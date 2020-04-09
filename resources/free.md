@@ -20,6 +20,8 @@
 
 [Git - Book](https://git-scm.com/book/en/v2)
 
+[Maven by example](https://books.sonatype.com/mvnex-book/reference/index.html)
+
 [Software Testing: From Theory to Practice](https://sttp.site/)
 
 [The Fuzzing Book](https://www.fuzzingbook.org/)
