@@ -28,7 +28,7 @@
 
 [CS191 - Lectures](https://www.cis.upenn.edu/~cis191/lectures.html)
 
-[Frontend Masters Minneapolis Workshop Notes] (https://github.com/substack/fmmn/blob/master/day1/unix.md)
+[Frontend Masters Minneapolis Workshop Notes](https://github.com/substack/fmmn/blob/master/day1/unix.md)
 
 [UNIX / Linux Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 
