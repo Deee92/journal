@@ -1,0 +1,24 @@
+Participants: Benoit, Deepika
+
+Create sample programs / applications ~ 10
+
+Develop pure method processor incrementally
+
+Start with finding all methods, then cases for public, private, static, non-static, overloaded, overridden, ...
+
+Run incrementally for sample applications
+
+Write test cases for those - input program and oracle
+
+Ultimately find pure methods for sample applications
+
+Timeline:
+
+Now: infrastructure ready roughly by June
+
+Later: experimental runs with real workload
+
+Even later: Write a first draft
+
+Distant future: Submit
+
