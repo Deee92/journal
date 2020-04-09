@@ -1,0 +1,36 @@
+[The Odin Project](https://www.theodinproject.com/home)
+
+[CS50](https://www.youtube.com/user/cs50tv/)
+
+[Teach Yourself Computer Science](https://teachyourselfcs.com/)
+
+[Open Source Society University](https://github.com/ossu/computer-science)
+
+[MOOC.fi](https://www.mooc.fi/en/#courses)
+
+[Computer Science - An Interdisciplinary Approach](https://introcs.cs.princeton.edu/java/home/)
+
+[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
+[Become a Programmer, Mofo](http://programming-motherfucker.com/become.html)
+
+[A Self-Learning, Modern Computer Science Curriculum](https://functionalcs.github.io/curriculum/)
+
+[Reasonably Polymorphic](https://reasonablypolymorphic.com/book/preface)
+
+[Git - Book](https://git-scm.com/book/en/v2)
+
+[Software Testing: From Theory to Practice](https://sttp.site/)
+
+[The Fuzzing Book](https://www.fuzzingbook.org/)
+
+[Conquering the Command Line](http://conqueringthecommandline.com/book)
+
+[CS191 - Lectures](https://www.cis.upenn.edu/~cis191/lectures.html)
+
+[Frontend Masters Minneapolis Workshop Notes] (https://github.com/substack/fmmn/blob/master/day1/unix.md)
+
+[UNIX / Linux Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+
+[Learn You a Haskell](http://learnyouahaskell.com/)
+
