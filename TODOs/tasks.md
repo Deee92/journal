@@ -7,5 +7,5 @@
 - [ ] Think about ideas for sample applications
 
 ### others
-- [] IoD report
+- [ ] [IoD report](https://docs.google.com/document/d/1QPrK1kBej99qHedfIhSi-rBzZ5zJ9k9fhfDDAJHfyek/edit?usp=sharing)
 
