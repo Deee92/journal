@@ -1,0 +1,18 @@
+Participants: Benoit, Deepika
+
+Accept and process one Maven project from CLI
+
+Test classes for sample projects
+
+Ignore empty methods
+
+Include getters
+
+Don't consider synchronized methods (not deterministic), and methods that invoke other methods (for now)
+
+For testing:
+
+https://github.com/apache/commons-cli
+
+https://github.com/apache/commons-collections 
+
