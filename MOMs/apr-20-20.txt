@@ -1,0 +1,20 @@
+Participants: assert
+
+dependencies in methods - method invocations
+
+(methods calling other impure methods are impure)
+
+Account for IO and randomness
+
+methods running in a multithreaded context
+
+methods that can throw exceptions
+
+reference papers for definitions of method purity - share with group
+
+Lambdas and anonymous inner classes
+
+Papers and existing reproducible tools to find pure methods
+
+Bytecode editor (Nicolas) https://github.com/Col-E/Recaf
+
