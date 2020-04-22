@@ -1,0 +1,8 @@
+Participants: Benoit, Deepika
+
+Dynamic analysis - bigger scope
+
+Static analysis with Spoon should suffice for a conservative, strict definition of method purity, i.e. no method invocations and assignments
+
+Try with apache/commons-math (https://github.com/apache/commons-math) -> should give interesting cases
+
