@@ -24,6 +24,8 @@
 
 [Software Testing: From Theory to Practice](https://sttp.site/)
 
+[Course Notes on Software Monitoring and Tracing, Martin Monperrus](https://www.monperrus.net/martin/monitoring.pdf)
+
 [The Fuzzing Book](https://www.fuzzingbook.org/)
 
 [Conquering the Command Line](http://conqueringthecommandline.com/book)
