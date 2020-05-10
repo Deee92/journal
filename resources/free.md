@@ -8,6 +8,10 @@
 
 [MOOC.fi](https://www.mooc.fi/en/#courses)
 
+[Algorithms](https://jeffe.cs.illinois.edu/teaching/algorithms/)
+
+[Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
+
 [Computer Science - An Interdisciplinary Approach](https://introcs.cs.princeton.edu/java/home/)
 
 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
