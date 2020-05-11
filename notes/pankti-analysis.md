@@ -10,26 +10,180 @@ All applications have
 
 ### All methods
 
-\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types
--- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ----------------
-1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 552 | 0
-2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 43 | 0
-3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0
-4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 11 | 0
-5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2
-6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0
+\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types | #METH | #PURE
+-- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ---------------- | ----- | -----
+1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 671 | 0 | 6542 | 995
+2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 56 | 0 | 2730 | 278
+3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0 | 220 | 37
+4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 856 | 172
+5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 893 | 105
+6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 2108 | 386
 ___
 
-### Candidate methods
+### Pure methods
 
-\# | application | % | return a value | return a primitive | ifs | loops | conditional operators | parameters | switch statements | local variables | multiple statements
--- | ----------- | - | -------------- | ------------------ | --- | ----- | --------------------- | ---------- | ----------------- | --------------- | -------------------
-1 | [commons-math v3.6.1][1] | 15.6% (1023 / 6542) | 999 | 638 | 51 | 51 | 30 | 170 | 1 | 81 | 90
-2 | [commons-collections v4.1][2] | 10% (281 / 2730) | 279 | 117 | 10 | 3 | 11 | 44 | 0 | 3 | 11
+\# | application | %PURE | return a value | return a primitive | ifs | loops | conditional operators | parameters | switch statements | local variables | multiple statements
+-- | ----------- | ----- | -------------- | ------------------ | --- | ----- | --------------------- | ---------- | ----------------- | --------------- | -------------------
+1 | [commons-math v3.6.1][1] | 15.2% (995 / 6542) | 983 | 611 | 44 | 37 | 30 | 154 | 1 | 67 | 74
+2 | [commons-collections v4.1][2] | 10% (278 / 2730) | 277 | 115 | 10 | 3 | 11 | 43 | 0 | 3 | 11
 3 | [commons-cli v1.4][3] | 16.8% (37 / 220) | 37 | 13 | 0 | 0 | 1 | 2 | 1 | 0 | 1
 4 | [ttorrent v2.0][4] | 20% (172 / 856) | 172 | 86 | 1 | 0 | 1 | 8 | 0 | 2 | 2
 5 | [jitsi-videobridge v2.1][5] | 11.7% (105 / 893) | 105 | 48 | 4 | 0 | 4 | 16 | 1 | 2 | 4
-6 | [hedwig v0.7][6] | 18.3% (386 / 2108) | 385 | 158 | 3 | 4 | 0 | 25 | 1 | 6 | 5
+6 | [hedwig v0.7][6] | 18.3% (386 / 2108) | 385 | 157 | 3 | 4 | 0 | 25 | 1 | 6 | 5
+___
+
+### Pure method examples - [commons-math v3.6.1][1]
+
+- pure methods that return a value (a primitive, or an object)\
+_org/apache/commons/math3/stat/regression/RegressionResults.java_
+```
+  public double getErrorSumSquares() {
+    return this.globalFitInfo[ SSE_IDX];
+  }
+```
+_org/apache/commons/math3/exception/MathIllegalStateException.java_
+```
+  public ExceptionContext getContext() {
+    return context;
+  }
+```
+
+- pure methods that do not return a value (return type is void)\
+_org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java_
+```
+  private static void push(double[] vals, double val) {
+    for (int i = vals.length-1; i > 0; i--) {
+        vals[i] = vals[i-1];
+    }
+    vals[0] = val;
+  }
+
+```
+
+- pure methods that return a primitive\
+_org/apache/commons/math3/util/Decimal64.java_
+```
+  public int intValue() {
+    return (int) value;
+  }
+```
+
+- pure methods that do not return a primitive\
+_org/apache/commons/math3/geometry/spherical/twod/Vertex.java_
+```
+  Circle sharedCircleWith(final Vertex vertex) {
+    for (final Circle circle1 : circles) {
+      for (final Circle circle2 : vertex.circles) {
+        if (circle1 == circle2) {
+          return circle1;
+        }
+      }
+    }
+    return null;
+  }
+
+```
+
+- pure methods with if statement(s)\
+_org/apache/commons/math3/stat/descriptive/moment/Variance.java_
+```
+  public double getResult() {
+    if (moment.n == 0) {
+      return Double.NaN;
+    } else if (moment.n == 1) {
+      return 0d;
+    } else {
+      if (isBiasCorrected) {
+        return moment.m2 / (moment.n - 1d);
+      } else {
+        return moment.m2 / (moment.n);
+      }
+    }
+  }
+```
+
+- pure methods with loop(s)\
+_org/apache/commons/math3/util/MathArrays.java_
+```
+  public static int[] sequence(int size,
+                               int start,
+                               int stride) {
+    final int[] a = new int[size];
+    for (int i = 0; i < size; i++) {
+      a[i] = start + i * stride;
+    }
+    return a;
+  }
+```
+
+_org/apache/commons/math3/analysis/interpolation/LoessInterpolator.java_
+```
+  private static int nextNonzero(final double[] weights, final int i) {
+    int j = i + 1;
+    while(j < weights.length && weights[j] == 0) {
+      ++j;
+    }
+    return j;
+  }
+```
+
+- pure methods that use conditional operators\
+_org/apache/commons/math3/random/EmpiricalDistribution.java_
+```
+  private double pBminus(int i) {
+    return i == 0 ? 0 : upperBounds[i - 1];
+  }
+
+```
+
+- pure methods that have parameters\
+_org/apache/commons/math3/stat/regression/SimpleRegression.java_
+```
+  private double getIntercept(final double slope) {
+    if (hasIntercept){
+      return (sumY - slope * sumX) / n;
+    }
+    return 0.0;
+  }
+```
+
+- pure methods that use switch statements\
+_org/apache/commons/math3/optim/linear/Relationship.java_
+```
+  public Relationship oppositeRelationship() {
+    switch (this) {
+      case LEQ :
+        return GEQ;
+      case GEQ :
+        return LEQ;
+      default :
+        return EQ;
+    }
+  }
+```
+
+- pure methods that define local variables\
+_org/apache/commons/math3/geometry/euclidean/twod/Vector2D.java_
+```
+  public double distanceSq(Vector<Euclidean2D> p) {
+    Vector2D p3 = (Vector2D) p;
+    final double dx = p3.x - x;
+    final double dy = p3.y - y;
+    return dx * dx + dy * dy;
+  }
+```
+
+- pure methods that have multiple statements\
+_org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java_
+```
+  private static int[] inverse(final int[] indices) {
+    final int[] inverse = new int[indices.length];
+    for (int i = 0; i < indices.length; i++) {
+      inverse[indices[i]] = i;
+    }
+    return inverse;
+  }
+```
 
 [1]: https://github.com/apache/commons-math/tree/MATH_3_6_1
 [2]: https://github.com/apache/commons-collections/tree/collections-4.1
