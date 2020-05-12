@@ -1,9 +1,10 @@
 ## [jitsi/jitsi-videobridge](https://github.com/jitsi/jitsi-videobridge/tree/v2.1)
 
-### Methods
+### Methods and tags
 
 1. [org/jitsi/videobridge/cc/vp8/VP8Frame.java][1]
-```int getMaxSequenceNumber() {
+```
+int getMaxSequenceNumber() {
   return maxSequenceNumber; 
 }
 ```
