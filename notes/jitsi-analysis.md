@@ -1,5 +1,13 @@
 ## [jitsi/jitsi-videobridge](https://github.com/jitsi/jitsi-videobridge/tree/v2.1)
 
+### Summary
+
+Number of methods
+
+returning a value | returning a primitive | with parameters | with if conditions | with conditional operators | with loops | with local variables | with switch cases | with multiple statements
+------------------| --------------------- | --------------- | ------------------ | -------------------------- | ---------- | -------------------- | ----------------- | ------------------------
+105 | 48 | 16 | 4 | 4 | 0 | 2 | 1 | 4
+
 ### Methods and tags
 
 1. [org/jitsi/videobridge/cc/vp8/VP8Frame.java][1]
