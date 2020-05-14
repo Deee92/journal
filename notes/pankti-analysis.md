@@ -18,6 +18,7 @@ All applications have
 4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 856 | 172
 5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 893 | 105
 6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 2108 | 386
+7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 4726 | 786
 ___
 
 ### Pure methods
@@ -30,6 +31,7 @@ ___
 4 | [ttorrent v2.0][4] | 20% (172 / 856) | 172 | 86 | 1 | 0 | 1 | 8 | 0 | 2 | 2
 5 | [jitsi-videobridge v2.1][5] | 11.7% (105 / 893) | 105 | 48 | 4 | 0 | 4 | 16 | 1 | 2 | 4
 6 | [hedwig v0.7][6] | 18.3% (386 / 2108) | 385 | 157 | 3 | 4 | 0 | 25 | 1 | 6 | 5
+7 | [apache-maven v3.6.3][7] | 16.6% (786 / 4726) | 786 | 170 | 2 | 0 | 14 | 44 | 0 | 0 | 0 
 ___
 
 ### Pure method examples - [commons-math v3.6.1][1]
@@ -191,4 +193,5 @@ _org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java_
 [4]: https://github.com/mpetazzoni/ttorrent/tree/ttorrent-2.0
 [5]: https://github.com/jitsi/jitsi-videobridge/tree/v2.1
 [6]: https://sourceforge.net/projects/hwmail/files/0.7/
+[7]: https://github.com/apache/maven/tree/maven-3.6.3
 
