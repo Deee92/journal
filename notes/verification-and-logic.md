@@ -101,4 +101,56 @@ Two kind of operators:
   * unary: next (X), eventually (F), always (global G)
   * binary: until (U)
 
+State transition model\
+states: S1, S2, S3 ... Sj
+Model M models temporal formula phi\
+`(M, Si) |= phi`
+
+### Operators
+Future logic, reasoning about the state of a system in future
+
+1. Next: X phi **circle**\
+`(M, Sj) |= X phi <=> (M, S(j+1)) |= phi`\
+phi holds at next state
+
+2. Future / eventuality: F phi ("eventually") **diamond**\
+`(M, Sj) |= F phi <=> there exists k, k >= j, (M, Sk) |= phi`\
+phi eventually holds
+
+3. Globally / always: G phi **square**\
+`(M, Sj) |= G phi <=> for all k, k >= j, (M, Sk) |= phi`\
+phi holds globally
+
+4. Until (binary): xi U phi\
+`(M, Sj) |= xi U phi <=> there exsits k (M, Sk) |= phi and for all k, j < k (M, Sj) |= xi`\
+xi holds until phi holds
+
+Past logic, reasoning about the state of the system in the past
+
+1. Previous (circle with a tilde in the middle)\
+`(M, Sj) |= previous phi  <=> (M, S(j-1)) |= phi`\
+phi holds in previous state
+
+2. Eventually in the past (diamond with a tilde in the middle)
+`(M, Sj) |= eventually in the past phi <=> there exists k, k <= j (M, Sk) |= phi\
+phi holds eventually in the past
+
+3. Globally (always) in the past (square with a tilde in the middle)
+`(M, Sj) |= globally in the past phi <=> for all k, k <= j (M, Sk) |= phi`
+phi holds globally in the past
+
+4. Back to (beta, B)
+`(M, Sj) |= phi B xi <=> there exists k (M, Sk) |= xi and for all j >= k (M, Sj) |= phi until present state`\
+Or `(M, Sj) |= phi for j = 0 to present state`\
+
+### Examples
+P, Q, R are atomic propositions
+
+- _"If I start studying, I will eventually graduate"_\
+(P -> FQ)\
+If P is true, that implies Q is eventually true
+
+- _"Either I have coffee now or I will sleep"_\
+(P v XQ)\
+Either P is true or next Q is true
 

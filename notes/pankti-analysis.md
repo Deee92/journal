@@ -10,27 +10,27 @@ All applications have
 
 ### All methods
 
-\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types | #METH | #PURE
--- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ---------------- | ----- | -----
-1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 671 | 0 | 6542 | 995
-2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 56 | 0 | 2730 | 278
-3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0 | 220 | 37
-4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 856 | 172
-5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 893 | 105
-6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 2108 | 386
-7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 4726 | 786
+\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types | modiying array args | #METH | #PURE
+-- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ---------------- | ------------------- | ----- | -----
+1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 671 | 0 | 14 | 6542 | 980
+2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 56 | 0 | 1 | 2730 | 277
+3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0 | 0 | 220 | 37
+4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 0 | 856 | 172
+5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 0 | 893 | 105
+6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 1 | 2108 | 385
+7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 0 | 4726 | 786
 ___
 
 ### Pure methods
 
 \# | application | %PURE | return a value | return a primitive | ifs | loops | conditional operators | parameters | switch statements | local variables | multiple statements
 -- | ----------- | ----- | -------------- | ------------------ | --- | ----- | --------------------- | ---------- | ----------------- | --------------- | -------------------
-1 | [commons-math v3.6.1][1] | 15.2% (995 / 6542) | 983 | 611 | 44 | 37 | 30 | 154 | 1 | 67 | 74
-2 | [commons-collections v4.1][2] | 10% (278 / 2730) | 277 | 115 | 10 | 3 | 11 | 43 | 0 | 3 | 11
+1 | [commons-math v3.6.1][1] | 14.9% (980 / 6542) | 980 | 609 | 40 | 27 | 30 | 139 | 1 | 53 | 64
+2 | [commons-collections v4.1][2] | 10% (277 / 2730) | 277 | 115 | 10 | 2 | 11 | 42 | 0 | 2 | 10
 3 | [commons-cli v1.4][3] | 16.8% (37 / 220) | 37 | 13 | 0 | 0 | 1 | 2 | 1 | 0 | 1
 4 | [ttorrent v2.0][4] | 20% (172 / 856) | 172 | 86 | 1 | 0 | 1 | 8 | 0 | 2 | 2
 5 | [jitsi-videobridge v2.1][5] | 11.7% (105 / 893) | 105 | 48 | 4 | 0 | 4 | 16 | 1 | 2 | 4
-6 | [hedwig v0.7][6] | 18.3% (386 / 2108) | 385 | 157 | 3 | 4 | 0 | 25 | 1 | 6 | 5
+6 | [hedwig v0.7][6] | 18.2% (385 / 2108) | 385 | 157 | 2 | 3 | 0 | 24 | 1 | 5 | 5
 7 | [apache-maven v3.6.3][7] | 16.6% (786 / 4726) | 786 | 170 | 2 | 0 | 14 | 44 | 0 | 0 | 0 
 ___
 
@@ -48,18 +48,6 @@ _org/apache/commons/math3/exception/MathIllegalStateException.java_
   public ExceptionContext getContext() {
     return context;
   }
-```
-
-- pure methods that do not return a value (return type is void)\
-_org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java_
-```
-  private static void push(double[] vals, double val) {
-    for (int i = vals.length-1; i > 0; i--) {
-        vals[i] = vals[i-1];
-    }
-    vals[0] = val;
-  }
-
 ```
 
 - pure methods that return a primitive\
