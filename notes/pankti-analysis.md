@@ -19,6 +19,9 @@ All applications have
 5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 0 | 893 | 105
 6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 1 | 2108 | 385
 7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 0 | 4726 | 786
+8 | [hibernate-tools v5.4.16][8] | 438 | 0 | 9 | 0 | 0 | 1 | 1407 | 228
+9 | [eclipse/che v7.13.1][9] | 1025 | 38 | 78 | 4 | 36 | 0 | 9009 | 854
+10 | [commons-lang v3.10][10] | 500 | 18 | 3 | 422 | 0 | 0 | 2782 | 275
 ___
 
 ### Pure methods
@@ -32,6 +35,9 @@ ___
 5 | [jitsi-videobridge v2.1][5] | 11.7% (105 / 893) | 105 | 48 | 4 | 0 | 4 | 16 | 1 | 2 | 4
 6 | [hedwig v0.7][6] | 18.2% (385 / 2108) | 385 | 157 | 2 | 3 | 0 | 24 | 1 | 5 | 5
 7 | [apache-maven v3.6.3][7] | 16.6% (786 / 4726) | 786 | 170 | 2 | 0 | 14 | 44 | 0 | 0 | 0 
+8 | [hibernate-tools v5.4.16][8] | 16.2% ( 228 / 1407) | 228 | 49 | 3 | 0 | 3 | 67 | 0 | 1 | 2
+9 | [eclipse/che v7.13.1][9] | 0.09% (854 / 9009) | 854 | 115 | 8 | 3 | 4 | 49 | 4 | 7 | 10
+10 | [commons-lang v3.10][10] | 0.1% (275 / 2782) | 275 | 163 | 28 | 13 | 18 | 84 | 0 | 16 | 29
 ___
 
 ### Pure method examples - [commons-math v3.6.1][1]
@@ -182,4 +188,7 @@ _org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java_
 [5]: https://github.com/jitsi/jitsi-videobridge/tree/v2.1
 [6]: https://sourceforge.net/projects/hwmail/files/0.7/
 [7]: https://github.com/apache/maven/tree/maven-3.6.3
+[8]: https://github.com/hibernate/hibernate-tools/tree/5.4.16.Final
+[9]: https://github.com/eclipse/che/tree/7.13.1
+[10]: https://github.com/apache/commons-lang/tree/rel/commons-lang-3.10
 
