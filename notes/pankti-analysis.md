@@ -10,18 +10,18 @@ All applications have
 
 ### All methods
 
-\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types | modiying array args | #METH | #PURE
--- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ---------------- | ------------------- | ----- | -----
-1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 671 | 0 | 14 | 6542 | 980
-2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 56 | 0 | 1 | 2730 | 277
-3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0 | 0 | 220 | 37
-4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 0 | 856 | 172
-5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 0 | 893 | 105
-6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 1 | 2108 | 385
-7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 0 | 4726 | 786
-8 | [hibernate-tools v5.4.16][8] | 438 | 0 | 9 | 0 | 0 | 1 | 1407 | 228
-9 | [eclipse/che v7.13.1][9] | 1025 | 38 | 78 | 4 | 36 | 0 | 9009 | 854
-10 | [commons-lang v3.10][10] | 500 | 18 | 3 | 422 | 0 | 0 | 2782 | 275
+\# | application | processing time (avg of 5, ms) | synchronized | empty | deprecated | annotation types | modiying array args | LOC (*.java) | #MAVEN_MODULES | #METH | #PURE
+-- | ----------- | ------------------------------ | ------------ | ----- | ---------- | ---------------- | ------------------- | ------------ | -------------- | ----- | -----
+1 | [commons-math v3.6.1][1] | 1428 | 140 | 27 | 671 | 0 | 14 | 37.4k | 0 | 6542 | 980
+2 | [commons-collections v4.1][2] | 587 | 12 | 6 | 56 | 0 | 1 | 117.6k | 0 | 2730 | 277
+3 | [commons-cli v1.4][3] | 226 | 0 | 0 | 43 | 0 | 0 | 11.6k | 0 | 220 | 37
+4 | [ttorrent v2.0][4] | 281 | 24 | 20 | 14 | 0 | 0 | 20.8k | 8 | 856 | 172
+5 | [jitsi-videobridge v2.1][5] | 340 | 15 | 19 | 0 | 2 | 0 | 34.3k | 0 | 893 | 105
+6 | [hedwig v0.7][6] | 481 | 4 | 5 | 0 | 0 | 1 | 49.6k | 5 | 2108 | 385
+7 | [apache-maven v3.6.3][7] | 771 | 10 | 134 | 341 | 0 | 0 | 136.3k | 14 | 4726 | 786
+8 | [hibernate-tools v5.4.16][8] | 438 | 0 | 9 | 0 | 0 | 1 | 39.4k | 3 | 1407 | 228
+9 | [eclipse/che v7.13.1][9] | 1025 | 38 | 78 | 4 | 36 | 0 | 262.7k | 7 | 9009 | 854
+10 | [commons-lang v3.10][10] | 500 | 18 | 3 | 422 | 0 | 0 | 148.6k | 0 | 2782 | 275
 ___
 
 ### Pure methods
