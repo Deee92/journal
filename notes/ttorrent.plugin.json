@@ -1,0 +1,104 @@
+{
+  "name": "Ttorrent Plugin",
+  "id": "ttorrent",
+  "instrumentation": [
+    {
+      "className": "com.turn.ttorrent.client.Piece",
+      "methodName": "available",
+      "methodParameterTypes": [],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece available"
+    },
+    {
+      "className": "com.turn.ttorrent.tracker.TrackedTorrent",
+      "methodName": "getInfoHash",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "info hash"
+    },
+    {
+      "className": "com.turn.ttorrent.client.announce.TrackerClient",
+      "methodName": "getTrackerURI",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "tracker URI"
+    },
+    {
+      "className": "com.turn.ttorrent.network.ConnectionManager",
+      "methodName": "getBindPort",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "bind port"
+    },
+    {
+      "className": "com.turn.ttorrent.network.AcceptAttachmentImpl",
+      "methodName": "isTimeoutElapsed",
+      "methodParameterTypes": [
+          "long"
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "elapsed timeout"
+    },
+    {
+      "className": "com.turn.ttorrent.network.ConnectTask",
+      "methodName": "isTimeoutElapsed",
+      "methodParameterTypes": [
+          "long"
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "elapsed timeout"
+    },
+    {
+      "className": "com.turn.ttorrent.network.ReadWriteAttachment",
+      "methodName": "isTimeoutElapsed",
+      "methodParameterTypes": [
+          "long"
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "elapsed timeout"
+    }
+  ]
+}
+
