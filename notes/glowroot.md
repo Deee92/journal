@@ -7,6 +7,11 @@
 5. Configure instrumentation (via JSON?) for all the pure methods in application
 6. Export traces
 7. Generate test cases with I/O pairs for all of these methods
+Implementation ideas:
+- Add json-only plugin to glowroot/plugins like [so](https://github.com/Deee92/journal/blob/master/notes/ttorrent.plugin.json)
+- `java -javaagent:/path/to/glowroot/glowroot.jar -jar /path/to/ttorrent/cli/build/ttorrent-version-shaded-jar.jar -d 2 -o /path/to/download/directory /path/to/torrent/file.torrent`
+- later: export json config for all pure methods to json plugin
+- `java -jar /path/to/h2/bin/h2*.jar`, set JDBC url to `jdbc:h2:/path/to/glowroot/data/data`, browse traces, ...
 
 ### Background
 
