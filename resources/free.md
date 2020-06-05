@@ -42,3 +42,5 @@
 
 [Learn You a Haskell](http://learnyouahaskell.com/)
 
+[freeCodeCamp - Free Online Programming & Computer Science Courses](https://www.freecodecamp.org/news/free-online-programming-cs-courses/)
+
