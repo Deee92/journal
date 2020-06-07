@@ -16,6 +16,60 @@
       "timerName": "piece available"
     },
     {
+      "className": "com.turn.ttorrent.client.Piece",
+      "methodName": "getSize",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece get size"
+    },
+    {
+      "className": "com.turn.ttorrent.client.Piece",
+      "methodName": "getIndex",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece index"
+    },
+    {
+      "className": "com.turn.ttorrent.client.Piece",
+      "methodName": "equals",
+      "methodParameterTypes": [
+          "java.lang.Object"
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece equality"
+    },
+    {
+      "className": "com.turn.ttorrent.client.Piece",
+      "methodName": "isValid",
+      "methodParameterTypes": [],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece validity"
+    },
+    {
       "className": "com.turn.ttorrent.tracker.TrackedTorrent",
       "methodName": "getInfoHash",
       "methodParameterTypes": [ ],
@@ -55,6 +109,45 @@
       "timerName": "bind port"
     },
     {
+      "className": "com.turn.ttorrent.peer.SharingPeer",
+      "methodName": "isDownloading",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "downloading"
+    },
+    {
+      "className": "com.turn.ttorrent.client.LoadedTorrentImpl",
+      "methodName": "getTorrentHash",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece size"
+    },
+    {
+      "className": "com.turn.ttorrent.common.Optional",
+      "methodName": "isPresent",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "piece size"
+    },
+    {
       "className": "com.turn.ttorrent.network.AcceptAttachmentImpl",
       "methodName": "isTimeoutElapsed",
       "methodParameterTypes": [
@@ -62,7 +155,7 @@
       ],
       "captureKind": "transaction",
       "transactionType": "Pure",
-      "transactionNameTemplate": "{{methodName}}",
+      "transactionNameTemplate": "AcceptAttachmentImpl {{methodName}}",
       "transactionSlowThresholdMillis": 0,
       "alreadyInTransactionBehavior": "capture-new-transaction",
       "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
@@ -77,7 +170,7 @@
       ],
       "captureKind": "transaction",
       "transactionType": "Pure",
-      "transactionNameTemplate": "{{methodName}}",
+      "transactionNameTemplate": "ConnectTask {{methodName}}",
       "transactionSlowThresholdMillis": 0,
       "alreadyInTransactionBehavior": "capture-new-transaction",
       "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
@@ -92,12 +185,51 @@
       ],
       "captureKind": "transaction",
       "transactionType": "Pure",
-      "transactionNameTemplate": "{{methodName}}",
+      "transactionNameTemplate": "ReadWriteAttachment {{methodName}}",
       "transactionSlowThresholdMillis": 0,
       "alreadyInTransactionBehavior": "capture-new-transaction",
       "traceEntryMessageTemplate": "method: {{methodName}}, parameter: {{0}}, calling object: {{this}}, return value: {{_}}",
       "traceEntryStackThresholdMillis": 0,
       "timerName": "elapsed timeout"
+    },
+    {
+      "className": "com.turn.ttorrent.tracker.TrackedPeer",
+      "methodName": "getLeft",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "tracked peer get left"
+    },
+    {
+      "className": "com.turn.ttorrent.tracker.TrackedPeer",
+      "methodName": "getUploaded",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "tracked peer get uploaded"
+    },
+    {
+      "className": "com.turn.ttorrent.tracker.TrackedPeer",
+      "methodName": "getDownloaded",
+      "methodParameterTypes": [ ],
+      "captureKind": "transaction",
+      "transactionType": "Pure",
+      "transactionNameTemplate": "{{methodName}}",
+      "transactionSlowThresholdMillis": 0,
+      "alreadyInTransactionBehavior": "capture-new-transaction",
+      "traceEntryMessageTemplate": "method: {{methodName}}, calling object: {{this}}, return value: {{_}}",
+      "traceEntryStackThresholdMillis": 0,
+      "timerName": "tracked peer get downloaded"
     }
   ]
 }
