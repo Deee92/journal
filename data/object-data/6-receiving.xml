@@ -1,0 +1,216 @@
+<com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+  <type>ANNOUNCE_REQUEST</type>
+  <data class="java.nio.HeapByteBuffer">
+    <mark>-1</mark>
+    <position>0</position>
+    <limit>185</limit>
+    <capacity>185</capacity>
+    <address>16</address>
+    <hb>ZDc6Y29tcGFjdGkxZTEwOmRvd25sb2FkZWRpMGU1OmV2ZW50NzpzdGFydGVkOTppbmZvX2hhc2gyMDoIHpIp07il7GVDSPCcqaKUPOzikzI6aXA5OjEyNy4wLjEuMTQ6bGVmdGk2NzEwODg2NDBlMTA6bm9fcGVlcl9pZGkwZTc6cGVlcl9pZDIwOi1UTzAwNDItZmMzNmJlMTdiNjIxNDpwb3J0aTY4ODFlODp1cGxvYWRlZGkwZWU=</hb>
+    <offset>0</offset>
+    <isReadOnly>false</isReadOnly>
+    <bigEndian>true</bigEndian>
+    <nativeByteOrder>false</nativeByteOrder>
+  </data>
+  <infoHash>CB6SKdO4pexlQ0jwnKmilDzs4pM=</infoHash>
+  <peer>
+    <address serialization="custom">
+      <java.net.InetSocketAddress>
+        <default>
+          <addr class="java.net.Inet4Address" resolves-to="java.net.InetAddress" serialization="custom">
+            <java.net.InetAddress>
+              <default>
+                <address>2130706689</address>
+                <family>2</family>
+              </default>
+            </java.net.InetAddress>
+          </addr>
+          <port>6881</port>
+        </default>
+      </java.net.InetSocketAddress>
+    </address>
+    <hostId>/127.0.1.1:6881</hostId>
+    <peerId class="java.nio.HeapByteBuffer">
+      <mark>-1</mark>
+      <position>0</position>
+      <limit>20</limit>
+      <capacity>20</capacity>
+      <address>16</address>
+      <hb>LVRPMDA0Mi1mYzM2YmUxN2I2MjE=</hb>
+      <offset>0</offset>
+      <isReadOnly>false</isReadOnly>
+      <bigEndian>true</bigEndian>
+      <nativeByteOrder>false</nativeByteOrder>
+    </peerId>
+    <hexPeerId>2D544F303034322D666333366265313762363231</hexPeerId>
+  </peer>
+  <uploaded>0</uploaded>
+  <downloaded>0</downloaded>
+  <left>671088640</left>
+  <compact>true</compact>
+  <noPeerId>false</noPeerId>
+  <event>STARTED</event>
+  <numWant>50</numWant>
+</com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+<com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+  <type>ANNOUNCE_REQUEST</type>
+  <data class="java.nio.HeapByteBuffer">
+    <mark>-1</mark>
+    <position>0</position>
+    <limit>182</limit>
+    <capacity>182</capacity>
+    <address>16</address>
+    <hb>ZDc6Y29tcGFjdGkxZTEwOmRvd25sb2FkZWRpMGU1OmV2ZW50NDpub25lOTppbmZvX2hhc2gyMDoIHpIp07il7GVDSPCcqaKUPOzikzI6aXA5OjEyNy4wLjEuMTQ6bGVmdGk2NzEwODg2NDBlMTA6bm9fcGVlcl9pZGkwZTc6cGVlcl9pZDIwOi1UTzAwNDItZmMzNmJlMTdiNjIxNDpwb3J0aTY4ODFlODp1cGxvYWRlZGkwZWU=</hb>
+    <offset>0</offset>
+    <isReadOnly>false</isReadOnly>
+    <bigEndian>true</bigEndian>
+    <nativeByteOrder>false</nativeByteOrder>
+  </data>
+  <infoHash>CB6SKdO4pexlQ0jwnKmilDzs4pM=</infoHash>
+  <peer>
+    <address serialization="custom">
+      <java.net.InetSocketAddress>
+        <default>
+          <addr class="java.net.Inet4Address" resolves-to="java.net.InetAddress" serialization="custom">
+            <java.net.InetAddress>
+              <default>
+                <address>2130706689</address>
+                <family>2</family>
+              </default>
+            </java.net.InetAddress>
+          </addr>
+          <port>6881</port>
+        </default>
+      </java.net.InetSocketAddress>
+    </address>
+    <hostId>/127.0.1.1:6881</hostId>
+    <peerId class="java.nio.HeapByteBuffer">
+      <mark>-1</mark>
+      <position>0</position>
+      <limit>20</limit>
+      <capacity>20</capacity>
+      <address>16</address>
+      <hb>LVRPMDA0Mi1mYzM2YmUxN2I2MjE=</hb>
+      <offset>0</offset>
+      <isReadOnly>false</isReadOnly>
+      <bigEndian>true</bigEndian>
+      <nativeByteOrder>false</nativeByteOrder>
+    </peerId>
+    <hexPeerId>2D544F303034322D666333366265313762363231</hexPeerId>
+  </peer>
+  <uploaded>0</uploaded>
+  <downloaded>0</downloaded>
+  <left>671088640</left>
+  <compact>true</compact>
+  <noPeerId>false</noPeerId>
+  <event>NONE</event>
+  <numWant>50</numWant>
+</com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+<com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+  <type>ANNOUNCE_REQUEST</type>
+  <data class="java.nio.HeapByteBuffer">
+    <mark>-1</mark>
+    <position>0</position>
+    <limit>188</limit>
+    <capacity>188</capacity>
+    <address>16</address>
+    <hb>ZDc6Y29tcGFjdGkxZTEwOmRvd25sb2FkZWRpMTE1ODY3NjQ4MGU1OmV2ZW50OTpjb21wbGV0ZWQ5OmluZm9faGFzaDIwOggekinTuKXsZUNI8JypopQ87OKTMjppcDk6MTI3LjAuMS4xNDpsZWZ0aTBlMTA6bm9fcGVlcl9pZGkwZTc6cGVlcl9pZDIwOi1UTzAwNDItZmMzNmJlMTdiNjIxNDpwb3J0aTY4ODFlODp1cGxvYWRlZGkwZWU=</hb>
+    <offset>0</offset>
+    <isReadOnly>false</isReadOnly>
+    <bigEndian>true</bigEndian>
+    <nativeByteOrder>false</nativeByteOrder>
+  </data>
+  <infoHash>CB6SKdO4pexlQ0jwnKmilDzs4pM=</infoHash>
+  <peer>
+    <address serialization="custom">
+      <java.net.InetSocketAddress>
+        <default>
+          <addr class="java.net.Inet4Address" resolves-to="java.net.InetAddress" serialization="custom">
+            <java.net.InetAddress>
+              <default>
+                <address>2130706689</address>
+                <family>2</family>
+              </default>
+            </java.net.InetAddress>
+          </addr>
+          <port>6881</port>
+        </default>
+      </java.net.InetSocketAddress>
+    </address>
+    <hostId>/127.0.1.1:6881</hostId>
+    <peerId class="java.nio.HeapByteBuffer">
+      <mark>-1</mark>
+      <position>0</position>
+      <limit>20</limit>
+      <capacity>20</capacity>
+      <address>16</address>
+      <hb>LVRPMDA0Mi1mYzM2YmUxN2I2MjE=</hb>
+      <offset>0</offset>
+      <isReadOnly>false</isReadOnly>
+      <bigEndian>true</bigEndian>
+      <nativeByteOrder>false</nativeByteOrder>
+    </peerId>
+    <hexPeerId>2D544F303034322D666333366265313762363231</hexPeerId>
+  </peer>
+  <uploaded>0</uploaded>
+  <downloaded>1158676480</downloaded>
+  <left>0</left>
+  <compact>true</compact>
+  <noPeerId>false</noPeerId>
+  <event>COMPLETED</event>
+  <numWant>50</numWant>
+</com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+<com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
+  <type>ANNOUNCE_REQUEST</type>
+  <data class="java.nio.HeapByteBuffer">
+    <mark>-1</mark>
+    <position>0</position>
+    <limit>186</limit>
+    <capacity>186</capacity>
+    <address>16</address>
+    <hb>ZDc6Y29tcGFjdGkxZTEwOmRvd25sb2FkZWRpMTE1ODY3NjQ4MGU1OmV2ZW50NzpzdG9wcGVkOTppbmZvX2hhc2gyMDoIHpIp07il7GVDSPCcqaKUPOzikzI6aXA5OjEyNy4wLjEuMTQ6bGVmdGkwZTEwOm5vX3BlZXJfaWRpMGU3OnBlZXJfaWQyMDotVE8wMDQyLWZjMzZiZTE3YjYyMTQ6cG9ydGk2ODgxZTg6dXBsb2FkZWRpMGVl</hb>
+    <offset>0</offset>
+    <isReadOnly>false</isReadOnly>
+    <bigEndian>true</bigEndian>
+    <nativeByteOrder>false</nativeByteOrder>
+  </data>
+  <infoHash>CB6SKdO4pexlQ0jwnKmilDzs4pM=</infoHash>
+  <peer>
+    <address serialization="custom">
+      <java.net.InetSocketAddress>
+        <default>
+          <addr class="java.net.Inet4Address" resolves-to="java.net.InetAddress" serialization="custom">
+            <java.net.InetAddress>
+              <default>
+                <address>2130706689</address>
+                <family>2</family>
+              </default>
+            </java.net.InetAddress>
+          </addr>
+          <port>6881</port>
+        </default>
+      </java.net.InetSocketAddress>
+    </address>
+    <hostId>/127.0.1.1:6881</hostId>
+    <peerId class="java.nio.HeapByteBuffer">
+      <mark>-1</mark>
+      <position>0</position>
+      <limit>20</limit>
+      <capacity>20</capacity>
+      <address>16</address>
+      <hb>LVRPMDA0Mi1mYzM2YmUxN2I2MjE=</hb>
+      <offset>0</offset>
+      <isReadOnly>false</isReadOnly>
+      <bigEndian>true</bigEndian>
+      <nativeByteOrder>false</nativeByteOrder>
+    </peerId>
+    <hexPeerId>2D544F303034322D666333366265313762363231</hexPeerId>
+  </peer>
+  <uploaded>0</uploaded>
+  <downloaded>1158676480</downloaded>
+  <left>0</left>
+  <compact>true</compact>
+  <noPeerId>false</noPeerId>
+  <event>STOPPED</event>
+  <numWant>50</numWant>
+</com.turn.ttorrent.common.protocol.http.HTTPAnnounceRequestMessage>
