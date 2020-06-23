@@ -8,6 +8,8 @@
 
 [MOOC.fi](https://www.mooc.fi/en/#courses)
 
+[Practical Python Programming](https://dabeaz-course.github.io/practical-python/)
+
 [Algorithms](https://jeffe.cs.illinois.edu/teaching/algorithms/)
 
 [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
