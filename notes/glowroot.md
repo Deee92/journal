@@ -46,6 +46,8 @@ Implementation ideas:
 - [How to profile JVM applications](https://www.lightbend.com/blog/profiling-jvm-applications)
 - [The JVM on Fire – Using Flame Graphs to Analyse Performance](https://blog.codecentric.de/en/2017/09/jvm-fire-using-flame-graphs-analyse-performance/)
 - [Profiling Java Applications with Async Profiler](https://hackernoon.com/profiling-java-applications-with-async-profiler-049s2790)
+
+#### [honest-profiler](https://github.com/jvm-profiling-tools/honest-profiler)
 - https://github.com/cykl/hprof2flamegraph
 - `java -agentpath:/home/user/dev/honest-profiler/liblagent.so=interval=7,logPath=/home/user/dev/honest-profiler/log.hpl -jar /home/user/ttorrent/cli/build/ttorrent-cli-1.2-shaded.jar -o ~/Downloads ~/Downloads/ubuntu-20.04-desktop-amd64.iso.torrent`
 - With hprof2flamgefraph
@@ -54,6 +56,10 @@ Implementation ideas:
 - [Ttorrent - Profiling interval 7ms](https://github.com/Deee92/journal/blob/master/images/output7.svg)
 - [Ttorrent - Profiling interval 3ms](https://github.com/Deee92/journal/blob/master/images/output3.svg)
 - [Ttorrent - Profiling interval 1ms](https://github.com/Deee92/journal/blob/master/images/output1.svg)
+
+#### [async-profiler v1.7.1](https://github.com/jvm-profiling-tools/async-profiler/tree/v1.7.1)
+- `java -agentpath:/home/user/dev/async-profiler/build/libasyncProfiler.so=start,file=/home/user/dev/async-profiler/profile.svg,event=alloc,interval=1000000,alluser,dot -jar /home/user/ttorrent/cli/build/ttorrent-cli-1.2-shaded.jar -o ~/Downloads ~/Downloads/ubuntu-20.04-desktop-amd64.iso.torrent`
+- [Ttorrent - Profiling interval 1ms](https://github.com/Deee92/journal/blob/master/images/async-profiler-profile-1ms.svg)
 
 #### Monitoring with [Glowroot](https://glowroot.org/)
 - Low-overhead [APM](https://en.wikipedia.org/wiki/Application_performance_management) tool
