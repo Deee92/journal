@@ -44,6 +44,16 @@ Implementation ideas:
 - [Profiling Software Using perf and Flame Graphs](https://www.percona.com/blog/2019/11/20/profiling-software-using-perf-and-flame-graphs/)
 - [Java performance profiling using flame graphs](https://medium.com/@maheshsenni/java-performance-profiling-using-flame-graphs-e29238130375)
 - [How to profile JVM applications](https://www.lightbend.com/blog/profiling-jvm-applications)
+- [The JVM on Fire – Using Flame Graphs to Analyse Performance](https://blog.codecentric.de/en/2017/09/jvm-fire-using-flame-graphs-analyse-performance/)
+- [Profiling Java Applications with Async Profiler](https://hackernoon.com/profiling-java-applications-with-async-profiler-049s2790)
+- https://github.com/cykl/hprof2flamegraph
+- `java -agentpath:/home/user/dev/honest-profiler/liblagent.so=interval=7,logPath=/home/user/dev/honest-profiler/log.hpl -jar /home/user/ttorrent/cli/build/ttorrent-cli-1.2-shaded.jar -o ~/Downloads ~/Downloads/ubuntu-20.04-desktop-amd64.iso.torrent`
+- With hprof2flamgefraph
+  - `python3 stackcollapse_hpl.py /home/user/dev/honest-profiler/log.hpl > /home/user/dev/honest-profiler/output-folded.txt`
+  - `perl flamegraph.pl /home/user/dev/honest-profiler/output-folded.txt > /home/user/dev/honest-profiler/output.svg`
+- [Ttorrent - Profiling interval 7ms](https://github.com/Deee92/journal/blob/master/images/output7.svg)
+- [Ttorrent - Profiling interval 3ms](https://github.com/Deee92/journal/blob/master/images/output3.svg)
+- [Ttorrent - Profiling interval 1ms](https://github.com/Deee92/journal/blob/master/images/output1.svg)
 
 #### Monitoring with [Glowroot](https://glowroot.org/)
 - Low-overhead [APM](https://en.wikipedia.org/wiki/Application_performance_management) tool
