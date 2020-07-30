@@ -2,11 +2,11 @@ visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditi
 public,org.apache.fontbox.ttf.VerticalMetricsTable,getAdvanceHeight,int,int,False,False,False,False,True,True,False,True,False,True
 public,org.apache.fontbox.util.BoundingBox,contains,"float, float",boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.util.SmallMap,size,,int,False,True,False,False,False,True,False,False,False,True
-public,org.apache.fontbox.ttf.PostScriptTable,getName,int,String,False,False,True,False,True,True,False,True,False,False
+public,org.apache.fontbox.ttf.PostScriptTable,getName,int,java.lang.String,False,False,True,False,True,True,False,True,False,False
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getEndPtOfContours,int,int,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getFlags,int,byte,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getYCoordinate,int,short,False,False,False,False,True,True,False,False,False,True
-public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getCFFFont,,CFFFont,False,False,False,False,False,True,False,True,False,False
+public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getCFFFont,,org.apache.fontbox.cff.CFFFont,False,False,False,False,False,True,False,True,False,False
 public,org.apache.fontbox.cmap.CIDRange,unmap,int,int,False,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.util.Matrix,getValue,"int, int",float,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.cmap.CodespaceRange,isFullMatch,"byte[], int",boolean,True,False,True,True,True,True,False,True,False,True
@@ -20,33 +20,33 @@ public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$7,blendChannel,"float,
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$8,blendChannel,"float, float",float,False,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$9,blendChannel,"float, float",float,False,True,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$12,blendChannel,"float, float",float,False,False,False,False,True,True,False,False,False,True
-public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getFontBoxFont,,FontBoxFont,False,False,False,False,False,True,False,True,False,False
+public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getFontBoxFont,,org.apache.fontbox.FontBoxFont,False,False,False,False,False,True,False,True,False,False
 public,org.apache.fontbox.ttf.HorizontalMetricsTable,getLeftSideBearing,int,int,False,False,False,False,True,True,False,True,False,True
-public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefTable,,"Map<COSObjectKey, Long>",False,True,False,False,False,True,False,False,False,False
+public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefTable,,java.util.Map,False,True,False,False,False,True,False,False,False,False
 public,org.apache.pdfbox.util.Matrix,getValues,,float[][],True,False,True,False,False,True,False,False,False,False
-public,org.apache.pdfbox.cos.COSBoolean,getValueAsObject,,Boolean,False,True,False,False,False,True,False,False,False,False
-public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnClass,int,Class<?>,False,False,False,False,True,True,True,False,False,False
-public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnClass,int,Class<?>,False,False,False,False,True,True,True,False,False,False
+public,org.apache.pdfbox.cos.COSBoolean,getValueAsObject,,java.lang.Boolean,False,True,False,False,False,True,False,False,False,False
+public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnClass,int,java.lang.Class,False,False,False,False,True,True,True,False,False,False
+public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnClass,int,java.lang.Class,False,False,False,False,True,True,True,False,False,False
 public,org.apache.fontbox.ttf.KerningSubtable$PairData0Format0,compare,"int[], int",int,True,False,True,False,True,True,False,True,False,True
 public,org.apache.fontbox.ttf.OpenTypeScript$1,compare,"int[], int",int,False,True,False,False,True,True,False,False,False,True
-public,org.apache.fontbox.type1.Token,toString,,String,False,False,False,False,False,True,False,True,False,False
-public,org.apache.pdfbox.debugger.ui.PageEntry,toString,,String,False,True,False,False,False,True,False,False,False,False
+public,org.apache.fontbox.type1.Token,toString,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.apache.pdfbox.debugger.ui.PageEntry,toString,,java.lang.String,False,True,False,False,False,True,False,False,False,False
 public,org.apache.fontbox.cff.CharStringCommand$Key,hashCode,,int,False,False,True,False,False,True,False,True,False,True
-public,org.apache.fontbox.cff.CharStringCommand$Key,equals,Object,boolean,True,False,True,False,True,True,False,True,False,True
+public,org.apache.fontbox.cff.CharStringCommand$Key,equals,java.lang.Object,boolean,True,False,True,False,True,True,False,True,False,True
 public,org.apache.fontbox.ttf.VerticalMetricsTable,getTopSideBearing,int,int,False,False,False,False,True,True,False,True,False,True
 public,org.apache.fontbox.cmap.CIDRange,map,char,int,False,False,True,False,True,True,False,True,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getXCoordinate,int,short,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.HorizontalMetricsTable,getAdvanceWidth,int,int,False,False,False,False,True,True,False,True,False,True
 public,org.apache.pdfbox.filter.ASCII85InputStream,skip,long,long,False,False,False,False,True,True,False,False,False,True
-public,org.apache.xmpbox.type.BooleanType,getStringValue,,String,False,True,False,False,False,True,False,False,False,False
-public,org.apache.pdfbox.pdfparser.PDFXRefStream,getObject,int,COSObject,False,False,False,False,True,True,False,False,False,False
-public,org.apache.pdfbox.pdmodel.PDPage$1,accept,PDAnnotation,boolean,False,False,False,False,True,True,False,False,False,True
-public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnName,int,String,False,False,False,False,True,True,False,False,False,False
-public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnName,int,String,False,False,False,False,True,True,False,False,False,False
-public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefType,,XRefType,False,True,False,False,False,True,False,False,False,False
+public,org.apache.xmpbox.type.BooleanType,getStringValue,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.apache.pdfbox.pdfparser.PDFXRefStream,getObject,int,org.apache.pdfbox.cos.COSObject,False,False,False,False,True,True,False,False,False,False
+public,org.apache.pdfbox.pdmodel.PDPage$1,accept,org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation,boolean,False,False,False,False,True,True,False,False,False,True
+public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnName,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnName,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefType,,org.apache.pdfbox.pdfparser.XrefTrailerResolver$XRefType,False,True,False,False,False,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceGray,toRGB,float,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB,toRGB,float,float[],False,False,False,False,True,True,False,False,False,False
-public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getTrailer,,COSDictionary,False,True,False,False,False,True,False,False,False,False
+public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getTrailer,,org.apache.pdfbox.cos.COSDictionary,False,True,False,False,False,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDCalGray,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDCalRGB,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYK,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
