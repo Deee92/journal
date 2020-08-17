@@ -1,0 +1,56 @@
+visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditionals,multiple-statements,loops,parameters,returns,switches,ifs,static,returns-primitives
+public,org.languagetool.tokenizers.el.GreekWordTokenizerImpl,yycharat,int,char,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.AnalyzedTokenReadings,getAnalyzedToken,int,org.languagetool.AnalyzedToken,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.openoffice.MultiDocumentsHandler,getNumMinToCheckParas,,java.util.List,False,False,True,False,False,True,False,True,False,False
+public,org.languagetool.rules.RuleMatch,getShortMessage,,java.lang.String,False,False,True,False,False,True,False,True,False,False
+public,org.languagetool.openoffice.MultiDocumentsHandler,getServiceDisplayName,com.sun.star.lang.Locale,java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.RemoteRuleConfig,getDownMilliseconds,,long,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.rules.patterns.PatternRuleId,toString,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.neuralnetwork.Suggestion,toString,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.patterns.AbstractPatternRule,toString,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.rules.ConfusionPair,toString,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.rules.RemoteRuleConfig,getFall,,int,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.rules.RemoteRuleConfig,getTimeoutPerCharacterMilliseconds,,float,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.rules.WordRepeatRule,ignore,"org.languagetool.AnalyzedTokenReadings[], int",boolean,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.rules.patterns.IgnoreWhitespaceFilter,startElement,org.w3c.dom.Element,short,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.synthesis.BaseSynthesizer,getPosTagCorrection,java.lang.String,java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.Language,hasNGramFalseFriendRule,org.languagetool.Language,boolean,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.gui.Configuration,getDefaultLanguage,,org.languagetool.Language,False,False,True,False,False,True,False,True,False,False
+public,org.languagetool.rules.ReadabilityRule,getDefaultValue,,int,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.gui.Configuration,getServerUrl,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.rules.de.GermanReadabilityRule,getDescription,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.pt.PortugueseReadabilityRule,getDescription,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.ReadabilityRule,getDescription,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.de.MissingCommaRelativeClauseRule,getDescription,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.rules.patterns.PatternToken,getPOStag,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.LinguServices,isCorrectSpell,"java.lang.String, org.languagetool.Language",boolean,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.rules.RemoteRuleConfig,getPort,,int,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.tagging.disambiguation.AbstractDisambiguator,preDisambiguate,org.languagetool.AnalyzedSentence,org.languagetool.AnalyzedSentence,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ru.RussianFillerWordsRule,isException,"org.languagetool.AnalyzedTokenReadings[], int",boolean,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.rules.ca.SimpleReplaceDNVColloquialRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.en.ContractionSpellingRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.es.SimpleReplaceVerbsRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceAnglicism,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.de.SentenceWhitespaceRule,getMessage,boolean,java.lang.String,False,False,False,False,True,True,False,True,False,False
+public,org.languagetool.rules.ca.SimpleReplaceDiacriticsIEC,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceDiacriticsTraditional,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceBalearicRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.de.SimpleReplaceRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceVerbsRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceDNVSecondaryRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.ReplaceOperationNamesRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ca.SimpleReplaceDNVRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.es.SimpleReplaceAnglicismRule,getMessage,"java.lang.String, java.util.List",java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.gui.RetainLineBreakTransferHandler,getSourceActions,javax.swing.JComponent,int,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.LinguServices,getNumberOfSyllables,"java.lang.String, org.languagetool.Language",int,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.AnalyzedSentence,getOriginalPosition,int,int,False,False,False,False,True,True,False,False,False,True
+public,org.languagetool.gui.RetainLineBreakTransferHandler$MyTransferable,isDataFlavorSupported,java.awt.datatransfer.DataFlavor,boolean,True,False,True,True,True,True,False,True,False,True
+public,org.languagetool.rules.RemoteRuleConfig,getMaxRetries,,int,False,True,False,False,False,True,False,False,False,True
+public,org.languagetool.noop.NoopDisambiguator,disambiguate,org.languagetool.AnalyzedSentence,org.languagetool.AnalyzedSentence,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.tagging.disambiguation.xx.DemoDisambiguator,disambiguate,org.languagetool.AnalyzedSentence,org.languagetool.AnalyzedSentence,False,False,False,False,True,True,False,False,False,False
+public,org.languagetool.rules.ReadabilityRule,getId,boolean,java.lang.String,False,False,False,False,True,True,False,True,False,False
+public,org.languagetool.rules.de.GermanReadabilityRule,getId,boolean,java.lang.String,False,False,False,False,True,True,False,True,False,False
+public,org.languagetool.rules.pt.PortugueseReadabilityRule,getId,boolean,java.lang.String,False,False,False,False,True,True,False,True,False,False
+public,org.languagetool.rules.patterns.AbstractPatternRule,getFullId,,java.lang.String,False,False,False,False,False,True,False,True,False,False
+public,org.languagetool.rules.de.MissingCommaRelativeClauseRule,getId,,java.lang.String,False,True,False,False,False,True,False,False,False,False
+public,org.languagetool.rules.RemoteRuleConfig,getBaseTimeoutMilliseconds,,long,False,True,False,False,False,True,False,False,False,True
