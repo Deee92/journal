@@ -69,7 +69,7 @@
   - **W** waiting for contention: threads wait for access to resources, only one thread can be given access to the same single resource (hardware/software) at one time, another must wait till resource is freed. Often unpredictable.
 - _Performance debugging/improvement_: hardware scaling, parallel algorithms, performance monitoring and profiling, work and data distribution, task granularity control, compiler optimizations, ... Increasing the nodes employed in the execution of application can improve performance but comes with its share of overhead (data and task distribution, synchronization, cache and TLB misses, page fault, ...)
 
-### Supercomputing history
+#### Supercomputing history
 - Continuous need to increase speed and concurrency
 - Advancements in computer architecture and programming models
 - Seven epochs:
@@ -82,3 +82,8 @@
   7. multicore petaflops
 - Device density, peak performance have seen exponential growth, semiconductor fabrication feature size approachine 5nm => "End of Moore's law". Other innovations (new families of architectures) will now drive advancements. Anton, quantum computing, neuromorphic architectures, ...
  
+#### More resources
+- [Designing and Building Applications for Extreme Scale Systems](http://wgropp.cs.illinois.edu/courses/cs598-s16/index.htm) 
+- [MPI and OpenMP user guide](https://www.uppmax.uu.se/support/user-guides/mpi-and-openmp-user-guide/)
+- [HPC on YouTube](https://www.youtube.com/results?search_query=high+performance+computing&page=&utm_source=opensearch)
+
