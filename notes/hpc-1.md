@@ -86,4 +86,5 @@
 - [Designing and Building Applications for Extreme Scale Systems](http://wgropp.cs.illinois.edu/courses/cs598-s16/index.htm) 
 - [MPI and OpenMP user guide](https://www.uppmax.uu.se/support/user-guides/mpi-and-openmp-user-guide/)
 - [HPC on YouTube](https://www.youtube.com/results?search_query=high+performance+computing&page=&utm_source=opensearch)
+- [Tutorials and articles](https://www.openmp.org/resources/tutorials-articles/)
 
