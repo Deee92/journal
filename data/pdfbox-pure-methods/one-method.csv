@@ -1,2 +1,2 @@
 visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditionals,multiple-statements,loops,parameters,returns,switches,ifs,static,returns-primitives
-public,org.apache.fontbox.cmap.CodespaceRange,isFullMatch,"[byte[], int]",boolean,True,False,True,True,True,True,False,True,False,True
+public,org.apache.fontbox.cmap.CodespaceRange,isFullMatch,"byte[], int",boolean,True,False,True,True,True,True,False,True,False,True
