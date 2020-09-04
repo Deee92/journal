@@ -13,4 +13,8 @@
 11 | org.apache.fontbox.ttf.HorizontalMetricsTable.getLeftSideBearing | 59 | 59 | 0 | strings read from file
 12 | org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGB | 1 | 1 | 0 | assertTrue on Arrays.equals()
 13 | org.apache.pdfbox.pdmodel.graphics.color.PDDeviceGray.toRGB | 1 | 1 | 0 | assertTrue on Arrays.equals()
+14 | org.apache.pdfbox.pdfparser.COSParser.lastIndexOf | 14 | 14 | 0 | strings read from file + `xStream.registerConverter(new FileCleanableConverter());`
+15 | org.apache.pdfbox.pdfparser.BaseParser.isWhiteSpace | 21 | 21 | 0 | strings read from file + `xStream.registerConverter(new FileCleanableConverter());`, extremely large XML files generated
+16 | org.apache.pdfbox.pdfparser.BaseParser.isEndOfName | | | | extremely large XML files generated
+17 | org.apache.pdfbox.pdfparser.BaseParser.isClosing | | | | extremely large XML files generated
 
