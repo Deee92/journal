@@ -1,0 +1,11 @@
+visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditionals,multiple-statements,loops,parameters,returns,switches,ifs,static,returns-primitives
+public,org.jitsi.videobridge.Conference$NoOpDiagnosticContext,put,"java.lang.String, java.lang.Object",java.lang.Object,False,False,False,False,True,True,False,False,False,False
+public,org.jitsi.videobridge.Conference$NoOpTimeSeriesPoint,put,"java.lang.String, java.lang.Object",java.lang.Object,False,False,False,False,True,True,False,False,False,False
+public,org.jitsi.videobridge.cc.GenericAdaptiveTrackProjectionContext,rewriteRtcp,org.jitsi.rtp.rtcp.RtcpSrPacket,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.jitsi.videobridge.cc.BitrateController$TrackBitrateAllocation,getTargetBitrate,,long,False,True,False,False,False,True,False,False,False,True
+private,org.jitsi.videobridge.cc.BandwidthProbing,getSenderSSRC,,long,False,True,False,False,False,True,False,False,False,True
+,org.jitsi.videobridge.cc.vp8.VP8FrameProjection,isFullyProjected,long,boolean,False,False,False,False,True,True,False,False,False,True
+public,org.jitsi.videobridge.rest.ColibriWebSocketService,getColibriWebSocketUrl,"java.lang.String, java.lang.String, java.lang.String",java.lang.String,False,False,True,False,True,True,False,True,False,False
+protected,org.jitsi.videobridge.octo.OctoEndpointMessageTransport,getId,java.lang.Object,java.lang.String,False,False,True,False,True,True,False,True,False,False
+,org.jitsi.videobridge.cc.vp8.VP8Frame,matchesSSRC,org.jitsi.videobridge.cc.vp8.VP8Frame,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.jitsi.videobridge.cc.BitrateController,getAvailableBandwidth,long,long,True,False,True,False,True,True,False,True,False,True

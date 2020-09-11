@@ -1,8 +1,9 @@
 visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditionals,multiple-statements,loops,parameters,returns,switches,ifs,static,returns-primitives
-public,com.turn.ttorrent.client.Piece,equals,Object,boolean,False,False,False,False,True,True,False,True,False,True
+public,com.turn.ttorrent.client.Piece,equals,java.lang.Object,boolean,False,False,False,False,True,True,False,True,False,True
 public,com.turn.ttorrent.common.protocol.PeerMessage$Type,equals,byte,boolean,False,False,False,False,True,True,False,False,False,True
+private,com.turn.ttorrent.network.ConnectionWorker,getDefaultWriteErrorMessageWithSuffix,"java.nio.channels.SocketChannel, java.lang.String",java.lang.String,False,False,False,False,True,True,False,False,False,False
 public,com.turn.ttorrent.common.Optional,orElse,T,T,False,True,False,False,True,True,False,False,False,False
 public,com.turn.ttorrent.network.AcceptAttachmentImpl,isTimeoutElapsed,long,boolean,False,False,False,False,True,True,False,False,False,True
 public,com.turn.ttorrent.network.ConnectTask,isTimeoutElapsed,long,boolean,True,False,True,False,True,True,False,False,False,True
 public,com.turn.ttorrent.network.ReadWriteAttachment,isTimeoutElapsed,long,boolean,True,False,True,False,True,True,False,False,False,True
-public,com.turn.ttorrent.tracker.TrackerRequestProcessor$1,isBadAddress,String,boolean,False,False,False,False,True,True,False,False,False,True
+public,com.turn.ttorrent.tracker.TrackerRequestProcessor$1,isBadAddress,java.lang.String,boolean,False,False,False,False,True,True,False,False,False,True

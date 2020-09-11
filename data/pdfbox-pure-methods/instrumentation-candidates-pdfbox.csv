@@ -1,31 +1,59 @@
 visibility,parent-FQN,method-name,param-list,return-type,local-variables,conditionals,multiple-statements,loops,parameters,returns,switches,ifs,static,returns-primitives
 public,org.apache.fontbox.ttf.VerticalMetricsTable,getAdvanceHeight,int,int,False,False,False,False,True,True,False,True,False,True
 public,org.apache.fontbox.util.BoundingBox,contains,"float, float",boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.encryption.AccessPermission,isPermissionBitOn,int,boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.util.SmallMap,size,,int,False,True,False,False,False,True,False,False,False,True
+private,org.apache.pdfbox.tools.PDFText2HTML$FontState,openTag,java.lang.String,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.debugger.flagbitspane.FieldFlag,isFlagBitSet,"int, int",java.lang.Boolean,True,False,True,False,True,True,False,False,False,False
 public,org.apache.fontbox.ttf.PostScriptTable,getName,int,java.lang.String,False,False,True,False,True,True,False,True,False,False
+private,org.apache.fontbox.cmap.CMapParser,isWhitespaceOrEOF,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getFamilyKindValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.fontbox.cmap.CMapParser,isDelimiter,int,boolean,False,False,False,False,True,True,True,False,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getEndPtOfContours,int,int,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getFlags,int,byte,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.graphics.shading.Patch,getFlag1Color,,float[][],True,False,True,True,False,True,False,False,False,False
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getYCoordinate,int,short,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.PDFunction,interpolate,"float, float, float, float, float",float,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.graphics.shading.GouraudShadingContext,interpolate,"float, long, float, float",float,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.graphics.shading.PatchMeshesShadingContext,interpolate,"float, long, float, float",float,False,False,False,False,True,True,False,False,False,True
+private,org.apache.fontbox.cmap.CMap,getCodeFromArray,"byte[], int, int",int,True,False,True,True,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getCFFFont,,org.apache.fontbox.cff.CFFFont,False,False,False,False,False,True,False,True,False,False
+private,org.apache.fontbox.cff.DataInput,peek,int,int,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.filter.CCITTFaxEncoderStream,getNextChanges,"int, boolean",int[],True,False,True,True,True,True,False,True,False,False
+private,org.apache.pdfbox.pdmodel.graphics.shading.CoonsPatch,reshapeControlPoints,java.awt.geom.Point2D[],java.awt.geom.Point2D[][],True,False,True,False,True,True,False,False,False,False
+private,org.apache.pdfbox.pdmodel.graphics.shading.TensorPatch,reshapeControlPoints,java.awt.geom.Point2D[],java.awt.geom.Point2D[][],True,False,True,True,True,True,False,False,False,False
 ,org.apache.pdfbox.debugger.streampane.tooltip.ColorToolTip,getMarkUp,java.lang.String,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.fontbox.cff.Type2CharStringParser,getMaskLength,,int,True,False,True,False,False,True,False,True,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.PDFunction,clipToRange,"float, float, float",float,False,False,True,False,True,True,False,True,False,True
+private,org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject,clampColor,float,float,False,True,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.rendering.PageDrawer,clampColor,float,float,False,True,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdfparser.BaseParser,isEndOfName,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.interactive.digitalsignature.COSFilterInputStream,inRange,,boolean,True,False,True,True,False,True,False,True,False,True
 ,org.apache.pdfbox.filter.CCITTFaxDecoderStream$Node,walk,boolean,org.apache.pdfbox.filter.CCITTFaxDecoderStream$Node,False,True,False,False,True,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.graphics.shading.Patch,getFlag2Color,,float[][],True,False,True,True,False,True,False,False,False,False
+private,org.apache.pdfbox.pdmodel.interactive.annotation.handlers.CloudyBorder,getPolygonDirection,java.awt.geom.Point2D$Double[],double,True,False,True,True,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.PDAbstractContentStream,isOutside255Interval,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.PDPageContentStream,isOutside255Interval,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.fontbox.type1.Type1Parser,decrypt,"byte[], int, int",byte[],True,False,True,True,True,True,False,True,False,False
 public,org.apache.fontbox.cmap.CIDRange,unmap,int,int,False,False,True,False,True,True,False,True,False,True
+private,org.apache.fontbox.afm.AFMParser,isEOL,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.filter.ASCIIHexFilter,isEOD,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getProportionValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.fontbox.afm.AFMParser,isWhitespace,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.filter.ASCIIHexFilter,isWhitespace,int,boolean,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdfparser.BaseParser,isWhitespace,int,boolean,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.graphics.shading.Line,calcColor,java.awt.Point,float[],True,False,True,True,True,True,False,True,False,False
 ,org.apache.fontbox.cff.CFFParser$RangeMapping,isInRange,int,boolean,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdfparser.COSParser,lastIndexOf,"char[], byte[], int",int,True,False,True,True,True,True,False,True,False,True
 public,org.apache.pdfbox.util.Matrix,getValue,"int, int",float,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdfparser.BaseParser,isCR,int,boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.cmap.CodespaceRange,isFullMatch,"byte[], int",boolean,True,False,True,True,True,True,False,True,False,True
+private,org.apache.pdfbox.pdmodel.PDAbstractContentStream,isOutsideOneInterval,double,boolean,False,False,False,False,True,True,False,False,False,True
 ,org.apache.fontbox.ttf.GlyphSubstitutionTable$LookupTypeSingleSubstFormat1,doSubstitution,"int, int",int,False,True,False,False,True,True,False,False,False,True
 ,org.apache.fontbox.ttf.GlyphSubstitutionTable$LookupTypeSingleSubstFormat2,doSubstitution,"int, int",int,False,True,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.cff.CFFParser$Format3FDSelect,getFDIndex,int,int,True,False,True,True,True,True,False,True,False,True
 public,org.apache.fontbox.cff.CFFParser$Format0FDSelect,getFDIndex,int,int,False,False,True,False,True,True,False,True,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getStrokeVariationValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$1,blendChannel,"float, float",float,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$2,blendChannel,"float, float",float,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$3,blendChannel,"float, float",float,False,False,False,False,True,True,False,False,False,True
@@ -34,6 +62,7 @@ public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$7,blendChannel,"float,
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$8,blendChannel,"float, float",float,False,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$9,blendChannel,"float, float",float,False,True,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.graphics.blend.BlendMode$12,blendChannel,"float, float",float,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdfparser.PDFStreamParser,isSpaceOrReturn,int,boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.font.PDCIDFontType0,getFontBoxFont,,org.apache.fontbox.FontBoxFont,False,False,False,False,False,True,False,True,False,False
 public,org.apache.fontbox.ttf.HorizontalMetricsTable,getLeftSideBearing,int,int,False,False,False,False,True,True,False,True,False,True
 public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefTable,,java.util.Map,False,True,False,False,False,True,False,False,False,False
@@ -41,43 +70,69 @@ public,org.apache.pdfbox.util.Matrix,getValues,,float[][],True,False,True,False,
 public,org.apache.pdfbox.cos.COSBoolean,getValueAsObject,,java.lang.Boolean,False,True,False,False,False,True,False,False,False,False
 public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnClass,int,java.lang.Class,False,False,False,False,True,True,True,False,False,False
 public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnClass,int,java.lang.Class,False,False,False,False,True,True,True,False,False,False
-public,org.apache.fontbox.ttf.KerningSubtable$PairData0Format0,compare,"int[], int",int,True,False,True,False,True,True,False,True,False,True
-public,org.apache.fontbox.ttf.OpenTypeScript$1,compare,"int[], int",int,False,True,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdfparser.BaseParser,isLF,int,boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getArmStyleValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+public,org.apache.fontbox.ttf.KerningSubtable$PairData0Format0,compare,"int[], int[]",int,True,False,True,False,True,True,False,True,False,True
+public,org.apache.fontbox.ttf.OpenTypeScript$1,compare,"int[], int[]",int,False,True,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.type1.Token,toString,,java.lang.String,False,False,False,False,False,True,False,True,False,False
 public,org.apache.pdfbox.debugger.ui.PageEntry,toString,,java.lang.String,False,True,False,False,False,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$And,applyforInteger,"int, int",int,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$Or,applyforInteger,"int, int",int,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$Xor,applyforInteger,"int, int",int,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.colorpane.CSSeparation,getIntRepresentation,float,int,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.cff.CharStringCommand$Key,hashCode,,int,False,False,True,False,False,True,False,True,False,True
+private,org.apache.pdfbox.pdmodel.graphics.shading.TensorPatch,getBernsteinPolynomials,int,double[][],True,False,True,True,True,True,False,False,False,False
+private,org.apache.fontbox.ttf.GlyphRenderer,midValue,"int, int",int,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getLetterformValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
 public,org.apache.fontbox.cff.CharStringCommand$Key,equals,java.lang.Object,boolean,True,False,True,False,True,True,False,True,False,True
 public,org.apache.fontbox.ttf.VerticalMetricsTable,getTopSideBearing,int,int,False,False,False,False,True,True,False,True,False,True
 protected,org.apache.pdfbox.pdmodel.graphics.shading.Patch,getFlag3Color,,float[][],True,False,True,True,False,True,False,False,False,False
+private,org.apache.pdfbox.filter.DCTFilter,clamp,float,int,False,True,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdfparser.BaseParser,isClosing,int,boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.cmap.CIDRange,map,char,int,False,False,True,False,True,True,False,True,False,True
+private,org.apache.pdfbox.text.PDFMarkedContentExtractor,within,"float, float, float",boolean,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.text.PDFTextStripper,within,"float, float, float",boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.GlyfSimpleDescript,getXCoordinate,int,short,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.graphics.shading.TensorPatch,getFlag1Edge,,java.awt.geom.Point2D[],True,False,True,True,False,True,False,False,False,False
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getMidlineValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getWeightValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$And,applyForBoolean,"boolean, boolean",boolean,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$Or,applyForBoolean,"boolean, boolean",boolean,False,False,False,False,True,True,False,False,False,True
 protected,org.apache.pdfbox.pdmodel.common.function.type4.BitwiseOperators$Xor,applyForBoolean,"boolean, boolean",boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.fontbox.ttf.HorizontalMetricsTable,getAdvanceWidth,int,int,False,False,False,False,True,True,False,True,False,True
+private,org.apache.pdfbox.filter.LZWFilter,calculateChunk,"int, int",int,False,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.filter.ASCII85InputStream,skip,long,long,False,False,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.pdmodel.graphics.state.PDExtendedGraphicsState,defaultIfNull,"java.lang.Float, float",float,False,True,False,False,True,True,False,False,False,True
+private,org.apache.pdfbox.debugger.hexviewer.HexPane,getIndexForPoint,java.awt.Point,int,True,False,True,False,True,True,False,True,False,True
 public,org.apache.xmpbox.type.BooleanType,getStringValue,,java.lang.String,False,True,False,False,False,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.graphics.shading.CoonsPatch,getFlag2Edge,,java.awt.geom.Point2D[],True,False,True,False,False,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.graphics.shading.TensorPatch,getFlag2Edge,,java.awt.geom.Point2D[],True,False,True,True,False,True,False,False,False,False
+private,org.apache.fontbox.cmap.CMapParser,createIntFromBytes,byte[],int,True,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.pdfparser.PDFXRefStream,getObject,int,org.apache.pdfbox.cos.COSObject,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.debugger.colorpane.CSSeparation,getFloatRepresentation,int,float,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdmodel.PDPage$1,accept,org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation,boolean,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.debugger.colorpane.DeviceNTableModel,getColumnName,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.debugger.colorpane.IndexedTableModel,getColumnName,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.fontbox.ttf.TTFSubsetter,toUInt32,"int, int",long,False,False,False,False,True,True,False,False,False,True
+private,org.apache.fontbox.ttf.TTFSubsetter,toUInt32,byte[],long,False,False,False,False,True,True,False,False,False,True
 public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getXrefType,,org.apache.pdfbox.pdfparser.XrefTrailerResolver$XRefType,False,True,False,False,False,True,False,False,False,False
 ,org.apache.fontbox.ttf.GlyphSubstitutionTable$CoverageTableFormat2,getCoverageIndex,int,int,True,False,True,True,True,True,False,True,False,True
 protected,org.apache.pdfbox.pdmodel.graphics.shading.CoonsPatch,getFlag3Edge,,java.awt.geom.Point2D[],True,False,True,False,False,True,False,False,False,False
 protected,org.apache.pdfbox.pdmodel.graphics.shading.TensorPatch,getFlag3Edge,,java.awt.geom.Point2D[],True,False,True,True,False,True,False,False,False,False
 protected,org.apache.pdfbox.pdfparser.BaseParser,isSpace,int,boolean,False,False,False,False,True,True,False,False,False,True
 ,org.apache.fontbox.cff.CFFParser$RangeMapping,isInReverseRange,int,boolean,False,False,False,False,True,True,False,False,False,True
-public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceGray,toRGB,float,float[],False,False,False,False,True,True,False,False,False,False
-public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB,toRGB,float,float[],False,False,False,False,True,True,False,False,False,False
+private,org.apache.fontbox.ttf.CmapSubtable,getCharCode,int,int,False,False,True,False,True,True,False,True,False,True
+public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceGray,toRGB,float[],float[],False,False,False,False,True,True,False,False,False,False
+public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB,toRGB,float[],float[],False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.preflight.process.MetadataValidationProcess,hasJpegMagicNumber,byte[],boolean,False,False,True,False,True,True,False,True,False,True
 public,org.apache.pdfbox.pdfparser.XrefTrailerResolver,getTrailer,,org.apache.pdfbox.cos.COSDictionary,False,True,False,False,False,True,False,False,False,False
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getXHeightValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getSerifStyleValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.filter.CCITTFaxEncoderStream,getNextRefChanges,"int, boolean",int[],True,True,True,True,True,True,False,True,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDCalGray,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDCalRGB,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYK,getDefaultDecode,int,float[],False,False,False,False,True,True,False,False,False,False
 public,org.apache.fontbox.ttf.KerningSubtable,isHorizontalKerning,boolean,boolean,False,False,False,False,True,True,False,True,False,True
+private,org.apache.pdfbox.debugger.flagbitspane.PanoseFlag,getContrastValue,int,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.tools.PDFText2HTML$FontState,closeTag,java.lang.String,java.lang.String,False,False,False,False,True,True,False,False,False,False
+private,org.apache.pdfbox.pdmodel.graphics.color.PDLab,inverse,float,float,False,False,False,False,True,True,False,True,False,True
