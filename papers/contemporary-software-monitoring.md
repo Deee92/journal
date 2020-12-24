@@ -1,6 +1,6 @@
 ## [Contemporary software monitoring: a systematic mapping study](http://arxiv.org/abs/1912.05878)
-### [Summary of v1](https://docs.google.com/presentation/d/1B1ttMn3agKpg82PpmaiiEFqXvgBYa9cjEmzwSAEIy0o/edit?usp=sharing)
 
+- [Summary of v1](https://docs.google.com/presentation/d/1B1ttMn3agKpg82PpmaiiEFqXvgBYa9cjEmzwSAEIy0o/edit?usp=sharing)
 - software testing: preventing failures and assessing reliability
 - software monitoring (app + env logs): determine how system behaves in prod, detect and diagnose undesired behaviour
 - does not often work for very complex systems, challenging to gain insight
@@ -15,6 +15,7 @@ Tools:
 - ELK - Elastic (search engine) Logstash (log processor, many plugins) Kibana (vis, query, exploration)
 - Grafana (UI)
 - Fluentd (log processing)
+
 Issues with logging
 - Decisions that developers must take: where and what to log
 - Scale, many different components in software stack 
