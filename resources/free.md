@@ -46,3 +46,5 @@
 
 [freeCodeCamp - Free Online Programming & Computer Science Courses](https://www.freecodecamp.org/news/free-online-programming-cs-courses/)
 
+[Test Automation University](https://testautomationu.applitools.com/)
+
