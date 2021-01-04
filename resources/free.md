@@ -48,3 +48,5 @@
 
 [Test Automation University](https://testautomationu.applitools.com/)
 
+[All Content | Martin Fowler](https://martinfowler.com/tags/)
+
