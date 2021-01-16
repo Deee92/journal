@@ -76,5 +76,5 @@
 TODO
 
 ## Conclusion
-Mocking is common testing practice, this paper analyzes how and why developers use mock objects; 4 projects, three developers interviewed, 105 developers surveyed, one Mockito developer interviewed. Developers tend to mock dependencies that make testing difficult, and not classes they can fully control. Slowness is an important factor. Technical challenges: unstable dependencies, coupling between mock and prod class, legacy systems, hard-to-test classes. Mocks generally introduced during inception of test classes, tend to stay for entire lifetime; Change as frequently as prod class they mock and changes to test code (refactoring) that use them.
+Mocking is common testing practice, this paper analyzes how and why developers use mock objects; 4 projects, three developers interviewed, 105 developers surveyed, one Mockito developer interviewed. Developers tend to mock dependencies that make testing difficult, and not classes they can fully control. Technical challenges: unstable dependencies, coupling between mock and prod class, legacy systems, hard-to-test classes. Mocks generally introduced during inception of test classes, tend to stay for entire lifetime; Change as frequently as prod class they mock and changes to test code (refactoring) that use them.
 
