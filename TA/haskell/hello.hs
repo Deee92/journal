@@ -10,9 +10,11 @@ import System.IO
 maxInt = maxBound :: Int
 minInt = minBound :: Int
 
--- Integer
--- as big as possible in memory
--- Float, Double, Bool(True False), Char, Tuple
+-- Int
+-- Integer: as big as possible in memory
+-- Float, Double, Bool(True False), Char, Tuple, String 
+-- :: pronouced "has type"
+-- = does not denote assignment but an IMMUTABLE DEFINITION
 
 always5 :: Int
 always5 = 5
