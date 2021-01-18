@@ -46,6 +46,8 @@
 
 [School of Haskell](https://www.schoolofhaskell.com/)
 
+[Learn Haskell in 10 minutes](https://wiki.haskell.org/Learn_Haskell_in_10_minutes)
+
 [freeCodeCamp - Free Online Programming & Computer Science Courses](https://www.freecodecamp.org/news/free-online-programming-cs-courses/)
 
 [Test Automation University](https://testautomationu.applitools.com/)
