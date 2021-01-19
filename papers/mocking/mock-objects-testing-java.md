@@ -73,7 +73,10 @@
 5. mock evolution over time: `verify()`, `when()`, `mock()`, `thenReturn()` most used Mockito APIs; lines about mocks change often, reasons: test refactoring, changes to mocked prod class, changes to internal implementation of mocked class;
 
 ## Discussion
-TODO
+- With Mockito developer: db and external dependencies should be mocked when not integration testing. Java libraries and data holders should never be mocked. A good practice is to mock interfaces instead of real classes, SUT (unit) should not be mocked. Not mocking static (and final?) classes are a design decision at Mockito. What (not) to mock comes with experience.
+- Mocks and code quality: for highly complex or coupled classes, developers prefer to use mocks instead of actual implementation. Metrics: CBO (coupling between objects), LOC, NOM (number of methods). Compare these code metrics with whether or not the class is mocked (if mocked more than 50% of the time). Both mocked and not-mocked classes are similar in the metrics, negligible difference. Values for LOC and complexity are slightly higher for mocked classes. Conclusion: chosen metrics are not good predictors.
+- Mocking vs not mocking trade-offs: testing all dependencies => realism; simulating dependencies => focus;
+- Implications for developers, tool-makers, researchers: why and developers mock objects, how mocks drive testing strategy (eg., mocking interfaces), too much mocking usually means design can be improved, how they are coupled and evolve (changes in prod code => changes in mocks).
 
 ## Conclusion
 Mocking is common testing practice, this paper analyzes how and why developers use mock objects; 4 projects, three developers interviewed, 105 developers surveyed, one Mockito developer interviewed. Developers tend to mock dependencies that make testing difficult, and not classes they can fully control. Technical challenges: unstable dependencies, coupling between mock and prod class, legacy systems, hard-to-test classes. Mocks generally introduced during inception of test classes, tend to stay for entire lifetime; Change as frequently as prod class they mock and changes to test code (refactoring) that use them.
