@@ -1,4 +1,4 @@
-## Source classes: A, B, C
+## Source classes: A, B, C, D
 
 ```
 public class A {
@@ -29,7 +29,12 @@ public class A {
         int numFromB = usingB();
         return "B says: " + numFromB + " and C says: " + c.giveString();
     }
+
+    public boolean getABoolean(D d) {
+        return d.complementOfD();
+    }
 }
+
 
 // can't be final
 public class B {
@@ -57,6 +62,14 @@ public class C {
     }
 }
 
+// can't be final
+public class D {
+    boolean booleanInD;
+
+    boolean complementOfD() {
+        return !booleanInD;
+    }
+}
 ```
 
 ## Tests
@@ -126,6 +139,18 @@ public class TestA {
         // The methods in B and C are bare-bones
         // Output: B says: 0 and C says: null
         System.out.println(a.usingBAndC());
+    }
+    
+    @Test
+    public void testD() {
+        A a = new A();
+        // D is an external parameter object
+        D mockD = mock(D.class);
+        a.getABoolean(mockD);
+        verify(mockD).complementOfD();
+        // Method in D is bare-bones
+        // Output: Boolean value: false
+        System.out.println("Boolean value: " + a.getABoolean(mockD));
     }
 }
 ```
