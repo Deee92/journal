@@ -58,3 +58,7 @@
 
 [Literature search](https://www.monperrus.net/martin/se-search.html)
 
+[SRE Books](https://sre.google/books/)
+
+[Developing open source scientific practice](https://berkeley-stat159-f17.github.io/stat159-f17/_static/ref/millman-perez.pdf)
+
