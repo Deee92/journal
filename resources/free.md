@@ -62,3 +62,5 @@
 
 [Developing open source scientific practice](https://berkeley-stat159-f17.github.io/stat159-f17/_static/ref/millman-perez.pdf)
 
+[Use of Assertions](https://blog.regehr.org/archives/1091)
+
