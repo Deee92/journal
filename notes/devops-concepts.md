@@ -1,0 +1,88 @@
+### DevOps
+
+- AIOps / MLOps
+- Ansible (RedHat)
+- Amazon Web Services ([AWS](https://aws.amazon.com/)): on-demand cloud computing platform + API provider
+- Amazon Simple Storage Service ([S3](https://aws.amazon.com/s3/)): a part of AWS, scalable object storage through a web service interface (storage for apps, data archives, backup and recovery, ...)
+- Azure (Microsoft): cloud service provider (IaaS, PaaS, SaaS)
+- Bazel
+- Bots: repairnator, dependabot on GitHub and renovate (maintain db of vulnerable dependencies)
+- Burst computing: providing high computing power to handle peak traffic
+- Chef
+- Cloud computing: on-demand availability of computing/data resources through (mostly Linux) servers
+  - using company-owned / on-premise servers and resources ("private" cloud)
+  - using servers provided by another company, services delivered over public Internet ("public" cloud)
+  - "hybrid" cloud: private cloud (for sensitive data) + public cloud
+- Cluster
+- Containers (containerization)
+- Continuous Delivery (CD)
+- Continuous Deployment (CD): pushing to production and releasing to users
+- Continuous Integration (CI): configuring automated testing, build tasks to run when new code is added, ensures regression is not introduced
+- Cucumber
+- DevOps: Development + Operations
+- DevSecOps
+- Distributed systems: components distributed over several servers (distributed computing)
+- Docker: Containerization tool
+- Docker compose
+- Docker swarm
+- Edge computing: providing computing resources close to end-users
+- Elastic Compute Cloud ([EC2](https://aws.amazon.com/ec2/)): a part of AWS, allows users to rent virual computers to run their applications
+- GitHub Actions
+- GitOps
+- Google Cloud Platform (GCP): cloud service provider
+- Grid computing: using distributed resources for a common goal 
+- Headless browsers
+- Hypervisor
+- Infrastructure as Code (IaC)
+- Infrastructure as a Service (IaaS): online services that provide APIs to abstract infrastructure details through their data centers (VMs, servers, storage, load balancers, network)
+- Jenkins
+- Kubernetes (k8s)
+- LXC
+- Microservice architecture
+- Monolithic architecture
+- Monorepos
+- OpenShift
+- Platform as a Service (PaaS): Execution runtime, database, web server, development tools
+- Puppet
+- Rackspace: cloud 
+- Selenium
+- Serverless: cloud provider manages starting and stopping VMs, good for scalability, optimizes cost
+  - Function as a Service (FaaS): using serverless computing, deploying individual functions in the cloud to run in response to events
+- Software as a Service (SaaS): CRM, Email, file hosting services, games, virtual desktop communication
+- Software Configuration Management (SCM)
+- Software suppy chain: all software components that are part of a software product, process
+  - build scripts and config files include in-house codebase + 3rd party libraries (dependencies)
+  - package managers fetch binaries of external dependencies (code reuse)
+  - open-source software supply chain
+  - bugs, security vulnerabilities can be included anywhere in the chain, and propagated along the chain
+  - typosquatting (gson => Gson)
+  - truck factor: number of developers involved
+  - reproducible builds
+  - depdendency analysis, remove bloated dependencies ([DepClean](https://github.com/castor-software/depclean))
+- TeamCity
+- Terraform
+- Travis CI
+- Utility computing: pay-as-you-go, cost reflects amount of resources allocated and consumed
+- Version Control System (VCS)
+- Virtual machines
+- Virtualization: separating a physical device into many "virtual" devices to maximize resource usage, efficiency
+- Webhook: user-defined HTTP callbacks triggered by some event (comment on a post, push to a repo to trigger CI, notify bug tracking system, ...)
+  - payload is usually JSON
+  - HTTP POST request made to the configured URL
+
+### Resources
+- [Amazon Web Services](https://en.wikipedia.org/wiki/Amazon_Web_Services)
+- [Cloud computing](https://en.wikipedia.org/wiki/Cloud_computing)
+  - [Cloud computing comparison](https://en.wikipedia.org/wiki/Cloud-computing_comparison)
+- [Distributed computing](https://en.wikipedia.org/wiki/Distributed_computing)
+- [Elastic Compute Cloud](https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud)
+- [Headless browswers](https://www.keycdn.com/blog/headless-browsers)
+- [r/cicd](https://www.reddit.com/r/cicd/)
+- [r/devops](https://www.reddit.com/r/devops/)
+- [r/softwaretesting](https://www.reddit.com/r/softwaretesting/)
+- [Service models: SaaS, PaaS, IaaS](https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/)
+- [Software supply chain](https://www.youtube.com/watch?v=W3C7ui8YisY&t=77s&ab_channel=EngineeringUTM)
+  - [Surviving software dependencies](https://dl.acm.org/doi/pdf/10.1145/3347446)
+- [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
+- [Webhook](https://en.wikipedia.org/wiki/Webhook)
+  - [GitHub Docs | Webhooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks)
