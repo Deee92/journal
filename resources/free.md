@@ -64,3 +64,4 @@
 
 [Use of Assertions](https://blog.regehr.org/archives/1091)
 
+[How to GraphQL](https://www.howtographql.com/)
