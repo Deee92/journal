@@ -18,6 +18,7 @@ query Second {
         name
         weight {
           value
+          unit
         }
         category {
           name
@@ -36,6 +37,7 @@ query Second {
           name
           weight {
             value
+            unit
           }
         }
       }
@@ -44,7 +46,7 @@ query Second {
 }
 
 query Third {
-  categories (first: 12) {
+  categories (first: 15) {
     edges {
       node {
         name
@@ -52,6 +54,7 @@ query Third {
           edges {
             node {
               name
+              id
             }
           }
         }
@@ -66,6 +69,25 @@ query Fourth {
     edges {
       node {
         name
+      }
+    }
+  }
+}
+
+query Fifth {
+  product(id: "UHJvZHVjdDo2MQ==", channel: "default-channel") {
+    id
+    name
+    category {
+      name
+    }
+    variants {
+      name
+      product {
+        name
+      }
+      weight {
+        value
       }
     }
   }
