@@ -94,4 +94,34 @@ query Fifth {
 }
 ```
 
+### [Authentication](https://docs.saleor.io/docs/developer/users#authentication)
+
+```
+mutation Auth {
+  tokenCreate(email: "admin@example.com", password: "admin") {
+    token
+    refreshToken
+    csrfToken
+    user {
+      email
+    }
+    errors {
+      field
+      message
+    }
+  }
+}
+
+query First {
+  customers(first: 10) {
+    edges {
+      node {
+        firstName
+        lastName
+      }
+    }
+  }
+}
+```
+
 ▶️ [To demo playground](https://demo.saleor.io/graphql/)
