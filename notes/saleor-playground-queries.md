@@ -124,4 +124,20 @@ query First {
 }
 ```
 
+### [Resolution issues](https://github.com/mirumee/saleor/issues/4837)
+```
+query GitHubIssue4837 {	
+  products(first: 10, filter: {
+    attributes: {slug: "abv", values: "51"}
+  }){
+  	edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+```
+
 ▶️ [To demo playground](https://demo.saleor.io/graphql/)
