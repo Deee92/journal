@@ -140,4 +140,69 @@ query GitHubIssue4837 {
 }
 ```
 
+### Attributes
+```
+query AnotherIssue {	
+  products(first: 10, filter: {
+    attributes: {slug: "flavor", values: "apple"}
+  }){
+  	edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+
+query ProductsAndAttributes {
+  products(first:50) {
+    edges {
+      node {
+        name
+        id
+        attributes {
+          attribute {
+            slug
+          }
+          values {
+            slug
+            value
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+query AllAttributeNames {
+  attributes(first: 100) {
+    edges {
+      node {
+        slug
+      }
+    }
+  }
+}
+
+
+query AppleJuiceAttributes {
+  product(id: "UHJvZHVjdDo3Mg==") {
+    name
+    attributes {
+      attribute {
+        slug
+      }
+      values {
+        name
+        value
+        slug
+      }
+    }
+  }
+}
+
+```
+
 ▶️ [To demo playground](https://demo.saleor.io/graphql/)
