@@ -66,4 +66,4 @@
 
 [How to GraphQL](https://www.howtographql.com/)
 
-[Most popular repos by language, according to StackOverflow - **kaxap/arl** ](https://github.com/kaxap/arl)
+[Most starred repos by language - **kaxap/arl** ](https://github.com/kaxap/arl)
