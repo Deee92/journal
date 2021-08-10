@@ -205,4 +205,34 @@ query AppleJuiceAttributes {
 
 ```
 
+### Introspection queries
+```
+query SchemaMeta {
+  __schema {
+    types {
+      name
+      kind
+    }
+  }
+}
+
+query QueryEntryPoints {
+  __type(name: "Query") {
+    fields {
+      name
+    }
+  }
+}
+
+# Gives the schema itself
+query Demo {
+  _service {
+    __typename
+    sdl
+  }
+}
+
+```
+
+
 ▶️ [To demo playground](https://demo.saleor.io/graphql/)
