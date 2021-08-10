@@ -1,0 +1,216 @@
+{
+  "data": {
+    "__type": {
+      "fields": [
+        {
+          "name": "webhook"
+        },
+        {
+          "name": "webhookEvents"
+        },
+        {
+          "name": "webhookSamplePayload"
+        },
+        {
+          "name": "warehouse"
+        },
+        {
+          "name": "warehouses"
+        },
+        {
+          "name": "translations"
+        },
+        {
+          "name": "translation"
+        },
+        {
+          "name": "stock"
+        },
+        {
+          "name": "stocks"
+        },
+        {
+          "name": "shop"
+        },
+        {
+          "name": "shippingZone"
+        },
+        {
+          "name": "shippingZones"
+        },
+        {
+          "name": "digitalContent"
+        },
+        {
+          "name": "digitalContents"
+        },
+        {
+          "name": "attributes"
+        },
+        {
+          "name": "attribute"
+        },
+        {
+          "name": "categories"
+        },
+        {
+          "name": "category"
+        },
+        {
+          "name": "collection"
+        },
+        {
+          "name": "collections"
+        },
+        {
+          "name": "product"
+        },
+        {
+          "name": "products"
+        },
+        {
+          "name": "productType"
+        },
+        {
+          "name": "productTypes"
+        },
+        {
+          "name": "productVariant"
+        },
+        {
+          "name": "productVariants"
+        },
+        {
+          "name": "reportProductSales"
+        },
+        {
+          "name": "payment"
+        },
+        {
+          "name": "payments"
+        },
+        {
+          "name": "page"
+        },
+        {
+          "name": "pages"
+        },
+        {
+          "name": "homepageEvents"
+        },
+        {
+          "name": "order"
+        },
+        {
+          "name": "orders"
+        },
+        {
+          "name": "draftOrders"
+        },
+        {
+          "name": "ordersTotal"
+        },
+        {
+          "name": "orderByToken"
+        },
+        {
+          "name": "menu"
+        },
+        {
+          "name": "menus"
+        },
+        {
+          "name": "menuItem"
+        },
+        {
+          "name": "menuItems"
+        },
+        {
+          "name": "giftCard"
+        },
+        {
+          "name": "giftCards"
+        },
+        {
+          "name": "plugin"
+        },
+        {
+          "name": "plugins"
+        },
+        {
+          "name": "sale"
+        },
+        {
+          "name": "sales"
+        },
+        {
+          "name": "voucher"
+        },
+        {
+          "name": "vouchers"
+        },
+        {
+          "name": "exportFile"
+        },
+        {
+          "name": "exportFiles"
+        },
+        {
+          "name": "taxTypes"
+        },
+        {
+          "name": "checkout"
+        },
+        {
+          "name": "checkouts"
+        },
+        {
+          "name": "checkoutLine"
+        },
+        {
+          "name": "checkoutLines"
+        },
+        {
+          "name": "appsInstallations"
+        },
+        {
+          "name": "apps"
+        },
+        {
+          "name": "app"
+        },
+        {
+          "name": "addressValidationRules"
+        },
+        {
+          "name": "address"
+        },
+        {
+          "name": "customers"
+        },
+        {
+          "name": "permissionGroups"
+        },
+        {
+          "name": "permissionGroup"
+        },
+        {
+          "name": "me"
+        },
+        {
+          "name": "staffUsers"
+        },
+        {
+          "name": "user"
+        },
+        {
+          "name": "_entities"
+        },
+        {
+          "name": "_service"
+        }
+      ]
+    }
+  }
+}
+
