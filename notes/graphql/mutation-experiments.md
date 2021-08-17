@@ -6,10 +6,10 @@
 mutmut run --paths-to-mutate ./saleor/graphql/<some-type>/resolvers.py --runner pytest
 ```
 
-#### Results (with backend tests)
+#### Results
 
-\# | File path | Mutants | Killed | Survived | Surviving mutant IDs | Surviving mutants caught with test queries?
---|------------|---------|--------|----------|----------------------|--------------------------------------------
+\# | File path | Mutants | Killed by BE tests | Survived | Surviving mutant IDs | Surviving mutants caught with (BE + FE) test queries?
+--|------------|---------|--------------------|----------|----------------------|------------------------------------------------------
 1 | ./saleor/saleor/graphql/webhook/resolvers.py | 12 | 11 | 1 | ID: 5 | No
 2 | ./saleor/saleor/graphql/menu/resolvers.py | 9 | 1 | 8 | ID: 1 - 8 | No
 3 | ./saleor/saleor/graphql/order/resolvers.py | 20 | 7 | 13 | ID: 1 - 11, 13 - 14 | No
