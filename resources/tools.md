@@ -7,3 +7,5 @@
 [HTML escape characters](https://www.toptal.com/designers/htmlarrows/)
 
 [freeformatter](https://www.freeformatter.com)
+
+[Citing GitHub repos](https://github.blog/2021-08-19-enhanced-support-citations-github/)
