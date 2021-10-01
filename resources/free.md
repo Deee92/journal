@@ -67,3 +67,5 @@
 [How to GraphQL](https://www.howtographql.com/)
 
 [Most starred repos by language - **kaxap/arl** ](https://github.com/kaxap/arl)
+
+[Observability: The 5-Year Retrospective](https://www.honeycomb.io/blog/observability-5-year-retrospective/)
