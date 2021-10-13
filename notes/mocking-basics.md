@@ -1,3 +1,44 @@
+# Motivation
+
+```
+public class Calculator {
+    String colour;
+    DrNitro nitro;
+
+    Calculator() {
+        this.colour = "red";
+        this.nitro = new DrNitro();
+    }
+
+    public int getSum(int a, int b) {
+        nitro.destroyEarth("now"); // some side effect
+        return a + b;
+    }
+}
+```
+
+## When testing this - we test calculator methods in isolation, without side-effects
+
+```
+@ExtendWith(MockitoExtension.class)
+public class CalculatorTest {
+    @Mock
+    DrNitro mockDrNitro;
+
+    @InjectMocks
+    Calculator calculator = new Calculator();
+
+    @Test
+    public void testCalculatorAddition() {
+        int sum = calculator.getSum(21, 21);
+        verify(mockDrNitro, times(1)).destroyEarth(anyString());
+        assertEquals(42, sum);
+    }
+}
+```
+
+# More notes
+
 ## Source classes: A, B, C, D
 
 ```
