@@ -26,6 +26,10 @@
 
 [Developing open source scientific practice](https://berkeley-stat159-f17.github.io/stat159-f17/_static/ref/millman-perez.pdf)
 
+[DZone - Refcardz](https://dzone.com/refcardz)
+
+- [DZone - Mockito refcard](https://dzone.com/refcardz/mockito)
+
 ## F
 
 [freeCodeCamp - Free Online Programming & Computer Science Courses](https://www.freecodecamp.org/news/free-online-programming-cs-courses/)
@@ -74,7 +78,7 @@
 
 [Practical Python Programming](https://dabeaz-course.github.io/practical-python/)
 
-## R
+## [R](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 [Reasonably Polymorphic](https://reasonablypolymorphic.com/book/preface)
 
