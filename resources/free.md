@@ -6,7 +6,7 @@
 
 [Awesome Java](https://github.com/akullpp/awesome-java)
 
-  - [Wesbite](https://java.libhunt.com/)
+  - [Website](https://java.libhunt.com/)
 
 ## B
 
