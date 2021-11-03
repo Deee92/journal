@@ -28,8 +28,6 @@ ___
   - localhost:8081/admin
   - username: admin
   - password: admin
-
-```
 ____
 
 #### More case studies tried:
@@ -39,4 +37,3 @@ ____
 - jsoup
 - OpenTripPlanner
 - GeoServer
-
