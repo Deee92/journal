@@ -10,11 +10,12 @@
 - Static analysis, no test execution, Java + Mockito
 
 ### Evaluation
-- Applicability of automatic refactoring framework to 5 OSS + 4 OSS
-- Impact on test behavior through mutation analysis = similar fault finding capability
-- Impact on code complexity (due to refactoring out of subclases for mocking) = decrease in code complexity
-- runtime performance of refactoring framework (
-- User study with 6 developers
+- Empirical evaluation on 5 OSS to study what can and can't be feasibly refactored automatically
+- Applicability of automatic refactoring framework to 4 OSS: successfully applied to 214/610 (35%) of subclasses
+- Impact on test behavior through mutation analysis: similar fault finding capability pre- and post-refactoring
+- Impact on code complexity (due to refactoring out of subclases for mocking): decrease in code complexity since it reduces the coupling between test and production classes
+- runtime performance of refactoring framework (i.e., time it takes to identify refactoring candidates + do the actual refactoring): few minutes and few seconds, respectively
+- User study with 6 developers, who rate it positively
 
 ### Notable
 - References
