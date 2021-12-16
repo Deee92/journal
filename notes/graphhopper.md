@@ -1,3 +1,24 @@
+### Adding more profiles 
+
+In `config_example.yml`:
+
+```
+  profiles:
+    - name: car
+      vehicle: car
+      weighting: fastest
+    - name: bike
+      vehicle: bike
+      weighting: fastest
+      
+  profiles_ch:
+    - profile: car
+    - profile: bike
+
+```
+
+More [here](https://docs.graphhopper.com/#section/Map-Data-and-Routing-Profiles/OpenStreetMap)
+
 ### Running
 
 `java -javaagent:/home/dee/dev/jacoco-0.8.8-20211214.101659-25/lib/jacocoagent.jar=destfile=/home/dee/dev/graphhopper/jacoco.exec -Ddw.graphhopper.datareader.file=/home/dee/Downloads/sweden-latest.osm.pbf -jar web/target/graphhopper-web-4.0.jar server config-example.yml `
