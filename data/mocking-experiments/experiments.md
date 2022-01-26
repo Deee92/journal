@@ -11,7 +11,7 @@
 
 \#  | case study | targets | mockable targets | effective targets | generated tests | passing | failing | comments
 --- | ---------- | ------- | ---------------- | ----------------- | --------------- | ------- | ------- | -------- 
-1   | PDFBox     | 3610    | 103 / 3610       | 22 / 103          | 254             | wip     | wip     | (original workload)
+1   | PDFBox     | 3610    | 95 / 3610        | 20 / 95           | wip             | wip     | wip     | (original workload)
 
 ### TODO:
 - add stubs to tests that verify sequence of nested method invocations
