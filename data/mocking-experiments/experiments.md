@@ -15,4 +15,4 @@
 
 ### TODO:
 - add stubs to tests that verify sequence of nested method invocations
-- add pre-defined examples to workload for PDFBox
+- add pre-defined examples to workload for PDFBox (`java -javaagent:/home/dee/dev/glowroot/glowroot.jar -cp target/pdfbox-examples-2.0.24-jar-with-dependencies.jar org.apache.pdfbox.examples.util.PrintTextColors target/SimpleForm.pdf`)
