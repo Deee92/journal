@@ -9,9 +9,10 @@
 
 ### Data
 
-\#  | case study | targets | mockable targets | effective targets | generated tests | passing | failing | comments
---- | ---------- | ------- | ---------------- | ----------------- | --------------- | ------- | ------- | -------- 
-1   | PDFBox     | 3610    | 95 / 3610        | 20 / 95           | wip             | wip     | wip     | (original workload)
+\#  | case study | methods | methods with nested invocations | instrumented targets | instrumented nested methods | effective targets | effective nested targets | generated tests with mocks | passing | failing | comments
+--- | ---------- | ------- | ------------------------------- | -------------------- | --------------------------- | ----------------- | ------------------------ | --------------------------- | ------- | ------- | --------
+1   | PDFBox     | 6169    | 3614 / 6169 (58.6%)             | 75                   | 122                         | 23                | 49                       |   293                        | 102 / 293 (34.8%) | 191 / 293 (65.2%) | original workload
+
 
 ### TODO:
 - add stubs to tests that verify sequence of nested method invocations
