@@ -14,7 +14,7 @@
 
 \#  | case study | methods | methods with nested invocations | instrumented targets | instrumented nested methods | effective targets | effective nested targets | generated tests with mocks | passing | failing | comments
 --- | ---------- | ------- | ------------------------------- | -------------------- | --------------------------- | ----------------- | ------------------------ | --------------------------- | ------- | ------- | --------
-1   | PDFBox     | 6169    | 3614 / 6169 (58.6%)             | 75                   | 122                         | 23                | 49                       |   443                        | 213 / 443 (48.1%) | 230 / 443 (51.9%) | original workload
+1   | PDFBox     | 6169    | 3614 / 6169 (58.6%)             | 173                  | 240                         | 55 / 173          | 34 / 240                 |   184                        | 73 / 184 (39.7%)  | 111 / 184 (60.3%) | original workload
 
 
 ### TODO:
