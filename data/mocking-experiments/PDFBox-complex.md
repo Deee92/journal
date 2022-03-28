@@ -12,7 +12,7 @@
 
 \#   | MUT (LOC) (CC) | mockable-fqn (LOC) (CC) | target-type | test-oo | test-po | test-co
 ---- | -------------- | ----------------------- | ----------- | ------- | ------- | -------
-1    | `org.apache.pdfbox.cos.COSName.writePDF` (3) | `java.io.OutputStream.write(int)` | parameter | 
+1    | `org.apache.pdfbox.cos.COSName.writePDF` (3) | `java.io.OutputStream.write(int)` | parameter | - | 7P | 7P
 2    | `org.apache.pdfbox.io.RandomAccessInputStream.read(byte[],int,int)` (5) | `org.apache.pdfbox.io.RandomAccessRead.isEOF` | field | 5F | 5F | 5F
 3    | `org.apache.pdfbox.io.RandomAccessInputStream.read` (5) | `org.apache.pdfbox.io.RandomAccessRead.isEOF` | field | 1F | 1F | 1P
 4    | `org.apache.pdfbox.io.RandomAccessInputStream.read` (5) | `org.apache.pdfbox.io.RandomAccessRead.read` | field | 3P | 3P | 3P
@@ -30,17 +30,18 @@
 16   | `org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage` (11) | `java.awt.image.Raster.getHeight` | parameter |
 17   | `org.apache.pdfbox.rendering.PDFRenderer.renderImage(int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination)` (24) | `org.apache.pdfbox.rendering.ImageType.toBufferedImageType` | parameter | - | 1P | 1F (wip)
 18   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Path2D$Float.moveTo(float,float)` | field | 
-19   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Path2D.closePath` | field | 
-20   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Point2D.getX` | parameter | 
-21   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Point2D.getY` | parameter | 
-22   | `org.apache.pdfbox.rendering.PageDrawer.fillPath` (12) | `java.awt.geom.Path2D.setWindingRule(int)` | field |
-23   | `org.apache.pdfbox.rendering.PageDrawer.fillPath` (12) | `java.awt.geom.Path2D.reset` | field |
-24   | `org.apache.pdfbox.rendering.PageDrawer.strokePath` (6) | `java.awt.geom.Path2D.reset` | field |
-25   | `org.apache.pdfbox.rendering.PageDrawer.drawImage` (7) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.getInterpolate` | parameter | - | 1F | 1F
-26   | `org.apache.pdfbox.rendering.PageDrawer.drawImage` (7) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil` | parameter | - | 1F | 1F
-27   | `org.apache.pdfbox.rendering.PageDrawer.drawPage` (11) | `java.awt.Graphics2D.translate(double,double)` | field | x | x | x
-28   | `org.apache.pdfbox.rendering.PageDrawer.drawPage` (11) | `java.awt.Graphics2D.scale(double,double)` | field | x | x | x
-29   | `org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage` (4) | `org.apache.pdfbox.pdmodel.PDPage.getRotation` | parameter | - | 1F | 1F
-30   | `org.apache.pdfbox.text.TextPositionComparator.compare` (10) | `org.apache.pdfbox.text.TextPosition.getDir` | parameter | 1P | 1P | 1F (wip)
-31   | `org.apache.pdfbox.text.TextPositionComparator.compare` (10) | `org.apache.pdfbox.text.TextPosition.getYDirAdj` | parameter | 1P | 1P | 1F (wip)
-32   | `org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage` (5) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil` | parameter | - | 1F | 1F
+19   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Path2D$Float.lineTo(float,float)` | field | 
+20   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Path2D.closePath` | field | 
+21   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Point2D.getX` | parameter | 
+22   | `org.apache.pdfbox.rendering.PageDrawer.appendRectangle` (5) | `java.awt.geom.Point2D.getY` | parameter | 
+23   | `org.apache.pdfbox.rendering.PageDrawer.fillPath` (12) | `java.awt.geom.Path2D.setWindingRule(int)` | field |
+24   | `org.apache.pdfbox.rendering.PageDrawer.fillPath` (12) | `java.awt.geom.Path2D.reset` | field |
+25   | `org.apache.pdfbox.rendering.PageDrawer.strokePath` (6) | `java.awt.geom.Path2D.reset` | field |
+26   | `org.apache.pdfbox.rendering.PageDrawer.drawImage` (7) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.getInterpolate` | parameter | - | 1F | 1F
+27   | `org.apache.pdfbox.rendering.PageDrawer.drawImage` (7) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil` | parameter | - | 1F | 1F
+28   | `org.apache.pdfbox.rendering.PageDrawer.drawPage` (11) | `java.awt.Graphics2D.translate(double,double)` | field | x | x | x
+29   | `org.apache.pdfbox.rendering.PageDrawer.drawPage` (11) | `java.awt.Graphics2D.scale(double,double)` | field | x | x | x
+30   | `org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage` (4) | `org.apache.pdfbox.pdmodel.PDPage.getRotation` | parameter | - | 1F | 1F
+31   | `org.apache.pdfbox.text.TextPositionComparator.compare` (10) | `org.apache.pdfbox.text.TextPosition.getDir` | parameter | 1P | 1P | 1F (wip)
+32   | `org.apache.pdfbox.text.TextPositionComparator.compare` (10) | `org.apache.pdfbox.text.TextPosition.getYDirAdj` | parameter | 1P | 1P | 1F (wip)
+33   | `org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage` (5) | `org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil` | parameter | - | 1F | 1F
