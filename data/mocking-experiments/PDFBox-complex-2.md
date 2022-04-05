@@ -1,10 +1,10 @@
 ## Definitions:
 1. **LOC** - Lines of code
 2. **CC** - Cyclomatic complexity
-3. **MUT** - Method under test (> 2 LOC)
+3. **MUT** - Method under test (> 1 LOC)
 4. **mockable-fqn** - Fully qualified name of the mockable method (> 1 LOC)
 5. **target-type** - field / parameter
-6. **test-oo** - Generated test with an _output oracle_ (stub + assertion); valid if MUT returns a non-void primitive value
+6. **test-oo** - Generated test with an _output oracle_ (stub + assertion); generated if MUT returns a non-void primitive value
 7. **test-po** - Generated test with a _parameter oracle_ (stub + assertion + verification with production parameters)
 8. **test-co** - Generated test with a _sequence oracle_ (verification on the sequence and frequency of mockable invocations) 
 
@@ -24,3 +24,17 @@
 10   | [org.apache.pdfbox.pdmodel.PDDocumentCatalog.getAcroForm(org.apache.pdfbox.pdmodel.fixup.PDDocumentFixup)]() | [org.apache.pdfbox.pdmodel.fixup.PDDocumentFixup.apply()]() | PARAMETER | - | 2P/2 | 2P/2 | -
 11   | [org.apache.pdfbox.pdmodel.PDPageContentStream.setFont]() | [org.apache.pdfbox.pdmodel.font.PDFont.willBeSubset()]() | PARAMETER | - | 1P/1 | 1P/1 | -
 12   | [org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption]() | [org.apache.pdfbox.pdmodel.encryption.PDEncryption.isEncryptMetaData()]() | PARAMETER | - | 0P/1 | 0P/1 | Breaks because of default value in mock
+13   | [org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID]() | [org.apache.fontbox.ttf.CmapSubtable.getGlyphId(int)]() | FIELD | | |
+14   | [org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont]() | [org.apache.fontbox.ttf.TrueTypeFont.getAdvanceWidth(int)](), [org.apache.fontbox.ttf.TrueTypeFont.getUnitsPerEm()]() | FIELD | | |
+15   | [org.apache.pdfbox.pdmodel.graphics.color.PDColor.getComponents]() | [org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace.getNumberOfComponents()]() | FIELD | | |
+16   | [org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage]() | [java.awt.image.Raster.getWidth()]() and [java.awt.image.Raster.getHeight()]() | PARAMETER | | |
+17   | [org.apache.pdfbox.rendering.PDFRenderer.renderImage(int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination)]() | [org.apache.pdfbox.rendering.ImageType.toBufferedImageType()]() | PARAMETER | | |
+18   | [org.apache.pdfbox.rendering.PageDrawer.appendRectangle]() | [java.awt.geom.Point2D.getX()](), [java.awt.geom.Point2D.getY()](), [java.awt.geom.Path2D$Float.moveTo(float,float)](), [java.awt.geom.Path2D$Float.lineTo(float,float)](), and [java.awt.geom.Path2D.closePath()]() | PARAMETER, PARAMETER, FIELD, FIELD, FIELD | | |
+19   | [org.apache.pdfbox.rendering.PageDrawer.fillPath]() | [java.awt.geom.Path2D.setWindingRule(int)]() and [java.awt.geom.Path2D.reset()]() | FIELD | | |
+20   | [org.apache.pdfbox.rendering.PageDrawer.strokePath]() | [java.awt.geom.Path2D.reset()]() | FIELD | | |
+21   | [org.apache.pdfbox.rendering.PageDrawer.drawImage]() | [org.apache.pdfbox.pdmodel.graphics.image.PDImage.getInterpolate]() and [org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil]() | PARAMETER | | |
+22   | [org.apache.pdfbox.rendering.PageDrawer.drawPage]() | [java.awt.Graphics2D.translate(double,double)]() and [java.awt.Graphics2D.scale(double,double)]() | FIELD | | |
+23   | [org.apache.pdfbox.rendering.PageDrawer.endPath]() | [java.awt.geom.Path2D.setWindingRule(int)]() and [java.awt.geom.Path2D.reset()]() | FIELD | | |
+24   | [org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage]() | [org.apache.pdfbox.pdmodel.PDPage.getRotation()]() | PARAMETER | | |
+25   | [org.apache.pdfbox.text.TextPositionComparator.compare]() | [org.apache.pdfbox.text.TextPosition.getDir()]() and [org.apache.pdfbox.text.TextPosition.getYDirAdj()]() | PARAMETER | | |
+26   | [org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage]() | [org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil()]() | PARAMETER | | |
