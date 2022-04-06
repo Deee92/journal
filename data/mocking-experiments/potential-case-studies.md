@@ -8,6 +8,8 @@
 
 ___
 
+GraphHopper: `bash graphhopper.sh -a web -i /home/dee/Downloads/sweden-latest.osm.pbf`
+
 #### Modifications for [BroadLeaf/DemoSite](https://github.com/BroadleafCommerce/DemoSite):
 ```
 <properties>
@@ -37,3 +39,6 @@ ____
 - jsoup
 - OpenTripPlanner
 - GeoServer
+
+Android apps with pankti?
+
