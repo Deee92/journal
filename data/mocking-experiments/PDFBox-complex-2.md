@@ -1,11 +1,9 @@
 ## Definitions:
-1. **LOC** - Lines of code
-2. **CC** - Cyclomatic complexity
 3. **MUT** - Method under test (> 1 LOC)
 4. **mockable-fqn** - Fully qualified name of the mockable method (> 1 LOC)
-5. **target-type** - field / parameter
+5. **target-type** - FIELD / PARAMETER
 6. **test-oo** - Generated test with an _output oracle_ (stub + assertion); generated if MUT returns a non-void primitive value
-7. **test-po** - Generated test with a _parameter oracle_ (stub + assertion + verification with production parameters)
+7. **test-po** - Generated test with a _parameter oracle_ (stub + verification with production parameters)
 8. **test-co** - Generated test with a _sequence oracle_ (verification on the sequence and frequency of mockable invocations) 
 
 ---
