@@ -38,3 +38,9 @@
 24   | [org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage](https://github.com/apache/pdfbox/blob/8876e8e1a0adbf619cef4638cc3cea073e3ca484/pdfbox/src/main/java/org/apache/pdfbox/text/LegacyPDFStreamEngine.java#L130) | [org.apache.pdfbox.pdmodel.PDPage.getRotation()]() | PARAMETER | [link](https://github.com/Deee92/journal/blob/master/data/mocking-experiments/tests/pdfbox/TestLegacyPDFStreamEnginePanktiGen.java) | - | 0P/1 | 0P/1 | NPE
 25   | [org.apache.pdfbox.text.TextPositionComparator.compare](https://github.com/apache/pdfbox/blob/8876e8e1a0adbf619cef4638cc3cea073e3ca484/pdfbox/src/main/java/org/apache/pdfbox/text/TextPositionComparator.java#L32) | [org.apache.pdfbox.text.TextPosition.getDir()]() and [org.apache.pdfbox.text.TextPosition.getYDirAdj()]() | PARAMETER | [link](https://github.com/Deee92/journal/blob/master/data/mocking-experiments/tests/pdfbox/TestTextPositionComparatorPanktiGen.java) | 1P/1 | 1P/1 | 0P/1 | todo: fix
 26   | [org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage](https://github.com/apache/pdfbox/blob/8876e8e1a0adbf619cef4638cc3cea073e3ca484/tools/src/main/java/org/apache/pdfbox/tools/ExtractImages.java#L247) | [org.apache.pdfbox.pdmodel.graphics.image.PDImage.isStencil()]() | PARAMETER | [link](https://github.com/Deee92/journal/blob/master/data/mocking-experiments/tests/pdfbox/TestImageGraphicsEnginePanktiGen.java) | - | 0P/1 | 0P/1 | FNF
+
+
+## TOTAL
+- Tests: 118
+- Passing: 67 (56.8%) (OO: 11/16, PO: 29/51, CO: 27/51)
+- Failing: 51
