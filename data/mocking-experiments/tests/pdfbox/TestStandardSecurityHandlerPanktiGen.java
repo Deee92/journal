@@ -14,11 +14,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestStandardSecurityHandlerPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -32,7 +34,6 @@ public class TestStandardSecurityHandlerPanktiGen {
     @Test
     public void test_prepareForDecryption_PO_c16807deba6b41f9afe5a9e5682de5ac() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler>" +
         "  <keyLength>40</keyLength>" +
@@ -317,9 +318,8 @@ public class TestStandardSecurityHandlerPanktiGen {
         "  </objects>" +
         "  <useAES>false</useAES>" +
         "</org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler>";
-        org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption1-params.xml");
         org.apache.pdfbox.pdmodel.encryption.PDEncryption paramObject1 = (org.apache.pdfbox.pdmodel.encryption.PDEncryption) paramObjects[0];
         org.apache.pdfbox.cos.COSArray paramObject2 = (org.apache.pdfbox.cos.COSArray) paramObjects[1];
         org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial paramObject3 = (org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial) paramObjects[2];
@@ -334,7 +334,6 @@ public class TestStandardSecurityHandlerPanktiGen {
     @Test
     public void test_prepareForDecryption_CO_c16807deba6b41f9afe5a9e5682de5ac() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler>" +
         "  <keyLength>40</keyLength>" +
@@ -619,9 +618,8 @@ public class TestStandardSecurityHandlerPanktiGen {
         "  </objects>" +
         "  <useAES>false</useAES>" +
         "</org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler>";
-        org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption1-params.xml");
         org.apache.pdfbox.pdmodel.encryption.PDEncryption paramObject1 = (org.apache.pdfbox.pdmodel.encryption.PDEncryption) paramObjects[0];
         org.apache.pdfbox.cos.COSArray paramObject2 = (org.apache.pdfbox.cos.COSArray) paramObjects[1];
         org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial paramObject3 = (org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial) paramObjects[2];

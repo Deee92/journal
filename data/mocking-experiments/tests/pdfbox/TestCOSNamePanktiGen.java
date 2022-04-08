@@ -18,11 +18,13 @@ import static org.mockito.ArgumentMatchers.anyInt;
 public class TestCOSNamePanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -36,16 +38,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_57f9cd35728c4fefa343d3457f94c9f2() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>false</direct>" +
         "  <name>Type</name>" +
         "  <hashCode>2622298</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF1-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -61,16 +61,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_57f9cd35728c4fefa343d3457f94c9f2() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>false</direct>" +
         "  <name>Type</name>" +
         "  <hashCode>2622298</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF1-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -83,16 +81,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_94278115977f42179cad3df9c3a42cf9() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF2-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF2-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -109,16 +105,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_94278115977f42179cad3df9c3a42cf9() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF2-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF2-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -131,16 +125,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_9f49beebd9784611a539b87e2c1164b9() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF3-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF3-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -157,16 +149,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_9f49beebd9784611a539b87e2c1164b9() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF3-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF3-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -185,7 +175,7 @@ public class TestCOSNamePanktiGen {
         "  <name>Type</name>" +
         "  <hashCode>2622298</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.pdfwriter.COSStandardOutputStream>" +
@@ -208,7 +198,7 @@ public class TestCOSNamePanktiGen {
         "    <onNewLine>true</onNewLine>" +
         "  </org.apache.pdfbox.pdfwriter.COSStandardOutputStream>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -230,7 +220,7 @@ public class TestCOSNamePanktiGen {
         "  <name>Type</name>" +
         "  <hashCode>2622298</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.pdfwriter.COSStandardOutputStream>" +
@@ -253,7 +243,7 @@ public class TestCOSNamePanktiGen {
         "    <onNewLine>true</onNewLine>" +
         "  </org.apache.pdfbox.pdfwriter.COSStandardOutputStream>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -266,16 +256,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_35d04b3534794eccba652ad7739d8283() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF5-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF5-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -292,16 +280,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_35d04b3534794eccba652ad7739d8283() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF5-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF5-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -314,16 +300,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_c909a264eef94b1f8da9a94c1d0c0d51() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF6-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF6-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -340,16 +324,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_c909a264eef94b1f8da9a94c1d0c0d51() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>true</direct>" +
         "  <name>Pages</name>" +
         "  <hashCode>76873636</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF6-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF6-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -362,16 +344,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_PO_0136f68280fd42009ad81e1cc9babeef() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>false</direct>" +
         "  <name>F1</name>" +
         "  <hashCode>2219</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF7-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF7-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act
@@ -385,16 +365,14 @@ public class TestCOSNamePanktiGen {
     @Test
     public void test_writePDF_CO_0136f68280fd42009ad81e1cc9babeef() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
         "  <direct>false</direct>" +
         "  <name>F1</name>" +
         "  <hashCode>2219</hashCode>" +
         "</org.apache.pdfbox.cos.COSName>";
-        org.apache.pdfbox.cos.COSName receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.cos.COSName.writePDF7-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.cos.COSName receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.cos.COSName.writePDF7-params.xml");
         java.io.OutputStream paramObject1 = (java.io.OutputStream) paramObjects[0];
         OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
         // Act

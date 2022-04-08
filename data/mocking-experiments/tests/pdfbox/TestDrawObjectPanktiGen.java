@@ -15,11 +15,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestDrawObjectPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -33,9 +35,7 @@ public class TestDrawObjectPanktiGen {
     @Test
     public void test_process_PO_4505e1ee58724049879563678ad948b1() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process1-receiving.xml").getFile());
-        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObjectFromFile("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process1-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.contentstream.operator.Operator>" +
@@ -49,7 +49,7 @@ public class TestDrawObjectPanktiGen {
         "    </org.apache.pdfbox.cos.COSName>" +
         "  </list>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         org.apache.pdfbox.contentstream.operator.Operator paramObject1 = (org.apache.pdfbox.contentstream.operator.Operator) paramObjects[0];
         java.util.List paramObject2 = (java.util.List) paramObjects[1];
         List mockList = Mockito.mock(List.class);
@@ -63,9 +63,7 @@ public class TestDrawObjectPanktiGen {
     @Test
     public void test_process_CO_4505e1ee58724049879563678ad948b1() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process1-receiving.xml").getFile());
-        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObjectFromFile("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process1-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.contentstream.operator.Operator>" +
@@ -79,7 +77,7 @@ public class TestDrawObjectPanktiGen {
         "    </org.apache.pdfbox.cos.COSName>" +
         "  </list>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         org.apache.pdfbox.contentstream.operator.Operator paramObject1 = (org.apache.pdfbox.contentstream.operator.Operator) paramObjects[0];
         java.util.List paramObject2 = (java.util.List) paramObjects[1];
         List mockList = Mockito.mock(List.class);
@@ -88,15 +86,13 @@ public class TestDrawObjectPanktiGen {
         receivingObject.process(paramObject1, mockList);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockList);
-        orderVerifier.verify(mockList).isEmpty();
+        orderVerifier.verify(mockList, Mockito.times(1)).isEmpty();
     }
 
     @Test
     public void test_process_PO_eff5d75293454e758d5391be0a64a95b() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process2-receiving.xml").getFile());
-        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObjectFromFile("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process2-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.contentstream.operator.Operator>" +
@@ -110,7 +106,7 @@ public class TestDrawObjectPanktiGen {
         "    </org.apache.pdfbox.cos.COSName>" +
         "  </list>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         org.apache.pdfbox.contentstream.operator.Operator paramObject1 = (org.apache.pdfbox.contentstream.operator.Operator) paramObjects[0];
         java.util.List paramObject2 = (java.util.List) paramObjects[1];
         List mockList = Mockito.mock(List.class);
@@ -124,9 +120,7 @@ public class TestDrawObjectPanktiGen {
     @Test
     public void test_process_CO_eff5d75293454e758d5391be0a64a95b() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process2-receiving.xml").getFile());
-        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.contentstream.operator.graphics.DrawObject receivingObject = deserializeObjectFromFile("org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process2-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <org.apache.pdfbox.contentstream.operator.Operator>" +
@@ -140,7 +134,7 @@ public class TestDrawObjectPanktiGen {
         "    </org.apache.pdfbox.cos.COSName>" +
         "  </list>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         org.apache.pdfbox.contentstream.operator.Operator paramObject1 = (org.apache.pdfbox.contentstream.operator.Operator) paramObjects[0];
         java.util.List paramObject2 = (java.util.List) paramObjects[1];
         List mockList = Mockito.mock(List.class);
@@ -149,6 +143,6 @@ public class TestDrawObjectPanktiGen {
         receivingObject.process(paramObject1, mockList);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockList);
-        orderVerifier.verify(mockList).isEmpty();
+        orderVerifier.verify(mockList, Mockito.times(1)).isEmpty();
     }
 }

@@ -15,11 +15,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestLegacyPDFStreamEnginePanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -33,11 +35,8 @@ public class TestLegacyPDFStreamEnginePanktiGen {
     @Test
     public void test_processPage_PO_78014429d97343d0b121af4b2014aebc() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml").getFile());
-        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObject(fileReceiving);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);
@@ -50,11 +49,8 @@ public class TestLegacyPDFStreamEnginePanktiGen {
     @Test
     public void test_processPage_CO_78014429d97343d0b121af4b2014aebc() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml").getFile());
-        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObject(fileReceiving);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);
@@ -62,6 +58,6 @@ public class TestLegacyPDFStreamEnginePanktiGen {
         receivingObject.processPage(mockPDPage);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockPDPage);
-        orderVerifier.verify(mockPDPage).getRotation();
+        orderVerifier.verify(mockPDPage, Mockito.times(1)).getRotation();
     }
 }

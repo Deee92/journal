@@ -14,11 +14,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestPDFRendererPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -30,11 +32,9 @@ public class TestPDFRendererPanktiGen {
     }
 
     @Test
-    public void test_renderImage_PO_2ada86993d8243028d415743da064f85() throws Exception {
+    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_PO_2ada86993d8243028d415743da064f85() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml").getFile());
-        org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <int>0</int>" +
@@ -42,7 +42,7 @@ public class TestPDFRendererPanktiGen {
         "  <org.apache.pdfbox.rendering.ImageType>RGB</org.apache.pdfbox.rendering.ImageType>" +
         "  <org.apache.pdfbox.rendering.RenderDestination>EXPORT</org.apache.pdfbox.rendering.RenderDestination>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         int paramObject1 = (Integer) paramObjects[0];
         float paramObject2 = (Float) paramObjects[1];
         org.apache.pdfbox.rendering.ImageType paramObject3 = (org.apache.pdfbox.rendering.ImageType) paramObjects[2];
@@ -56,11 +56,9 @@ public class TestPDFRendererPanktiGen {
     }
 
     @Test
-    public void test_renderImage_CO_2ada86993d8243028d415743da064f85() throws Exception {
+    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_CO_2ada86993d8243028d415743da064f85() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml").getFile());
-        org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml");
         String paramsObjectStr = 
         "<object-array>" +
         "  <int>0</int>" +
@@ -68,7 +66,7 @@ public class TestPDFRendererPanktiGen {
         "  <org.apache.pdfbox.rendering.ImageType>RGB</org.apache.pdfbox.rendering.ImageType>" +
         "  <org.apache.pdfbox.rendering.RenderDestination>EXPORT</org.apache.pdfbox.rendering.RenderDestination>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         int paramObject1 = (Integer) paramObjects[0];
         float paramObject2 = (Float) paramObjects[1];
         org.apache.pdfbox.rendering.ImageType paramObject3 = (org.apache.pdfbox.rendering.ImageType) paramObjects[2];

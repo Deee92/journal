@@ -15,11 +15,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestPDFMergerUtilityPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -33,7 +35,6 @@ public class TestPDFMergerUtilityPanktiGen {
     @Test
     public void test_appendDocument_PO_61e1416671fa443dab511aff7820ad75() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.multipdf.PDFMergerUtility>" +
         "  <sources>" +
@@ -46,9 +47,8 @@ public class TestPDFMergerUtilityPanktiGen {
         "  <acroFormMergeMode>PDFBOX_LEGACY_MODE</acroFormMergeMode>" +
         "  <nextFieldNum>1</nextFieldNum>" +
         "</org.apache.pdfbox.multipdf.PDFMergerUtility>";
-        org.apache.pdfbox.multipdf.PDFMergerUtility receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.multipdf.PDFMergerUtility receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument1-params.xml");
         org.apache.pdfbox.pdmodel.PDDocument paramObject1 = (org.apache.pdfbox.pdmodel.PDDocument) paramObjects[0];
         org.apache.pdfbox.pdmodel.PDDocument paramObject2 = (org.apache.pdfbox.pdmodel.PDDocument) paramObjects[1];
         PDDocument mockPDDocument = Mockito.mock(PDDocument.class);
@@ -62,7 +62,6 @@ public class TestPDFMergerUtilityPanktiGen {
     @Test
     public void test_appendDocument_CO_61e1416671fa443dab511aff7820ad75() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
         String receivingObjectStr = 
         "<org.apache.pdfbox.multipdf.PDFMergerUtility>" +
         "  <sources>" +
@@ -75,9 +74,8 @@ public class TestPDFMergerUtilityPanktiGen {
         "  <acroFormMergeMode>PDFBOX_LEGACY_MODE</acroFormMergeMode>" +
         "  <nextFieldNum>1</nextFieldNum>" +
         "</org.apache.pdfbox.multipdf.PDFMergerUtility>";
-        org.apache.pdfbox.multipdf.PDFMergerUtility receivingObject = deserializeObject(receivingObjectStr);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.multipdf.PDFMergerUtility receivingObject = deserializeObjectFromString(receivingObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument1-params.xml");
         org.apache.pdfbox.pdmodel.PDDocument paramObject1 = (org.apache.pdfbox.pdmodel.PDDocument) paramObjects[0];
         org.apache.pdfbox.pdmodel.PDDocument paramObject2 = (org.apache.pdfbox.pdmodel.PDDocument) paramObjects[1];
         PDDocument mockPDDocument = Mockito.mock(PDDocument.class);

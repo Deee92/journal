@@ -15,19 +15,16 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestPDColorPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
-    }
-
-    @BeforeAll
-    public static void setxStream() {
-        xStream.registerConverter(new FileCleanableConverter());
     }
 
     private PDColorSpace insertPrivateMockField_colorSpace_InPDColor(PDColor receivingObject) throws Exception {
@@ -36,6 +33,11 @@ public class TestPDColorPanktiGen {
         fieldToMock.setAccessible(true);
         fieldToMock.set(receivingObject, mockPDColorSpace);
         return mockPDColorSpace;
+    }
+
+    @BeforeAll
+    public static void setxStream() {
+        xStream.registerConverter(new FileCleanableConverter());
     }
 
     @Test
@@ -59,7 +61,7 @@ public class TestPDColorPanktiGen {
         "    </initialColor>" +
         "  </colorSpace>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDColor>";
-        org.apache.pdfbox.pdmodel.graphics.color.PDColor receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.pdmodel.graphics.color.PDColor receivingObject = deserializeObjectFromString(receivingObjectStr);
         PDColorSpace mockPDColorSpace = insertPrivateMockField_colorSpace_InPDColor(receivingObject);
         Mockito.when(mockPDColorSpace.getNumberOfComponents()).thenReturn(3);
         // Act
@@ -89,13 +91,13 @@ public class TestPDColorPanktiGen {
         "    </initialColor>" +
         "  </colorSpace>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDColor>";
-        org.apache.pdfbox.pdmodel.graphics.color.PDColor receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.pdmodel.graphics.color.PDColor receivingObject = deserializeObjectFromString(receivingObjectStr);
         PDColorSpace mockPDColorSpace = insertPrivateMockField_colorSpace_InPDColor(receivingObject);
         Mockito.when(mockPDColorSpace.getNumberOfComponents()).thenReturn(3);
         // Act
         receivingObject.getComponents();
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockPDColorSpace);
-        orderVerifier.verify(mockPDColorSpace).getNumberOfComponents();
+        orderVerifier.verify(mockPDColorSpace, Mockito.times(1)).getNumberOfComponents();
     }
 }

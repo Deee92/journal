@@ -14,11 +14,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestPDDocumentPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -32,11 +34,8 @@ public class TestPDDocumentPanktiGen {
     @Test
     public void test_importPage_PO_253aab2681c444ad8a693344e523cc64() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObject(fileReceiving);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);
@@ -49,11 +48,8 @@ public class TestPDDocumentPanktiGen {
     @Test
     public void test_importPage_CO_253aab2681c444ad8a693344e523cc64() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObject(fileReceiving);
-        File fileParams = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml").getFile());
-        Object[] paramObjects = deserializeObject(fileParams);
+        org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);
@@ -61,6 +57,6 @@ public class TestPDDocumentPanktiGen {
         receivingObject.importPage(mockPDPage);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockPDPage);
-        orderVerifier.verify(mockPDPage).getRotation();
+        orderVerifier.verify(mockPDPage, Mockito.times(1)).getRotation();
     }
 }

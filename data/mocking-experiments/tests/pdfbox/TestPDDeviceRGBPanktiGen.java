@@ -1,6 +1,7 @@
 package org.apache.pdfbox.pdmodel.graphics.color;
 import com.thoughtworks.xstream.XStream;
 
+import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.util.Scanner;
@@ -16,11 +17,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class TestPDDeviceRGBPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
@@ -45,7 +48,7 @@ public class TestPDDeviceRGBPanktiGen {
         "    <colorSpace class=\"org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB\" reference=\"../..\"/>" +
         "  </initialColor>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>";
-        org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObjectFromString(receivingObjectStr);
         String paramsObjectStr = 
         "<object-array>" +
         "  <sun.awt.image.ByteBandedRaster>" +
@@ -114,7 +117,7 @@ public class TestPDDeviceRGBPanktiGen {
         "    <maxY>1</maxY>" +
         "  </sun.awt.image.ByteBandedRaster>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         java.awt.image.WritableRaster paramObject1 = (java.awt.image.WritableRaster) paramObjects[0];
         WritableRaster mockRaster = Mockito.mock(WritableRaster.class);
         Mockito.when(mockRaster.getWidth()).thenReturn(1);
@@ -140,7 +143,7 @@ public class TestPDDeviceRGBPanktiGen {
         "    <colorSpace class=\"org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB\" reference=\"../..\"/>" +
         "  </initialColor>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>";
-        org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObject(receivingObjectStr);
+        org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObjectFromString(receivingObjectStr);
         String paramsObjectStr = 
         "<object-array>" +
         "  <sun.awt.image.ByteBandedRaster>" +
@@ -209,7 +212,7 @@ public class TestPDDeviceRGBPanktiGen {
         "    <maxY>1</maxY>" +
         "  </sun.awt.image.ByteBandedRaster>" +
         "</object-array>";
-        Object[] paramObjects = deserializeObject(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
         java.awt.image.WritableRaster paramObject1 = (java.awt.image.WritableRaster) paramObjects[0];
         WritableRaster mockRaster = Mockito.mock(WritableRaster.class);
         Mockito.when(mockRaster.getWidth()).thenReturn(1);
@@ -218,9 +221,9 @@ public class TestPDDeviceRGBPanktiGen {
         receivingObject.toRGBImage(mockRaster);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockRaster, mockRaster);
-        orderVerifier.verify(mockRaster).getWidth();
-        orderVerifier.verify(mockRaster).getHeight();
-        orderVerifier.verify(mockRaster).getWidth();
-        orderVerifier.verify(mockRaster).getHeight();
+        orderVerifier.verify(mockRaster, Mockito.times(1)).getWidth();
+        orderVerifier.verify(mockRaster, Mockito.times(1)).getHeight();
+        orderVerifier.verify(mockRaster, Mockito.times(1)).getWidth();
+        orderVerifier.verify(mockRaster, Mockito.times(1)).getHeight();
     }
 }

@@ -21,19 +21,16 @@ import static org.mockito.ArgumentMatchers.anyInt;
 public class TestPDTrueTypeFontPanktiGen {
     static XStream xStream = new XStream();
 
-    private <T> T deserializeObject(String serializedObjectString) {
+    private <T> T deserializeObjectFromString(String serializedObjectString) {
         return (T) xStream.fromXML(serializedObjectString);
     }
 
-    private <T> T deserializeObject(File serializedObjectFile) throws Exception {
+    private <T> T deserializeObjectFromFile(String serializedObjectFilePath) throws Exception {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File serializedObjectFile = new File(classLoader.getResource(serializedObjectFilePath).getFile());
         Scanner scanner = new Scanner(serializedObjectFile);
         String serializedObjectString = scanner.useDelimiter("\\A").next();
         return (T) xStream.fromXML(serializedObjectString);
-    }
-
-    @BeforeAll
-    public static void setxStream() {
-        xStream.registerConverter(new FileCleanableConverter());
     }
 
     private CmapSubtable insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(PDTrueTypeFont receivingObject) throws Exception {
@@ -60,29 +57,31 @@ public class TestPDTrueTypeFontPanktiGen {
         return mockCmapSubtable;
     }
 
+    @BeforeAll
+    public static void setxStream() {
+        xStream.registerConverter(new FileCleanableConverter());
+    }
+
     @Test
     public void test_codeToGID_OO_2e80f59359054f5cbc394c5160704cde() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
-        Mockito.when(mockCmapSubtable1.getGlyphId(32)).thenReturn(0);
-        Mockito.when(mockCmapSubtable2.getGlyphId(32)).thenReturn(0);
-        Mockito.when(mockCmapSubtable3.getGlyphId(32)).thenReturn(0);
+        Mockito.lenient().when(mockCmapSubtable1.getGlyphId(32)).thenReturn(0);
+        Mockito.lenient().when(mockCmapSubtable2.getGlyphId(32)).thenReturn(0);
+        Mockito.lenient().when(mockCmapSubtable3.getGlyphId(32)).thenReturn(0);
         // Act
+        int expectedObject = receivingObject.codeToGID(32);
         // Assert
-        Assertions.assertEquals(0, receivingObject.codeToGID(32));
+        Assertions.assertEquals(0, expectedObject);
     }
 
     @Test
     public void test_codeToGID_PO_2e80f59359054f5cbc394c5160704cde() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
@@ -100,9 +99,7 @@ public class TestPDTrueTypeFontPanktiGen {
     @Test
     public void test_codeToGID_CO_2e80f59359054f5cbc394c5160704cde() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID1-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
@@ -121,26 +118,23 @@ public class TestPDTrueTypeFontPanktiGen {
     @Test
     public void test_codeToGID_OO_a5b2c5e0465742b48b9a4e0cc069b45f() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
-        Mockito.when(mockCmapSubtable1.getGlyphId(32)).thenReturn(3);
-        Mockito.when(mockCmapSubtable2.getGlyphId(32)).thenReturn(3);
-        Mockito.when(mockCmapSubtable3.getGlyphId(32)).thenReturn(3);
+        Mockito.lenient().when(mockCmapSubtable1.getGlyphId(32)).thenReturn(3);
+        Mockito.lenient().when(mockCmapSubtable2.getGlyphId(32)).thenReturn(3);
+        Mockito.lenient().when(mockCmapSubtable3.getGlyphId(32)).thenReturn(3);
         // Act
+        int expectedObject = receivingObject.codeToGID(32);
         // Assert
-        Assertions.assertEquals(3, receivingObject.codeToGID(32));
+        Assertions.assertEquals(3, expectedObject);
     }
 
     @Test
     public void test_codeToGID_PO_a5b2c5e0465742b48b9a4e0cc069b45f() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
@@ -158,9 +152,7 @@ public class TestPDTrueTypeFontPanktiGen {
     @Test
     public void test_codeToGID_CO_a5b2c5e0465742b48b9a4e0cc069b45f() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.codeToGID2-receiving.xml");
         CmapSubtable mockCmapSubtable1 = insertPrivateMockField_cmapWinUnicode_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable2 = insertPrivateMockField_cmapMacRoman_InPDTrueTypeFont(receivingObject);
         CmapSubtable mockCmapSubtable3 = insertPrivateMockField_cmapWinSymbol_InPDTrueTypeFont(receivingObject);
@@ -170,10 +162,10 @@ public class TestPDTrueTypeFontPanktiGen {
         // Act
         receivingObject.codeToGID(32);
         // Assert
-        InOrder orderVerifier = Mockito.inOrder(mockCmapSubtable1, mockCmapSubtable2, mockCmapSubtable2);
-        orderVerifier.verify(mockCmapSubtable1).getGlyphId(anyInt());
-        orderVerifier.verify(mockCmapSubtable2).getGlyphId(anyInt());
-        orderVerifier.verify(mockCmapSubtable3).getGlyphId(anyInt());
+        InOrder orderVerifier = Mockito.inOrder(mockCmapSubtable1, mockCmapSubtable2, mockCmapSubtable3);
+        orderVerifier.verify(mockCmapSubtable1, Mockito.times(1)).getGlyphId(anyInt());
+        orderVerifier.verify(mockCmapSubtable2, Mockito.times(1)).getGlyphId(anyInt());
+        orderVerifier.verify(mockCmapSubtable3, Mockito.times(1)).getGlyphId(anyInt());
     }
 
     private TrueTypeFont insertPrivateMockField_ttf_InPDTrueTypeFont(PDTrueTypeFont receivingObject) throws Exception {
@@ -187,23 +179,20 @@ public class TestPDTrueTypeFontPanktiGen {
     @Test
     public void test_getWidthFromFont_OO_5c84d35fbacf4ed18c9875b92c51437b() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml");
         TrueTypeFont mockTrueTypeFont = insertPrivateMockField_ttf_InPDTrueTypeFont(receivingObject);
         Mockito.when(mockTrueTypeFont.getAdvanceWidth(0)).thenReturn(1536);
         Mockito.when(mockTrueTypeFont.getUnitsPerEm()).thenReturn(2048);
         // Act
+        float expectedObject = receivingObject.getWidthFromFont(32);
         // Assert
-        Assertions.assertEquals(750.0, receivingObject.getWidthFromFont(32));
+        Assertions.assertEquals(750.0, expectedObject);
     }
 
     @Test
     public void test_getWidthFromFont_PO_5c84d35fbacf4ed18c9875b92c51437b() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml");
         TrueTypeFont mockTrueTypeFont = insertPrivateMockField_ttf_InPDTrueTypeFont(receivingObject);
         Mockito.when(mockTrueTypeFont.getAdvanceWidth(0)).thenReturn(1536);
         Mockito.when(mockTrueTypeFont.getUnitsPerEm()).thenReturn(2048);
@@ -217,9 +206,7 @@ public class TestPDTrueTypeFontPanktiGen {
     @Test
     public void test_getWidthFromFont_CO_5c84d35fbacf4ed18c9875b92c51437b() throws Exception {
         // Arrange
-        ClassLoader classLoader = getClass().getClassLoader();
-        File fileReceiving = new File(classLoader.getResource("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml").getFile());
-        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObject(fileReceiving);
+        org.apache.pdfbox.pdmodel.font.PDTrueTypeFont receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.getWidthFromFont1-receiving.xml");
         TrueTypeFont mockTrueTypeFont = insertPrivateMockField_ttf_InPDTrueTypeFont(receivingObject);
         Mockito.when(mockTrueTypeFont.getAdvanceWidth(0)).thenReturn(1536);
         Mockito.when(mockTrueTypeFont.getUnitsPerEm()).thenReturn(2048);
@@ -227,7 +214,7 @@ public class TestPDTrueTypeFontPanktiGen {
         receivingObject.getWidthFromFont(32);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockTrueTypeFont, mockTrueTypeFont);
-        orderVerifier.verify(mockTrueTypeFont).getAdvanceWidth(anyInt());
-        orderVerifier.verify(mockTrueTypeFont).getUnitsPerEm();
+        orderVerifier.verify(mockTrueTypeFont, Mockito.times(1)).getAdvanceWidth(anyInt());
+        orderVerifier.verify(mockTrueTypeFont, Mockito.times(1)).getUnitsPerEm();
     }
 }
