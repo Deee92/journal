@@ -218,3 +218,50 @@
 
 ---
 
+### 15. PDDocument - `importPage(PDPage page)`
+
+---
+
+### 16. PDPageContentStream - `setFont(PDFont font, float fontSize)`
+
+---
+
+### 17. PageDrawer - `appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3)`
+
+---
+
+### 18. PageDrawer - `fillPath(int windingRule)`
+
+---
+
+### 19. PageDrawer - `strokePath()`
+
+---
+
+### 20. PageDrawer - `drawImage(PDImage pdImage)`
+
+---
+
+### 21. PageDrawer - `drawPage(Graphics g, PDRectangle pageSize)`
+
+---
+
+### 22. PageDrawer - `endPath()`
+
+---
+
+### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)`
+
+---
+
+### 24. LegacyPDFStreamEngine - `processPage(PDPage page)`
+
+---
+
+### 25. TextPositionComparator - `compare(TextPosition pos1, TextPosition pos2)`
+
+---
+
+### 26. ImageGraphicsEngine - `drawImage(PDImage pdImage)`
+
+---
