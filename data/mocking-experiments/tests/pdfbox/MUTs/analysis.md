@@ -3,11 +3,10 @@
 - C2: primitive params
 - C3: primitive returned value
 - C4: LOC
-- C5: static
+- C5: non-static
 
 ### 1. DrawObject - `process(Operator operator, List<COSBase> operands)`
 
-    @Override
     public void process(Operator operator, List<COSBase> operands) throws IOException {
         if (operands.isEmpty()) // rick: we mock this
         {
@@ -118,4 +117,104 @@
     
 ---
 
-### 
+### 4. RandomAccessInputStream - `read(byte[] b, int off, int len)`
+
+    public int read(byte[] b, int off, int len) throws IOException {
+        restorePosition(); // rick: instance method not invoked on field or param (!C1)
+        if (input.isEOF()) // rick: we mock this
+        {
+            return -1;
+        }
+        int n = input.read(b, off, len); // rick: recursive call, accepts non-primitive param (!C2)
+        if (n != -1)
+        {
+            position += n;
+        }
+        else
+        {
+            // rick: we instrument getPosition, it does not get invoked 
+            // original comment:
+            // should never happen due to prior isEOF() check
+            // unless there is an unsynchronized concurrent access
+            LOG.error("read() returns -1, assumed position: " +
+                       position + ", actual position: " + input.getPosition());
+        }
+        return n;
+    }
+
+---
+
+### 5. RandomAccessInputStream - `read()`
+
+    public int read() throws IOException {
+        restorePosition(); // rick: instance method not invoked on field or param (!C1)
+        if (input.isEOF()) // rick: we mock this
+        {
+            return -1;
+        }
+        int b = input.read(); // rick: we mock this
+        if (b != -1)
+        {
+            position += 1;
+        }
+        else
+        {
+            // rick: we instrument getPosition, it does not get invoked 
+            // original comment:
+            // should never happen due to prior isEOF() check
+            // unless there is an unsynchronized concurrent access
+            LOG.error("read() returns -1, assumed position: " +
+                       position + ", actual position: " + input.getPosition());
+        }
+        return b;
+    }
+
+---
+
+### 6. RandomAccessInputStream - `available()`
+
+    public int available() throws IOException {
+        restorePosition(); // rick: instance method not invoked on field or param (!C1)
+        // rick: we mock length and getPosition
+        long available = input.length() - input.getPosition(); 
+        if (available > Integer.MAX_VALUE)
+        {
+            return Integer.MAX_VALUE;
+        }
+        return (int)available;
+    }
+    
+---
+
+### 7. PDFMergerUtility - `appendDocument(PDDocument destination, PDDocument source)`
+
+---
+
+### 8. COSWriter - `close()`
+
+---
+
+### 9. StandardSecurityHandler - `prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)`
+
+---
+
+### 10. PDTrueTypeFont - `codeToGID(int code)`
+
+---
+
+### 11. PDTrueTypeFont - `getWidthFromFont(int code)`
+
+---
+
+### 12. PDColor - `getComponents()`
+
+---
+
+### 13. PDDeviceRGB - `toRGBImage(WritableRaster raster)`
+
+---
+
+### 14. PDDocumentCatalog - `getAcroForm(PDDocumentFixup acroFormFixup)`
+
+---
+
