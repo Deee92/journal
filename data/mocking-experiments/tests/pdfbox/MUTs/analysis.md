@@ -8,36 +8,42 @@
 ### 1. DrawObject - `process(Operator operator, List<COSBase> operands)`
 
     public void process(Operator operator, List<COSBase> operands) throws IOException {
-        if (operands.isEmpty()) // rick: we mock this
+        // rick: we mock isEmpty
+        if (operands.isEmpty())
         {
             throw new MissingOperandException(operator, operands);
         }
-        COSBase base0 = operands.get(0); // rick: get does not return a primitive (!C3)
+        
+        // rick: get - C1 C2 !C3
+        COSBase base0 = operands.get(0);
         if (!(base0 instanceof COSName))
         {
             return;
         }
         COSName objectName = (COSName) base0;
-        // rick: context is inherited field (!C1), getResources returns non-primitive (!C3), is 1 LOC (!C4)
-        // rick: getXObject is not invoked on field or param (!C1), takes a non-primitive param (!C2), returns non-primitive (!C3), is 31 LOC (C4)
+        // rick: getResources (1 LOC) - (context is inherited field) !C1 !C3 (1 LOC) !C4
+        // rick: getXObject (31 LOC) - !C1 !C2 !C3 C4
         PDXObject xobject = context.getResources().getXObject(objectName);
 
         if (xobject == null)
         {
-            // rick: getName is not invoked on field or param (!C1), does not return a primitive (!C3)
+            // rick: getName - !C1 !C3
             throw new MissingResourceException("Missing XObject: " + objectName.getName());
         }
         else if (xobject instanceof PDImageXObject)
         {
             PDImageXObject image = (PDImageXObject)xobject;
-            context.drawImage(image); // rick: context is inherited field (!C1), drawImage takes non-primitive param (!C2)
+            // rick: drawImage - (context is inherited field) !C1 !C2
+            context.drawImage(image);
         }
         else if (xobject instanceof PDFormXObject)
         {
             try
             {
-                context.increaseLevel(); // rick: context is inherited field (!C1), increaseLevel is 1 LOC (!C4)
-                if (context.getLevel() > 25) // rick: context is inherited field (!C1), getLevel is 1 LOC (!C4)
+                // rick: increaseLevel (1 LOC) - (context is inherited field) !C1 !C4
+                context.increaseLevel();
+                // rick: getLevel (1 LOC) - (context is inherited field) !C1 !C4
+                if (context.getLevel() > 25)
                 {
                     LOG.error("recursion is too deep, skipping form XObject");
                     return;
@@ -781,15 +787,19 @@ TODO
 ### 17. PageDrawer - `appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3)`
 
     public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
-        // to ensure that the path is created in the right direction, we have to create
-        // it by combining single lines instead of creating a simple rectangle
+        // rick: we mock moveTo
+        // rick: we mock getX
+        // rick: we mock getY
         linePath.moveTo((float) p0.getX(), (float) p0.getY());
+        
+        // rick: we mock lineTo
+        // rick: we mock getX
+        // rick: we mock getY
         linePath.lineTo((float) p1.getX(), (float) p1.getY());
         linePath.lineTo((float) p2.getX(), (float) p2.getY());
         linePath.lineTo((float) p3.getX(), (float) p3.getY());
 
-        // close the subpath instead of adding the last line so that a possible set line
-        // cap style isn't taken into account at the "beginning" of the rectangle
+        // rick: we mock closePath
         linePath.closePath();
     }
     
@@ -798,30 +808,49 @@ TODO
 ### 18. PageDrawer - `fillPath(int windingRule)`
 
     public void fillPath(int windingRule) throws IOException {
+        // rick: setComposite - C1 !C2
+        // rick: getGraphicsState - !C1 !C3
+        // rick: getNonStrokingJavaComposite - !C1 !C3
         graphics.setComposite(getGraphicsState().getNonStrokingJavaComposite());
+        
+        // rick: setPaint - C1 !C2
+        // rick: getNonStrokingPaint - !C1 !C3
         graphics.setPaint(getNonStrokingPaint());
+        
+        // rick: setClip - !C1
         setClip();
+        
+        // rick: we mock setWindingRule
         linePath.setWindingRule(windingRule);
 
-        // disable anti-aliasing for rectangular paths, this is a workaround to avoid small stripes
-        // which occur when solid fills are used to simulate piecewise gradients, see PDFBOX-2302
-        // note that we ignore paths with a width/height under 1 as these are fills used as strokes,
-        // see PDFBOX-1658 for an example
+        // rick: getBounds2D - C1 !C3
         Rectangle2D bounds = linePath.getBounds2D();
+        
+        // rick: isRectangular - !C1 !C2
+        // rick: getWidth - !C1
+        // rick: getHeight - !C1
         boolean noAntiAlias = isRectangular(linePath) && bounds.getWidth() > 1 &&
                                                          bounds.getHeight() > 1;
         if (noAntiAlias)
         {
+            // rick: setRenderingHint - C1 !C2
             graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                                       RenderingHints.VALUE_ANTIALIAS_OFF);
         }
 
         Shape shape;
+        
+        // rick: getPaint - C1 !C3
         if (!(graphics.getPaint() instanceof Color))
         {
-            // apply clip to path to avoid oversized device bounds in shading contexts (PDFBOX-2901)
             Area area = new Area(linePath);
+            // rick: intersect - !C1 !C2
+            // rick: getClip - C1 !C3
             area.intersect(new Area(graphics.getClip()));
+            
+            // rick: intersectShadingBBox - !C1 !C2
+            // rick: getGraphicsState - !C1 !C3
+            // rick: getNonStrokingColor - !C1 !C3
             intersectShadingBBox(getGraphicsState().getNonStrokingColor(), area);
             shape = area;
         }
@@ -829,17 +858,19 @@ TODO
         {
             shape = linePath;
         }
+        // rick: isContentRendered - !C1
         if (isContentRendered())
         {
+            // rick: fill - !C2
             graphics.fill(shape);
         }
         
+        // rick: we mock reset
         linePath.reset();
 
         if (noAntiAlias)
         {
-            // JDK 1.7 has a bug where rendering hints are reset by the above call to
-            // the setRenderingHint method, so we re-set all hints, see PDFBOX-2302
+            // rick: setRenderingHints - !C1
             setRenderingHints();
         }
     }
@@ -849,14 +880,30 @@ TODO
 ### 19. PageDrawer - `strokePath()`
 
     public void strokePath() throws IOException {
+        // rick: setComposite - C1, !C2
+        // rick: getGraphicsState - !C1 !C3
+        // rick: getStrokingJavaComposite - !C1 !C3
         graphics.setComposite(getGraphicsState().getStrokingJavaComposite());
+        
+        // rick: setPaint - !C2
+        // rick: getStrokingPaint - !C1 !C3
         graphics.setPaint(getStrokingPaint());
+        
+        // rick: setStroke - !C2
+        // rick: getStroke - !C1 !C3
         graphics.setStroke(getStroke());
+        
+        // rick: setClip - !C1
         setClip();
+        
+        // rick: isContentRendered - !C1
         if (isContentRendered())
         {
+            // rick: draw - !C2
             graphics.draw(linePath);
         }
+        
+        // rick: we mock reset
         linePath.reset();
     }
     
@@ -874,6 +921,28 @@ TODO
 
 ### 22. PageDrawer - `endPath()`
 
+    public void endPath() {
+        if (clipWindingRule != -1)
+        {
+            // rick: we mock setWindingRule
+            linePath.setWindingRule(clipWindingRule);
+
+            // rick: getPathIterator - !C2 !C3
+            // rick: isDone !C1
+            if (!linePath.getPathIterator(null).isDone())
+            {
+                // rick: getGraphicsState - !C1 !C3
+                // rick: intersectClippingPath - !C1 !C2
+                getGraphicsState().intersectClippingPath(linePath);
+            }
+
+            lastClip = null;
+
+            clipWindingRule = -1;
+        }
+        // rick: we mock reset
+        linePath.reset();
+    }
 ---
 
 ### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)`
@@ -890,4 +959,35 @@ TODO
 
 ### 26. ImageGraphicsEngine - `drawImage(PDImage pdImage)`
 
+    public void drawImage(PDImage pdImage) throws IOException {
+            if (pdImage instanceof PDImageXObject)
+            {
+                // rick: we mock isStencil
+                if (pdImage.isStencil())
+                {
+                    // rick: processColor - !C1 !C2
+                    // rick: getGraphicsState - !C1 !C3
+                    // rick: getNonStrokingColor - !C1 !C3
+                    processColor(getGraphicsState().getNonStrokingColor());
+                }
+                PDImageXObject xobject = (PDImageXObject)pdImage;
+                // rick: contains - C1 !C2
+                // rick: getCOSObject - !C1 !C3
+                if (seen.contains(xobject.getCOSObject()))
+                {
+                    return;
+                }
+                // rick: add - C1 !C2
+                // rick: getCOSObject - !C1 !C3
+                seen.add(xobject.getCOSObject());
+            }
+
+            String name = filePrefix + "-" + imageCounter;
+            imageCounter++;
+
+            System.out.println("Writing image: " + name);
+            
+            // rick: write2file - !C1 !C2
+            write2file(pdImage, name, useDirectJPEG, noColorConvert);
+        }
 ---
