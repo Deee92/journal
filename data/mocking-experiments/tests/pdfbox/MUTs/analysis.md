@@ -785,15 +785,11 @@
 
 ---
 
-### 9. StandardSecurityHandler - `prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)`
-
-TODO
+### 9. StandardSecurityHandler - `prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)` - TODO
 
 ---
 
-### 10. PDTrueTypeFont - `codeToGID(int code)`
-
-TODO
+### 10. PDTrueTypeFont - `codeToGID(int code)` - TODO
 
 ---
 
@@ -1068,13 +1064,11 @@ TODO
     
 ---
 
-### 20. PageDrawer - `drawImage(PDImage pdImage)`
-
-TODO
+### 20. PageDrawer - `drawImage(PDImage pdImage)` - TODO
 
 ---
 
-### 21. PageDrawer - `drawPage(Graphics g, PDRectangle pageSize)`
+### 21. PageDrawer - `drawPage(Graphics g, PDRectangle pageSize)` - TODO
 
 ---
 
@@ -1104,15 +1098,160 @@ TODO
     }
 ---
 
-### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)`
+### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)` - TODO
+
+    public BufferedImage renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination) throws IOException {
+        PDPage page = document.getPage(pageIndex);
+
+        PDRectangle cropbBox = page.getCropBox();
+        float widthPt = cropbBox.getWidth();
+        float heightPt = cropbBox.getHeight();
+
+        int widthPx = (int) Math.max(Math.floor(widthPt * scale), 1);
+        int heightPx = (int) Math.max(Math.floor(heightPt * scale), 1);
+
+        if ((long) widthPx * (long) heightPx > Integer.MAX_VALUE)
+        {
+            throw new IOException("Maximum size of image exceeded (w * h * scale ^ 2) = "//
+                    + widthPt + " * " + heightPt + " * " + scale + " ^ 2 > " + Integer.MAX_VALUE);
+        }
+
+        int rotationAngle = page.getRotation();
+
+        int bimType = imageType.toBufferedImageType();
+        if (imageType != ImageType.ARGB && hasBlendMode(page))
+        {
+            bimType = BufferedImage.TYPE_INT_ARGB;
+        }
+
+        BufferedImage image;
+        if (rotationAngle == 90 || rotationAngle == 270)
+        {
+            image = new BufferedImage(heightPx, widthPx, bimType);
+        }
+        else
+        {
+            image = new BufferedImage(widthPx, heightPx, bimType);
+        }
+
+        pageImage = image;
+
+        Graphics2D g = image.createGraphics();
+        if (image.getType() == BufferedImage.TYPE_INT_ARGB)
+        {
+            g.setBackground(new Color(0, 0, 0, 0));
+        }
+        else
+        {
+            g.setBackground(Color.WHITE);
+        }
+        g.clearRect(0, 0, image.getWidth(), image.getHeight());
+        
+        transform(g, page, scale, scale);
+
+        RenderingHints actualRenderingHints =
+                renderingHints == null ? createDefaultRenderingHints(g) : renderingHints;
+        PageDrawerParameters parameters =
+                new PageDrawerParameters(this, page, subsamplingAllowed, destination,
+                        actualRenderingHints, imageDownscalingOptimizationThreshold);
+        PageDrawer drawer = createPageDrawer(parameters);
+        drawer.drawPage(g, page.getCropBox());       
+        
+        g.dispose();
+
+        if (image.getType() != imageType.toBufferedImageType())
+        {
+            BufferedImage newImage = 
+                    new BufferedImage(image.getWidth(), image.getHeight(), imageType.toBufferedImageType());
+            Graphics2D dstGraphics = newImage.createGraphics();
+            dstGraphics.setBackground(Color.WHITE);
+            dstGraphics.clearRect(0, 0, image.getWidth(), image.getHeight());
+            dstGraphics.drawImage(image, 0, 0, null);
+            dstGraphics.dispose();
+            image = newImage;
+        }
+
+        return image;
+    }
 
 ---
 
 ### 24. LegacyPDFStreamEngine - `processPage(PDPage page)`
 
+    public void processPage(PDPage page) throws IOException {
+        // rick: we mock getRotation
+        this.pageRotation = page.getRotation();
+        // rick: getCropBox - C1 !C3
+        this.pageSize = page.getCropBox();
+
+        // rick: getLowerLeftX (1 LOC) - C1 C3 !C4
+        // rick: getLowerLeftY (1 LOC) - C1 C3 !C4
+        if (pageSize.getLowerLeftX() == 0 && pageSize.getLowerLeftY() == 0)
+        {
+            translateMatrix = null;
+        }
+        else
+        {
+            // rick: getTranslateInstance - !C5
+            // rick: getLowerLeftX (1 LOC) - C1 C3 !C4
+            // rick: getLowerLeftY (1 LOC) - C1 C3 !C4
+            translateMatrix = Matrix.getTranslateInstance(-pageSize.getLowerLeftX(), -pageSize.getLowerLeftY());
+        }
+        // rick: !C1 !C2
+        super.processPage(page);
+    }
+    
 ---
 
 ### 25. TextPositionComparator - `compare(TextPosition pos1, TextPosition pos2)`
+
+    public int compare(TextPosition pos1, TextPosition pos2) {
+        // rick: compare - !C5 
+        // rick: we mock getDir
+        // rick: we mock getDir
+        int cmp1 = Float.compare(pos1.getDir(), pos2.getDir());
+        if (cmp1 != 0)
+        {
+            return cmp1;
+        }
+        
+        // rick-TODO: we already mock pos - we should mock all interactions with it within the generated test
+        // rick: getXDirAdj (1 LOC) - C1 C3 !C4
+        float x1 = pos1.getXDirAdj();
+        
+        // rick: getXDirAdj (1 LOC) - C1 C3 !C4
+        float x2 = pos2.getXDirAdj();
+        
+        // rick: we mock getYDirAdj
+        float pos1YBottom = pos1.getYDirAdj();
+        
+        // rick: we mock getYDirAdj
+        float pos2YBottom = pos2.getYDirAdj();
+
+        // rick: getHeightDir (1 LOC) - C1 C3 !C4
+        float pos1YTop = pos1YBottom - pos1.getHeightDir();
+        // rick: getHeightDir (1 LOC) - C1 C3 !C4
+        float pos2YTop = pos2YBottom - pos2.getHeightDir();
+
+        // rick: abs - !C5
+        float yDifference = Math.abs(pos1YBottom - pos2YBottom);
+
+        if (yDifference < .1 ||
+            pos2YBottom >= pos1YTop && pos2YBottom <= pos1YBottom ||
+            pos1YBottom >= pos2YTop && pos1YBottom <= pos2YBottom)
+        {
+            // rick: compare - !C5
+            return Float.compare(x1, x2);
+        }
+        else if (pos1YBottom < pos2YBottom)
+        {
+            return -1;
+        }
+        else
+        {
+            return 1;
+        }
+    }
 
 ---
 
