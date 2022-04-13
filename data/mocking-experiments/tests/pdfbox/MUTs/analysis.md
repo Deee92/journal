@@ -1098,16 +1098,26 @@
     }
 ---
 
-### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)` - TODO
+### 23. PDFRenderer - `renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)`
 
     public BufferedImage renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination) throws IOException {
+        // rick: getPage - C1 C2 !C3
         PDPage page = document.getPage(pageIndex);
 
+        // rick: getCropBox - !C1 !C3
         PDRectangle cropbBox = page.getCropBox();
+        
+        // rick: getWidth - !C1
         float widthPt = cropbBox.getWidth();
+        // rick: getHeight - !C1
         float heightPt = cropbBox.getHeight();
 
+        // rick: max - !C5
+        // rick: floor - !C5
         int widthPx = (int) Math.max(Math.floor(widthPt * scale), 1);
+        
+        // rick: max - !C5
+        // rick: floor - !C5
         int heightPx = (int) Math.max(Math.floor(heightPt * scale), 1);
 
         if ((long) widthPx * (long) heightPx > Integer.MAX_VALUE)
@@ -1116,9 +1126,13 @@
                     + widthPt + " * " + heightPt + " * " + scale + " ^ 2 > " + Integer.MAX_VALUE);
         }
 
+        // rick: getRotation - !C1
         int rotationAngle = page.getRotation();
 
+        // rick: we mock toBufferedImageType
         int bimType = imageType.toBufferedImageType();
+        
+        // rick: hasBlendMode - !C1 !C2
         if (imageType != ImageType.ARGB && hasBlendMode(page))
         {
             bimType = BufferedImage.TYPE_INT_ARGB;
@@ -1136,38 +1150,72 @@
 
         pageImage = image;
 
+        // rick: createGraphics - !C1 !C3
         Graphics2D g = image.createGraphics();
+        
+        // rick: getType - !C1 !C3
         if (image.getType() == BufferedImage.TYPE_INT_ARGB)
         {
+            // rick: setBackground - !C1 !C2
             g.setBackground(new Color(0, 0, 0, 0));
         }
         else
         {
+            // rick: setBackground - !C1 !C2
             g.setBackground(Color.WHITE);
         }
+        
+        // rick: clearRect - !C1
         g.clearRect(0, 0, image.getWidth(), image.getHeight());
         
+        // rick: transform - !C1 !C2
         transform(g, page, scale, scale);
 
+        // rick: createDefaultRenderingHints - !C1 !C2 !C3
         RenderingHints actualRenderingHints =
                 renderingHints == null ? createDefaultRenderingHints(g) : renderingHints;
+        
         PageDrawerParameters parameters =
                 new PageDrawerParameters(this, page, subsamplingAllowed, destination,
                         actualRenderingHints, imageDownscalingOptimizationThreshold);
+        
+        // rick: createPageDrawer - !C1 !C2 !C3
         PageDrawer drawer = createPageDrawer(parameters);
+        
+        // rick: drawPage - !C1 !C2
+        // rick: getCropBox - !C1 !C2
         drawer.drawPage(g, page.getCropBox());       
         
+        // rick: dispose - !C1
         g.dispose();
 
+        // rick: getType - !C1 !C3
+        // rick: we mock toBufferedImageType
         if (image.getType() != imageType.toBufferedImageType())
         {
+            // rick: getWidth - !C1
+            // rick: getHeight - !C1
+            // rick: we instrument toBufferedImageType (and mock its previous two calls) - this call is not invoked
             BufferedImage newImage = 
                     new BufferedImage(image.getWidth(), image.getHeight(), imageType.toBufferedImageType());
+                    
+            // rick: createGraphics - !C1 !C3
             Graphics2D dstGraphics = newImage.createGraphics();
+            
+            // rick: setBackground - !C1 !C2
             dstGraphics.setBackground(Color.WHITE);
+            
+            // rick: clearRect - !C1
+            // rick: getWidth - !C1
+            // rick: getHeight - !C1
             dstGraphics.clearRect(0, 0, image.getWidth(), image.getHeight());
+            
+            // rick: drawImage - !C1 !C2
             dstGraphics.drawImage(image, 0, 0, null);
+            
+            // rick: dispose - !C1
             dstGraphics.dispose();
+            
             image = newImage;
         }
 
