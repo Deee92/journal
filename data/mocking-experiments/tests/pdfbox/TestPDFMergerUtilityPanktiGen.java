@@ -33,7 +33,7 @@ public class TestPDFMergerUtilityPanktiGen {
     }
 
     @Test
-    public void test_appendDocument_PO_61e1416671fa443dab511aff7820ad75() throws Exception {
+    public void test_appendDocument_PO_833034a4a214461b99ff5322b2e80571() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.multipdf.PDFMergerUtility>" +
@@ -60,7 +60,7 @@ public class TestPDFMergerUtilityPanktiGen {
     }
 
     @Test
-    public void test_appendDocument_CO_61e1416671fa443dab511aff7820ad75() throws Exception {
+    public void test_appendDocument_CO_833034a4a214461b99ff5322b2e80571() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.multipdf.PDFMergerUtility>" +

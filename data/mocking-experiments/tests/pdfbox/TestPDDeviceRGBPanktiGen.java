@@ -1,7 +1,6 @@
 package org.apache.pdfbox.pdmodel.graphics.color;
 import com.thoughtworks.xstream.XStream;
 
-import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.util.Scanner;
@@ -35,7 +34,7 @@ public class TestPDDeviceRGBPanktiGen {
     }
 
     @Test
-    public void test_toRGBImage_PO_5c59283eb55c43d9bd377dfdd410a496() throws Exception {
+    public void test_toRGBImage_PO_c4a605d936ef4eb7bf53eb4e2c1d20d2() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>" +
@@ -49,75 +48,7 @@ public class TestPDDeviceRGBPanktiGen {
         "  </initialColor>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>";
         org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObjectFromString(receivingObjectStr);
-        String paramsObjectStr = 
-        "<object-array>" +
-        "  <sun.awt.image.ByteBandedRaster>" +
-        "    <sampleModel class=\"java.awt.image.BandedSampleModel\">" +
-        "      <width>1</width>" +
-        "      <height>1</height>" +
-        "      <numBands defined-in=\"java.awt.image.SampleModel\">3</numBands>" +
-        "      <dataType>0</dataType>" +
-        "      <bandOffsets>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "      </bandOffsets>" +
-        "      <bankIndices>" +
-        "        <int>0</int>" +
-        "        <int>1</int>" +
-        "        <int>2</int>" +
-        "      </bankIndices>" +
-        "      <numBands>3</numBands>" +
-        "      <numBanks>3</numBanks>" +
-        "      <scanlineStride>1</scanlineStride>" +
-        "      <pixelStride>1</pixelStride>" +
-        "    </sampleModel>" +
-        "    <dataBuffer class=\"java.awt.image.DataBufferByte\">" +
-        "      <dataType>0</dataType>" +
-        "      <banks>3</banks>" +
-        "      <offset>0</offset>" +
-        "      <size>1</size>" +
-        "      <offsets>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "      </offsets>" +
-        "      <theTrackable>" +
-        "        <theState>STABLE</theState>" +
-        "        <numDynamicAgents>0</numDynamicAgents>" +
-        "      </theTrackable>" +
-        "      <data>AA==</data>" +
-        "      <bankdata>" +
-        "        <byte-array reference=\"../../data\"/>" +
-        "        <byte-array>AA==</byte-array>" +
-        "        <byte-array>AA==</byte-array>" +
-        "      </bankdata>" +
-        "    </dataBuffer>" +
-        "    <minX>0</minX>" +
-        "    <minY>0</minY>" +
-        "    <width>1</width>" +
-        "    <height>1</height>" +
-        "    <sampleModelTranslateX>0</sampleModelTranslateX>" +
-        "    <sampleModelTranslateY>0</sampleModelTranslateY>" +
-        "    <numBands>3</numBands>" +
-        "    <numDataElements>3</numDataElements>" +
-        "    <theTrackable reference=\"../dataBuffer/theTrackable\"/>" +
-        "    <dataOffsets>" +
-        "      <int>0</int>" +
-        "      <int>0</int>" +
-        "      <int>0</int>" +
-        "    </dataOffsets>" +
-        "    <scanlineStride>1</scanlineStride>" +
-        "    <data>" +
-        "      <byte-array reference=\"../../dataBuffer/data\"/>" +
-        "      <byte-array reference=\"../../dataBuffer/bankdata/byte-array[2]\"/>" +
-        "      <byte-array reference=\"../../dataBuffer/bankdata/byte-array[3]\"/>" +
-        "    </data>" +
-        "    <maxX>1</maxX>" +
-        "    <maxY>1</maxY>" +
-        "  </sun.awt.image.ByteBandedRaster>" +
-        "</object-array>";
-        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage1-params.xml");
         java.awt.image.WritableRaster paramObject1 = (java.awt.image.WritableRaster) paramObjects[0];
         WritableRaster mockRaster = Mockito.mock(WritableRaster.class);
         Mockito.when(mockRaster.getWidth()).thenReturn(1);
@@ -130,7 +61,7 @@ public class TestPDDeviceRGBPanktiGen {
     }
 
     @Test
-    public void test_toRGBImage_CO_5c59283eb55c43d9bd377dfdd410a496() throws Exception {
+    public void test_toRGBImage_CO_c4a605d936ef4eb7bf53eb4e2c1d20d2() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>" +
@@ -144,75 +75,7 @@ public class TestPDDeviceRGBPanktiGen {
         "  </initialColor>" +
         "</org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB>";
         org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB receivingObject = deserializeObjectFromString(receivingObjectStr);
-        String paramsObjectStr = 
-        "<object-array>" +
-        "  <sun.awt.image.ByteBandedRaster>" +
-        "    <sampleModel class=\"java.awt.image.BandedSampleModel\">" +
-        "      <width>1</width>" +
-        "      <height>1</height>" +
-        "      <numBands defined-in=\"java.awt.image.SampleModel\">3</numBands>" +
-        "      <dataType>0</dataType>" +
-        "      <bandOffsets>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "      </bandOffsets>" +
-        "      <bankIndices>" +
-        "        <int>0</int>" +
-        "        <int>1</int>" +
-        "        <int>2</int>" +
-        "      </bankIndices>" +
-        "      <numBands>3</numBands>" +
-        "      <numBanks>3</numBanks>" +
-        "      <scanlineStride>1</scanlineStride>" +
-        "      <pixelStride>1</pixelStride>" +
-        "    </sampleModel>" +
-        "    <dataBuffer class=\"java.awt.image.DataBufferByte\">" +
-        "      <dataType>0</dataType>" +
-        "      <banks>3</banks>" +
-        "      <offset>0</offset>" +
-        "      <size>1</size>" +
-        "      <offsets>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "        <int>0</int>" +
-        "      </offsets>" +
-        "      <theTrackable>" +
-        "        <theState>STABLE</theState>" +
-        "        <numDynamicAgents>0</numDynamicAgents>" +
-        "      </theTrackable>" +
-        "      <data>AA==</data>" +
-        "      <bankdata>" +
-        "        <byte-array reference=\"../../data\"/>" +
-        "        <byte-array>AA==</byte-array>" +
-        "        <byte-array>AA==</byte-array>" +
-        "      </bankdata>" +
-        "    </dataBuffer>" +
-        "    <minX>0</minX>" +
-        "    <minY>0</minY>" +
-        "    <width>1</width>" +
-        "    <height>1</height>" +
-        "    <sampleModelTranslateX>0</sampleModelTranslateX>" +
-        "    <sampleModelTranslateY>0</sampleModelTranslateY>" +
-        "    <numBands>3</numBands>" +
-        "    <numDataElements>3</numDataElements>" +
-        "    <theTrackable reference=\"../dataBuffer/theTrackable\"/>" +
-        "    <dataOffsets>" +
-        "      <int>0</int>" +
-        "      <int>0</int>" +
-        "      <int>0</int>" +
-        "    </dataOffsets>" +
-        "    <scanlineStride>1</scanlineStride>" +
-        "    <data>" +
-        "      <byte-array reference=\"../../dataBuffer/data\"/>" +
-        "      <byte-array reference=\"../../dataBuffer/bankdata/byte-array[2]\"/>" +
-        "      <byte-array reference=\"../../dataBuffer/bankdata/byte-array[3]\"/>" +
-        "    </data>" +
-        "    <maxX>1</maxX>" +
-        "    <maxY>1</maxY>" +
-        "  </sun.awt.image.ByteBandedRaster>" +
-        "</object-array>";
-        Object[] paramObjects = deserializeObjectFromString(paramsObjectStr);
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB.toRGBImage1-params.xml");
         java.awt.image.WritableRaster paramObject1 = (java.awt.image.WritableRaster) paramObjects[0];
         WritableRaster mockRaster = Mockito.mock(WritableRaster.class);
         Mockito.when(mockRaster.getWidth()).thenReturn(1);

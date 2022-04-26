@@ -33,7 +33,7 @@ public class TestTextPositionComparatorPanktiGen {
     }
 
     @Test
-    public void test_compare_OO_23f2468454624bcaa833970ea3095431() throws Exception {
+    public void test_compare_OO_a954c326448b4d1692bba571c88e726b() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.text.TextPositionComparator/>";
@@ -46,13 +46,13 @@ public class TestTextPositionComparatorPanktiGen {
         Mockito.when(mockTextPosition.getYDirAdj()).thenReturn(50.93988F);
         Mockito.when(mockTextPosition.getYDirAdj()).thenReturn(520.8596F);
         // Act
-        int expectedObject = receivingObject.compare(mockTextPosition, paramObject2);
+        int actual = receivingObject.compare(mockTextPosition, paramObject2);
         // Assert
-        Assertions.assertEquals(-1, expectedObject);
+        Assertions.assertEquals(-1, actual);
     }
 
     @Test
-    public void test_compare_PO_23f2468454624bcaa833970ea3095431() throws Exception {
+    public void test_compare_PO_a954c326448b4d1692bba571c88e726b() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.text.TextPositionComparator/>";
@@ -72,7 +72,7 @@ public class TestTextPositionComparatorPanktiGen {
     }
 
     @Test
-    public void test_compare_CO_23f2468454624bcaa833970ea3095431() throws Exception {
+    public void test_compare_CO_a954c326448b4d1692bba571c88e726b() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.text.TextPositionComparator/>";
@@ -88,9 +88,7 @@ public class TestTextPositionComparatorPanktiGen {
         receivingObject.compare(mockTextPosition, paramObject2);
         // Assert
         InOrder orderVerifier = Mockito.inOrder(mockTextPosition, mockTextPosition);
-        orderVerifier.verify(mockTextPosition, Mockito.times(4)).getDir();
-        orderVerifier.verify(mockTextPosition, Mockito.times(1)).getYDirAdj();
-        orderVerifier.verify(mockTextPosition, Mockito.times(2)).getDir();
+        orderVerifier.verify(mockTextPosition, Mockito.times(1)).getDir();
         orderVerifier.verify(mockTextPosition, Mockito.times(1)).getYDirAdj();
     }
 }

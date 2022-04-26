@@ -41,7 +41,7 @@ public class TestPDColorPanktiGen {
     }
 
     @Test
-    public void test_getComponents_PO_e02b54c76bb240cd949aee27dd2a06e1() throws Exception {
+    public void test_getComponents_PO_6b2a360d35074d908d3949dc10df8b1c() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.graphics.color.PDColor>" +
@@ -71,7 +71,7 @@ public class TestPDColorPanktiGen {
     }
 
     @Test
-    public void test_getComponents_CO_e02b54c76bb240cd949aee27dd2a06e1() throws Exception {
+    public void test_getComponents_CO_6b2a360d35074d908d3949dc10df8b1c() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.pdmodel.graphics.color.PDColor>" +

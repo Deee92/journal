@@ -34,7 +34,7 @@ public class TestImageGraphicsEnginePanktiGen {
     }
 
     @Test
-    public void test_drawImage_PO_3891dc636a7a4c5987f9617d511812e7() throws Exception {
+    public void test_drawImage_PO_9a4bf28df86046b2baae2b353edbab68() throws Exception {
         // Arrange
         PDFGraphicsStreamEngine receivingObject = deserializeObjectFromFile("org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage1-params.xml");
@@ -48,7 +48,7 @@ public class TestImageGraphicsEnginePanktiGen {
     }
 
     @Test
-    public void test_drawImage_CO_3891dc636a7a4c5987f9617d511812e7() throws Exception {
+    public void test_drawImage_CO_9a4bf28df86046b2baae2b353edbab68() throws Exception {
         // Arrange
         PDFGraphicsStreamEngine receivingObject = deserializeObjectFromFile("org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.tools.ExtractImages$ImageGraphicsEngine.drawImage1-params.xml");

@@ -33,10 +33,10 @@ public class TestLegacyPDFStreamEnginePanktiGen {
     }
 
     @Test
-    public void test_processPage_PO_78014429d97343d0b121af4b2014aebc() throws Exception {
+    public void test_processPage_PO_1613643e16f84812847e079b8b01725f() throws Exception {
         // Arrange
-        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml");
-        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml");
+        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage1-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage1-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);
@@ -47,10 +47,10 @@ public class TestLegacyPDFStreamEnginePanktiGen {
     }
 
     @Test
-    public void test_processPage_CO_78014429d97343d0b121af4b2014aebc() throws Exception {
+    public void test_processPage_CO_1613643e16f84812847e079b8b01725f() throws Exception {
         // Arrange
-        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-receiving.xml");
-        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage2-params.xml");
+        org.apache.pdfbox.text.PDFTextStripper receivingObject = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage1-receiving.xml");
+        Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.text.LegacyPDFStreamEngine.processPage1-params.xml");
         org.apache.pdfbox.pdmodel.PDPage paramObject1 = (org.apache.pdfbox.pdmodel.PDPage) paramObjects[0];
         PDPage mockPDPage = Mockito.mock(PDPage.class);
         Mockito.when(mockPDPage.getRotation()).thenReturn(0);

@@ -36,7 +36,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_57f9cd35728c4fefa343d3457f94c9f2() throws Exception {
+    public void test_writePDF_PO_96a6209c1df046cca2f473c313adabe6() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -59,7 +59,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_57f9cd35728c4fefa343d3457f94c9f2() throws Exception {
+    public void test_writePDF_CO_96a6209c1df046cca2f473c313adabe6() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -79,7 +79,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_94278115977f42179cad3df9c3a42cf9() throws Exception {
+    public void test_writePDF_PO_c4f2fa11bfca4ffb936492a8fc14ece7() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -103,7 +103,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_94278115977f42179cad3df9c3a42cf9() throws Exception {
+    public void test_writePDF_CO_c4f2fa11bfca4ffb936492a8fc14ece7() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -123,7 +123,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_9f49beebd9784611a539b87e2c1164b9() throws Exception {
+    public void test_writePDF_PO_72ff3bfc161848abbfd44a36fee9472f() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -147,7 +147,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_9f49beebd9784611a539b87e2c1164b9() throws Exception {
+    public void test_writePDF_CO_72ff3bfc161848abbfd44a36fee9472f() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -167,7 +167,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_ea3df74c518e4a968f64bc62a46b55a8() throws Exception {
+    public void test_writePDF_PO_d6ddabb1243048d398aac0cc96d938e6() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -212,7 +212,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_ea3df74c518e4a968f64bc62a46b55a8() throws Exception {
+    public void test_writePDF_CO_d6ddabb1243048d398aac0cc96d938e6() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -254,7 +254,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_35d04b3534794eccba652ad7739d8283() throws Exception {
+    public void test_writePDF_PO_2652345b4712437792fba3d47dd89bca() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -278,7 +278,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_35d04b3534794eccba652ad7739d8283() throws Exception {
+    public void test_writePDF_CO_2652345b4712437792fba3d47dd89bca() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -298,7 +298,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_c909a264eef94b1f8da9a94c1d0c0d51() throws Exception {
+    public void test_writePDF_PO_4c71f20d11ff40ef840f86906a550308() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -322,7 +322,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_c909a264eef94b1f8da9a94c1d0c0d51() throws Exception {
+    public void test_writePDF_CO_4c71f20d11ff40ef840f86906a550308() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -342,7 +342,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_PO_0136f68280fd42009ad81e1cc9babeef() throws Exception {
+    public void test_writePDF_PO_151cd9cab2fd46d1b092b5550bf04fda() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +
@@ -363,7 +363,7 @@ public class TestCOSNamePanktiGen {
     }
 
     @Test
-    public void test_writePDF_CO_0136f68280fd42009ad81e1cc9babeef() throws Exception {
+    public void test_writePDF_CO_151cd9cab2fd46d1b092b5550bf04fda() throws Exception {
         // Arrange
         String receivingObjectStr = 
         "<org.apache.pdfbox.cos.COSName>" +

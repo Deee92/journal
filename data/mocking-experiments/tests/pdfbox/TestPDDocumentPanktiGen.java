@@ -32,7 +32,7 @@ public class TestPDDocumentPanktiGen {
     }
 
     @Test
-    public void test_importPage_PO_253aab2681c444ad8a693344e523cc64() throws Exception {
+    public void test_importPage_PO_49eac416f04047bc9ae7145fdee8e370() throws Exception {
         // Arrange
         org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml");
@@ -46,7 +46,7 @@ public class TestPDDocumentPanktiGen {
     }
 
     @Test
-    public void test_importPage_CO_253aab2681c444ad8a693344e523cc64() throws Exception {
+    public void test_importPage_CO_49eac416f04047bc9ae7145fdee8e370() throws Exception {
         // Arrange
         org.apache.pdfbox.pdmodel.PDDocument receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDDocument.importPage1-params.xml");

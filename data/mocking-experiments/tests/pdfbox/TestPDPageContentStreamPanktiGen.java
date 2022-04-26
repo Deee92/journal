@@ -33,7 +33,7 @@ public class TestPDPageContentStreamPanktiGen {
     }
 
     @Test
-    public void test_setFont_PO_dcf69593d8b9474fa8c132cc1dab21c1() throws Exception {
+    public void test_setFont_PO_dd0969ff8fff4782997914ec56931ded() throws Exception {
         // Arrange
         org.apache.pdfbox.pdmodel.PDPageContentStream receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDPageContentStream.setFont1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDPageContentStream.setFont1-params.xml");
@@ -48,7 +48,7 @@ public class TestPDPageContentStreamPanktiGen {
     }
 
     @Test
-    public void test_setFont_CO_dcf69593d8b9474fa8c132cc1dab21c1() throws Exception {
+    public void test_setFont_CO_dd0969ff8fff4782997914ec56931ded() throws Exception {
         // Arrange
         org.apache.pdfbox.pdmodel.PDPageContentStream receivingObject = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDPageContentStream.setFont1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.pdmodel.PDPageContentStream.setFont1-params.xml");

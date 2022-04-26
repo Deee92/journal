@@ -32,7 +32,7 @@ public class TestPDFRendererPanktiGen {
     }
 
     @Test
-    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_PO_2ada86993d8243028d415743da064f85() throws Exception {
+    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_PO_5dd53bf0bae3453d84f3f2d2ddf33ef8() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml");
         String paramsObjectStr = 
@@ -56,7 +56,7 @@ public class TestPDFRendererPanktiGen {
     }
 
     @Test
-    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_CO_2ada86993d8243028d415743da064f85() throws Exception {
+    public void test_renderImage_int_float_org_apache_pdfbox_rendering_ImageType_org_apache_pdfbox_rendering_RenderDestination_CO_5dd53bf0bae3453d84f3f2d2ddf33ef8() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PDFRenderer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PDFRenderer.renderImage_int,float,org.apache.pdfbox.rendering.ImageType,org.apache.pdfbox.rendering.RenderDestination1-receiving.xml");
         String paramsObjectStr = 

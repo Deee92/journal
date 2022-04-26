@@ -50,7 +50,7 @@ public class TestPageDrawerPanktiGen {
     }
 
     @Test
-    public void test_appendRectangle_PO_6bd03d3fa48f42f39725389569c401cd() throws Exception {
+    public void test_appendRectangle_PO_06766bc4eb294c41834d852dd4e90974() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.appendRectangle1-receiving.xml");
         String paramsObjectStr = 
@@ -97,7 +97,7 @@ public class TestPageDrawerPanktiGen {
     }
 
     @Test
-    public void test_appendRectangle_CO_6bd03d3fa48f42f39725389569c401cd() throws Exception {
+    public void test_appendRectangle_CO_06766bc4eb294c41834d852dd4e90974() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.appendRectangle1-receiving.xml");
         String paramsObjectStr = 
@@ -145,61 +145,90 @@ public class TestPageDrawerPanktiGen {
         orderVerifier.verify(mockPoint2D, Mockito.times(1)).getY();
         orderVerifier.verify(mockPath2DFloat, Mockito.times(1)).lineTo(anyFloat(), anyFloat());
         orderVerifier.verify(mockPoint2D, Mockito.times(1)).getX();
-        orderVerifier.verify(mockPath2DFloat, Mockito.times(1)).lineTo(anyFloat(), anyFloat());
         orderVerifier.verify(mockPoint2D, Mockito.times(1)).getY();
+        orderVerifier.verify(mockPath2DFloat, Mockito.times(1)).lineTo(anyFloat(), anyFloat());
         orderVerifier.verify(mockPath2D, Mockito.times(1)).closePath();
     }
 
+    private Graphics2D insertPrivateMockField_graphics_InPageDrawer(PageDrawer receivingObject) throws Exception {
+        Graphics2D mockGraphics2D = Mockito.mock(Graphics2D.class);
+        Field fieldToMock = receivingObject.getClass().getDeclaredField("graphics");
+        fieldToMock.setAccessible(true);
+        fieldToMock.set(receivingObject, mockGraphics2D);
+        return mockGraphics2D;
+    }
+
     @Test
-    public void test_fillPath_PO_6ae43eae52224019b09113778e9bafe3() throws Exception {
+    public void test_fillPath_PO_c5a71bc452784599bd273c8069142107() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.fillPath1-receiving.xml");
+        Graphics2D mockGraphics2D = insertPrivateMockField_graphics_InPageDrawer(receivingObject);
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
         // Act
         receivingObject.fillPath(1);
         // Assert
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setComposite(any(java.awt.Composite.class));
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setPaint(any(java.awt.Paint.class));
         Mockito.verify(mockPath2D, Mockito.atLeastOnce()).setWindingRule(1);
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setRenderingHint(any(java.awt.RenderingHints.Key.class),   any(java.lang.Object.class));
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).fill(any(java.awt.Shape.class));
         Mockito.verify(mockPath2D, Mockito.atLeastOnce()).reset();
     }
 
     @Test
-    public void test_fillPath_CO_6ae43eae52224019b09113778e9bafe3() throws Exception {
+    public void test_fillPath_CO_c5a71bc452784599bd273c8069142107() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.fillPath1-receiving.xml");
+        Graphics2D mockGraphics2D = insertPrivateMockField_graphics_InPageDrawer(receivingObject);
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
         // Act
         receivingObject.fillPath(1);
         // Assert
-        InOrder orderVerifier = Mockito.inOrder(mockPath2D, mockPath2D);
+        InOrder orderVerifier = Mockito.inOrder(mockGraphics2D, mockGraphics2D, mockPath2D, mockGraphics2D, mockGraphics2D, mockPath2D);
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setComposite((java.awt.Composite) any());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setPaint((java.awt.Paint) any());
         orderVerifier.verify(mockPath2D, Mockito.times(1)).setWindingRule(anyInt());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setRenderingHint((java.awt.RenderingHints.Key) any(), (java.lang.Object) any());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).fill((java.awt.Shape) any());
         orderVerifier.verify(mockPath2D, Mockito.times(1)).reset();
+        orderVerifier.verify(mockGraphics2D, Mockito.times(3)).setRenderingHint((java.awt.RenderingHints.Key) any(), (java.lang.Object) any());
     }
 
     @Test
-    public void test_strokePath_PO_d2a207e490fa4f04a06f5ded02b71152() throws Exception {
+    public void test_strokePath_PO_076666c70ffa48328d1eb42731c24ad4() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.strokePath1-receiving.xml");
+        Graphics2D mockGraphics2D = insertPrivateMockField_graphics_InPageDrawer(receivingObject);
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
         // Act
         receivingObject.strokePath();
         // Assert
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setComposite(any(java.awt.Composite.class));
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setPaint(any(java.awt.Paint.class));
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).setStroke(any(java.awt.Stroke.class));
+        Mockito.verify(mockGraphics2D, Mockito.atLeastOnce()).draw(any(java.awt.Shape.class));
         Mockito.verify(mockPath2D, Mockito.atLeastOnce()).reset();
     }
 
     @Test
-    public void test_strokePath_CO_d2a207e490fa4f04a06f5ded02b71152() throws Exception {
+    public void test_strokePath_CO_076666c70ffa48328d1eb42731c24ad4() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.strokePath1-receiving.xml");
+        Graphics2D mockGraphics2D = insertPrivateMockField_graphics_InPageDrawer(receivingObject);
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
         // Act
         receivingObject.strokePath();
         // Assert
-        InOrder orderVerifier = Mockito.inOrder(mockPath2D);
+        InOrder orderVerifier = Mockito.inOrder(mockGraphics2D, mockGraphics2D, mockGraphics2D, mockGraphics2D, mockPath2D);
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setComposite((java.awt.Composite) any());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setPaint((java.awt.Paint) any());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).setStroke((java.awt.Stroke) any());
+        orderVerifier.verify(mockGraphics2D, Mockito.times(1)).draw((java.awt.Shape) any());
         orderVerifier.verify(mockPath2D, Mockito.times(1)).reset();
     }
 
     @Test
-    public void test_drawImage_PO_61791bad67ef482fa22ce0726a9ef0ba() throws Exception {
+    public void test_drawImage_PO_94670a01dace4a53a0330d70437b0b6a() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawImage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawImage1-params.xml");
@@ -215,7 +244,7 @@ public class TestPageDrawerPanktiGen {
     }
 
     @Test
-    public void test_drawImage_CO_61791bad67ef482fa22ce0726a9ef0ba() throws Exception {
+    public void test_drawImage_CO_94670a01dace4a53a0330d70437b0b6a() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawImage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawImage1-params.xml");
@@ -232,17 +261,9 @@ public class TestPageDrawerPanktiGen {
         orderVerifier.verify(mockPDImage, Mockito.times(1)).getInterpolate();
     }
 
-    private Graphics2D insertPrivateMockField_graphics_InPageDrawer(PageDrawer receivingObject) throws Exception {
-        Graphics2D mockGraphics2D = Mockito.mock(Graphics2D.class);
-        Field fieldToMock = receivingObject.getClass().getDeclaredField("graphics");
-        fieldToMock.setAccessible(true);
-        fieldToMock.set(receivingObject, mockGraphics2D);
-        return mockGraphics2D;
-    }
-
     @Test
     @Disabled
-    public void test_drawPage_PO_93f79e1b2eb744f680224a2784cb34e9() throws Exception {
+    public void test_drawPage_PO_e20781592ab04c559154b87cf60b3865() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawPage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawPage1-params.xml");
@@ -259,7 +280,7 @@ public class TestPageDrawerPanktiGen {
 
     @Test
     @Disabled
-    public void test_drawPage_CO_93f79e1b2eb744f680224a2784cb34e9() throws Exception {
+    public void test_drawPage_CO_e20781592ab04c559154b87cf60b3865() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawPage1-receiving.xml");
         Object[] paramObjects = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.drawPage1-params.xml");
@@ -276,7 +297,7 @@ public class TestPageDrawerPanktiGen {
     }
 
     @Test
-    public void test_endPath_PO_6b5f48be344f4a14b45238dad690a991() throws Exception {
+    public void test_endPath_PO_536869fb4f0c472a889adacf7b679494() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.endPath1-receiving.xml");
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
@@ -288,7 +309,7 @@ public class TestPageDrawerPanktiGen {
     }
 
     @Test
-    public void test_endPath_CO_6b5f48be344f4a14b45238dad690a991() throws Exception {
+    public void test_endPath_CO_536869fb4f0c472a889adacf7b679494() throws Exception {
         // Arrange
         org.apache.pdfbox.rendering.PageDrawer receivingObject = deserializeObjectFromFile("org.apache.pdfbox.rendering.PageDrawer.endPath1-receiving.xml");
         Path2D mockPath2D = insertPrivateMockField_linePath_InPageDrawer(receivingObject);
