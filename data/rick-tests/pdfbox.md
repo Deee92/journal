@@ -8,11 +8,8 @@
 | org.apache.pdfbox.io.RandomAccessInputStream 	| read() 	| RandomAccessRead.eof(), RandomAccessRead.read() 	| 9 	| 3 	| 3 	| 3 	| 9 	| 0 	| - 	|
 | org.apache.pdfbox.io.RandomAccessInputStream 	| read(byte[],int,int) 	| RandomAccessRead.eof(), RandomAccessRead.read(byte[],int,int) 	| 15 	| 5 	| 5 	| 5 	| 15 	| 0 	| - 	|
 | org.apache.pdfbox.io.RandomAccessInputStream 	| available() 	| RandomAccessRead.length(), RandomAccessRead.getPosition() 	| 12 	| 4 	| 4 	| 4 	| 12 	| 0 	| - 	|
-| org.apache.pdfbox.multipdf.Overlay 	| overlay(Map) 	| *** Set.add(Object) *** 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| File not found 	|
-| org.apache.pdfbox.multipdf.PDFCloneUtility 	| cloneForNewDocument(Object) 	| *** Set.add(Object) *** 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| Wanted but not invoked 	|
 | org.apache.pdfbox.multipdf.PDFMergerUtility 	| appendDocument(PDDocument,PDDocument) 	| PDDocument.getVersion() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
 | org.apache.pdfbox.pdfwriter.COSWriter 	| visitFromName() 	| COSName.writePDF(OutputStream) 	| 14 	| - 	| 7 	| 7 	| 14 	| 0 	| - 	|
-| org.apache.pdfbox.pdfwriter.COSWriter 	| doWriteObject() 	| *** Set.add(Object) *** 	| 14 	| - 	| 7 	| 7 	| 6 PO 	| 8 	| Bad file descriptor, wanted 10 but found 1 	|
 | org.apache.pdfbox.pdfwriter.COSWriter 	| close() 	| OutputStream.close() 	| 12 	| - 	| 6 	| 6 	| 1 PO 	| 11 	| Bad file descriptor, wanted 10 but found 1 	|
 | org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler 	| prepareForDecryption(PDEncryption,COSArray, DecryptionMaterial) 	| PDEncryption.isEncryptMetaData() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| Unknown Encryption Revision 0 	|
 | org.apache.pdfbox.pdmodel.font.PDFontDescriptor 	| getCapHeight() 	| COSDictionary.getFloat(COSName,float) 	| 3 	| 1 	| 1 	| 1 	| 3 	| 0 	| - 	|
@@ -44,5 +41,5 @@
 | org.apache.pdfbox.text.PDFTextStripper 	| processPage(PDPage) 	| PDPage.getRotation() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
 | org.apache.pdfbox.text.TextPositionComparator 	| compare(TextPosition,TextPosition) 	| TextPosition.getDir(), TextPosition.getYDirAdj() 	| 3 	| 1 	| 1 	| 1 	| 2 	| 1 CO 	| wanted 4 times but was once 	|
 | org.apache.pdfbox.tools.PDFGraphicsStreamEngine 	| drawImage(PDImage) 	| PDImage.isStencil() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| File not found 	|
-| TOTAL: 27 CUTs 	| 44 MUTs 	| 67 mocked methods 	| 199 	| 19 	| 90 	| 90 	| 139/191 	| 52/191 	|  	|
+| TOTAL: 25 CUTs 	| 41 MUTs 	| 64 mocked methods 	| 181 	| 19 	| 81 	| 81 	| 133/173 	| 40/173 	|  	|
 |  	|  	|  	|  	|  	|  	|  	|  	|  	|  	|
