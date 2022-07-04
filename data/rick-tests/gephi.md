@@ -55,5 +55,5 @@
 | org.gephi.statistics.plugin.Hits 	| execute(Graph) 	| Graph.getNodeCount() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
 | org.gephi.statistics.plugin.Modularity 	| execute(Graph) 	| Graph.getNodeCount() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
 | org.gephi.statistics.plugin.StatisticalInferenceClustering 	| execute(Graph) 	| Graph.getNodeCount() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
-| org.gephi.statistics.plugin.WeightedDegree 	| calculateAverageWeightedDegree(Graph,boolean,boolean) 	| Graph.getNodeCount() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
+| org.gephi.statistics.plugin.WeightedDegree 	| calculateAverageWeightedDegree(Graph,boolean,boolean) 	| Graph.getNodeCount() 	| 3 	| 1 	| 1 	| 1 	| 0 	| 3 	| NPE 	|
 | org.gephi.statistics.plugin.WeightedDegree 	| execute(Graph) 	| Graph.isDirected() 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| NPE 	|
