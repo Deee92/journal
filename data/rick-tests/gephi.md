@@ -20,6 +20,7 @@
 | org.gephi.importer.impl.ImportContainerImpl 	| verify() 	| not inv - Class.getSimpleName(), Object2IntMap.size() 	| 3 	| 1 	| 1 	| 1 	| 0 	| 3 	| array index out of bounds 	|
 | org.gephi.io.importer.impl.ImportControllerImpl 	| process(Container[],Processor,Workspace) 	| Processor.setContainers(ContainerUnloader[]), Processor.setWorkspace(Workspace), Processor.process() 	| 2 	| - 	| 1 	| 1 	| 2 	| 0 	| - 	|
 | org.gephi.io.importer.impl.ImportControllerImpl 	| importFile(Reader,FileImporter,File) 	| Reader.close(), FileImporter.setReader(Reader), Importer.execute(ContainerLoader) 	| 2 	| - 	| 1 	| 1 	| 0 	| 2 	| wanted but not invoked 	|
+| org.gephi.io.importer.plugin.file.ImporterGEXF 	| execute(ContainerLoader) 	| XMLStreamReader.hasNext(), XMLStreamReader.next(), XMLStreamReader.getLocalName(), XMLStreamReader.close() 	| 3 	| 1 	| 1 	| 1 	| 0 	| 3 	| bad file descriptor 	|
 | org.gephi.layout.plugin.force.quadtree.QuadTree.FirstAdd 	| addNode(Node) 	| Node.x(), Node.y() 	| 3 	| 1 	| 1 	| 1 	| 3 	| 0 	| - 	|
 | org.gephi.layout.plugin.force.yifanHu.YifanHuLayout.ElectricalForce 	| calculateForce(Node,Node,float) 	| Node.x(), Node.y() 	| 2 	| - 	| 1 	| 1 	| PO 	| CO 	| 1 extra invocation 	|
 | org.gephi.layout.plugin.force.yifanHu.YifanHuLayout.SpringForce 	| calculateForce(Node,Node,float) 	| not inv - Node.x(), Node.y() 	| 2 	| - 	| 1 	| 1 	| 2 	| 0 	| - 	|
