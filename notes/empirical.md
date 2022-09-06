@@ -12,7 +12,7 @@ test suite
   - mocks
   - stubs
   - annotations
-  - **property-based testing**
+  - **property-based / parameterized tests** 
   - number of oracle statements
   - automatically generated tests?
   - oracles: assertions and verifications (what kind) 
