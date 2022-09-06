@@ -1,0 +1,31 @@
+test suite
+- N most popular projects by language
+- domain
+- coverage
+- static analysis
+  - testing libraries
+  - LOC of test / prod in project
+  - focal method(s) / method calls
+  - variables, objects
+  - LOC of test methods
+  - method calls to external apis
+  - mocks
+  - stubs
+  - annotations
+  - **property-based testing**
+  - number of oracle statements
+  - automatically generated tests?
+  - oracles: assertions and verifications (what kind) 
+- dynamic analysis
+  - flakiness 
+  - mutation analysis?
+  - execution time
+  - passing / failing tests
+- evolution across versions
+  - additions
+  - modifications
+  - deletions
+  - change in coverage, TDD?
+- proposed applications
+  - test generation, repair
+  - ML
