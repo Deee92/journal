@@ -12,7 +12,10 @@ test suite
   - mocks
   - stubs
   - annotations
-  - **property-based / parameterized tests** 
+  - **property-based / parameterized tests**, RW:
+    - [PUTs in .NET projects](https://drops.dagstuhl.de/opus/volltexte/2018/9210/)
+    - [web page](https://sites.google.com/site/putstudy/home?authuser=0)
+    - [PUTs in Java projects](https://sites.google.com/site/putstudy/home/javaputstudy?authuser=0)
   - number of oracle statements
   - automatically generated tests?
   - oracles: assertions and verifications (what kind) 
