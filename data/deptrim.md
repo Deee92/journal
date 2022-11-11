@@ -3,7 +3,7 @@
 \# | project-module | original compile-scope dependencies | debloated specialized dependencies | generated pom files | successful builds | unsuccessful builds | comments |
 -- | -------------- | ----------------------------------- | ---------------------------------- | ------------------- | ----------------- | ------------------- | -------- |
 1 | [tika-core](https://github.com/apache/tika/tree/main/tika-core) | 32 | 2 | 4 | 2 | 2 | problematic poms 2, 4 with `commons-io` |
-2 | [undertow-core](https://github.com/undertow-io/undertow/tree/master/core) | 118 | 5 | 32 | 7 (1, 2, 3, 4, 5, 6, 7) | 0 (confirm 8 to 31) | pom-32 also good  |
+2 | [undertow-core](https://github.com/undertow-io/undertow/tree/master/core) | 118 | 5 | 32 | 32 | 0 | all poms build |
 
 ## Steps
 - `git clone project.git`
