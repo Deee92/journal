@@ -1,9 +1,10 @@
 ## Experiments
 
-\# | project-module | original compile-scope dependencies | debloated specialized dependencies | generated pom files | successful builds | unsuccessful builds | comments |
--- | -------------- | ----------------------------------- | ---------------------------------- | ------------------- | ----------------- | ------------------- | -------- |
+\# | project-module | original dependencies | debloated specialized compile-scope dependencies | generated pom files | successful builds | unsuccessful builds | comments |
+-- | -------------- | --------------------- | ------------------------------------------------ | ------------------- | ----------------- | ------------------- | -------- |
 1 | [tika-core](https://github.com/apache/tika/tree/main/tika-core) | 32 | 2 | 4 | 2 | 2 | problematic poms 2, 4 with `commons-io` |
 2 | [undertow-core](https://github.com/undertow-io/undertow/tree/master/core) | 118 | 5 | 32 | 32 | 0 | all poms build |
+3 | [pdfbox-pdfbox](https://github.com/apache/pdfbox/tree/trunk/pdfbox) | 23 | 6 | 64 | 14 | 50 | successful poms: 1, 3, 5, 7, 9, 11, 13, 15, 33, 35, 37, 39, 41, 43
 
 ## Steps
 - `git clone project.git`
