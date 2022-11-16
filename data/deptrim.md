@@ -7,6 +7,7 @@
 3 | [pdfbox-pdfbox](https://github.com/apache/pdfbox/tree/trunk/pdfbox) | 23 | 6 | 64 | 14 (28%) | 50 | successful poms: 1, 3, 5, 7, 9, 11, 13, 15, 33, 35, 37, 39, 41, 43
 4 | [pdfbox-fontbox](https://github.com/apache/pdfbox/tree/trunk/fontbox) | 11 | 2 | 4 | 2 (50%) | 2 | problematic poms 3, 4
 5 | [httpcomponents-client-httpclient5](https://github.com/apache/httpcomponents-client/tree/master/httpclient5) | 95 | 4 | 16 | 16 (100%) | 0 | all poms build
+6 | [tablesaw-core](https://github.com/jtablesaw/tablesaw/tree/master/core) | 50 | 12 | 4096 | | | |
 
 ## Steps
 - `git clone project.git`
