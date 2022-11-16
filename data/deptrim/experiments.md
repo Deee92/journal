@@ -10,6 +10,9 @@
 6 | [tablesaw-core](https://github.com/jtablesaw/tablesaw/tree/master/core) | 50 | 12 | 4096 | | | |
 
 ## Steps
+
+**_Implemented in [pipeline.sh](https://github.com/Deee92/journal/blob/master/data/deptrim/pipeline.sh)_**
+
 - `git clone project.git`
 - `cd project/`
 - `mvn install -DskipTests`
