@@ -8,13 +8,19 @@ echo "${logger} Building original project and storing data"
 cp pom.xml original/pom-original.xml
 mvn clean package >> original/maven.log
 cp target/*.jar original/
+mvn dependency:copy-dependencies -DincludeScope=compile >> original/compile-scope-dependencies.log
+mkdir original/compile-scope-dependencies/
+cp -r target/dependency original/compile-scope-dependencies/
+mvn dependency:copy-dependencies >> original/all-dependencies.log
+mkdir original/all-dependencies/
+cp -r target/dependency original/all-dependencies/
 mvn dependency:tree >> original/dependency-tree.log
+
 
 echo "====================================================="
 echo "${logger} Running DepTrim"
 echo "====================================================="
-mvn se.kth.castor:deptrim-maven-plugin:0.0.1:deptrim -DcreatePomTrimmed=true -DignoreScopes=test,provided,system,import,runtime
-cp -r target/dependency original/
+mvn se.kth.castor:deptrim-maven-plugin:0.0.1:deptrim -DcreatePomTrimmed=true -DignoreScopes=test,provided,system,import,runtime >> original/deptrim.log
 cp -r libs-deptrim original/
 
 poms=`find . -name "pom-debloated-spl-*.xml" | wc -l`
