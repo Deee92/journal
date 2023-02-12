@@ -1,0 +1,79 @@
+# Automated testing frameworks
+- [JUnit](https://junit.org/junit5/)
+- [TestNG](https://testng.org/doc/)
+- [Spock](https://spockframework.org/)
+- [Rest Assured](https://rest-assured.io/)
+- [SoapUI](https://www.soapui.org/)
+- [Selenium](https://www.selenium.dev/)
+- [WebDriverIO](https://webdriver.io/)
+- [Playwright](https://playwright.dev/java/)
+- [Cypress](https://www.cypress.io/)
+- [Mocha](https://mochajs.org/)
+- [Chai](https://www.chaijs.com/)
+- [Nightwatch](https://nightwatchjs.org/)
+- [pytest](https://docs.pytest.org/en/7.2.x/)
+- [Robot Framework](https://robotframework.org/)
+
+# Techniques
+- Mocking
+  - [Mockito](https://site.mockito.org/)
+  - [mockserver](https://www.mock-server.com/)
+  - [mountebank](http://www.mbtest.org/)
+  - [sinon](https://github.com/sinonjs/sinon)
+- Fixtures
+  - [java-faker](https://github.com/DiUS/java-faker)
+  - [faker](https://github.com/faker-ruby/faker)
+  - [Website wireframes](https://gomockingbird.com/home)
+- Code coverage
+  - [JaCoCo](https://www.eclemma.org/jacoco/)
+  - [OpenClover](https://openclover.org/)
+  - [Istanbul](https://istanbul.js.org/)
+- Mutation testing
+  - [pitest](https://pitest.org/)
+  - [descartes](https://github.com/STAMP-project/pitest-descartes)
+- Property-based testing
+  - [Hypothesis](https://hypothesis.works/)
+  - [jqwik](https://jqwik.net/)
+- BDD testing
+  - [Cucumber](https://cucumber.io/)
+  - [JBehave](https://jbehave.org/)
+- Load + performance testing
+  - [jMeter](https://jmeter.apache.org/)
+
+# Relevant technologies
+- VCS: Git (GitHub, BitBucket, GitLab)
+- [Java](https://dev.java/learn/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Build tools and package repositories: Maven, Gradle, npm, pip, cargo 
+- Web development frameworks: SpringBoot, Quarkus, Django, NodeJS, React
+- Web APIs: REST, OpenAPI, GraphQL
+- Data serialization: JSON, XML
+- Databases
+  - [MySQL](https://www.mysql.com/)
+  - [MongoDB](https://www.mongodb.com/)
+  - [Neo4j](https://neo4j.com/)
+- Caching: Redis
+- CI: GitHub Actions, Jenkins, Circle CI
+- Containerization: Docker, Docker compose, Kubernetes
+- Cloud: AWS, Azure DevOps, GCP
+- IaC: Terraform, Ansible, (AWS, Azure, GCP), ...
+- Monitoring: Datadog, Prometheus, ELK, Grafana
+- Project management: Jira, Trello, Notion
+
+# Papers
+- [The oracle problem in software testing](https://ieeexplore.ieee.org/document/6963470)
+- [An orchestrated survey of methodologies for automated software test case generation](https://www.sciencedirect.com/science/article/abs/pii/S0164121213000563)
+- [A snowballing literature on test amplification](https://www.sciencedirect.com/science/article/abs/pii/S0164121219301736)
+- [To mock or not to mock? an empirical study on mocking practices](https://ieeexplore.ieee.org/document/7962389)
+- [An empirical study on the usage of mocking frameworks in software testing](https://ieeexplore.ieee.org/document/6958396)
+
+# Resources
+- [awesome-software-testing](https://github.com/TheJambo/awesome-testing)
+- [awesome sites to test on](https://github.com/BMayhew/awesome-sites-to-test-on)
+- [howtheytest](https://github.com/abhivaikar/howtheytest)
+- [Testing for Java](https://github.com/akullpp/awesome-java#testing)
+- [Test Automation University](https://testautomationu.applitools.com/)
+- [Software Testing Weekly](https://softwaretestingweekly.com/issues)
+- [r/qualityassurance](https://www.reddit.com/r/QualityAssurance/)
+- [r/softwaretesting](https://www.reddit.com/r/softwaretesting/)
+- [a list of awesome lists](https://github.com/sindresorhus/awesome)
