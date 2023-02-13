@@ -25,6 +25,7 @@
 - Fixtures
   - [java-faker](https://github.com/DiUS/java-faker)
   - [faker](https://github.com/faker-ruby/faker)
+  - [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings)
   - [Website wireframes](https://gomockingbird.com/home)
 - Code coverage
   - [JaCoCo](https://www.eclemma.org/jacoco/)
