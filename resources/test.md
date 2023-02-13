@@ -8,6 +8,7 @@
 - [WebDriverIO](https://webdriver.io/)
 - [Playwright](https://playwright.dev/java/)
 - [Cypress](https://www.cypress.io/)
+- [Jest](https://jestjs.io/)
 - [Mocha](https://mochajs.org/)
 - [Chai](https://www.chaijs.com/)
 - [Nightwatch](https://nightwatchjs.org/)
@@ -45,7 +46,7 @@
 - [Java](https://dev.java/learn/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - Build tools and package repositories: Maven, Gradle, npm, pip, cargo 
-- Web development frameworks: SpringBoot, Quarkus, Django, NodeJS, React
+- Development frameworks: SpringBoot, Quarkus, Django, NodeJS, Angular, React, Flutter
 - Web APIs: REST, OpenAPI, GraphQL
 - Data serialization: JSON, XML
 - Databases
