@@ -2,6 +2,7 @@
 - [JUnit](https://junit.org/junit5/)
 - [TestNG](https://testng.org/doc/)
 - [Spock](https://spockframework.org/)
+- [ArchUnit](https://www.archunit.org/)
 - [Rest Assured](https://rest-assured.io/)
 - [SoapUI](https://www.soapui.org/)
 - [Selenium](https://www.selenium.dev/)
@@ -67,6 +68,7 @@
 - [A snowballing literature on test amplification](https://www.sciencedirect.com/science/article/abs/pii/S0164121219301736)
 - [To mock or not to mock? an empirical study on mocking practices](https://ieeexplore.ieee.org/document/7962389)
 - [An empirical study on the usage of mocking frameworks in software testing](https://ieeexplore.ieee.org/document/6958396)
+- [A Qualitative Study on the Sources, Impacts, and Mitigation Strategies of Flaky Tests](https://ieeexplore.ieee.org/abstract/document/9787862)
 
 # Resources
 - [awesome-software-testing](https://github.com/TheJambo/awesome-testing)
