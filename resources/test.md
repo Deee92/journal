@@ -31,6 +31,9 @@
   - [JaCoCo](https://www.eclemma.org/jacoco/)
   - [OpenClover](https://openclover.org/)
   - [Istanbul](https://istanbul.js.org/)
+- Code quality
+  - [SonarQube](https://docs.sonarqube.org/latest/)
+  - [checkstyle](https://github.com/checkstyle/checkstyle)
 - Mutation testing
   - [pitest](https://pitest.org/)
   - [descartes](https://github.com/STAMP-project/pitest-descartes)
