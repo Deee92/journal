@@ -34,6 +34,7 @@
 - Code quality
   - [SonarQube](https://docs.sonarqube.org/latest/)
   - [checkstyle](https://github.com/checkstyle/checkstyle)
+  - [ESLint](https://eslint.org/)
 - Mutation testing
   - [pitest](https://pitest.org/)
   - [descartes](https://github.com/STAMP-project/pitest-descartes)
@@ -51,7 +52,7 @@
 - [Java](https://dev.java/learn/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - Build tools and package repositories: Maven, Gradle, npm, pip, cargo 
-- Development frameworks: SpringBoot, Quarkus, Django, NodeJS, Angular, React, Flutter
+- Development frameworks: SpringBoot, Quarkus, Micronaut, Django, NodeJS, Angular, React, Flutter
 - Web APIs: REST, OpenAPI, GraphQL
 - Data serialization: JSON, XML
 - Databases
