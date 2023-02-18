@@ -4,6 +4,7 @@
 - [Spock](https://spockframework.org/)
 - [ArchUnit](https://www.archunit.org/)
 - [Rest Assured](https://rest-assured.io/)
+- [Postman](https://www.postman.com/automated-testing/)
 - [SoapUI](https://www.soapui.org/)
 - [Selenium](https://www.selenium.dev/)
 - [WebDriverIO](https://webdriver.io/)
