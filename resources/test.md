@@ -15,6 +15,7 @@
 - [Chai](https://www.chaijs.com/)
 - [Nightwatch](https://nightwatchjs.org/)
 - [pytest](https://docs.pytest.org/en/7.2.x/)
+- [Appium](https://appium.io/)
 - [Robot Framework](https://robotframework.org/)
 
 # Techniques
