@@ -80,6 +80,7 @@
 # Resources
 - [awesome-software-testing](https://github.com/TheJambo/awesome-testing)
 - [awesome sites to test on](https://github.com/BMayhew/awesome-sites-to-test-on)
+- [saucelabs/the-internet](https://the-internet.herokuapp.com/)
 - [howtheytest](https://github.com/abhivaikar/howtheytest)
 - [Testing for Java](https://github.com/akullpp/awesome-java#testing)
 - [Test Automation University](https://testautomationu.applitools.com/)
