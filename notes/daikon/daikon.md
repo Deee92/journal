@@ -7,6 +7,12 @@
 - `java -cp .:../daikon.jar daikon.DynComp Sample`
 - `java -cp .:../daikon.jar daikon.Chicory --daikon --comparability-file=Sample.decls-DynComp Sample`
 
+### Running from jar
+- `javac Sample.java`
+- `jar -cvf sample.jar Sample.class`
+- `java -cp .:../daikon.jar:sample.jar daikon.DynComp Sample`
+- `java -cp .:../daikon.jar:sample.jar daikon.Chicory --daikon --comparability-file=Sample.decls-DynComp Sample`
+
 ## Output
 ```
 Hello there
