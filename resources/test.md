@@ -77,6 +77,9 @@
 - [An empirical study on the usage of mocking frameworks in software testing](https://ieeexplore.ieee.org/document/6958396)
 - [A Qualitative Study on the Sources, Impacts, and Mitigation Strategies of Flaky Tests](https://ieeexplore.ieee.org/abstract/document/9787862)
 
+# 🪐
+- [Soft assertions](https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/api/SoftAssertions.html)
+
 # Resources
 - [awesome-software-testing](https://github.com/TheJambo/awesome-testing)
 - [awesome sites to test on](https://github.com/BMayhew/awesome-sites-to-test-on)
