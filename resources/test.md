@@ -26,6 +26,7 @@
   - [sinon](https://github.com/sinonjs/sinon)
 - Fixtures
   - [java-faker](https://github.com/DiUS/java-faker)
+  - [Instancio](https://github.com/instancio/instancio)
   - [faker](https://github.com/faker-ruby/faker)
   - [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings)
   - [Website wireframes](https://gomockingbird.com/home)
