@@ -41,9 +41,14 @@
 - Mutation testing
   - [pitest](https://pitest.org/)
   - [descartes](https://github.com/STAMP-project/pitest-descartes)
-- Property-based testing
+- Property-based testing (generalizations, invariants)
   - [Hypothesis](https://hypothesis.works/)
   - [jqwik](https://jqwik.net/)
+- Parameterized / data-driven testing (example-based)
+  - [JUnit](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)
+- Metamorphic testing (invariance, increasing, decreasing)
+  - [Post on StickyMinds](https://www.stickyminds.com/article/metamorphic-testing)
+  - [Post on Giskard](https://www.giskard.ai/knowledge/how-to-test-ml-models-4-metamorphic-testing)
 - BDD testing
   - [Cucumber](https://cucumber.io/)
   - [JBehave](https://jbehave.org/)
@@ -77,6 +82,8 @@
 - [To mock or not to mock? an empirical study on mocking practices](https://ieeexplore.ieee.org/document/7962389)
 - [An empirical study on the usage of mocking frameworks in software testing](https://ieeexplore.ieee.org/document/6958396)
 - [A Qualitative Study on the Sources, Impacts, and Mitigation Strategies of Flaky Tests](https://ieeexplore.ieee.org/abstract/document/9787862)
+- [A Characteristic Study of Parameterized Unit Tests in .NET Open Source Projects](https://drops.dagstuhl.de/opus/volltexte/2018/9210/pdf/LIPIcs-ECOOP-2018-5.pdf)
+- [A Survey on Metamorphic Testing](https://ieeexplore.ieee.org/abstract/document/7422146)
 
 # 🪐
 - [Soft assertions](https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/api/SoftAssertions.html)
