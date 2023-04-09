@@ -55,6 +55,15 @@
   - [JBehave](https://jbehave.org/)
 - Load + performance testing
   - [jMeter](https://jmeter.apache.org/)
+- Tests from production
+  - [CodeParrot](https://www.codeparrot.ai/)
+  - [hypertest](https://www.hypertest.co/api-testing)
+  - [speedscale](https://speedscale.com/)
+  - [Meticulous](https://www.meticulous.ai/)
+  - [Pythagora](https://github.com/Pythagora-io/pythagora)
+  - [Loadmill](https://www.loadmill.com/)
+  - [akamas](https://www.akamas.io/)
+  - [unlogged](https://www.unlogged.io/)
 
 # Relevant technologies
 - VCS: Git (GitHub, BitBucket, GitLab)
