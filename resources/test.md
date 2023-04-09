@@ -28,6 +28,7 @@
   - [java-faker](https://github.com/DiUS/java-faker)
   - [Instancio](https://github.com/instancio/instancio)
   - [faker](https://github.com/faker-ruby/faker)
+  - AI-generated syntethic/fake data: [tonic.ai](https://www.tonic.ai/), [mostly.ai](https://mostly.ai/)
   - [big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings)
   - [Website wireframes](https://gomockingbird.com/home)
 - Code coverage
