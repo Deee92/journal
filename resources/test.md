@@ -43,6 +43,7 @@
   - [pitest](https://pitest.org/)
   - [descartes](https://github.com/STAMP-project/pitest-descartes)
 - Property-based testing (generalizations, invariants)
+  - [Post on Oracle Java Magazine](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing)
   - [Hypothesis](https://hypothesis.works/)
   - [jqwik](https://jqwik.net/)
 - Parameterized / data-driven testing (example-based)
@@ -68,6 +69,7 @@
 # Relevant technologies
 - VCS: Git (GitHub, BitBucket, GitLab)
 - [Java](https://dev.java/learn/)
+  - [Oracle Java Magazine](https://blogs.oracle.com/javamagazine/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - Build tools and package repositories: Maven, Gradle, npm, pip, cargo 
 - Development frameworks: SpringBoot, Quarkus, Micronaut, Django, NodeJS, Angular, React, Flutter
