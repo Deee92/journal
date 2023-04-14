@@ -45,6 +45,7 @@
 - Property-based testing (generalizations, invariants)
   - [Oracle Java Magazine](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing)
   - [Post: Property-based testing patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html)
+  - [Incremental](https://increment.com/testing/in-praise-of-property-based-testing/)
   - [Hypothesis](https://hypothesis.works/)
   - [jqwik](https://jqwik.net/)
 - Parameterized / data-driven testing (example-based)
