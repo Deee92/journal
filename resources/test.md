@@ -101,6 +101,7 @@
 
 # 🪐
 - [Soft assertions](https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/api/SoftAssertions.html)
+- [Test smells](https://testsmells.org/index.html)
 
 # Resources
 - [awesome-software-testing](https://github.com/TheJambo/awesome-testing)
