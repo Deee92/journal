@@ -1,6 +1,7 @@
 # Automated testing frameworks
 - [JUnit](https://junit.org/junit5/)
 - [TestNG](https://testng.org/doc/)
+- [GoogleTest](https://google.github.io/googletest/)
 - [Spock](https://spockframework.org/)
 - [ArchUnit](https://www.archunit.org/)
 - [Rest Assured](https://rest-assured.io/)
@@ -73,6 +74,7 @@
 - [Java](https://dev.java/learn/)
   - [Oracle Java Magazine](https://blogs.oracle.com/javamagazine/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [C++](https://www.learncpp.com/)
 - Build tools and package repositories: Maven, Gradle, npm, pip, cargo 
 - Development frameworks: SpringBoot, Quarkus, Micronaut, Django, NodeJS, Angular, React, Flutter
 - Web APIs: REST, OpenAPI, GraphQL
