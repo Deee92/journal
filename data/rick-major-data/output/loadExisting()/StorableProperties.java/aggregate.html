@@ -1,0 +1,295 @@
+<!DOCTYPE html><head><title>LittleDarwin Aggregate Mutation Report</title> <style type='text/css'> body { font-family: "Carlito", "Calibri", "Helvetica Neue", sans-serif;}
+                    .code { font-family: monospace; font-size: medium; }
+                    .methodLine { background: white; }
+                    .outsideLine { background: lightgray; } 
+                    .tooltip { position: relative; display: inline-block; }
+                    .tooltip .tooltiptext { visibility: hidden; display: block;
+                        background-color: #006400; color: #ffffff; text-align: left;
+                        border-radius: 0.3em; padding: 0.5em 0.5em; position: absolute; top: 125%; z-index: 200;}
+                    .tooltip:hover .tooltiptext { visibility: visible; } .NullifyObjectInitialization { background: #F08080; } .LogicalOperatorReplacement { background: #F0E68C; } .RemoveNullCheck { background: #ADD8E6; } .ConditionalOperatorReplacement { background: #87CEFA; } .ShiftOperatorReplacement { background: #9ACD32; } .RemoveMethod { background: #FF00D4; } .RelationalOperatorReplacement { background: #FFA07A; } .ArithmeticOperatorReplacementShortcut { background: #FF00FF; } .GenericTraditionalMutationOperator { background: #FFFFF0; } .ArithmeticOperatorReplacementBinary { background: #FFB6C1; } .ConditionalOperatorDeletion { background: #FFD700; } .NullifyInputVariable { background: #90EE90; } .ArithmeticOperatorReplacementUnary { background: #DDA0DD; } .NullifyReturnValue { background: #E0FFFF; } .AssignmentOperatorReplacementShortcut { background: #B0C4DE; } </style></head><body><h1>LittleDarwin Aggregate Mutation Report</h1><p>Average Density: 0.60</p><div><pre class="code"><span class="outsideLine"><i>0001</i> /*                                                                                                                          
+</span><span class="outsideLine"><i>0002</i>  *  Licensed to GraphHopper GmbH under one or more contributor                                                              
+</span><span class="outsideLine"><i>0003</i>  *  license agreements. See the NOTICE file distributed with this work for                                                  
+</span><span class="outsideLine"><i>0004</i>  *  additional information regarding copyright ownership.                                                                   
+</span><span class="outsideLine"><i>0005</i>  *                                                                                                                          
+</span><span class="outsideLine"><i>0006</i>  *  GraphHopper GmbH licenses this file to you under the Apache License,                                                    
+</span><span class="outsideLine"><i>0007</i>  *  Version 2.0 (the "License"); you may not use this file except in                                                        
+</span><span class="outsideLine"><i>0008</i>  *  compliance with the License. You may obtain a copy of the License at                                                    
+</span><span class="outsideLine"><i>0009</i>  *                                                                                                                          
+</span><span class="outsideLine"><i>0010</i>  *       http://www.apache.org/licenses/LICENSE-2.0                                                                         
+</span><span class="outsideLine"><i>0011</i>  *                                                                                                                          
+</span><span class="outsideLine"><i>0012</i>  *  Unless required by applicable law or agreed to in writing, software                                                     
+</span><span class="outsideLine"><i>0013</i>  *  distributed under the License is distributed on an "AS IS" BASIS,                                                       
+</span><span class="outsideLine"><i>0014</i>  *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.                                                
+</span><span class="outsideLine"><i>0015</i>  *  See the License for the specific language governing permissions and                                                     
+</span><span class="outsideLine"><i>0016</i>  *  limitations under the License.                                                                                          
+</span><span class="outsideLine"><i>0017</i>  */                                                                                                                         
+</span><span class="outsideLine"><i>0018</i> package com.graphhopper.storage;                                                                                            
+</span><span class="outsideLine"><i>0019</i>                                                                                                                             
+</span><span class="outsideLine"><i>0020</i> import com.graphhopper.util.Helper;                                                                                         
+</span><span class="outsideLine"><i>0021</i> import org.slf4j.Logger;                                                                                                    
+</span><span class="outsideLine"><i>0022</i> import org.slf4j.LoggerFactory;                                                                                             
+</span><span class="outsideLine"><i>0023</i>                                                                                                                             
+</span><span class="outsideLine"><i>0024</i> import java.io.*;                                                                                                           
+</span><span class="outsideLine"><i>0025</i> import java.util.LinkedHashMap;                                                                                             
+</span><span class="outsideLine"><i>0026</i> import java.util.Map;                                                                                                       
+</span><span class="outsideLine"><i>0027</i>                                                                                                                             
+</span><span class="outsideLine"><i>0028</i> import static com.graphhopper.util.Helper.*;                                                                                
+</span><span class="outsideLine"><i>0029</i>                                                                                                                             
+</span><span class="outsideLine"><i>0030</i> /**                                                                                                                         
+</span><span class="outsideLine"><i>0031</i>  * Writes an in-memory HashMap into a file on flush. Thread safe, see #743.                                                 
+</span><span class="outsideLine"><i>0032</i>  *                                                                                                                          
+</span><span class="outsideLine"><i>0033</i>  * @author Peter Karich                                                                                                     
+</span><span class="outsideLine"><i>0034</i>  */                                                                                                                         
+</span><span class="outsideLine"><i>0035</i> public class StorableProperties {                                                                                           
+</span><span class="outsideLine"><i>0036</i>                                                                                                                             
+</span><span class="outsideLine"><i>0037</i>     private static final Logger LOGGER = LoggerFactory.getLogger(StorableProperties.class);                                 
+</span><span class="outsideLine"><i>0038</i>                                                                                                                             
+</span><span class="outsideLine"><i>0039</i>     private final Map<String, String> map = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 553</span>new LinkedHashMap<>()</span>;                                                          
+</span><span class="outsideLine"><i>0040</i>     private final DataAccess da;                                                                                            
+</span><span class="outsideLine"><i>0041</i>                                                                                                                             
+</span><span class="methodLine"><i>0042</i>     public StorableProperties(Directory dir) {                                                                              
+</span><span class="outsideLine"><i>0043</i>         // reduce size                                                                                                      
+</span><span class="methodLine"><i>0044</i>         int segmentSize = 1 <span class="ShiftOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: >> 
+Mutation Operator Type: ShiftOperatorReplacement 
+Node ID: 1019</span><<</span> 15;                                                                                          
+</span><span class="methodLine"><i>0045</i>         this.da = dir.create("properties", segmentSize);                                                                    
+</span><span class="methodLine"><i>0046</i>     }                                                                                                                       
+</span><span class="outsideLine"><i>0047</i>                                                                                                                             
+</span><span class="methodLine"><i>0048</i>     public synchronized boolean loadExisting() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 241</span>{                                                                            
+</span><span class="methodLine"><i>0049</i>         if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 668</span>!</span>da.loadExisting())                                                                                             
+</span><span class="methodLine"><i>0050</i>             return false;                                                                                                   
+</span><span class="outsideLine"><i>0051</i>                                                                                                                             
+</span><span class="methodLine"><i>0052</i>         int len = (int) da.getCapacity();                                                                                   
+</span><span class="methodLine"><i>0053</i>         byte[] bytes = new byte[len];                                                                                       
+</span><span class="methodLine"><i>0054</i>         da.getBytes(0, bytes, len);                                                                                         
+</span><span class="methodLine"><i>0055</i>         try {                                                                                                               
+</span><span class="methodLine"><i>0056</i>             loadProperties(map, <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1335</span>new StringReader(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1634</span>new String(bytes, UTF_CS)</span>)</span>);                                               
+</span><span class="methodLine"><i>0057</i>             return true;                                                                                                    
+</span><span class="methodLine"><i>0058</i>         } catch (IOException ex) {                                                                                          
+</span><span class="methodLine"><i>0059</i>             throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1141</span>new IllegalStateException(ex)</span>;                                                                            
+</span><span class="methodLine"><i>0060</i>         }                                                                                                                   
+</span><span class="methodLine"><i>0061</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0062</i>                                                                                                                             
+</span><span class="methodLine"><i>0063</i>     public synchronized void flush() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+// void -- no return //
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 246</span>{                                                                                      
+</span><span class="methodLine"><i>0064</i>         try {                                                                                                               
+</span><span class="methodLine"><i>0065</i>             StringWriter sw = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1412</span>new StringWriter()</span>;                                                                           
+</span><span class="methodLine"><i>0066</i>             saveProperties(map, sw);                                                                                        
+</span><span class="outsideLine"><i>0067</i>             // TODO at the moment the size is limited to da.segmentSize() !                                                 
+</span><span class="methodLine"><i>0068</i>             byte[] bytes = sw.toString().getBytes(UTF_CS);                                                                  
+</span><span class="methodLine"><i>0069</i>             da.setBytes(0, bytes, bytes.length);                                                                            
+</span><span class="methodLine"><i>0070</i>             da.flush();                                                                                                     
+</span><span class="methodLine"><i>0071</i>         } catch (IOException ex) {                                                                                          
+</span><span class="methodLine"><i>0072</i>             throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1160</span>new RuntimeException(ex)</span>;                                                                                 
+</span><span class="methodLine"><i>0073</i>         }                                                                                                                   
+</span><span class="methodLine"><i>0074</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0075</i>                                                                                                                             
+</span><span class="methodLine"><i>0076</i>     public synchronized StorableProperties remove(String key) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { key = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 412</span>{</span>                                                             
+</span><span class="methodLine"><i>0077</i>         map.remove(key);                                                                                                    
+</span><span class="methodLine"><i>0078</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 505</span>return this;</span>                                                                                                        
+</span><span class="methodLine"><i>0079</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0080</i>                                                                                                                             
+</span><span class="methodLine"><i>0081</i>     public synchronized StorableProperties putAll(Map<String, String> externMap) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { externMap = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 418</span>{</span>                                          
+</span><span class="methodLine"><i>0082</i>         map.putAll(externMap);                                                                                              
+</span><span class="methodLine"><i>0083</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 509</span>return this;</span>                                                                                                        
+</span><span class="methodLine"><i>0084</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0085</i>                                                                                                                             
+</span><span class="methodLine"><i>0086</i>     public synchronized StorableProperties put(String key, String val) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { key = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 426</span>{</span>                                                    
+</span><span class="methodLine"><i>0087</i>         map.put(key, val);                                                                                                  
+</span><span class="methodLine"><i>0088</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 515</span>return this;</span>                                                                                                        
+</span><span class="methodLine"><i>0089</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0090</i>                                                                                                                             
+</span><span class="outsideLine"><i>0091</i>     /**                                                                                                                     
+</span><span class="outsideLine"><i>0092</i>      * Before it saves this value it creates a string out of it.                                                            
+</span><span class="outsideLine"><i>0093</i>      */                                                                                                                     
+</span><span class="methodLine"><i>0094</i>     public synchronized StorableProperties put(String key, Object val) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { key = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 434</span>{</span>                                                    
+</span><span class="methodLine"><i>0095</i>         if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 715</span>!</span>key.equals(toLowerCase(key)))                                                                                  
+</span><span class="methodLine"><i>0096</i>             throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 829</span>new IllegalArgumentException("Do not use upper case keys (" + key + ") for StorableProperties since 0.7")</span>;
+</span><span class="outsideLine"><i>0097</i>                                                                                                                             
+</span><span class="methodLine"><i>0098</i>         map.put(key, val.toString());                                                                                       
+</span><span class="methodLine"><i>0099</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 522</span>return this;</span>                                                                                                        
+</span><span class="methodLine"><i>0100</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0101</i>                                                                                                                             
+</span><span class="methodLine"><i>0102</i>     public synchronized String get(String key) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { key = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 441</span>{</span>                                                                            
+</span><span class="methodLine"><i>0103</i>         if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 724</span>!</span>key.equals(toLowerCase(key)))                                                                                  
+</span><span class="methodLine"><i>0104</i>             throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 838</span>new IllegalArgumentException("Do not use upper case keys (" + key + ") for StorableProperties since 0.7")</span>;
+</span><span class="outsideLine"><i>0105</i>                                                                                                                             
+</span><span class="methodLine"><i>0106</i>         String ret = map.get(key);                                                                                          
+</span><span class="methodLine"><i>0107</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 732</span>ret <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 732</span>==</span> null</span>)                                                                                                    
+</span><span class="methodLine"><i>0108</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 619</span>return "";</span>                                                                                                      
+</span><span class="outsideLine"><i>0109</i>                                                                                                                             
+</span><span class="methodLine"><i>0110</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 528</span>return ret;</span>                                                                                                         
+</span><span class="methodLine"><i>0111</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0112</i>                                                                                                                             
+</span><span class="methodLine"><i>0113</i>     public synchronized void close() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+// void -- no return //
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 276</span>{                                                                                      
+</span><span class="methodLine"><i>0114</i>         da.close();                                                                                                         
+</span><span class="methodLine"><i>0115</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0116</i>                                                                                                                             
+</span><span class="methodLine"><i>0117</i>     public synchronized boolean isClosed() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 281</span>{                                                                                
+</span><span class="methodLine"><i>0118</i>         return da.isClosed();                                                                                               
+</span><span class="methodLine"><i>0119</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0120</i>                                                                                                                             
+</span><span class="methodLine"><i>0121</i>     public synchronized StorableProperties create(long size) <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 286</span>{                                                              
+</span><span class="methodLine"><i>0122</i>         da.create(size);                                                                                                    
+</span><span class="methodLine"><i>0123</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 534</span>return this;</span>                                                                                                        
+</span><span class="methodLine"><i>0124</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0125</i>                                                                                                                             
+</span><span class="methodLine"><i>0126</i>     public synchronized long getCapacity() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 1L;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 291</span>{                                                                                
+</span><span class="methodLine"><i>0127</i>         return da.getCapacity();                                                                                            
+</span><span class="methodLine"><i>0128</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0129</i>                                                                                                                             
+</span><span class="methodLine"><i>0130</i>     public synchronized boolean containsVersion() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 296</span>{                                                                         
+</span><span class="methodLine"><i>0131</i>         return map.containsKey("nodes.version") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 993</span>||</span>                                                                          
+</span><span class="methodLine"><i>0132</i>                 map.containsKey("edges.version") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 860</span>||</span>                                                                         
+</span><span class="methodLine"><i>0133</i>                 map.containsKey("geometry.version") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 748</span>||</span>                                                                      
+</span><span class="methodLine"><i>0134</i>                 map.containsKey("location_index.version") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 639</span>||</span>                                                                
+</span><span class="methodLine"><i>0135</i>                 map.containsKey("string_index.version");                                                                    
+</span><span class="methodLine"><i>0136</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0137</i>                                                                                                                             
+</span><span class="outsideLine"><i>0138</i>     @Override                                                                                                               
+</span><span class="methodLine"><i>0139</i>     public synchronized String toString() <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return "A";
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 302</span>{                                                                                 
+</span><span class="methodLine"><i>0140</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 538</span>return da.toString();</span>                                                                                               
+</span><span class="methodLine"><i>0141</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0142</i>                                                                                                                             
+</span><span class="methodLine"><i>0143</i>     static void loadProperties(Map<String, String> map, Reader tmpReader) throws IOException <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { map = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 477</span>{</span>                              
+</span><span class="methodLine"><i>0144</i>         BufferedReader reader = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1218</span>new BufferedReader(tmpReader)</span>;                                                              
+</span><span class="methodLine"><i>0145</i>         String line;                                                                                                        
+</span><span class="methodLine"><i>0146</i>         try {                                                                                                               
+</span><span class="methodLine"><i>0147</i>             while (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 1110</span>(line = reader.readLine()) <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1110</span>!=</span> null</span>) {                                                                    
+</span><span class="methodLine"><i>0148</i>                 if (line.startsWith("//") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 1452</span>||</span> line.startsWith("#")) {                                                        
+</span><span class="methodLine"><i>0149</i>                     continue;                                                                                               
+</span><span class="methodLine"><i>0150</i>                 }                                                                                                           
+</span><span class="outsideLine"><i>0151</i>                                                                                                                             
+</span><span class="methodLine"><i>0152</i>                 if (Helper.isEmpty(line)) {                                                                                 
+</span><span class="methodLine"><i>0153</i>                     continue;                                                                                               
+</span><span class="methodLine"><i>0154</i>                 }                                                                                                           
+</span><span class="outsideLine"><i>0155</i>                                                                                                                             
+</span><span class="methodLine"><i>0156</i>                 int index = line.indexOf("=");                                                                              
+</span><span class="methodLine"><i>0157</i>                 if (index <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: >= 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1462</span><</span> 0) {                                                                                            
+</span><span class="methodLine"><i>0158</i>                     LOGGER.warn("Skipping configuration at line:" + line);                                                  
+</span><span class="methodLine"><i>0159</i>                     continue;                                                                                               
+</span><span class="methodLine"><i>0160</i>                 }                                                                                                           
+</span><span class="outsideLine"><i>0161</i>                                                                                                                             
+</span><span class="methodLine"><i>0162</i>                 String field = line.substring(0, index);                                                                    
+</span><span class="methodLine"><i>0163</i>                 String value = line.substring(index <span class="ArithmeticOperatorReplacementBinary tooltip"><span class="tooltiptext">Mutated Text: - 
+Mutation Operator Type: ArithmeticOperatorReplacementBinary 
+Node ID: 1688</span>+</span> 1);                                                                   
+</span><span class="methodLine"><i>0164</i>                 map.put(field.trim(), value.trim());                                                                        
+</span><span class="methodLine"><i>0165</i>             }                                                                                                               
+</span><span class="methodLine"><i>0166</i>         } finally {                                                                                                         
+</span><span class="methodLine"><i>0167</i>             reader.close();                                                                                                 
+</span><span class="methodLine"><i>0168</i>         }                                                                                                                   
+</span><span class="methodLine"><i>0169</i>     }</span>                                                                                                                       
+</span><span class="outsideLine"><i>0170</i> }                                                                                                                           
+</span><span class="outsideLine"><i>0171</i>                                                                                                                             </pre></div><footer><p style="font-size: small">Report generated by LittleDarwin 0.10.7 </p></footer></body></html>

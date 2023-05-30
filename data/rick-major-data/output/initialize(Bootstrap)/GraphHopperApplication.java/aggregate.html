@@ -1,0 +1,89 @@
+<!DOCTYPE html><head><title>LittleDarwin Aggregate Mutation Report</title> <style type='text/css'> body { font-family: "Carlito", "Calibri", "Helvetica Neue", sans-serif;}
+                    .code { font-family: monospace; font-size: medium; }
+                    .methodLine { background: white; }
+                    .outsideLine { background: lightgray; } 
+                    .tooltip { position: relative; display: inline-block; }
+                    .tooltip .tooltiptext { visibility: hidden; display: block;
+                        background-color: #006400; color: #ffffff; text-align: left;
+                        border-radius: 0.3em; padding: 0.5em 0.5em; position: absolute; top: 125%; z-index: 200;}
+                    .tooltip:hover .tooltiptext { visibility: visible; } .NullifyReturnValue { background: #E0FFFF; } .AssignmentOperatorReplacementShortcut { background: #B0C4DE; } .ArithmeticOperatorReplacementBinary { background: #FFB6C1; } .NullifyObjectInitialization { background: #F08080; } .LogicalOperatorReplacement { background: #F0E68C; } .RemoveNullCheck { background: #ADD8E6; } .ConditionalOperatorReplacement { background: #87CEFA; } .ShiftOperatorReplacement { background: #9ACD32; } .RemoveMethod { background: #FF00D4; } .RelationalOperatorReplacement { background: #FFA07A; } .ArithmeticOperatorReplacementShortcut { background: #FF00FF; } .GenericTraditionalMutationOperator { background: #FFFFF0; } .ConditionalOperatorDeletion { background: #FFD700; } .NullifyInputVariable { background: #90EE90; } .ArithmeticOperatorReplacementUnary { background: #DDA0DD; } </style></head><body><h1>LittleDarwin Aggregate Mutation Report</h1><p>Average Density: 0.94</p><div><pre class="code"><span class="outsideLine"><i>0001</i> /*                                                                                                                                           
+</span><span class="outsideLine"><i>0002</i>  *  Licensed to GraphHopper GmbH under one or more contributor                                                                               
+</span><span class="outsideLine"><i>0003</i>  *  license agreements. See the NOTICE file distributed with this work for                                                                   
+</span><span class="outsideLine"><i>0004</i>  *  additional information regarding copyright ownership.                                                                                    
+</span><span class="outsideLine"><i>0005</i>  *                                                                                                                                           
+</span><span class="outsideLine"><i>0006</i>  *  GraphHopper GmbH licenses this file to you under the Apache License,                                                                     
+</span><span class="outsideLine"><i>0007</i>  *  Version 2.0 (the "License"); you may not use this file except in                                                                         
+</span><span class="outsideLine"><i>0008</i>  *  compliance with the License. You may obtain a copy of the License at                                                                     
+</span><span class="outsideLine"><i>0009</i>  *                                                                                                                                           
+</span><span class="outsideLine"><i>0010</i>  *       http://www.apache.org/licenses/LICENSE-2.0                                                                                          
+</span><span class="outsideLine"><i>0011</i>  *                                                                                                                                           
+</span><span class="outsideLine"><i>0012</i>  *  Unless required by applicable law or agreed to in writing, software                                                                      
+</span><span class="outsideLine"><i>0013</i>  *  distributed under the License is distributed on an "AS IS" BASIS,                                                                        
+</span><span class="outsideLine"><i>0014</i>  *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.                                                                 
+</span><span class="outsideLine"><i>0015</i>  *  See the License for the specific language governing permissions and                                                                      
+</span><span class="outsideLine"><i>0016</i>  *  limitations under the License.                                                                                                           
+</span><span class="outsideLine"><i>0017</i>  */                                                                                                                                          
+</span><span class="outsideLine"><i>0018</i> package com.graphhopper.application;                                                                                                         
+</span><span class="outsideLine"><i>0019</i>                                                                                                                                              
+</span><span class="outsideLine"><i>0020</i> import com.graphhopper.application.cli.ImportCommand;                                                                                        
+</span><span class="outsideLine"><i>0021</i> import com.graphhopper.application.cli.MatchCommand;                                                                                         
+</span><span class="outsideLine"><i>0022</i> import com.graphhopper.application.resources.RootResource;                                                                                   
+</span><span class="outsideLine"><i>0023</i> import com.graphhopper.http.CORSFilter;                                                                                                      
+</span><span class="outsideLine"><i>0024</i> import com.graphhopper.http.GraphHopperBundle;                                                                                               
+</span><span class="outsideLine"><i>0025</i> import com.graphhopper.http.RealtimeBundle;                                                                                                  
+</span><span class="outsideLine"><i>0026</i> import com.graphhopper.navigation.NavigateResource;                                                                                          
+</span><span class="outsideLine"><i>0027</i> import io.dropwizard.Application;                                                                                                            
+</span><span class="outsideLine"><i>0028</i> import io.dropwizard.assets.AssetsBundle;                                                                                                    
+</span><span class="outsideLine"><i>0029</i> import io.dropwizard.setup.Bootstrap;                                                                                                        
+</span><span class="outsideLine"><i>0030</i> import io.dropwizard.setup.Environment;                                                                                                      
+</span><span class="outsideLine"><i>0031</i>                                                                                                                                              
+</span><span class="outsideLine"><i>0032</i> import javax.servlet.DispatcherType;                                                                                                         
+</span><span class="outsideLine"><i>0033</i> import java.util.EnumSet;                                                                                                                    
+</span><span class="outsideLine"><i>0034</i>                                                                                                                                              
+</span><span class="outsideLine"><i>0035</i> public final class GraphHopperApplication extends Application<GraphHopperServerConfiguration> {                                              
+</span><span class="outsideLine"><i>0036</i>                                                                                                                                              
+</span><span class="methodLine"><i>0037</i>     public static void main(String[] args) throws Exception <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { args = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 237</span>{</span>                                                                                
+</span><span class="methodLine"><i>0038</i>         <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 414</span>new GraphHopperApplication()</span>.run(args);                                                                                              
+</span><span class="methodLine"><i>0039</i>     }</span>                                                                                                                                        
+</span><span class="outsideLine"><i>0040</i>                                                                                                                                              
+</span><span class="outsideLine"><i>0041</i>     @Override                                                                                                                                
+</span><span class="methodLine"><i>0042</i>     public void initialize(Bootstrap<GraphHopperServerConfiguration> bootstrap) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { bootstrap = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 242</span>{</span>                                                            
+</span><span class="methodLine"><i>0043</i>         bootstrap.addBundle(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 419</span>new GraphHopperBundle()</span>);                                                                                        
+</span><span class="methodLine"><i>0044</i>         bootstrap.addBundle(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 422</span>new RealtimeBundle()</span>);                                                                                           
+</span><span class="methodLine"><i>0045</i>         bootstrap.addCommand(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 425</span>new ImportCommand()</span>);                                                                                           
+</span><span class="methodLine"><i>0046</i>         bootstrap.addCommand(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 428</span>new MatchCommand()</span>);                                                                                            
+</span><span class="methodLine"><i>0047</i>         bootstrap.addBundle(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 431</span>new AssetsBundle("/com/graphhopper/maps/", "/maps/", "index.html")</span>);                                             
+</span><span class="outsideLine"><i>0048</i>         // see this link even though its outdated?! // https://www.webjars.org/documentation#dropwizard                                      
+</span><span class="methodLine"><i>0049</i>         bootstrap.addBundle(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 434</span>new AssetsBundle("/META-INF/resources/webjars", "/webjars/", null, "webjars")</span>);                                  
+</span><span class="methodLine"><i>0050</i>     }</span>                                                                                                                                        
+</span><span class="outsideLine"><i>0051</i>                                                                                                                                              
+</span><span class="outsideLine"><i>0052</i>     @Override                                                                                                                                
+</span><span class="methodLine"><i>0053</i>     public void run(GraphHopperServerConfiguration configuration, Environment environment) <span class="NullifyInputVariable tooltip"><span class="tooltiptext">Mutated Text: { configuration = null; 
+Mutation Operator Type: NullifyInputVariable 
+Node ID: 254</span>{</span>                                                 
+</span><span class="methodLine"><i>0054</i>         environment.jersey().register(<span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 439</span>new RootResource()</span>);                                                                                   
+</span><span class="methodLine"><i>0055</i>         environment.jersey().register(NavigateResource.class);                                                                               
+</span><span class="methodLine"><i>0056</i>         environment.servlets().addFilter("cors", CORSFilter.class).addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), false, "*");
+</span><span class="methodLine"><i>0057</i>     }</span>                                                                                                                                        
+</span><span class="outsideLine"><i>0058</i> }                                                                                                                                            
+</span><span class="outsideLine"><i>0059</i>                                                                                                                                              </pre></div><footer><p style="font-size: small">Report generated by LittleDarwin 0.10.7 </p></footer></body></html>

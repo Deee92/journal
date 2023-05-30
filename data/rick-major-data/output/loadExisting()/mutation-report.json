@@ -1,0 +1,66 @@
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/36.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.419 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 3.897 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.756 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.155 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 8.844 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/37.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.654 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.721 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.584 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.781 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.58 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/44.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.165 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.64 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 3.999 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 4.443 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.756 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/6.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.471 s - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4 s - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.871 s - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.072 s - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.679 s - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/7.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.56 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.809 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 3.87 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.42 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.822 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},
+{
+    "mut": "loadExisting()",
+    "CUT": "com.graphhopper.storage.StorableProperties",
+    "mutant-file": "./StorableProperties.java/8.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.234 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-oo": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.699 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-po": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.438 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-co": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.289 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen",
+    "result-all": "Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.051 s <<< FAILURE! - in com.graphhopper.storage.TestStorablePropertiesRickGen"
+},

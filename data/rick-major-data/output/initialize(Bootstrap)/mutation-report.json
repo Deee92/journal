@@ -1,0 +1,88 @@
+[{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/10.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.986 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.433 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.919 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.151 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/14.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.293 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.314 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.732 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.003 s <<< FAILURE! - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/2.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.755 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.888 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.048 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.894 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/3.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.19 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.588 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.75 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.54 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/4.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.303 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.093 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.193 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.924 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/5.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.664 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.696 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.594 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.753 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/6.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.248 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.415 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.89 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.755 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+},
+{
+    "mut": "initialize(Bootstrap)",
+    "CUT": "com.graphhopper.application.GraphHopperApplication",
+    "mutant-file": "./GraphHopperApplication.java/7.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.968 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.126 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.734 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.492 s - in com.graphhopper.application.TestGraphHopperApplicationRickGen"
+}]

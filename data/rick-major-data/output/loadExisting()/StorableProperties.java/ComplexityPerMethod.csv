@@ -1,0 +1,16 @@
+***not in a method***;1;1;0
+StorableProperties.StorableProperties( Directory dir );1;1;4
+StorableProperties.close( );1;1;3
+StorableProperties.containsVersion( );6;5;7
+StorableProperties.create( long size );2;1;4
+StorableProperties.flush( );3;2;11
+StorableProperties.get( String key );9;3;8
+StorableProperties.getCapacity( );2;1;3
+StorableProperties.isClosed( );2;1;3
+StorableProperties.loadExisting( );6;3;13
+StorableProperties.loadProperties( Map < String , String > map , Reader tmpReader );9;6;24
+StorableProperties.put( String key , Object val );6;2;6
+StorableProperties.put( String key , String val );4;1;4
+StorableProperties.putAll( Map < String , String > externMap );3;1;4
+StorableProperties.remove( String key );3;1;4
+StorableProperties.toString( );3;1;3

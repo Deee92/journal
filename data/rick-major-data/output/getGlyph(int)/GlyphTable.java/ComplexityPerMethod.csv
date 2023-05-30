@@ -1,0 +1,6 @@
+GlyphTable.GlyphTable( TrueTypeFont font );0;1;3
+GlyphTable.getGlyph( int gid );24;9;33
+GlyphTable.getGlyphData( int gid );5;3;11
+GlyphTable.getGlyphs( );17;8;35
+GlyphTable.read( TrueTypeFont ttf , TTFDataStream data );4;2;10
+GlyphTable.setGlyphs( GlyphData [ ] glyphsValue );2;1;3

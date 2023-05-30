@@ -1,0 +1,22 @@
+[{
+    "mut": "setMaxDistance(double)",
+    "CUT": "com.graphhopper.util.DouglasPeucker",
+    "mutant-file": "./DouglasPeucker.java/16.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.121 s <<< FAILURE! - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 4.169 s <<< FAILURE! - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-co": "Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 4.434 s <<< FAILURE! - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-all": "Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.51 s <<< FAILURE! - in com.graphhopper.util.TestDouglasPeuckerRickGen"
+},
+{
+    "mut": "setMaxDistance(double)",
+    "CUT": "com.graphhopper.util.DouglasPeucker",
+    "mutant-file": "./DouglasPeucker.java/58.java",
+    "mutant-within-mut": true,
+    "result_baseline": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.174 s - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-oo": "",
+    "result-po": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.44 s - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-co": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.406 s - in com.graphhopper.util.TestDouglasPeuckerRickGen",
+    "result-all": "Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.369 s - in com.graphhopper.util.TestDouglasPeuckerRickGen"
+}]

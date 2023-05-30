@@ -1,0 +1,9 @@
+DouglasPeucker.DouglasPeucker( );0;1;5
+DouglasPeucker.removeNaN( PointList pointList );6;3;10
+DouglasPeucker.setApproximation( boolean a );1;2;7
+DouglasPeucker.setElevationMaxDistance( double dist );2;1;4
+DouglasPeucker.setMaxDistance( double dist );2;1;5
+DouglasPeucker.simplify( PointList points );4;1;3
+DouglasPeucker.simplify( PointList points , int fromIndex , int lastIndex );3;1;3
+DouglasPeucker.simplify( PointList points , int fromIndex , int lastIndex , boolean compress );13;5;18
+DouglasPeucker.subSimplify( PointList points , int fromIndex , int lastIndex );31;13;46
