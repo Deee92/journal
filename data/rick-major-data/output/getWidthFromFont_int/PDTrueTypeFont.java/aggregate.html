@@ -1,0 +1,1134 @@
+<!DOCTYPE html><head><title>LittleDarwin Aggregate Mutation Report</title> <style type='text/css'> body { font-family: "Carlito", "Calibri", "Helvetica Neue", sans-serif;}
+                    .code { font-family: monospace; font-size: medium; }
+                    .methodLine { background: white; }
+                    .outsideLine { background: lightgray; } 
+                    .tooltip { position: relative; display: inline-block; }
+                    .tooltip .tooltiptext { visibility: hidden; display: block;
+                        background-color: #006400; color: #ffffff; text-align: left;
+                        border-radius: 0.3em; padding: 0.5em 0.5em; position: absolute; top: 125%; z-index: 200;}
+                    .tooltip:hover .tooltiptext { visibility: visible; } .RelationalOperatorReplacement { background: #FFA07A; } .ArithmeticOperatorReplacementShortcut { background: #FF00FF; } .GenericTraditionalMutationOperator { background: #FFFFF0; } .ArithmeticOperatorReplacementBinary { background: #FFB6C1; } .ConditionalOperatorDeletion { background: #FFD700; } .NullifyInputVariable { background: #90EE90; } .ArithmeticOperatorReplacementUnary { background: #DDA0DD; } .NullifyReturnValue { background: #E0FFFF; } .AssignmentOperatorReplacementShortcut { background: #B0C4DE; } .NullifyObjectInitialization { background: #F08080; } .LogicalOperatorReplacement { background: #F0E68C; } .RemoveNullCheck { background: #ADD8E6; } .ConditionalOperatorReplacement { background: #87CEFA; } .ShiftOperatorReplacement { background: #9ACD32; } .RemoveMethod { background: #FF00D4; } </style></head><body><h1>LittleDarwin Aggregate Mutation Report</h1><p>Average Density: 0.52</p><div><pre class="code"><span class="outsideLine"><i>0001</i> /*                                                                                                     
+</span><span class="outsideLine"><i>0002</i>  * Licensed to the Apache Software Foundation (ASF) under one or more                                  
+</span><span class="outsideLine"><i>0003</i>  * contributor license agreements.  See the NOTICE file distributed with                               
+</span><span class="outsideLine"><i>0004</i>  * this work for additional information regarding copyright ownership.                                 
+</span><span class="outsideLine"><i>0005</i>  * The ASF licenses this file to You under the Apache License, Version 2.0                             
+</span><span class="outsideLine"><i>0006</i>  * (the "License"); you may not use this file except in compliance with                                
+</span><span class="outsideLine"><i>0007</i>  * the License.  You may obtain a copy of the License at                                               
+</span><span class="outsideLine"><i>0008</i>  *                                                                                                     
+</span><span class="outsideLine"><i>0009</i>  *      http://www.apache.org/licenses/LICENSE-2.0                                                     
+</span><span class="outsideLine"><i>0010</i>  *                                                                                                     
+</span><span class="outsideLine"><i>0011</i>  * Unless required by applicable law or agreed to in writing, software                                 
+</span><span class="outsideLine"><i>0012</i>  * distributed under the License is distributed on an "AS IS" BASIS,                                   
+</span><span class="outsideLine"><i>0013</i>  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.                            
+</span><span class="outsideLine"><i>0014</i>  * See the License for the specific language governing permissions and                                 
+</span><span class="outsideLine"><i>0015</i>  * limitations under the License.                                                                      
+</span><span class="outsideLine"><i>0016</i>  */                                                                                                    
+</span><span class="outsideLine"><i>0017</i> package org.apache.pdfbox.pdmodel.font;                                                                
+</span><span class="outsideLine"><i>0018</i>                                                                                                        
+</span><span class="outsideLine"><i>0019</i> import java.awt.geom.GeneralPath;                                                                      
+</span><span class="outsideLine"><i>0020</i> import java.io.File;                                                                                   
+</span><span class="outsideLine"><i>0021</i> import java.io.IOException;                                                                            
+</span><span class="outsideLine"><i>0022</i> import java.io.InputStream;                                                                            
+</span><span class="outsideLine"><i>0023</i> import java.util.HashMap;                                                                              
+</span><span class="outsideLine"><i>0024</i> import java.util.Map;                                                                                  
+</span><span class="outsideLine"><i>0025</i> import org.apache.commons.logging.Log;                                                                 
+</span><span class="outsideLine"><i>0026</i> import org.apache.commons.logging.LogFactory;                                                          
+</span><span class="outsideLine"><i>0027</i> import org.apache.fontbox.FontBoxFont;                                                                 
+</span><span class="outsideLine"><i>0028</i> import org.apache.fontbox.ttf.CmapSubtable;                                                            
+</span><span class="outsideLine"><i>0029</i> import org.apache.fontbox.ttf.CmapTable;                                                               
+</span><span class="outsideLine"><i>0030</i> import org.apache.fontbox.ttf.GlyphData;                                                               
+</span><span class="outsideLine"><i>0031</i> import org.apache.fontbox.ttf.PostScriptTable;                                                         
+</span><span class="outsideLine"><i>0032</i> import org.apache.fontbox.ttf.TTFParser;                                                               
+</span><span class="outsideLine"><i>0033</i> import org.apache.fontbox.ttf.TrueTypeFont;                                                            
+</span><span class="outsideLine"><i>0034</i> import org.apache.fontbox.util.BoundingBox;                                                            
+</span><span class="outsideLine"><i>0035</i> import org.apache.pdfbox.cos.COSDictionary;                                                            
+</span><span class="outsideLine"><i>0036</i> import org.apache.pdfbox.cos.COSName;                                                                  
+</span><span class="outsideLine"><i>0037</i> import org.apache.pdfbox.pdmodel.PDDocument;                                                           
+</span><span class="outsideLine"><i>0038</i> import org.apache.pdfbox.pdmodel.common.PDRectangle;                                                   
+</span><span class="outsideLine"><i>0039</i> import org.apache.pdfbox.pdmodel.common.PDStream;                                                      
+</span><span class="outsideLine"><i>0040</i> import org.apache.pdfbox.pdmodel.font.encoding.BuiltInEncoding;                                        
+</span><span class="outsideLine"><i>0041</i> import org.apache.pdfbox.pdmodel.font.encoding.Encoding;                                               
+</span><span class="outsideLine"><i>0042</i> import org.apache.pdfbox.pdmodel.font.encoding.GlyphList;                                              
+</span><span class="outsideLine"><i>0043</i> import org.apache.pdfbox.pdmodel.font.encoding.MacOSRomanEncoding;                                     
+</span><span class="outsideLine"><i>0044</i> import org.apache.pdfbox.pdmodel.font.encoding.MacRomanEncoding;                                       
+</span><span class="outsideLine"><i>0045</i> import org.apache.pdfbox.pdmodel.font.encoding.StandardEncoding;                                       
+</span><span class="outsideLine"><i>0046</i> import org.apache.pdfbox.pdmodel.font.encoding.Type1Encoding;                                          
+</span><span class="outsideLine"><i>0047</i> import org.apache.pdfbox.pdmodel.font.encoding.WinAnsiEncoding;                                        
+</span><span class="outsideLine"><i>0048</i>                                                                                                        
+</span><span class="outsideLine"><i>0049</i>                                                                                                        
+</span><span class="outsideLine"><i>0050</i> import static org.apache.pdfbox.pdmodel.font.UniUtil.getUniNameOfCodePoint;                            
+</span><span class="outsideLine"><i>0051</i>                                                                                                        
+</span><span class="outsideLine"><i>0052</i> /**                                                                                                    
+</span><span class="outsideLine"><i>0053</i>  * TrueType font.                                                                                      
+</span><span class="outsideLine"><i>0054</i>  *                                                                                                     
+</span><span class="outsideLine"><i>0055</i>  * @author Ben Litchfield                                                                              
+</span><span class="outsideLine"><i>0056</i>  */                                                                                                    
+</span><span class="outsideLine"><i>0057</i> public class PDTrueTypeFont extends PDSimpleFont implements PDVectorFont                               
+</span><span class="outsideLine"><i>0058</i> {                                                                                                      
+</span><span class="outsideLine"><i>0059</i>     private static final Log LOG = LogFactory.getLog(PDTrueTypeFont.class);                            
+</span><span class="outsideLine"><i>0060</i>                                                                                                        
+</span><span class="outsideLine"><i>0061</i>     private static final int START_RANGE_F000 = 0xF000;                                                
+</span><span class="outsideLine"><i>0062</i>     private static final int START_RANGE_F100 = 0xF100;                                                
+</span><span class="outsideLine"><i>0063</i>     private static final int START_RANGE_F200 = 0xF200;                                                
+</span><span class="outsideLine"><i>0064</i>                                                                                                        
+</span><span class="outsideLine"><i>0065</i>     private static final Map<String, Integer> INVERTED_MACOS_ROMAN = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1669</span>new HashMap<String, Integer>(250)</span>;
+</span><span class="outsideLine"><i>0066</i>     static                                                                                             
+</span><span class="outsideLine"><i>0067</i>     {                                                                                                  
+</span><span class="outsideLine"><i>0068</i>         Map<Integer, String> codeToName = MacOSRomanEncoding.INSTANCE.getCodeToNameMap();              
+</span><span class="outsideLine"><i>0069</i>         for (Map.Entry<Integer, String> entry : codeToName.entrySet())                                 
+</span><span class="outsideLine"><i>0070</i>         {                                                                                              
+</span><span class="outsideLine"><i>0071</i>             if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 2173</span>!</span>INVERTED_MACOS_ROMAN.containsKey(entry.getValue()))                                   
+</span><span class="outsideLine"><i>0072</i>             {                                                                                          
+</span><span class="outsideLine"><i>0073</i>                 INVERTED_MACOS_ROMAN.put(entry.getValue(), entry.getKey());                            
+</span><span class="outsideLine"><i>0074</i>             }                                                                                          
+</span><span class="outsideLine"><i>0075</i>         }                                                                                              
+</span><span class="outsideLine"><i>0076</i>     }                                                                                                  
+</span><span class="outsideLine"><i>0077</i>                                                                                                        
+</span><span class="outsideLine"><i>0078</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0079</i>      * Loads a TTF to be embedded into a document as a simple font.                                    
+</span><span class="outsideLine"><i>0080</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0081</i>      * <p><b>Note:</b> Simple fonts only support 256 characters. For Unicode support, use              
+</span><span class="outsideLine"><i>0082</i>      * {@link PDType0Font#load(PDDocument, File)} instead.</p>                                         
+</span><span class="outsideLine"><i>0083</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0084</i>      * @param doc The PDF document that will hold the embedded font.                                   
+</span><span class="outsideLine"><i>0085</i>      * @param file A TTF file.                                                                         
+</span><span class="outsideLine"><i>0086</i>      * @param encoding The PostScript encoding vector to be used for embedding.                        
+</span><span class="outsideLine"><i>0087</i>      * @return a PDTrueTypeFont instance.                                                              
+</span><span class="outsideLine"><i>0088</i>      * @throws IOException If there is an error loading the data.                                      
+</span><span class="outsideLine"><i>0089</i>      */                                                                                                
+</span><span class="outsideLine"><i>0090</i>     public static PDTrueTypeFont load(PDDocument doc, File file, Encoding encoding)                    
+</span><span class="outsideLine"><i>0091</i>             throws IOException                                                                         
+</span><span class="methodLine"><i>0092</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 762</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0093</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1505</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1959</span>new PDTrueTypeFont(doc, <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3796</span>new TTFParser()</span>.parse(file), encoding, true)</span>;</span>                   
+</span><span class="methodLine"><i>0094</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0095</i>                                                                                                        
+</span><span class="outsideLine"><i>0096</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0097</i>      * Loads a TTF to be embedded into a document as a simple font.                                    
+</span><span class="outsideLine"><i>0098</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0099</i>      * <p><b>Note:</b> Simple fonts only support 256 characters. For Unicode support, use              
+</span><span class="outsideLine"><i>0100</i>      * {@link PDType0Font#load(PDDocument, InputStream)} instead.</p>                                  
+</span><span class="outsideLine"><i>0101</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0102</i>      * @param doc The PDF document that will hold the embedded font.                                   
+</span><span class="outsideLine"><i>0103</i>      * @param input A TTF file stream                                                                  
+</span><span class="outsideLine"><i>0104</i>      * @param encoding The PostScript encoding vector to be used for embedding.                        
+</span><span class="outsideLine"><i>0105</i>      * @return a PDTrueTypeFont instance.                                                              
+</span><span class="outsideLine"><i>0106</i>      * @throws IOException If there is an error loading the data.                                      
+</span><span class="outsideLine"><i>0107</i>      */                                                                                                
+</span><span class="outsideLine"><i>0108</i>     public static PDTrueTypeFont load(PDDocument doc, InputStream input, Encoding encoding)            
+</span><span class="outsideLine"><i>0109</i>             throws IOException                                                                         
+</span><span class="methodLine"><i>0110</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 770</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0111</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1512</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1964</span>new PDTrueTypeFont(doc, <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3800</span>new TTFParser()</span>.parse(input), encoding, true)</span>;</span>                  
+</span><span class="methodLine"><i>0112</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0113</i>                                                                                                        
+</span><span class="outsideLine"><i>0114</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0115</i>      * Loads a TTF to be embedded into a document as a simple font.                                    
+</span><span class="outsideLine"><i>0116</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0117</i>      * <p>                                                                                             
+</span><span class="outsideLine"><i>0118</i>      * <b>Note:</b> Simple fonts only support 256 characters. For Unicode support, use                 
+</span><span class="outsideLine"><i>0119</i>      * {@link PDType0Font#load(PDDocument, InputStream)} instead.                                      
+</span><span class="outsideLine"><i>0120</i>      * </p>                                                                                            
+</span><span class="outsideLine"><i>0121</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0122</i>      * @param doc The PDF document that will hold the embedded font.                                   
+</span><span class="outsideLine"><i>0123</i>      * @param ttf A true type font                                                                     
+</span><span class="outsideLine"><i>0124</i>      * @param encoding The PostScript encoding vector to be used for embedding.                        
+</span><span class="outsideLine"><i>0125</i>      * @return a PDTrueTypeFont instance.                                                              
+</span><span class="outsideLine"><i>0126</i>      * @throws IOException If there is an error loading the data.                                      
+</span><span class="outsideLine"><i>0127</i>      */                                                                                                
+</span><span class="outsideLine"><i>0128</i>     public static PDTrueTypeFont load(PDDocument doc, TrueTypeFont ttf, Encoding encoding)             
+</span><span class="outsideLine"><i>0129</i>             throws IOException                                                                         
+</span><span class="methodLine"><i>0130</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 778</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0131</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1519</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1969</span>new PDTrueTypeFont(doc, ttf, encoding, false)</span>;</span>                                          
+</span><span class="methodLine"><i>0132</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0133</i>                                                                                                        
+</span><span class="outsideLine"><i>0134</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0135</i>      * Loads a TTF to be embedded into a document as a simple font. Only supports WinAnsiEncoding.     
+</span><span class="outsideLine"><i>0136</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0137</i>      * @param doc The PDF document that will hold the embedded font.                                   
+</span><span class="outsideLine"><i>0138</i>      * @param file A TTF file.                                                                         
+</span><span class="outsideLine"><i>0139</i>      * @return a PDTrueTypeFont instance.                                                              
+</span><span class="outsideLine"><i>0140</i>      * @throws IOException If there is an error loading the data.                                      
+</span><span class="outsideLine"><i>0141</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0142</i>      * @deprecated Use {@link PDType0Font#load(PDDocument, File)} instead.                             
+</span><span class="outsideLine"><i>0143</i>      */                                                                                                
+</span><span class="outsideLine"><i>0144</i>     @Deprecated                                                                                        
+</span><span class="outsideLine"><i>0145</i>     public static PDTrueTypeFont loadTTF(PDDocument doc, File file) throws IOException                 
+</span><span class="methodLine"><i>0146</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 787</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0147</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1525</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1973</span>new PDTrueTypeFont(doc, <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3805</span>new TTFParser()</span>.parse(file), WinAnsiEncoding.INSTANCE, true)</span>;</span>   
+</span><span class="methodLine"><i>0148</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0149</i>                                                                                                        
+</span><span class="outsideLine"><i>0150</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0151</i>      * Loads a TTF to be embedded into a document as a simple font. Only supports WinAnsiEncoding.     
+</span><span class="outsideLine"><i>0152</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0153</i>      * @param doc The PDF document that will hold the embedded font.                                   
+</span><span class="outsideLine"><i>0154</i>      * @param input A TTF file stream                                                                  
+</span><span class="outsideLine"><i>0155</i>      * @return a PDTrueTypeFont instance.                                                              
+</span><span class="outsideLine"><i>0156</i>      * @throws IOException If there is an error loading the data.                                      
+</span><span class="outsideLine"><i>0157</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0158</i>      * @deprecated Use {@link PDType0Font#load(PDDocument, InputStream)} instead.                      
+</span><span class="outsideLine"><i>0159</i>      */                                                                                                
+</span><span class="outsideLine"><i>0160</i>     @Deprecated                                                                                        
+</span><span class="outsideLine"><i>0161</i>     public static PDTrueTypeFont loadTTF(PDDocument doc, InputStream input) throws IOException         
+</span><span class="methodLine"><i>0162</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 796</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0163</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1531</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 1977</span>new PDTrueTypeFont(doc, <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3810</span>new TTFParser()</span>.parse(input), WinAnsiEncoding.INSTANCE,         
+</span><span class="methodLine"><i>0164</i>                 true)</span>;</span>                                                                                 
+</span><span class="methodLine"><i>0165</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0166</i>                                                                                                        
+</span><span class="outsideLine"><i>0167</i>     private CmapSubtable cmapWinUnicode = null;                                                        
+</span><span class="outsideLine"><i>0168</i>     private CmapSubtable cmapWinSymbol = null;                                                         
+</span><span class="outsideLine"><i>0169</i>     private CmapSubtable cmapMacRoman = null;                                                          
+</span><span class="outsideLine"><i>0170</i>     private boolean cmapInitialized = false;                                                           
+</span><span class="outsideLine"><i>0171</i>     private Map<Integer, Integer> gidToCode; // for embedding                                          
+</span><span class="outsideLine"><i>0172</i>                                                                                                        
+</span><span class="outsideLine"><i>0173</i>     private final TrueTypeFont ttf;                                                                    
+</span><span class="outsideLine"><i>0174</i>     private final boolean isEmbedded;                                                                  
+</span><span class="outsideLine"><i>0175</i>     private final boolean isDamaged;                                                                   
+</span><span class="outsideLine"><i>0176</i>     private BoundingBox fontBBox;                                                                      
+</span><span class="outsideLine"><i>0177</i>                                                                                                        
+</span><span class="outsideLine"><i>0178</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0179</i>      * Creates a new TrueType font from a Font dictionary.                                             
+</span><span class="outsideLine"><i>0180</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0181</i>      * @param fontDictionary The font dictionary according to the PDF specification.                   
+</span><span class="outsideLine"><i>0182</i>      */                                                                                                
+</span><span class="outsideLine"><i>0183</i>     public PDTrueTypeFont(COSDictionary fontDictionary) throws IOException                             
+</span><span class="methodLine"><i>0184</i>     {                                                                                                  
+</span><span class="methodLine"><i>0185</i>         super(fontDictionary);                                                                         
+</span><span class="outsideLine"><i>0186</i>                                                                                                        
+</span><span class="methodLine"><i>0187</i>         TrueTypeFont ttfFont = null;                                                                   
+</span><span class="methodLine"><i>0188</i>         boolean fontIsDamaged = false;                                                                 
+</span><span class="methodLine"><i>0189</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 1991</span>getFontDescriptor() <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1991</span>!=</span> null</span>)                                                               
+</span><span class="methodLine"><i>0190</i>         {                                                                                              
+</span><span class="methodLine"><i>0191</i>             PDFontDescriptor fd = super.getFontDescriptor();                                           
+</span><span class="methodLine"><i>0192</i>             PDStream ff2Stream = fd.getFontFile2();                                                    
+</span><span class="methodLine"><i>0193</i>             if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3016</span>ff2Stream <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3016</span>!=</span> null</span>)                                                                     
+</span><span class="methodLine"><i>0194</i>             {                                                                                          
+</span><span class="methodLine"><i>0195</i>                 try                                                                                    
+</span><span class="methodLine"><i>0196</i>                 {                                                                                      
+</span><span class="outsideLine"><i>0197</i>                     // embedded                                                                        
+</span><span class="methodLine"><i>0198</i>                     TTFParser ttfParser = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 5417</span>new TTFParser(true)</span>;                                         
+</span><span class="methodLine"><i>0199</i>                     ttfFont = ttfParser.parse(ff2Stream.createInputStream());                          
+</span><span class="methodLine"><i>0200</i>                 }                                                                                      
+</span><span class="methodLine"><i>0201</i>                 catch (IOException e)                                                                  
+</span><span class="methodLine"><i>0202</i>                 {                                                                                      
+</span><span class="methodLine"><i>0203</i>                     LOG.warn("Could not read embedded TTF for font " + getBaseFont(), e);              
+</span><span class="methodLine"><i>0204</i>                     fontIsDamaged = true;                                                              
+</span><span class="methodLine"><i>0205</i>                 }                                                                                      
+</span><span class="methodLine"><i>0206</i>             }                                                                                          
+</span><span class="methodLine"><i>0207</i>         }                                                                                              
+</span><span class="methodLine"><i>0208</i>         isEmbedded = <span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2210</span>ttfFont <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2210</span>!=</span> null</span>;                                                                  
+</span><span class="methodLine"><i>0209</i>         isDamaged = fontIsDamaged;                                                                     
+</span><span class="outsideLine"><i>0210</i>                                                                                                        
+</span><span class="outsideLine"><i>0211</i>         // substitute                                                                                  
+</span><span class="methodLine"><i>0212</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 1997</span>ttfFont <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1997</span>==</span> null</span>)                                                                           
+</span><span class="methodLine"><i>0213</i>         {                                                                                              
+</span><span class="methodLine"><i>0214</i>             FontMapping<TrueTypeFont> mapping = FontMappers.instance()                                 
+</span><span class="methodLine"><i>0215</i>                                                            .getTrueTypeFont(getBaseFont(),             
+</span><span class="methodLine"><i>0216</i>                                                                             getFontDescriptor());      
+</span><span class="methodLine"><i>0217</i>             ttfFont = mapping.getFont();                                                               
+</span><span class="outsideLine"><i>0218</i>                                                                                                        
+</span><span class="methodLine"><i>0219</i>             if (mapping.isFallback())                                                                  
+</span><span class="methodLine"><i>0220</i>             {                                                                                          
+</span><span class="methodLine"><i>0221</i>                 LOG.warn("Using fallback font '" + ttfFont + "' for '" + getBaseFont() + "'");         
+</span><span class="methodLine"><i>0222</i>             }                                                                                          
+</span><span class="methodLine"><i>0223</i>         }                                                                                              
+</span><span class="methodLine"><i>0224</i>         ttf = ttfFont;                                                                                 
+</span><span class="methodLine"><i>0225</i>         readEncoding();                                                                                
+</span><span class="methodLine"><i>0226</i>     }                                                                                                  
+</span><span class="outsideLine"><i>0227</i>                                                                                                        
+</span><span class="outsideLine"><i>0228</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0229</i>      * Returns the PostScript name of the font.                                                        
+</span><span class="outsideLine"><i>0230</i>      */                                                                                                
+</span><span class="outsideLine"><i>0231</i>     public final String getBaseFont()                                                                  
+</span><span class="methodLine"><i>0232</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return "A";
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 847</span>{                                                                                                  
+</span><span class="methodLine"><i>0233</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1561</span>return dict.getNameAsString(COSName.BASE_FONT);</span>                                                
+</span><span class="methodLine"><i>0234</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0235</i>                                                                                                        
+</span><span class="outsideLine"><i>0236</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0237</i>     protected Encoding readEncodingFromFont() throws IOException                                       
+</span><span class="methodLine"><i>0238</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 855</span>{                                                                                                  
+</span><span class="methodLine"><i>0239</i>         if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 2232</span>!</span>isEmbedded() <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 2007</span>&&</span> <span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2234</span>getStandard14AFM() <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2234</span>!=</span> null</span>)                                               
+</span><span class="methodLine"><i>0240</i>         {                                                                                              
+</span><span class="outsideLine"><i>0241</i>             // read from AFM                                                                           
+</span><span class="methodLine"><i>0242</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2516</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3034</span>new Type1Encoding(getStandard14AFM())</span>;</span>                                              
+</span><span class="methodLine"><i>0243</i>         }                                                                                              
+</span><span class="methodLine"><i>0244</i>         else                                                                                           
+</span><span class="methodLine"><i>0245</i>         {                                                                                              
+</span><span class="outsideLine"><i>0246</i>             // non-symbolic fonts don't have a built-in encoding per se, but there encoding is         
+</span><span class="outsideLine"><i>0247</i>             // assumed to be StandardEncoding by the PDF spec unless an explicit Encoding is present   
+</span><span class="outsideLine"><i>0248</i>             // which will override this anyway                                                         
+</span><span class="methodLine"><i>0249</i>             if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3306</span>getSymbolicFlag() <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3306</span>!=</span> null</span> <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 3036</span>&&</span><span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3308</span>!</span>getSymbolicFlag())                                        
+</span><span class="methodLine"><i>0250</i>             {                                                                                          
+</span><span class="methodLine"><i>0251</i>                 <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 3586</span>return StandardEncoding.INSTANCE;</span>                                                      
+</span><span class="methodLine"><i>0252</i>             }                                                                                          
+</span><span class="outsideLine"><i>0253</i>                                                                                                        
+</span><span class="outsideLine"><i>0254</i>             // normalise the standard 14 name, e.g "Symbol,Italic" -> "Symbol"                         
+</span><span class="methodLine"><i>0255</i>             String standard14Name = Standard14Fonts.getMappedFontName(getName());                      
+</span><span class="outsideLine"><i>0256</i>                                                                                                        
+</span><span class="outsideLine"><i>0257</i>             // likewise, if the font is standard 14 then we know it's Standard Encoding                
+</span><span class="methodLine"><i>0258</i>             if (isStandard14() <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 3314</span>&&</span>                                                                      
+</span><span class="methodLine"><i>0259</i>                 <span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3593</span>!</span>standard14Name.equals("Symbol") <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 3042</span>&&</span>                                                    
+</span><span class="methodLine"><i>0260</i>                 <span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3316</span>!</span>standard14Name.equals("ZapfDingbats"))                                                
+</span><span class="methodLine"><i>0261</i>             {                                                                                          
+</span><span class="methodLine"><i>0262</i>                 <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 3596</span>return StandardEncoding.INSTANCE;</span>                                                      
+</span><span class="methodLine"><i>0263</i>             }                                                                                          
+</span><span class="outsideLine"><i>0264</i>                                                                                                        
+</span><span class="outsideLine"><i>0265</i>             // synthesize an encoding, so that getEncoding() is always usable                          
+</span><span class="methodLine"><i>0266</i>             PostScriptTable post = ttf.getPostScript();                                                
+</span><span class="methodLine"><i>0267</i>             Map<Integer, String> codeToName = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4127</span>new HashMap<Integer, String>()</span>;                          
+</span><span class="methodLine"><i>0268</i>             for (int code = 0; code <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: > 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3051</span><=</span> 256; code<span class="ArithmeticOperatorReplacementShortcut tooltip"><span class="tooltiptext">Mutated Text: -- 
+Mutation Operator Type: ArithmeticOperatorReplacementShortcut 
+Node ID: 3610</span>++</span>)                                                    
+</span><span class="methodLine"><i>0269</i>             {                                                                                          
+</span><span class="methodLine"><i>0270</i>                 int gid = codeToGID(code);                                                             
+</span><span class="methodLine"><i>0271</i>                 if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: <= 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4137</span>></span> 0)                                                                           
+</span><span class="methodLine"><i>0272</i>                 {                                                                                      
+</span><span class="methodLine"><i>0273</i>                     String name = null;                                                                
+</span><span class="methodLine"><i>0274</i>                     if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 4947</span>post <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4947</span>!=</span> null</span>)                                                                  
+</span><span class="methodLine"><i>0275</i>                     {                                                                                  
+</span><span class="methodLine"><i>0276</i>                         name = post.getName(gid);                                                      
+</span><span class="methodLine"><i>0277</i>                     }                                                                                  
+</span><span class="methodLine"><i>0278</i>                     if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 4951</span>name <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4951</span>==</span> null</span>)                                                                  
+</span><span class="methodLine"><i>0279</i>                     {                                                                                  
+</span><span class="outsideLine"><i>0280</i>                         // GID pseudo-name                                                             
+</span><span class="methodLine"><i>0281</i>                         name = Integer.toString(gid);                                                  
+</span><span class="methodLine"><i>0282</i>                     }                                                                                  
+</span><span class="methodLine"><i>0283</i>                     codeToName.put(code, name);                                                        
+</span><span class="methodLine"><i>0284</i>                 }                                                                                      
+</span><span class="methodLine"><i>0285</i>             }                                                                                          
+</span><span class="methodLine"><i>0286</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2523</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3056</span>new BuiltInEncoding(codeToName)</span>;</span>                                                    
+</span><span class="methodLine"><i>0287</i>         }                                                                                              
+</span><span class="methodLine"><i>0288</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0289</i>                                                                                                        
+</span><span class="outsideLine"><i>0290</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0291</i>      * Creates a new TrueType font for embedding.                                                      
+</span><span class="outsideLine"><i>0292</i>      */                                                                                                
+</span><span class="outsideLine"><i>0293</i>     private PDTrueTypeFont(PDDocument document, TrueTypeFont ttf, Encoding encoding,                   
+</span><span class="outsideLine"><i>0294</i>             boolean closeTTF)                                                                          
+</span><span class="outsideLine"><i>0295</i>             throws IOException                                                                         
+</span><span class="methodLine"><i>0296</i>     {                                                                                                  
+</span><span class="methodLine"><i>0297</i>         PDTrueTypeFontEmbedder embedder = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3058</span>new PDTrueTypeFontEmbedder(document, dict, ttf,              
+</span><span class="methodLine"><i>0298</i>                                                                      encoding)</span>;                        
+</span><span class="methodLine"><i>0299</i>         this.encoding = encoding;                                                                      
+</span><span class="methodLine"><i>0300</i>         this.ttf = ttf;                                                                                
+</span><span class="methodLine"><i>0301</i>         setFontDescriptor(embedder.getFontDescriptor());                                               
+</span><span class="methodLine"><i>0302</i>         isEmbedded = true;                                                                             
+</span><span class="methodLine"><i>0303</i>         isDamaged = false;                                                                             
+</span><span class="methodLine"><i>0304</i>         glyphList = GlyphList.getAdobeGlyphList();                                                     
+</span><span class="methodLine"><i>0305</i>         if (closeTTF)                                                                                  
+</span><span class="methodLine"><i>0306</i>         {                                                                                              
+</span><span class="outsideLine"><i>0307</i>             // the TTF is fully loaded and it is safe to close the underlying data source              
+</span><span class="methodLine"><i>0308</i>             ttf.close();                                                                               
+</span><span class="methodLine"><i>0309</i>         }                                                                                              
+</span><span class="methodLine"><i>0310</i>     }                                                                                                  
+</span><span class="outsideLine"><i>0311</i>                                                                                                        
+</span><span class="outsideLine"><i>0312</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0313</i>     public int readCode(InputStream in) throws IOException                                             
+</span><span class="methodLine"><i>0314</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 1;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 869</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0315</i>         return in.read();                                                                              
+</span><span class="methodLine"><i>0316</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0317</i>                                                                                                        
+</span><span class="outsideLine"><i>0318</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0319</i>     public String getName()                                                                            
+</span><span class="methodLine"><i>0320</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return "A";
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 875</span>{                                                                                                  
+</span><span class="methodLine"><i>0321</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1585</span>return getBaseFont();</span>                                                                          
+</span><span class="methodLine"><i>0322</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0323</i>                                                                                                        
+</span><span class="outsideLine"><i>0324</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0325</i>     public BoundingBox getBoundingBox() throws IOException                                             
+</span><span class="methodLine"><i>0326</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 883</span>{                                                                                                  
+</span><span class="methodLine"><i>0327</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2035</span>fontBBox <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2035</span>==</span> null</span>)                                                                          
+</span><span class="methodLine"><i>0328</i>         {                                                                                              
+</span><span class="methodLine"><i>0329</i>             fontBBox = generateBoundingBox();                                                          
+</span><span class="methodLine"><i>0330</i>         }                                                                                              
+</span><span class="methodLine"><i>0331</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1588</span>return fontBBox;</span>                                                                               
+</span><span class="methodLine"><i>0332</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0333</i>                                                                                                        
+</span><span class="outsideLine"><i>0334</i>     private BoundingBox generateBoundingBox() throws IOException                                       
+</span><span class="methodLine"><i>0335</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 890</span>{                                                                                                  
+</span><span class="methodLine"><i>0336</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2040</span>getFontDescriptor() <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2040</span>!=</span> null</span>) {                                                             
+</span><span class="methodLine"><i>0337</i>             PDRectangle bbox = getFontDescriptor().getFontBoundingBox();                               
+</span><span class="methodLine"><i>0338</i>             if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3075</span>bbox <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3075</span>!=</span> null</span>)                                                                          
+</span><span class="methodLine"><i>0339</i>             {                                                                                          
+</span><span class="methodLine"><i>0340</i>                 <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 3631</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4155</span>new BoundingBox(bbox.getLowerLeftX(), bbox.getLowerLeftY(),                     
+</span><span class="methodLine"><i>0341</i>                         bbox.getUpperRightX(), bbox.getUpperRightY())</span>;</span>                                 
+</span><span class="methodLine"><i>0342</i>             }                                                                                          
+</span><span class="methodLine"><i>0343</i>         }                                                                                              
+</span><span class="methodLine"><i>0344</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1590</span>return ttf.getFontBBox();</span>                                                                      
+</span><span class="methodLine"><i>0345</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0346</i>                                                                                                        
+</span><span class="outsideLine"><i>0347</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0348</i>     public boolean isDamaged()                                                                         
+</span><span class="methodLine"><i>0349</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 896</span>{                                                                                                  
+</span><span class="methodLine"><i>0350</i>         return isDamaged;                                                                              
+</span><span class="methodLine"><i>0351</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0352</i>                                                                                                        
+</span><span class="outsideLine"><i>0353</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0354</i>      * Returns the embedded or substituted TrueType font.                                              
+</span><span class="outsideLine"><i>0355</i>      */                                                                                                
+</span><span class="outsideLine"><i>0356</i>     public TrueTypeFont getTrueTypeFont()                                                              
+</span><span class="methodLine"><i>0357</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 901</span>{                                                                                                  
+</span><span class="methodLine"><i>0358</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1593</span>return ttf;</span>                                                                                    
+</span><span class="methodLine"><i>0359</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0360</i>                                                                                                        
+</span><span class="outsideLine"><i>0361</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0362</i>     public float getWidthFromFont(int code) throws IOException                                         
+</span><span class="methodLine"><i>0363</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 0.1F;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 909</span>{                                                                                                  
+</span><span class="methodLine"><i>0364</i>         int gid = codeToGID(code);                                                                     
+</span><span class="methodLine"><i>0365</i>         float width = ttf.getAdvanceWidth(gid);                                                        
+</span><span class="methodLine"><i>0366</i>         float unitsPerEM = ttf.getUnitsPerEm();                                                        
+</span><span class="methodLine"><i>0367</i>         if (unitsPerEM <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2056</span>!=</span> 1000)                                                                        
+</span><span class="methodLine"><i>0368</i>         {                                                                                              
+</span><span class="methodLine"><i>0369</i>             width <span class="AssignmentOperatorReplacementShortcut tooltip"><span class="tooltiptext">Mutated Text: /= 
+Mutation Operator Type: AssignmentOperatorReplacementShortcut 
+Node ID: 3090</span>*=</span> 1000f <span class="ArithmeticOperatorReplacementBinary tooltip"><span class="tooltiptext">Mutated Text: * 
+Mutation Operator Type: ArithmeticOperatorReplacementBinary 
+Node ID: 3364</span>/</span> unitsPerEM;                                                               
+</span><span class="methodLine"><i>0370</i>         }                                                                                              
+</span><span class="methodLine"><i>0371</i>         return width;                                                                                  
+</span><span class="methodLine"><i>0372</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0373</i>                                                                                                        
+</span><span class="outsideLine"><i>0374</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0375</i>     public float getHeight(int code) throws IOException                                                
+</span><span class="methodLine"><i>0376</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 0.1F;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 917</span>{                                                                                                  
+</span><span class="methodLine"><i>0377</i>         int gid = codeToGID(code);                                                                     
+</span><span class="methodLine"><i>0378</i>         GlyphData glyph = ttf.getGlyph().getGlyph(gid);                                                
+</span><span class="methodLine"><i>0379</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2066</span>glyph <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2066</span>!=</span> null</span>)                                                                             
+</span><span class="methodLine"><i>0380</i>         {                                                                                              
+</span><span class="methodLine"><i>0381</i>             return glyph.getBoundingBox().getHeight();                                                 
+</span><span class="methodLine"><i>0382</i>         }                                                                                              
+</span><span class="methodLine"><i>0383</i>         return 0;                                                                                      
+</span><span class="methodLine"><i>0384</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0385</i>                                                                                                        
+</span><span class="outsideLine"><i>0386</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0387</i>     protected byte[] encode(int unicode) throws IOException                                            
+</span><span class="methodLine"><i>0388</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 1;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 925</span>{                                                                                                  
+</span><span class="methodLine"><i>0389</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2072</span>encoding <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2072</span>!=</span> null</span>)                                                                          
+</span><span class="methodLine"><i>0390</i>         {                                                                                              
+</span><span class="methodLine"><i>0391</i>             if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3105</span>!</span>encoding.contains(getGlyphList().codePointToName(unicode)))                           
+</span><span class="methodLine"><i>0392</i>             {                                                                                          
+</span><span class="methodLine"><i>0393</i>                 throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4166</span>new IllegalArgumentException(                                                    
+</span><span class="methodLine"><i>0394</i>                     String.format("U+%04X is not available in this font's encoding: %s",               
+</span><span class="methodLine"><i>0395</i>                                   unicode, encoding.getEncodingName()))</span>;                               
+</span><span class="methodLine"><i>0396</i>             }                                                                                          
+</span><span class="outsideLine"><i>0397</i>                                                                                                        
+</span><span class="methodLine"><i>0398</i>             String name = getGlyphList().codePointToName(unicode);                                     
+</span><span class="methodLine"><i>0399</i>             Map<String, Integer> inverted = encoding.getNameToCodeMap();                               
+</span><span class="outsideLine"><i>0400</i>                                                                                                        
+</span><span class="methodLine"><i>0401</i>             if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3113</span>!</span>ttf.hasGlyph(name))                                                                   
+</span><span class="methodLine"><i>0402</i>             {                                                                                          
+</span><span class="outsideLine"><i>0403</i>                 // try unicode name                                                                    
+</span><span class="methodLine"><i>0404</i>                 String uniName = getUniNameOfCodePoint(unicode);                                       
+</span><span class="methodLine"><i>0405</i>                 if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 4181</span>!</span>ttf.hasGlyph(uniName))                                                            
+</span><span class="methodLine"><i>0406</i>                 {                                                                                      
+</span><span class="methodLine"><i>0407</i>                     throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4973</span>new IllegalArgumentException(                                                
+</span><span class="methodLine"><i>0408</i>                             String.format("No glyph for U+%04X in font %s", unicode, getName()))</span>;      
+</span><span class="methodLine"><i>0409</i>                 }                                                                                      
+</span><span class="methodLine"><i>0410</i>             }                                                                                          
+</span><span class="outsideLine"><i>0411</i>                                                                                                        
+</span><span class="methodLine"><i>0412</i>             int code = inverted.get(name);                                                             
+</span><span class="methodLine"><i>0413</i>             return new byte[] { (byte)code };                                                          
+</span><span class="methodLine"><i>0414</i>         }                                                                                              
+</span><span class="methodLine"><i>0415</i>         else                                                                                           
+</span><span class="methodLine"><i>0416</i>         {                                                                                              
+</span><span class="outsideLine"><i>0417</i>             // use TTF font's built-in encoding                                                        
+</span><span class="methodLine"><i>0418</i>             String name = getGlyphList().codePointToName(unicode);                                     
+</span><span class="outsideLine"><i>0419</i>                                                                                                        
+</span><span class="methodLine"><i>0420</i>             if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3123</span>!</span>ttf.hasGlyph(name))                                                                   
+</span><span class="methodLine"><i>0421</i>             {                                                                                          
+</span><span class="methodLine"><i>0422</i>                 throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4196</span>new IllegalArgumentException(                                                    
+</span><span class="methodLine"><i>0423</i>                     String.format("No glyph for U+%04X in font %s", unicode, getName()))</span>;              
+</span><span class="methodLine"><i>0424</i>             }                                                                                          
+</span><span class="outsideLine"><i>0425</i>                                                                                                        
+</span><span class="methodLine"><i>0426</i>             int gid = ttf.nameToGID(name);                                                             
+</span><span class="methodLine"><i>0427</i>             Integer code = getGIDToCode().get(gid);                                                    
+</span><span class="methodLine"><i>0428</i>             if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3131</span>code <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3131</span>==</span> null</span>)                                                                          
+</span><span class="methodLine"><i>0429</i>             {                                                                                          
+</span><span class="methodLine"><i>0430</i>                 throw <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 4207</span>new IllegalArgumentException(                                                    
+</span><span class="methodLine"><i>0431</i>                     String.format("U+%04X is not available in this font's Encoding", unicode))</span>;        
+</span><span class="methodLine"><i>0432</i>             }                                                                                          
+</span><span class="outsideLine"><i>0433</i>                                                                                                        
+</span><span class="methodLine"><i>0434</i>             return new byte[] { (byte)(int)code };                                                     
+</span><span class="methodLine"><i>0435</i>         }                                                                                              
+</span><span class="methodLine"><i>0436</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0437</i>                                                                                                        
+</span><span class="outsideLine"><i>0438</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0439</i>      * Inverts the font's code -&gt; GID mapping. Any duplicate (GID -&gt; code) mappings will be lost.
+</span><span class="outsideLine"><i>0440</i>      */                                                                                                
+</span><span class="outsideLine"><i>0441</i>     protected Map<Integer, Integer> getGIDToCode() throws IOException                                  
+</span><span class="methodLine"><i>0442</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 932</span>{                                                                                                  
+</span><span class="methodLine"><i>0443</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2079</span>gidToCode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2079</span>!=</span> null</span>)                                                                         
+</span><span class="methodLine"><i>0444</i>         {                                                                                              
+</span><span class="methodLine"><i>0445</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2605</span>return gidToCode;</span>                                                                          
+</span><span class="methodLine"><i>0446</i>         }                                                                                              
+</span><span class="outsideLine"><i>0447</i>                                                                                                        
+</span><span class="methodLine"><i>0448</i>         gidToCode = <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 2608</span>new HashMap<Integer, Integer>()</span>;                                                   
+</span><span class="methodLine"><i>0449</i>         for (int code = 0; code <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: > 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2085</span><=</span> 255; code<span class="ArithmeticOperatorReplacementShortcut tooltip"><span class="tooltiptext">Mutated Text: -- 
+Mutation Operator Type: ArithmeticOperatorReplacementShortcut 
+Node ID: 2613</span>++</span>)                                                        
+</span><span class="methodLine"><i>0450</i>         {                                                                                              
+</span><span class="methodLine"><i>0451</i>             int gid = codeToGID(code);                                                                 
+</span><span class="methodLine"><i>0452</i>             if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 3150</span>!</span>gidToCode.containsKey(gid))                                                           
+</span><span class="methodLine"><i>0453</i>             {                                                                                          
+</span><span class="methodLine"><i>0454</i>                 gidToCode.put(gid, code);                                                              
+</span><span class="methodLine"><i>0455</i>             }                                                                                          
+</span><span class="methodLine"><i>0456</i>         }                                                                                              
+</span><span class="methodLine"><i>0457</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1621</span>return gidToCode;</span>                                                                              
+</span><span class="methodLine"><i>0458</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0459</i>                                                                                                        
+</span><span class="outsideLine"><i>0460</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0461</i>     public boolean isEmbedded()                                                                        
+</span><span class="methodLine"><i>0462</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 938</span>{                                                                                                  
+</span><span class="methodLine"><i>0463</i>         return isEmbedded;                                                                             
+</span><span class="methodLine"><i>0464</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0465</i>                                                                                                        
+</span><span class="outsideLine"><i>0466</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0467</i>     public GeneralPath getPath(int code) throws IOException                                            
+</span><span class="methodLine"><i>0468</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 946</span>{                                                                                                  
+</span><span class="methodLine"><i>0469</i>         int gid = codeToGID(code);                                                                     
+</span><span class="methodLine"><i>0470</i>         GlyphData glyph = ttf.getGlyph().getGlyph(gid);                                                
+</span><span class="outsideLine"><i>0471</i>                                                                                                        
+</span><span class="outsideLine"><i>0472</i>         // some glyphs have no outlines (e.g. space, table, newline)                                   
+</span><span class="methodLine"><i>0473</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: false 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2097</span>glyph <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2097</span>==</span> null</span>)                                                                             
+</span><span class="methodLine"><i>0474</i>         {                                                                                              
+</span><span class="methodLine"><i>0475</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2626</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3163</span>new GeneralPath()</span>;</span>                                                                  
+</span><span class="methodLine"><i>0476</i>         }                                                                                              
+</span><span class="methodLine"><i>0477</i>         else                                                                                           
+</span><span class="methodLine"><i>0478</i>         {                                                                                              
+</span><span class="methodLine"><i>0479</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2627</span>return glyph.getPath();</span>                                                                    
+</span><span class="methodLine"><i>0480</i>         }                                                                                              
+</span><span class="methodLine"><i>0481</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0482</i>                                                                                                        
+</span><span class="outsideLine"><i>0483</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0484</i>     public GeneralPath getPath(String name) throws IOException                                         
+</span><span class="methodLine"><i>0485</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 954</span>{</span>                                                                                                  
+</span><span class="outsideLine"><i>0486</i>         // handle glyph names and uniXXXX names                                                        
+</span><span class="methodLine"><i>0487</i>         int gid = ttf.nameToGID(name);                                                                 
+</span><span class="methodLine"><i>0488</i>         if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2105</span>==</span> 0)                                                                                  
+</span><span class="methodLine"><i>0489</i>         {                                                                                              
+</span><span class="methodLine"><i>0490</i>             try                                                                                        
+</span><span class="methodLine"><i>0491</i>             {                                                                                          
+</span><span class="outsideLine"><i>0492</i>                 // handle GID pseudo-names                                                             
+</span><span class="methodLine"><i>0493</i>                 gid = Integer.parseInt(name);                                                          
+</span><span class="methodLine"><i>0494</i>                 if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: <= 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3989</span>></span> ttf.getNumberOfGlyphs())                                                     
+</span><span class="methodLine"><i>0495</i>                 {                                                                                      
+</span><span class="methodLine"><i>0496</i>                     gid = 0;                                                                           
+</span><span class="methodLine"><i>0497</i>                 }                                                                                      
+</span><span class="methodLine"><i>0498</i>             }                                                                                          
+</span><span class="methodLine"><i>0499</i>             catch (NumberFormatException e)                                                            
+</span><span class="methodLine"><i>0500</i>             {                                                                                          
+</span><span class="methodLine"><i>0501</i>                 gid = 0;                                                                               
+</span><span class="methodLine"><i>0502</i>             }                                                                                          
+</span><span class="methodLine"><i>0503</i>         }                                                                                              
+</span><span class="outsideLine"><i>0504</i>         // I'm assuming .notdef paths are not drawn, as it PDFBOX-2421                                 
+</span><span class="methodLine"><i>0505</i>         if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2109</span>==</span> 0)                                                                                  
+</span><span class="methodLine"><i>0506</i>         {                                                                                              
+</span><span class="methodLine"><i>0507</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2637</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3184</span>new GeneralPath()</span>;</span>                                                                  
+</span><span class="methodLine"><i>0508</i>         }                                                                                              
+</span><span class="outsideLine"><i>0509</i>                                                                                                        
+</span><span class="methodLine"><i>0510</i>         GlyphData glyph = ttf.getGlyph().getGlyph(gid);                                                
+</span><span class="methodLine"><i>0511</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2115</span>glyph <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2115</span>!=</span> null</span>)                                                                             
+</span><span class="methodLine"><i>0512</i>         {                                                                                              
+</span><span class="methodLine"><i>0513</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2644</span>return glyph.getPath();</span>                                                                    
+</span><span class="methodLine"><i>0514</i>         }                                                                                              
+</span><span class="methodLine"><i>0515</i>         else                                                                                           
+</span><span class="methodLine"><i>0516</i>         {                                                                                              
+</span><span class="methodLine"><i>0517</i>             <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 2645</span>return <span class="NullifyObjectInitialization tooltip"><span class="tooltiptext">Mutated Text: null 
+Mutation Operator Type: NullifyObjectInitialization 
+Node ID: 3194</span>new GeneralPath()</span>;</span>                                                                  
+</span><span class="methodLine"><i>0518</i>         }                                                                                              
+</span><span class="methodLine"><i>0519</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0520</i>                                                                                                        
+</span><span class="outsideLine"><i>0521</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0522</i>     public boolean hasGlyph(String name) throws IOException                                            
+</span><span class="methodLine"><i>0523</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 962</span>{</span>                                                                                                  
+</span><span class="methodLine"><i>0524</i>         int gid = ttf.nameToGID(name);                                                                 
+</span><span class="methodLine"><i>0525</i>         return gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1893</span>!=</span> 0;                                                                               
+</span><span class="methodLine"><i>0526</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0527</i>                                                                                                        
+</span><span class="outsideLine"><i>0528</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0529</i>     public FontBoxFont getFontBoxFont()                                                                
+</span><span class="methodLine"><i>0530</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return null;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 968</span>{                                                                                                  
+</span><span class="methodLine"><i>0531</i>         <span class="NullifyReturnValue tooltip"><span class="tooltiptext">Mutated Text: return null; 
+Mutation Operator Type: NullifyReturnValue 
+Node ID: 1644</span>return ttf;</span>                                                                                    
+</span><span class="methodLine"><i>0532</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0533</i>                                                                                                        
+</span><span class="outsideLine"><i>0534</i>     @Override                                                                                          
+</span><span class="outsideLine"><i>0535</i>     public boolean hasGlyph(int code) throws IOException                                               
+</span><span class="methodLine"><i>0536</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return false;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 976</span>{                                                                                                  
+</span><span class="methodLine"><i>0537</i>         return codeToGID(code) <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 1901</span>!=</span> 0;                                                                   
+</span><span class="methodLine"><i>0538</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0539</i>                                                                                                        
+</span><span class="outsideLine"><i>0540</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0541</i>      * Returns the GID for the given character code.                                                   
+</span><span class="outsideLine"><i>0542</i>      *                                                                                                 
+</span><span class="outsideLine"><i>0543</i>      * @param code character code                                                                      
+</span><span class="outsideLine"><i>0544</i>      * @return GID (glyph index)                                                                       
+</span><span class="outsideLine"><i>0545</i>      * @throws java.io.IOException                                                                     
+</span><span class="outsideLine"><i>0546</i>      */                                                                                                
+</span><span class="outsideLine"><i>0547</i>     public int codeToGID(int code) throws IOException                                                  
+</span><span class="methodLine"><i>0548</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+    return 1;
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 983</span>{                                                                                                  
+</span><span class="methodLine"><i>0549</i>         extractCmapTable();                                                                            
+</span><span class="methodLine"><i>0550</i>         int gid = 0;                                                                                   
+</span><span class="outsideLine"><i>0551</i>                                                                                                        
+</span><span class="methodLine"><i>0552</i>         if (<span class="ConditionalOperatorDeletion tooltip"><span class="tooltiptext">Mutated Text:   
+Mutation Operator Type: ConditionalOperatorDeletion 
+Node ID: 2135</span>!</span>isSymbolic()) // non-symbolic                                                             
+</span><span class="methodLine"><i>0553</i>         {                                                                                              
+</span><span class="methodLine"><i>0554</i>             String name = encoding.getName(code);                                                      
+</span><span class="methodLine"><i>0555</i>             if (".notdef".equals(name))                                                                
+</span><span class="methodLine"><i>0556</i>             {                                                                                          
+</span><span class="methodLine"><i>0557</i>                 return 0;                                                                              
+</span><span class="methodLine"><i>0558</i>             }                                                                                          
+</span><span class="methodLine"><i>0559</i>             else                                                                                       
+</span><span class="methodLine"><i>0560</i>             {                                                                                          
+</span><span class="outsideLine"><i>0561</i>                 // (3, 1) - (Windows, Unicode)                                                         
+</span><span class="methodLine"><i>0562</i>                 if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 4239</span>cmapWinUnicode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4239</span>!=</span> null</span>)                                                            
+</span><span class="methodLine"><i>0563</i>                 {                                                                                      
+</span><span class="methodLine"><i>0564</i>                     String unicode = GlyphList.getAdobeGlyphList().toUnicode(name);                    
+</span><span class="methodLine"><i>0565</i>                     if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 4994</span>unicode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4994</span>!=</span> null</span>)                                                               
+</span><span class="methodLine"><i>0566</i>                     {                                                                                  
+</span><span class="methodLine"><i>0567</i>                         int uni = unicode.codePointAt(0);                                              
+</span><span class="methodLine"><i>0568</i>                         gid = cmapWinUnicode.getGlyphId(uni);                                          
+</span><span class="methodLine"><i>0569</i>                     }                                                                                  
+</span><span class="methodLine"><i>0570</i>                 }                                                                                      
+</span><span class="outsideLine"><i>0571</i>                                                                                                        
+</span><span class="outsideLine"><i>0572</i>                 // (1, 0) - (Macintosh, Roman)                                                         
+</span><span class="methodLine"><i>0573</i>                 if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4468</span>==</span> 0 <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 4243</span>&&</span> <span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 4470</span>cmapMacRoman <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4470</span>!=</span> null</span>)                                                  
+</span><span class="methodLine"><i>0574</i>                 {                                                                                      
+</span><span class="methodLine"><i>0575</i>                     Integer macCode = INVERTED_MACOS_ROMAN.get(name);                                  
+</span><span class="methodLine"><i>0576</i>                     if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 5004</span>macCode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5004</span>!=</span> null</span>)                                                               
+</span><span class="methodLine"><i>0577</i>                     {                                                                                  
+</span><span class="methodLine"><i>0578</i>                         gid = cmapMacRoman.getGlyphId(macCode);                                        
+</span><span class="methodLine"><i>0579</i>                     }                                                                                  
+</span><span class="methodLine"><i>0580</i>                 }                                                                                      
+</span><span class="outsideLine"><i>0581</i>                                                                                                        
+</span><span class="outsideLine"><i>0582</i>                 // 'post' table                                                                        
+</span><span class="methodLine"><i>0583</i>                 if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4247</span>==</span> 0)                                                                          
+</span><span class="methodLine"><i>0584</i>                 {                                                                                      
+</span><span class="methodLine"><i>0585</i>                     gid = ttf.nameToGID(name);                                                         
+</span><span class="methodLine"><i>0586</i>                 }                                                                                      
+</span><span class="methodLine"><i>0587</i>             }                                                                                          
+</span><span class="methodLine"><i>0588</i>         }                                                                                              
+</span><span class="methodLine"><i>0589</i>         else // symbolic                                                                               
+</span><span class="methodLine"><i>0590</i>         {                                                                                              
+</span><span class="outsideLine"><i>0591</i>             // PDFBOX-4755 / PDF.js #5501                                                              
+</span><span class="outsideLine"><i>0592</i>             // PDFBOX-3965: fallback for font has that the symbol flag but isn't                       
+</span><span class="methodLine"><i>0593</i>             if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3477</span>==</span> 0 <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 3210</span>&&</span> <span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3479</span>cmapWinUnicode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3479</span>!=</span> null</span>)                                                    
+</span><span class="methodLine"><i>0594</i>             {                                                                                          
+</span><span class="methodLine"><i>0595</i>                 if (encoding instanceof WinAnsiEncoding <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: && 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 4255</span>||</span> encoding instanceof MacRomanEncoding)       
+</span><span class="methodLine"><i>0596</i>                 {                                                                                      
+</span><span class="methodLine"><i>0597</i>                     String name = encoding.getName(code);                                              
+</span><span class="methodLine"><i>0598</i>                     if (".notdef".equals(name))                                                        
+</span><span class="methodLine"><i>0599</i>                     {                                                                                  
+</span><span class="methodLine"><i>0600</i>                         return 0;                                                                      
+</span><span class="methodLine"><i>0601</i>                     }                                                                                  
+</span><span class="methodLine"><i>0602</i>                     String unicode = GlyphList.getAdobeGlyphList().toUnicode(name);                    
+</span><span class="methodLine"><i>0603</i>                     if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 5022</span>unicode <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5022</span>!=</span> null</span>)                                                               
+</span><span class="methodLine"><i>0604</i>                     {                                                                                  
+</span><span class="methodLine"><i>0605</i>                         int uni = unicode.codePointAt(0);                                              
+</span><span class="methodLine"><i>0606</i>                         gid = cmapWinUnicode.getGlyphId(uni);                                          
+</span><span class="methodLine"><i>0607</i>                     }                                                                                  
+</span><span class="methodLine"><i>0608</i>                 }                                                                                      
+</span><span class="methodLine"><i>0609</i>                 else                                                                                   
+</span><span class="methodLine"><i>0610</i>                 {                                                                                      
+</span><span class="methodLine"><i>0611</i>                     gid = cmapWinUnicode.getGlyphId(code);                                             
+</span><span class="methodLine"><i>0612</i>                 }                                                                                      
+</span><span class="methodLine"><i>0613</i>             }                                                                                          
+</span><span class="outsideLine"><i>0614</i>                                                                                                        
+</span><span class="outsideLine"><i>0615</i>             // (3, 0) - (Windows, Symbol)                                                              
+</span><span class="methodLine"><i>0616</i>             if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3214</span>cmapWinSymbol <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3214</span>!=</span> null</span>)                                                                 
+</span><span class="methodLine"><i>0617</i>             {                                                                                          
+</span><span class="methodLine"><i>0618</i>                 gid = cmapWinSymbol.getGlyphId(code);                                                  
+</span><span class="methodLine"><i>0619</i>                 if (code <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: < 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4498</span>>=</span> 0 <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 4262</span>&&</span> code <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: > 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4500</span><=</span> 0xFF)                                                         
+</span><span class="methodLine"><i>0620</i>                 {                                                                                      
+</span><span class="outsideLine"><i>0621</i>                     // the CMap may use one of the following code ranges,                              
+</span><span class="outsideLine"><i>0622</i>                     // so that we have to add the high byte to get the                                 
+</span><span class="outsideLine"><i>0623</i>                     // mapped value                                                                    
+</span><span class="methodLine"><i>0624</i>                     if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5033</span>==</span> 0)                                                                      
+</span><span class="methodLine"><i>0625</i>                     {                                                                                  
+</span><span class="outsideLine"><i>0626</i>                         // F000 - F0FF                                                                 
+</span><span class="methodLine"><i>0627</i>                         gid = cmapWinSymbol.getGlyphId(code <span class="ArithmeticOperatorReplacementBinary tooltip"><span class="tooltiptext">Mutated Text: - 
+Mutation Operator Type: ArithmeticOperatorReplacementBinary 
+Node ID: 5856</span>+</span> START_RANGE_F000);                       
+</span><span class="methodLine"><i>0628</i>                     }                                                                                  
+</span><span class="methodLine"><i>0629</i>                     if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5037</span>==</span> 0)                                                                      
+</span><span class="methodLine"><i>0630</i>                     {                                                                                  
+</span><span class="outsideLine"><i>0631</i>                         // F100 - F1FF                                                                 
+</span><span class="methodLine"><i>0632</i>                         gid = cmapWinSymbol.getGlyphId(code <span class="ArithmeticOperatorReplacementBinary tooltip"><span class="tooltiptext">Mutated Text: - 
+Mutation Operator Type: ArithmeticOperatorReplacementBinary 
+Node ID: 5861</span>+</span> START_RANGE_F100);                       
+</span><span class="methodLine"><i>0633</i>                     }                                                                                  
+</span><span class="methodLine"><i>0634</i>                     if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5041</span>==</span> 0)                                                                      
+</span><span class="methodLine"><i>0635</i>                     {                                                                                  
+</span><span class="outsideLine"><i>0636</i>                         // F200 - F2FF                                                                 
+</span><span class="methodLine"><i>0637</i>                         gid = cmapWinSymbol.getGlyphId(code <span class="ArithmeticOperatorReplacementBinary tooltip"><span class="tooltiptext">Mutated Text: - 
+Mutation Operator Type: ArithmeticOperatorReplacementBinary 
+Node ID: 5866</span>+</span> START_RANGE_F200);                       
+</span><span class="methodLine"><i>0638</i>                     }                                                                                  
+</span><span class="methodLine"><i>0639</i>                 }                                                                                      
+</span><span class="methodLine"><i>0640</i>             }                                                                                          
+</span><span class="outsideLine"><i>0641</i>                                                                                                        
+</span><span class="outsideLine"><i>0642</i>             // (1, 0) - (Mac, Roman)                                                                   
+</span><span class="methodLine"><i>0643</i>             if (gid <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3490</span>==</span> 0 <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 3218</span>&&</span> <span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 3492</span>cmapMacRoman <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 3492</span>!=</span> null</span>)                                                      
+</span><span class="methodLine"><i>0644</i>             {                                                                                          
+</span><span class="methodLine"><i>0645</i>                 gid = cmapMacRoman.getGlyphId(code);                                                   
+</span><span class="methodLine"><i>0646</i>             }                                                                                          
+</span><span class="methodLine"><i>0647</i>         }                                                                                              
+</span><span class="methodLine"><i>0648</i>         return gid;                                                                                    
+</span><span class="methodLine"><i>0649</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0650</i>                                                                                                        
+</span><span class="outsideLine"><i>0651</i>     /**                                                                                                
+</span><span class="outsideLine"><i>0652</i>      * extract all useful "cmap" subtables.                                                            
+</span><span class="outsideLine"><i>0653</i>      */                                                                                                
+</span><span class="outsideLine"><i>0654</i>     private void extractCmapTable() throws IOException                                                 
+</span><span class="methodLine"><i>0655</i>     <span class="RemoveMethod tooltip"><span class="tooltiptext">Mutated Text: {
+// void -- no return //
+}
+ 
+Mutation Operator Type: RemoveMethod 
+Node ID: 990</span>{                                                                                                  
+</span><span class="methodLine"><i>0656</i>         if (cmapInitialized)                                                                           
+</span><span class="methodLine"><i>0657</i>         {                                                                                              
+</span><span class="methodLine"><i>0658</i>             return;                                                                                    
+</span><span class="methodLine"><i>0659</i>         }                                                                                              
+</span><span class="outsideLine"><i>0660</i>                                                                                                        
+</span><span class="methodLine"><i>0661</i>         CmapTable cmapTable = ttf.getCmap();                                                           
+</span><span class="methodLine"><i>0662</i>         if (<span class="RemoveNullCheck tooltip"><span class="tooltiptext">Mutated Text: true 
+Mutation Operator Type: RemoveNullCheck 
+Node ID: 2147</span>cmapTable <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: == 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 2147</span>!=</span> null</span>)                                                                         
+</span><span class="methodLine"><i>0663</i>         {                                                                                              
+</span><span class="outsideLine"><i>0664</i>             // get all relevant "cmap" subtables                                                       
+</span><span class="methodLine"><i>0665</i>             CmapSubtable[] cmaps = cmapTable.getCmaps();                                               
+</span><span class="methodLine"><i>0666</i>             for (CmapSubtable cmap : cmaps)                                                            
+</span><span class="methodLine"><i>0667</i>             {                                                                                          
+</span><span class="methodLine"><i>0668</i>                 if (CmapTable.PLATFORM_WINDOWS <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4274</span>==</span> cmap.getPlatformId())                                
+</span><span class="methodLine"><i>0669</i>                 {                                                                                      
+</span><span class="methodLine"><i>0670</i>                     if (CmapTable.ENCODING_WIN_UNICODE_BMP <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5049</span>==</span> cmap.getPlatformEncodingId())            
+</span><span class="methodLine"><i>0671</i>                     {                                                                                  
+</span><span class="methodLine"><i>0672</i>                         cmapWinUnicode = cmap;                                                         
+</span><span class="methodLine"><i>0673</i>                     }                                                                                  
+</span><span class="methodLine"><i>0674</i>                     else if (CmapTable.ENCODING_WIN_SYMBOL <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 5229</span>==</span> cmap.getPlatformEncodingId())            
+</span><span class="methodLine"><i>0675</i>                     {                                                                                  
+</span><span class="methodLine"><i>0676</i>                         cmapWinSymbol = cmap;                                                          
+</span><span class="methodLine"><i>0677</i>                     }                                                                                  
+</span><span class="methodLine"><i>0678</i>                 }                                                                                      
+</span><span class="methodLine"><i>0679</i>                 else if (CmapTable.PLATFORM_MACINTOSH <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4722</span>==</span> cmap.getPlatformId()                          
+</span><span class="methodLine"><i>0680</i>                         <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 4521</span>&&</span> CmapTable.ENCODING_MAC_ROMAN <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4724</span>==</span> cmap.getPlatformEncodingId())               
+</span><span class="methodLine"><i>0681</i>                 {                                                                                      
+</span><span class="methodLine"><i>0682</i>                     cmapMacRoman = cmap;                                                               
+</span><span class="methodLine"><i>0683</i>                 }                                                                                      
+</span><span class="methodLine"><i>0684</i>                 else if (CmapTable.PLATFORM_UNICODE <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4910</span>==</span> cmap.getPlatformId()                            
+</span><span class="methodLine"><i>0685</i>                         <span class="ConditionalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: || 
+Mutation Operator Type: ConditionalOperatorReplacement 
+Node ID: 4729</span>&&</span> CmapTable.ENCODING_UNICODE_1_0 <span class="RelationalOperatorReplacement tooltip"><span class="tooltiptext">Mutated Text: != 
+Mutation Operator Type: RelationalOperatorReplacement 
+Node ID: 4912</span>==</span> cmap.getPlatformEncodingId())             
+</span><span class="methodLine"><i>0686</i>                 {                                                                                      
+</span><span class="outsideLine"><i>0687</i>                     // PDFBOX-4755 / PDF.js #5501                                                      
+</span><span class="methodLine"><i>0688</i>                     cmapWinUnicode = cmap;                                                             
+</span><span class="methodLine"><i>0689</i>                 }                                                                                      
+</span><span class="methodLine"><i>0690</i>             }                                                                                          
+</span><span class="methodLine"><i>0691</i>         }                                                                                              
+</span><span class="methodLine"><i>0692</i>         cmapInitialized = true;                                                                        
+</span><span class="methodLine"><i>0693</i>     }</span>                                                                                                  
+</span><span class="outsideLine"><i>0694</i> }                                                                                                      
+</span><span class="outsideLine"><i>0695</i>                                                                                                        </pre></div><footer><p style="font-size: small">Report generated by LittleDarwin 0.10.7 </p></footer></body></html>
