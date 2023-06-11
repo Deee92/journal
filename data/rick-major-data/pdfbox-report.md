@@ -1,36 +1,36 @@
-
-MUT \# | CUT | MUT | total mutants | mutants in MUT | baseline | oo | po | co | all |
--- | --- | --- | ------------- | -------------- | -------- | -- | -- | -- | --- |
-1  | `DCTFilter` | `decode(InputStream,OutputStream,COSDictionary,int,DecodeOptions)` | 126 | 16 | x | x | x | x | x |
-4  | `PDFontDescriptor` | `setCapHeight(float)` | 158 | 1 | x | x | x | x | x |
-5  | `PDFontDescriptor` | `setXHeight(float)` | 158 | 1 | x | x | x | x | x |
-7  | `COSName` | `writePDF(OutputStream)` | 597 | 30 |
-8  | `GlyphTable` | `getGlyph(int)` | 52 |
-9  | `PDTrueTypeFont` | `toUnicode(int,GlyphList)` | 
-10 | `ScratchFileBuffer` | `seek(long)` |
-12 | `RandomAccessInputStream` | `available()` |
-13 | `RandomAccessInputStream` | `read(byte[],int,int)` |
-14 | `PDDocumentCatalog` | `getPageMode()` |
-15 | `PDICCBased` | `getNumberOfComponents()` | 
-16 | `PDPageContentStream` | `setFont(PDFont,float)` |
-17 | `PDColor` | `getComponents()` |
-18 | `COSDictionary` | `containsValue(Object)` |
-19 | `PDFontDescriptor` | `getCapHeight()` | 
-20 | `PDIndexed` | `toRGBImage(WritableRaster)` |
-21 | `PageDrawer` | `addOperator(OperatorProcessor)` |
-22 | `RandomAccessInputStream` | `read()` |
-23 | `PDResources` | `getFont(COSName)` |
-27 | `PDTrueTypeFont` | `getWidthFromFont(int)` |
-28 | `TextPositionComparator` | `compare(TextPosition,TextPosition)` |
-29 | `AxialShadingContext` | `getRaster(int,int, int,int)` |
-30 | `PDDocumentCatalog` | `getAcroForm(PDDocumentFixup)` |
-31 | `PDResources` | `getXObject(COSName)` |
-32 | `PDFRenderer` | `renderImage(int,float,ImageType,RenderDestination)` |
-33 | `PDResources` | `getExtGState(COSName)` |
-37 | `PDPage` | `setMediaBox(PDRectangle)` |
-38 | `PDPage` | `setResources(PDResources)` |
-39 | `PDFormXObject` | `setMatrix(AffineTransform)` |
-40 | `PDResources` | `getShading(COSName)` |
-41 | `COSWriter` | `close()` |
-42 | `COSWriter` | `visitFromName(COSName)` |
-47 | `PageDrawer` | `strokePath()` |
+| MUT\# | MUT | CUT | valid mutants | killed baseline | killed oo | killed po | killed co | killed all |
+|---|---|---|---|---|---|---|---|---|
+| 1 | decode(InputStream, OutputStream, COSDictionary, int, DecodeOptions) | DCTFilter | 12 | 0 | - | 1 | 1 | 1 |
+| 4 | setCapHeight(float) | PDFontDescriptor | 1 | 0 | - | 1 | 1 | 1 |
+| 5 | setXHeight(float) | PDFontDescriptor | 1 | 0 | - | 1 | 1 | 1 |
+| 7 | writePDF(OutputStream) | COSName | 29 | 0 | - | 8 | 8 | 8 |
+| 8 | getGlyph(int) | GlyphTable | 24 | 0 | - | 8 | 7 | 8 |
+| 9 | toUnicode(int, GlyphList) | PDTrueTypeFont | 17 | 0 | 7 | 5 | 5 | 7 |
+| 10 | seek(long) | ScratchFileBuffer | 14 | 0 | - | 3 | 3 | 3 |
+| 12 | available() | RandomAccessInputStream | 4 | 0 | 4 | 2 | 2 | 4 |
+| 13 | read(byte[], int, int) | RandomAccessInputStream | 6 | 0 | 2 | 2 | 2 | 2 |
+| 14 | getPageMode() | PDDocumentCatalog | 6 | 0 | - | 1 | 1 | 1 |
+| 15 | getNumberOfComponents() | PDICCBased | 6 | 0 | 3 | 4 | 4 | 4 |
+| 16 | setFont(PDFont,float) | PDPageContentStream | 2 | 0 | - | 1 | 1 | 1 |
+| 17 | getComponents() | PDColor | 5 | 0 | - | 1 | 1 | 1 |
+| 18 | containsValue(Object) | COSDictionary | 4 | 0 | 1 | 3 | 2 | 3 |
+| 19 | getCapHeight() | PDFontDescriptor | 3 | 0 | 3 | 3 | 3 | 3 |
+| 20 | toRGBImage(WritableRaster) | PDIndexed | 4 | 0 | - | 1 | 1 | 1 |
+| 21 | addOperator(OperatorProcessor) | PageDrawer | 1 | 0 | - | 1 | 1 | 1 |
+| 22 | read() | RandomAccessInputStream | 6 | 0 | 2 | 2 | 2 | 2 |
+| 23 | getFont(COSName) | PDResources | 26 | 0 | - | 6 | 6 | 6 |
+| 27 | getWidthFromFont(int) | PDTrueTypeFont | 5 | 0 | 5 | 2 | 2 | 5 |
+| 28 | compare(TextPosition, TextPosition) | TextPositionComparator | 17 | 0 | 3 | 3 | - | 3 |
+| 29 | getRaster(int, int, int, int) | AxialShadingContext | 28 | 0 | - | 3 | 3 | 3 |
+| 30 | getAcroForm(PDDocumentFixup) | PDDocumentCatalog | 14 | 0 | - | 4 | 4 | 4 |
+| 31 | getXObject(COSName) | PDResources | 19 | 0 | - | 7 | 6 | 7 |
+| 32 | renderImage(int, float, ImageType, RenderDestination) | PDFRenderer | 17 | 0 | - | 1 | 3 | 3 |
+| 33 | getExtGState(COSName) | PDResources | 17 | 0 | - | 7 | 6 | 7 |
+| 37 | setMediaBox(PDRectangle) | PDPage | 4 | 0 | - | 3 | 3 | 3 |
+| 38 | setResources(PDResources) | PDPage | 4 | 0 | - | 3 | 3 | 3 |
+| 39 | setMatrix(AffineTransform) | PDFormXObject | 2 | 0 | - | 1 | 1 | 1 |
+| 40 | getShading(COSName) | PDResources | 16 | 0 | - | 6 | 6 | 6 |
+| 41 | close() | COSWriter | 5 | 0 | - | 2 | - | 2 |
+| 42 | visitFromName(COSName) | COSWriter | 2 | 0 | - | 1 | 1 | 1 |
+| 47 | strokePath() | PageDrawer | 1 | 0 | - | 1 | 1 | 1 |
+| TOTAL | 33 MUTs |  | 322 | 0 / 322 | 30 / 68 (44%) | 98 / 322 (30.4%) | 91 / 322 (28.3%) | 107 / 322 (33.2%) |
