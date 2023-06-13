@@ -1,17 +1,17 @@
 | MUT\# | MUT | CUT | total mutants in MUT | mutants not raising errors | killed by baseline | killed by oo | killed by po | killed by co | killed by (oo +) po + co |
 |---|---|---|---|---|---|---|---|---|---|
-| 3 | initialize(Bootstrap) | GraphhopperApplication | 8 | 7 | 0 | - | 1 | 1 | 1 |
-| 4 | setMaxDistance(double) | DouglasPeucker | 2 | 1 | 0 | - | 1 | 1 | 1 |
-| 5 | init(EncodedValue.InitializerConfig) | EncodedValue.InitializerConfig | 5 | 4 | 0 | 1 | 2 | 2 | 2 |
-| 6 | loadExisting() | StorableProperties | 6 | 4 | 0 | 2 | 3 | 3 | 3 |
-| 7 | add(EncodedValue) | EncodingManager.Builder | 4 | 3 | 0 | - | 1 | 1 | 1 |
-| 8 | loadExisting() | LineIntIndex | 6 | 6 | 0 | 2 | 5 | 3 | 5 |
-| 12 | get(BooleanEncodedValue) | VirtualEdgeIteratorState | 4 | 3 | 0 | 2 | 3 | 3 | 3 |
-| 13 | getReverse(BooleanEncodedValue) | VirtualEdgeIteratorState | 5 | 4 | 0 | 3 | 4 | 3 | 4 |
-| 15 | getTurnDescription(Translation) | FinishInstruction | 5 | 4 | 0 | 3 | 3 | 3 | 3 |
-| 16 | getTurnDescription(Translation) | Instruction | 11 | 10 | 0 | 4 | 3 | 2 | 4 |
-| 17 | getTurnDescription(Translation) | RoundaboutInstruction | 8 | 6 | 0 | 4 | 3 | 2 | 4 |
-| 18 | getTurnDescription(Translation) | ViaInstruction | 5 | 4 | 0 | 3 | 3 | 3 | 3 |
-| 19 | init(GraphHopperConfig) | GraphHopper | 26 | 19 | 0 | - | 1 | 1 | 1 |
-| 22 | get(long,String) | StringIndex | 33 | 32 | 0 | - | 14 | 12 | 14 |
+| 3 | initialize(Bootstrap) | GraphhopperApplication | 8 | 7 | 0 | - | 1 ```3_14.java``` | 1 ```3_14.java``` | 1 ```3_14.java``` |
+| 4 | setMaxDistance(double) | DouglasPeucker | 2 | 1 | 0 | - | 1 ```4_29.java``` | 1 ```4_29.java``` | 1 ```4_29.java``` |
+| 5 | init(EncodedValue.InitializerConfig) | EncodedValue.InitializerConfig | 5 | 4 | 0 | 1 ```5_156.java``` | 2 ```5_156.java, 5_157.java``` | 2 ```5_156.java, 5_157.java``` | 2 ```5_156.java, 5_157.java``` |
+| 6 | loadExisting() | StorableProperties | 6 | 4 | 0 | 2 ```6_4.java, 6_58.java``` | 3 ```6_4.java, 6_57.java, 6_58.java``` | 3 ```6_4.java, 6_57.java, 6_58.java``` | 3 ```6_4.java, 6_57.java, 6_58.java``` |
+| 7 | add(EncodedValue) | EncodingManager.Builder | 4 | 3 | 0 | - | 1 ```7_310.java``` | 1 ```7_310.java``` | 1 ```7_310.java``` |
+| 8 | loadExisting() | LineIntIndex | 6 | 6 | 0 | 2 ```8_96.java, 8_174.java``` | 5 ```8_94.java, 8_95.java, 8_96.java, 8_173.java, 8_174.java``` | 3 ```8_96.java, 8_173.java, 8_174.java``` | 5 ```8_94.java, 8_95.java, 8_96.java, 8_173.java, 8_174.java``` |
+| 12 | get(BooleanEncodedValue) | VirtualEdgeIteratorState | 4 | 3 | 0 | 2 ```12_46.java, 12_65.java``` | 3 ```12_45.java, 12_46.java, 12_65.java``` | 3 ```12_45.java, 12_46.java, 12_65.java``` | 3 ```12_45.java, 12_46.java, 12_65.java``` |
+| 13 | getReverse(BooleanEncodedValue) | VirtualEdgeIteratorState | 5 | 4 | 0 | 3 ```13_43.java, 12_64.java, 12_97.java``` | 4 ```13_42.java, 13_43.java, 12_64.java, 12_97.java``` | 3 ```13_42.java, 12_43.java, 12_64.java``` | 4 ```13_42.java, 13_43.java, 12_64.java, 12_97.java``` |
+| 15 | getTurnDescription(Translation) | FinishInstruction | 5 | 4 | 0 | 3 ```15_4.java, 15_6.java, 15_7.java``` | 3 ```15_4.java, 15_6.java, 15_7.java``` | 3 ```15_4.java, 15_6.java, 15_7.java``` | 3 ```15_4.java, 15_6.java, 15_7.java``` |
+| 16 | getTurnDescription(Translation) | Instruction | 11 | 10 | 0 | 4 ```16_14.java, 16_25.java, 16_26.java, 16_52.java``` | 3 ```16_25.java, 16_26.java, 16_52.java``` | 2 ```16_25.java, 16_26.java``` | 4 ```16_14.java, 16_25.java, 16_26.java, 16_52.java``` |
+| 17 | getTurnDescription(Translation) | RoundaboutInstruction | 8 | 6 | 0 | 4 ```17_3.java, 17_8.java, 17_21.java, 17_22.java``` | 3 ```17_3.java, 17_21.java, 17_22.java``` | 2 ```17_21.java, 17_22.java``` | 4 ```17_3.java, 17_8.java, 17_21.java, 17_22.java``` |
+| 18 | getTurnDescription(Translation) | ViaInstruction | 5 | 4 | 0 | 3 ```18_3.java, 18_6.java, 18_7.java``` | 3 ```18_3.java, 18_6.java, 18_7.java``` | 3 ```18_3.java, 18_6.java, 18_7.java``` | 3 ```18_3.java, 18_6.java, 18_7.java``` |
+| 19 | init(GraphHopperConfig) | GraphHopper | 26 | 19 | 0 | - | 1 ```19_275.java``` | 1 ```19_275.java``` | 1 ```19_275.java``` |
+| 22 | get(long,String) | StringIndex | 33 | 32 | 0 | - | 14 ```22_8.java, 22_25.java, 22_47.java, 22_76.java, 22_97.java, 22_98.java, 22_111.java, 22_113.java, 22_114.java, 22_115.java, 22_116.java, 22_117.java, 22_118.java, 22_137.java``` | 12 ```22_8.java, 22_25.java, 22_47.java, 22_97.java, 22_98.java, 22_111.java, 22_113.java, 22_114.java, 22_115.java, 22_116.java, 22_117.java, 22_118.java``` | 14 ```22_8.java, 22_25.java, 22_47.java, 22_76.java, 22_97.java, 22_98.java, 22_111.java, 22_113.java, 22_114.java, 22_115.java, 22_116.java, 22_117.java, 22_118.java, 22_137.java``` |
 | TOTAL | 14 MUTs |  | 128 | 107 | 0 / 107 | 24 / 107 | 47 / 107 | 40 / 107 | 49 / 107 (45.8%) |
