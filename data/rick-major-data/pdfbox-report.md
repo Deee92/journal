@@ -1,36 +1,36 @@
 | MUT\# | MUT | CUT | total mutants in MUT | mutants not raising errors | killed by baseline | killed by oo | killed by po | killed by co | killed by (oo +) po + co |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | decode(InputStream, OutputStream, COSDictionary, int, DecodeOptions) | DCTFilter | 16 | 12 | 0 | - | 1 | 1 | 1 |
-| 4 | setCapHeight(float) | PDFontDescriptor | 1 | 1 | 0 | - | 1 | 1 | 1 |
-| 5 | setXHeight(float) | PDFontDescriptor | 1 | 1 | 0 | - | 1 | 1 | 1 |
-| 7 | writePDF(OutputStream) | COSName | 30 | 29 | 0 | - | 8 | 8 | 8 |
-| 8 | getGlyph(int) | GlyphTable | 24 | 24 | 0 | - | 8 | 7 | 8 |
-| 9 | toUnicode(int, GlyphList) | PDTrueTypeFont | 17 | 17 | 0 | 7 | 5 | 5 | 7 |
-| 10 | seek(long) | ScratchFileBuffer | 18 | 14 | 0 | - | 3 | 3 | 3 |
-| 12 | available() | RandomAccessInputStream | 4 | 4 | 0 | 4 | 2 | 2 | 4 |
-| 13 | read(byte[], int, int) | RandomAccessInputStream | 6 | 6 | 0 | 2 | 2 | 2 | 2 |
-| 14 | getPageMode() | PDDocumentCatalog | 6 | 6 | 0 | - | 1 | 1 | 1 |
-| 15 | getNumberOfComponents() | PDICCBased | 6 | 6 | 0 | 3 | 4 | 4 | 4 |
-| 16 | setFont(PDFont,float) | PDPageContentStream | 3 | 2 | 0 | - | 1 | 1 | 1 |
-| 17 | getComponents() | PDColor | 5 | 5 | 0 | - | 1 | 1 | 1 |
-| 18 | containsValue(Object) | COSDictionary | 5 | 4 | 0 | 1 | 3 | 2 | 3 |
-| 19 | getCapHeight() | PDFontDescriptor | 3 | 3 | 0 | 3 | 3 | 3 | 3 |
-| 20 | toRGBImage(WritableRaster) | PDIndexed | 8 | 4 | 0 | - | 1 | 1 | 1 |
-| 21 | addOperator(OperatorProcessor) | PageDrawer | 2 | 1 | 0 | - | 1 | 1 | 1 |
-| 22 | read() | RandomAccessInputStream | 6 | 6 | 0 | 2 | 2 | 2 | 2 |
-| 23 | getFont(COSName) | PDResources | 26 | 26 | 0 | - | 6 | 6 | 6 |
-| 27 | getWidthFromFont(int) | PDTrueTypeFont | 5 | 5 | 0 | 5 | 2 | 2 | 5 |
-| 28 | compare(TextPosition, TextPosition) | TextPositionComparator | 19 | 17 | 0 | 3 | 3 | - | 3 |
-| 29 | getRaster(int, int, int, int) | AxialShadingContext | 37 | 28 | 0 | - | 3 | 3 | 3 |
-| 30 | getAcroForm(PDDocumentFixup) | PDDocumentCatalog | 14 | 14 | 0 | - | 4 | 4 | 4 |
-| 31 | getXObject(COSName) | PDResources | 19 | 19 | 0 | - | 7 | 6 | 7 |
-| 32 | renderImage(int, float, ImageType, RenderDestination) | PDFRenderer | 23 | 17 | 0 | - | 1 | 3 | 3 |
-| 33 | getExtGState(COSName) | PDResources | 17 | 17 | 0 | - | 7 | 6 | 7 |
-| 37 | setMediaBox(PDRectangle) | PDPage | 4 | 4 | 0 | - | 3 | 3 | 3 |
-| 38 | setResources(PDResources) | PDPage | 4 | 4 | 0 | - | 3 | 3 | 3 |
-| 39 | setMatrix(AffineTransform) | PDFormXObject | 4 | 2 | 0 | - | 1 | 1 | 1 |
-| 40 | getShading(COSName) | PDResources | 16 | 16 | 0 | - | 6 | 6 | 6 |
-| 41 | close() | COSWriter | 5 | 5 | 0 | - | 2 | - | 2 |
-| 42 | visitFromName(COSName) | COSWriter | 3 | 2 | 0 | - | 1 | 1 | 1 |
-| 47 | strokePath() | PageDrawer | 1 | 1 | 0 | - | 1 | 1 | 1 |
+| 1 | decode(InputStream, OutputStream, COSDictionary, int, DecodeOptions) | DCTFilter | 16 | 12 | 0 | - | 1 ```1_97.java``` | 1 ```1_97.java``` | 1 ```1_97.java``` |
+| 4 | setCapHeight(float) | PDFontDescriptor | 1 | 1 | 0 | - | 1 ```4_96.java``` | 1 ```4_96.java``` | 1 ```4_96.java``` |
+| 5 | setXHeight(float) | PDFontDescriptor | 1 | 1 | 0 | - | 1 ```5_93.java``` | 1 ```5_93.java``` | 1 ```5_93.java``` |
+| 7 | writePDF(OutputStream) | COSName | 30 | 29 | 0 | - | 8 ```7_547.java, 7_559.java, 7_561.java, 7_566.java, 7_591.java, 7_592.java, 7_593.java, 7_594.java``` | 8 ```7_547.java, 7_559.java, 7_561.java, 7_566.java, 7_591.java, 7_592.java, 7_593.java, 7_594.java``` | 8 ```7_547.java, 7_559.java, 7_561.java, 7_566.java, 7_591.java, 7_592.java, 7_593.java, 7_594.java``` |
+| 8 | getGlyph(int) | GlyphTable | 24 | 24 | 0 | - | 8 ```8_4.java, 8_18.java, 8_25.java, 8_29.java, 8_37.java, 8_38.java, 8_40.java, 8_41.java``` | 7 ```8_18.java, 8_25.java, 8_29.java, 8_37.java, 8_38.java, 8_40.java, 8_41.java``` | 8 ```8_4.java, 8_18.java, 8_25.java, 8_29.java, 8_37.java, 8_38.java, 8_40.java, 8_41.java``` |
+| 9 | toUnicode(int, GlyphList) | PDTrueTypeFont | 17 | 17 | 0 | 7 ```9_6.java, 9_7.java, 9_8.java, 9_31.java, 9_55.java, 9_88.java, 9_89.java``` | 5 ```9_7.java, 9_8.java, 9_55.java, 9_88.java, 9_89.java``` | 5 ```9_7.java, 9_8.java, 9_55.java, 9_88.java, 9_89.java``` | 7 ```9_6.java, 9_7.java, 9_8.java, 9_31.java, 9_55.java, 9_88.java, 9_89.java``` |
+| 10 | seek(long) | ScratchFileBuffer | 18 | 14 | 0 | - | 3 ```10_23.java, 10_43.java, 10_69.java``` | 3 ```10_23.java, 10_43.java, 10_69.java``` | 3 ```10_23.java, 10_43.java, 10_69.java``` |
+| 12 | available() | RandomAccessInputStream | 4 | 4 | 0 | 4 ```12_10.java, 12_11.java, 12_15.java, 12_17.java``` | 2 ```12_10.java, 12_11.java``` | 2 ```12_10.java, 12_11.java``` | 4 ```12_10.java, 12_11.java, 12_15.java, 12_17.java``` |
+| 13 | read(byte[], int, int) | RandomAccessInputStream | 6 | 6 | 0 | 2 ```13_6.java, 13_7.java``` | 2 ```13_6.java, 13_7.java``` | 2 ```13_6.java, 13_7.java``` | 2 ```13_6.java, 13_7.java``` |
+| 14 | getPageMode() | PDDocumentCatalog | 6 | 6 | 0 | - | 1 ```14_116.java``` | 1 ```14_116.java``` | 1 ```14_116.java``` |
+| 15 | getNumberOfComponents() | PDICCBased | 6 | 6 | 0 | 3 ```15_47.java, 15_48.java, 15_80.java``` | 4 ```15_47.java, 15_48.java, 15_79.java, 15_80.java``` | 4 ```15_47.java, 15_48.java, 15_79.java, 15_80.java``` | 4 ```15_47.java, 15_48.java, 15_79.java, 15_80.java``` |
+| 16 | setFont(PDFont,float) | PDPageContentStream | 3 | 2 | 0 | - | 1 ```16_343.java``` | 1 ```16_343.java``` | 1 ```16_343.java``` |
+| 17 | getComponents() | PDColor | 5 | 5 | 0 | - | 1 ```17_21.java``` | 1 ```17_21.java``` | 1 ```17_21.java``` |
+| 18 | containsValue(Object) | COSDictionary | 5 | 4 | 0 | 1 ```18_392.java``` | 3 ```18_141.java, 18_392.java, 18_393.java``` | 2 ```18_392.java, 18_393.java``` | 3 ```18_141.java, 18_392.java, 18_393.java``` |
+| 19 | getCapHeight() | PDFontDescriptor | 3 | 3 | 0 | 3 ```19_5.java, 19_97.java, 19_98.java``` | 3 ```19_5.java, 19_97.java, 19_98.java``` | 3 ```19_5.java, 19_97.java, 19_98.java``` | 3 ```19_5.java, 19_97.java, 19_98.java``` |
+| 20 | toRGBImage(WritableRaster) | PDIndexed | 8 | 4 | 0 | - | 1 ```20_18.java``` | 1 ```20_18.java``` | 1 ```20_18.java``` |
+| 21 | addOperator(OperatorProcessor) | PageDrawer | 2 | 1 | 0 | - | 1 ```21_242.java``` | 1 ```21_242.java``` | 1 ```21_242.java``` |
+| 22 | read() | RandomAccessInputStream | 6 | 6 | 0 | 2 ```22_8.java, 22_9.java``` | 2 ```22_8.java, 22_9.java``` | 2 ```22_8.java, 22_9.java``` | 2 ```22_8.java, 22_9.java``` |
+| 23 | getFont(COSName) | PDResources | 26 | 26 | 0 | - | 6 ```23_52.java, 23_154.java, 23_224.java, 23_269.java, 23_270.java, 23_274.java``` | 6 ```23_52.java, 23_154.java, 23_224.java, 23_269.java, 23_270.java, 23_274.java``` | 6 ```23_52.java, 23_154.java, 23_224.java, 23_269.java, 23_270.java, 23_274.java``` |
+| 27 | getWidthFromFont(int) | PDTrueTypeFont | 5 | 5 | 0 | 5 ```27_38.java, 27_57.java, 27_108.java, 27_187.java, 27_188.java``` | 2 ```27_187.java, 27_188.java``` | 2 ```27_187.java, 27_188.java``` | 5 ```27_38.java, 27_57.java, 27_108.java, 27_187.java, 27_188.java``` |
+| 28 | compare(TextPosition, TextPosition) | TextPositionComparator | 19 | 17 | 0 | 3 ```28_11.java, 28_12.java, 28_19.java``` | 3 ```28_11.java, 28_12.java, 28_19.java``` | - | 3 ```28_11.java, 28_12.java, 28_19.java``` |
+| 29 | getRaster(int, int, int, int) | AxialShadingContext | 37 | 28 | 0 | - | 3 ```29_21.java, 29_32.java, 29_33.java``` | 3 ```29_21.java, 29_32.java, 29_33.java``` | 3 ```29_21.java, 29_32.java, 29_33.java``` |
+| 30 | getAcroForm(PDDocumentFixup) | PDDocumentCatalog | 14 | 14 | 0 | - | 4 ```30_21.java, 30_140.java, 30_166.java, 30_167.java``` | 4 ```30_21.java, 30_140.java, 30_166.java, 30_167.java``` | 4 ```30_21.java, 30_140.java, 30_166.java, 30_167.java``` |
+| 31 | getXObject(COSName) | PDResources | 19 | 19 | 0 | - | 7 ```31_43.java, 31_117.java, 31_213.java, 31_234.java, 31_235.java, 31_236.java, 31_237.java``` | 6 ```31_43.java, 31_117.java, 31_213.java, 31_234.java, 31_235.java, 31_237.java``` | 7 ```31_43.java, 31_117.java, 31_213.java, 31_234.java, 31_235.java, 31_236.java, 31_237.java``` |
+| 32 | renderImage(int, float, ImageType, RenderDestination) | PDFRenderer | 23 | 17 | 0 | - | 1 ```32_91.java``` | 3 ```32_71.java, 32_91.java, 32_128.java``` | 3 ```32_71.java, 32_91.java, 32_128.java``` |
+| 33 | getExtGState(COSName) | PDResources | 17 | 17 | 0 | - | 7 ```33_48.java, 33_101.java, 33_138.java, 33_219.java, 33_256.java, 33_357.java, 33_258.java``` | 6 ```33_48.java, 33_138.java, 33_219.java, 33_256.java, 33_357.java, 33_258.java``` | 7 ```33_48.java, 33_101.java, 33_138.java, 33_219.java, 33_256.java, 33_357.java, 33_258.java``` |
+| 37 | setMediaBox(PDRectangle) | PDPage | 4 | 4 | 0 | - | 3 ```37_23.java, 37_139.java, 37_167.java``` | 3 ```37_23.java, 37_139.java, 37_167.java``` | 3 ```37_23.java, 37_139.java, 37_167.java``` |
+| 38 | setResources(PDResources) | PDPage | 4 | 4 | 0 | - | 3 ```38_24.java, 38_146.java, 38_170.java``` | 3 ```38_24.java, 38_146.java, 38_170.java``` | 3 ```38_24.java, 38_146.java, 38_170.java``` |
+| 39 | setMatrix(AffineTransform) | PDFormXObject | 4 | 2 | 0 | - | 1 ```39_11.java``` | 1 ```39_11.java``` | 1 ```39_11.java``` |
+| 40 | getShading(COSName) | PDResources | 16 | 16 | 0 | - | 6 ```40_47.java, 40_133.java, 40_218.java, 40_251.java, 40_252.java, 40_253.java``` | 6 ```40_47.java, 40_133.java, 40_218.java, 40_251.java, 40_252.java, 40_253.java``` | 6 ```40_47.java, 40_133.java, 40_218.java, 40_251.java, 40_252.java, 40_253.java``` |
+| 41 | close() | COSWriter | 5 | 5 | 0 | - | 2 ```41_253.java, 41_308.java``` | - | 2 ```41_253.java, 41_308.java``` |
+| 42 | visitFromName(COSName) | COSWriter | 3 | 2 | 0 | - | 1 ```42_216.java``` | 1 ```42_216.java``` | 1 ```42_216.java``` |
+| 47 | strokePath() | PageDrawer | 1 | 1 | 0 | - | 1 ```47_385.java``` | 1 ```47_385.java``` | 1 ```47_385.java``` |
 | TOTAL | 33 MUTs |  | 358 | 322 | 0 / 322 | 30 / 322 | 98 / 322 | 91 / 322 | 107 / 322 (33.2%) |
