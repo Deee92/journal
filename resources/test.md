@@ -111,6 +111,7 @@
 - [saucelabs/the-internet](https://the-internet.herokuapp.com/)
 - [httpbin](https://httpbin.org/)
 - [howtheytest](https://github.com/abhivaikar/howtheytest)
+- [How to test it](https://howtotestit.wordpress.com/)
 - [Testing for Java](https://github.com/akullpp/awesome-java#testing)
 - [Test Automation University](https://testautomationu.applitools.com/)
 - [Software Testing Weekly](https://softwaretestingweekly.com/issues)
