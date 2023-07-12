@@ -1,0 +1,2166 @@
+[
+  {
+    "name": "classgraph",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/classgraph/",
+    "jar": "classgraph-4.8.154.jar",
+    "project_classes": 261,
+    "deps_orig": [
+      "jvm-driver-9.4.2.jar",
+      "narcissus-1.0.7.jar"
+    ],
+    "deps_spl": [
+      "jvm-driver-9.4.2.jar",
+      "narcissus-1.0.7.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [],
+    "project_size": 1153.5712890625,
+    "jvm-driver-9.4.2.jar": {
+      "original": {
+        "classes": 208,
+        "size": 424609
+      },
+      "spl": {
+        "classes": 200,
+        "size": 407424
+      }
+    },
+    "narcissus-1.0.7.jar": {
+      "original": {
+        "classes": 16,
+        "size": 41399
+      },
+      "spl": {
+        "classes": 14,
+        "size": 38106
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 224,
+    "class_reduction": 10,
+    "total_original_size": 1608.6572265625,
+    "total_final_size": 1588.6591796875,
+    "percentage_reduction": 1.2431515269249331
+  },
+  {
+    "name": "commons-validator",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/commons-validator/",
+    "jar": "commons-validator-1.7.jar",
+    "project_classes": 64,
+    "deps_orig": [
+      "commons-beanutils-1.9.4.jar",
+      "commons-collections-3.2.2.jar",
+      "commons-digester-2.1.jar",
+      "commons-logging-1.2.jar"
+    ],
+    "deps_spl": [
+      "commons-beanutils-1.9.4.jar",
+      "commons-collections-3.2.2.jar",
+      "commons-digester-2.1.jar",
+      "commons-logging-1.2.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [],
+    "project_size": 295.609375,
+    "commons-beanutils-1.9.4.jar": {
+      "original": {
+        "classes": 137,
+        "size": 484061
+      },
+      "spl": {
+        "classes": 63,
+        "size": 241286
+      }
+    },
+    "commons-collections-3.2.2.jar": {
+      "original": {
+        "classes": 460,
+        "size": 1116578
+      },
+      "spl": {
+        "classes": 7,
+        "size": 16099
+      }
+    },
+    "commons-digester-2.1.jar": {
+      "original": {
+        "classes": 155,
+        "size": 359028
+      },
+      "spl": {
+        "classes": 62,
+        "size": 182236
+      }
+    },
+    "commons-logging-1.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 102911
+      },
+      "spl": {
+        "classes": 23,
+        "size": 87696
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 780,
+    "class_reduction": 625,
+    "total_original_size": 2309.845703125,
+    "total_final_size": 810.5673828125,
+    "percentage_reduction": 64.90815894257005
+  },
+  {
+    "name": "CoreNLP",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/CoreNLP/",
+    "jar": "stanford-corenlp-4.5.1.jar",
+    "project_classes": 3932,
+    "deps_orig": [
+      "AppleJavaExtensions-1.4.jar",
+      "ejml-dsparse-0.39.jar",
+      "istack-commons-runtime-3.0.7.jar",
+      "jaxb-impl-2.4.0-b180830.0438.jar",
+      "lucene-analyzers-common-7.5.0.jar",
+      "protobuf-java-3.19.2.jar",
+      "xml-apis-1.3.03.jar",
+      "commons-lang3-3.3.1.jar",
+      "ejml-fdense-0.39.jar",
+      "javax.activation-api-1.2.0.jar",
+      "joda-time-2.10.5.jar",
+      "lucene-core-7.5.0.jar",
+      "serializer-2.7.2.jar",
+      "xom-1.3.7.jar",
+      "ejml-cdense-0.39.jar",
+      "ejml-fsparse-0.39.jar",
+      "javax.json-1.0.4.jar",
+      "jollyday-0.4.9.jar",
+      "lucene-queries-7.5.0.jar",
+      "slf4j-api-1.7.12.jar",
+      "ejml-core-0.39.jar",
+      "ejml-simple-0.39.jar",
+      "javax.servlet-api-3.0.1.jar",
+      "json-simple-1.1.1.jar",
+      "lucene-queryparser-7.5.0.jar",
+      "xalan-2.7.2.jar",
+      "ejml-ddense-0.39.jar",
+      "ejml-zdense-0.39.jar",
+      "jaxb-api-2.4.0-b180830.0359.jar",
+      "jsr305-3.0.2.jar",
+      "lucene-sandbox-7.5.0.jar",
+      "xercesImpl-2.8.0.jar"
+    ],
+    "deps_spl": [
+      "AppleJavaExtensions-1.4.jar",
+      "ejml-dsparse-0.39.jar",
+      "istack-commons-runtime-3.0.7.jar",
+      "joda-time-2.10.5.jar",
+      "lucene-core-7.5.0.jar",
+      "xalan-2.7.2.jar",
+      "commons-lang3-3.3.1.jar",
+      "ejml-fdense-0.39.jar",
+      "javax.activation-api-1.2.0.jar",
+      "jollyday-0.4.9.jar",
+      "lucene-queryparser-7.5.0.jar",
+      "xercesImpl-2.8.0.jar",
+      "ejml-cdense-0.39.jar",
+      "ejml-fsparse-0.39.jar",
+      "javax.servlet-api-3.0.1.jar",
+      "json-simple-1.1.1.jar",
+      "protobuf-java-3.19.2.jar",
+      "xml-apis-1.3.03.jar",
+      "ejml-core-0.39.jar",
+      "ejml-simple-0.39.jar",
+      "jaxb-api-2.4.0-b180830.0359.jar",
+      "jsr305-3.0.2.jar",
+      "serializer-2.7.2.jar",
+      "xom-1.3.7.jar",
+      "ejml-ddense-0.39.jar",
+      "ejml-zdense-0.39.jar",
+      "jaxb-impl-2.4.0-b180830.0438.jar",
+      "lucene-analyzers-common-7.5.0.jar",
+      "slf4j-api-1.7.12.jar"
+    ],
+    "deps_non_spl": [
+      "javax.json-1.0.4.jar"
+    ],
+    "deps_bloated": [
+      "lucene-queries-7.5.0.jar",
+      "lucene-sandbox-7.5.0.jar"
+    ],
+    "project_size": 24111.1708984375,
+    "AppleJavaExtensions-1.4.jar": {
+      "original": {
+        "classes": 21,
+        "size": 14590
+      },
+      "spl": {
+        "classes": 4,
+        "size": 4073
+      }
+    },
+    "ejml-dsparse-0.39.jar": {
+      "original": {
+        "classes": 27,
+        "size": 133129
+      },
+      "spl": {
+        "classes": 22,
+        "size": 120997
+      }
+    },
+    "istack-commons-runtime-3.0.7.jar": {
+      "original": {
+        "classes": 22,
+        "size": 39489
+      },
+      "spl": {
+        "classes": 8,
+        "size": 7371
+      }
+    },
+    "jaxb-impl-2.4.0-b180830.0438.jar": {
+      "original": {
+        "classes": 642,
+        "size": 1815293
+      },
+      "spl": {
+        "classes": 574,
+        "size": 1741892
+      }
+    },
+    "lucene-analyzers-common-7.5.0.jar": {
+      "original": {
+        "classes": 578,
+        "size": 3904814
+      },
+      "spl": {
+        "classes": 2,
+        "size": 3670
+      }
+    },
+    "protobuf-java-3.19.2.jar": {
+      "original": {
+        "classes": 675,
+        "size": 4438865
+      },
+      "spl": {
+        "classes": 498,
+        "size": 3205584
+      }
+    },
+    "xml-apis-1.3.03.jar": {
+      "original": {
+        "classes": 302,
+        "size": 269926
+      },
+      "spl": {
+        "classes": 201,
+        "size": 212974
+      }
+    },
+    "commons-lang3-3.3.1.jar": {
+      "original": {
+        "classes": 217,
+        "size": 861964
+      },
+      "spl": {
+        "classes": 61,
+        "size": 362400
+      }
+    },
+    "ejml-fdense-0.39.jar": {
+      "original": {
+        "classes": 124,
+        "size": 717563
+      },
+      "spl": {
+        "classes": 94,
+        "size": 464423
+      }
+    },
+    "javax.activation-api-1.2.0.jar": {
+      "original": {
+        "classes": 31,
+        "size": 73108
+      },
+      "spl": {
+        "classes": 27,
+        "size": 61948
+      }
+    },
+    "joda-time-2.10.5.jar": {
+      "original": {
+        "classes": 247,
+        "size": 876405
+      },
+      "spl": {
+        "classes": 227,
+        "size": 793554
+      }
+    },
+    "lucene-core-7.5.0.jar": {
+      "original": {
+        "classes": 1923,
+        "size": 5965898
+      },
+      "spl": {
+        "classes": 1082,
+        "size": 3420146
+      }
+    },
+    "serializer-2.7.2.jar": {
+      "original": {
+        "classes": 108,
+        "size": 513867
+      },
+      "spl": {
+        "classes": 69,
+        "size": 265353
+      }
+    },
+    "xom-1.3.7.jar": {
+      "original": {
+        "classes": 287,
+        "size": 539414
+      },
+      "spl": {
+        "classes": 262,
+        "size": 474819
+      }
+    },
+    "ejml-cdense-0.39.jar": {
+      "original": {
+        "classes": 31,
+        "size": 139035
+      },
+      "spl": {
+        "classes": 22,
+        "size": 101045
+      }
+    },
+    "ejml-fsparse-0.39.jar": {
+      "original": {
+        "classes": 26,
+        "size": 132360
+      },
+      "spl": {
+        "classes": 22,
+        "size": 120874
+      }
+    },
+    "javax.json-1.0.4.jar": {
+      "original": {
+        "classes": 72,
+        "size": 155597
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 72,
+        "size": 155597
+      }
+    },
+    "jollyday-0.4.9.jar": {
+      "original": {
+        "classes": 82,
+        "size": 173920
+      },
+      "spl": {
+        "classes": 60,
+        "size": 126783
+      }
+    },
+    "lucene-queries-7.5.0.jar": {
+      "original": {
+        "classes": 208,
+        "size": 510979
+      }
+    },
+    "slf4j-api-1.7.12.jar": {
+      "original": {
+        "classes": 28,
+        "size": 60137
+      },
+      "spl": {
+        "classes": 13,
+        "size": 34541
+      }
+    },
+    "ejml-core-0.39.jar": {
+      "original": {
+        "classes": 147,
+        "size": 370925
+      },
+      "spl": {
+        "classes": 139,
+        "size": 351457
+      }
+    },
+    "ejml-simple-0.39.jar": {
+      "original": {
+        "classes": 146,
+        "size": 371418
+      },
+      "spl": {
+        "classes": 145,
+        "size": 370627
+      }
+    },
+    "javax.servlet-api-3.0.1.jar": {
+      "original": {
+        "classes": 74,
+        "size": 102079
+      },
+      "spl": {
+        "classes": 49,
+        "size": 74004
+      }
+    },
+    "json-simple-1.1.1.jar": {
+      "original": {
+        "classes": 12,
+        "size": 39181
+      },
+      "spl": {
+        "classes": 11,
+        "size": 35242
+      }
+    },
+    "lucene-queryparser-7.5.0.jar": {
+      "original": {
+        "classes": 254,
+        "size": 701918
+      },
+      "spl": {
+        "classes": 2,
+        "size": 4992
+      }
+    },
+    "xalan-2.7.2.jar": {
+      "original": {
+        "classes": 1501,
+        "size": 6588683
+      },
+      "spl": {
+        "classes": 572,
+        "size": 2049048
+      }
+    },
+    "ejml-ddense-0.39.jar": {
+      "original": {
+        "classes": 124,
+        "size": 719054
+      },
+      "spl": {
+        "classes": 94,
+        "size": 465076
+      }
+    },
+    "ejml-zdense-0.39.jar": {
+      "original": {
+        "classes": 31,
+        "size": 139548
+      },
+      "spl": {
+        "classes": 22,
+        "size": 101527
+      }
+    },
+    "jaxb-api-2.4.0-b180830.0359.jar": {
+      "original": {
+        "classes": 112,
+        "size": 188256
+      },
+      "spl": {
+        "classes": 92,
+        "size": 151344
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 7,
+        "size": 4704
+      }
+    },
+    "lucene-sandbox-7.5.0.jar": {
+      "original": {
+        "classes": 156,
+        "size": 502799
+      }
+    },
+    "xercesImpl-2.8.0.jar": {
+      "original": {
+        "classes": 878,
+        "size": 2368333
+      },
+      "spl": {
+        "classes": 656,
+        "size": 2043325
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 364,
+      "size": 1013778
+    },
+    "total_classes_orig_deps": 9121,
+    "class_reduction": 4012,
+    "total_original_size": 56776.98046875,
+    "total_final_size": 41034.4033203125,
+    "percentage_reduction": 27.72704187236974
+  },
+  {
+    "name": "guice/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/guice/core/",
+    "jar": "original-guice-5.1.0.jar",
+    "project_classes": 460,
+    "deps_orig": [
+      "aopalliance-1.0.jar",
+      "checker-qual-3.5.0.jar",
+      "failureaccess-1.0.1.jar",
+      "j2objc-annotations-1.3.jar",
+      "jsr305-3.0.1.jar",
+      "asm-9.2.jar",
+      "error_prone_annotations-2.3.4.jar",
+      "guava-30.1-jre.jar",
+      "javax.inject-1.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    ],
+    "deps_spl": [
+      "aopalliance-1.0.jar",
+      "asm-9.2.jar",
+      "checker-qual-3.5.0.jar",
+      "error_prone_annotations-2.3.4.jar",
+      "guava-30.1-jre.jar",
+      "j2objc-annotations-1.3.jar",
+      "jsr305-3.0.1.jar"
+    ],
+    "deps_non_spl": [
+      "failureaccess-1.0.1.jar",
+      "javax.inject-1.jar"
+    ],
+    "deps_bloated": [
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    ],
+    "project_size": 1482.880859375,
+    "aopalliance-1.0.jar": {
+      "original": {
+        "classes": 9,
+        "size": 3388
+      },
+      "spl": {
+        "classes": 6,
+        "size": 1342
+      }
+    },
+    "checker-qual-3.5.0.jar": {
+      "original": {
+        "classes": 321,
+        "size": 269718
+      },
+      "spl": {
+        "classes": 12,
+        "size": 12670
+      }
+    },
+    "failureaccess-1.0.1.jar": {
+      "original": {
+        "classes": 2,
+        "size": 1201
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 2,
+        "size": 1201
+      }
+    },
+    "j2objc-annotations-1.3.jar": {
+      "original": {
+        "classes": 12,
+        "size": 7232
+      },
+      "spl": {
+        "classes": 4,
+        "size": 2665
+      }
+    },
+    "jsr305-3.0.1.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21257
+      },
+      "spl": {
+        "classes": 8,
+        "size": 5162
+      }
+    },
+    "asm-9.2.jar": {
+      "original": {
+        "classes": 38,
+        "size": 243663
+      },
+      "spl": {
+        "classes": 34,
+        "size": 235244
+      }
+    },
+    "error_prone_annotations-2.3.4.jar": {
+      "original": {
+        "classes": 22,
+        "size": 11044
+      },
+      "spl": {
+        "classes": 9,
+        "size": 4758
+      }
+    },
+    "guava-30.1-jre.jar": {
+      "original": {
+        "classes": 2029,
+        "size": 6300161
+      },
+      "spl": {
+        "classes": 1066,
+        "size": 3435897
+      }
+    },
+    "javax.inject-1.jar": {
+      "original": {
+        "classes": 6,
+        "size": 2311
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 6,
+        "size": 2311
+      }
+    },
+    "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 2474,
+    "class_reduction": 1327,
+    "total_original_size": 8182.0751953125,
+    "total_final_size": 5097.3828125,
+    "percentage_reduction": 37.70061150965364
+  },
+  {
+    "name": "httpcomponents-client/httpclient5",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/httpcomponents-client/httpclient5/",
+    "jar": "httpclient5-5.2.1.jar",
+    "project_classes": 493,
+    "deps_orig": [
+      "conscrypt-openjdk-uber-2.5.2.jar",
+      "dec-0.1.2.jar",
+      "httpcore5-5.2.jar",
+      "httpcore5-h2-5.2.jar",
+      "slf4j-api-1.7.36.jar"
+    ],
+    "deps_spl": [
+      "conscrypt-openjdk-uber-2.5.2.jar",
+      "httpcore5-5.2.jar",
+      "httpcore5-h2-5.2.jar",
+      "slf4j-api-1.7.36.jar"
+    ],
+    "deps_non_spl": [
+      "dec-0.1.2.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 1667.3798828125,
+    "conscrypt-openjdk-uber-2.5.2.jar": {
+      "original": {
+        "classes": 316,
+        "size": 922469
+      },
+      "spl": {
+        "classes": 176,
+        "size": 668392
+      }
+    },
+    "dec-0.1.2.jar": {
+      "original": {
+        "classes": 19,
+        "size": 201594
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 19,
+        "size": 201594
+      }
+    },
+    "httpcore5-5.2.jar": {
+      "original": {
+        "classes": 635,
+        "size": 1840485
+      },
+      "spl": {
+        "classes": 406,
+        "size": 1149234
+      }
+    },
+    "httpcore5-h2-5.2.jar": {
+      "original": {
+        "classes": 149,
+        "size": 509020
+      },
+      "spl": {
+        "classes": 93,
+        "size": 314377
+      }
+    },
+    "slf4j-api-1.7.36.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82200
+      },
+      "spl": {
+        "classes": 27,
+        "size": 71970
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 1153,
+    "class_reduction": 432,
+    "total_original_size": 5139.8095703125,
+    "total_final_size": 4016.56640625,
+    "percentage_reduction": 21.85378949738418
+  },
+  {
+    "name": "immutables/gson",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/immutables/gson/",
+    "jar": "gson-2.9.3.jar",
+    "project_classes": 31,
+    "deps_orig": [
+      "gson-2.8.8.jar",
+      "javax.ws.rs-api-2.0.jar"
+    ],
+    "deps_spl": [
+      "gson-2.8.8.jar",
+      "javax.ws.rs-api-2.0.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [],
+    "project_size": 77.9658203125,
+    "gson-2.8.8.jar": {
+      "original": {
+        "classes": 182,
+        "size": 466748
+      },
+      "spl": {
+        "classes": 169,
+        "size": 429353
+      }
+    },
+    "javax.ws.rs-api-2.0.jar": {
+      "original": {
+        "classes": 125,
+        "size": 202937
+      },
+      "spl": {
+        "classes": 90,
+        "size": 159586
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 307,
+    "class_reduction": 48,
+    "total_original_size": 731.955078125,
+    "total_final_size": 653.1015625,
+    "percentage_reduction": 10.77299932490307
+  },
+  {
+    "name": "jimfs",
+    "path": "/home/dee/dev/deptrim-major/execution-results/jimfs/",
+    "jar": "jimfs-1.2.jar",
+    "project_classes": 124,
+    "deps_orig": [
+      "auto-service-annotations-1.0-rc7.jar",
+      "error_prone_annotations-2.3.4.jar",
+      "guava-30.1-android.jar",
+      "j2objc-annotations-1.3.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "checker-compat-qual-2.5.5.jar",
+      "failureaccess-1.0.1.jar",
+      "icu4j-68.2.jar",
+      "jsr305-3.0.2.jar"
+    ],
+    "deps_spl": [
+      "checker-compat-qual-2.5.5.jar",
+      "jsr305-3.0.2.jar",
+      "error_prone_annotations-2.3.4.jar",
+      "icu4j-68.2.jar",
+      "j2objc-annotations-1.3.jar",
+      "guava-30.1-android.jar"
+    ],
+    "deps_non_spl": [
+      "auto-service-annotations-1.0-rc7.jar",
+      "failureaccess-1.0.1.jar"
+    ],
+    "deps_bloated": [
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    ],
+    "project_size": 437.1044921875,
+    "auto-service-annotations-1.0-rc7.jar": {
+      "original": {
+        "classes": 1,
+        "size": 512
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 1,
+        "size": 512
+      }
+    },
+    "error_prone_annotations-2.3.4.jar": {
+      "original": {
+        "classes": 22,
+        "size": 11044
+      },
+      "spl": {
+        "classes": 9,
+        "size": 4758
+      }
+    },
+    "guava-30.1-android.jar": {
+      "original": {
+        "classes": 1952,
+        "size": 5854098
+      },
+      "spl": {
+        "classes": 860,
+        "size": 2712058
+      }
+    },
+    "j2objc-annotations-1.3.jar": {
+      "original": {
+        "classes": 12,
+        "size": 7232
+      },
+      "spl": {
+        "classes": 4,
+        "size": 2665
+      }
+    },
+    "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "checker-compat-qual-2.5.5.jar": {
+      "original": {
+        "classes": 10,
+        "size": 4404
+      },
+      "spl": {
+        "classes": 2,
+        "size": 746
+      }
+    },
+    "failureaccess-1.0.1.jar": {
+      "original": {
+        "classes": 2,
+        "size": 1201
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 2,
+        "size": 1201
+      }
+    },
+    "icu4j-68.2.jar": {
+      "original": {
+        "classes": 1526,
+        "size": 5490745
+      },
+      "spl": {
+        "classes": 934,
+        "size": 3317086
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 7,
+        "size": 4883
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 3560,
+    "class_reduction": 1741,
+    "total_original_size": 11560.6181640625,
+    "total_final_size": 6339.359375,
+    "percentage_reduction": 45.1641833936993
+  },
+  {
+    "name": "pdfbox/pdfbox",
+    "path": "/home/dee/dev/deptrim-major/execution-results/pdfbox_pdfbox/",
+    "jar": "pdfbox-3.0.0-SNAPSHOT.jar",
+    "project_classes": 754,
+    "deps_orig": [
+      "bcmail-jdk18on-1.72.jar",
+      "bcpkix-jdk18on-1.72.jar",
+      "bcprov-jdk18on-1.72.jar",
+      "bcutil-jdk18on-1.72.jar",
+      "commons-logging-1.2.jar",
+      "fontbox-3.0.0-SNAPSHOT.jar",
+      "io-3.0.0-SNAPSHOT.jar"
+    ],
+    "deps_spl": [
+      "bcpkix-jdk18on-1.72.jar",
+      "bcprov-jdk18on-1.72.jar",
+      "bcutil-jdk18on-1.72.jar",
+      "commons-logging-1.2.jar",
+      "fontbox-3.0.0-SNAPSHOT.jar",
+      "io-3.0.0-SNAPSHOT.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [
+      "bcmail-jdk18on-1.72.jar"
+    ],
+    "project_size": 3223.107421875,
+    "bcmail-jdk18on-1.72.jar": {
+      "original": {
+        "classes": 63,
+        "size": 176232
+      }
+    },
+    "bcpkix-jdk18on-1.72.jar": {
+      "original": {
+        "classes": 853,
+        "size": 1809361
+      },
+      "spl": {
+        "classes": 109,
+        "size": 243482
+      }
+    },
+    "bcprov-jdk18on-1.72.jar": {
+      "original": {
+        "classes": 5114,
+        "size": 12030367
+      },
+      "spl": {
+        "classes": 1346,
+        "size": 3574162
+      }
+    },
+    "bcutil-jdk18on-1.72.jar": {
+      "original": {
+        "classes": 583,
+        "size": 1209345
+      },
+      "spl": {
+        "classes": 33,
+        "size": 76158
+      }
+    },
+    "commons-logging-1.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 102911
+      },
+      "spl": {
+        "classes": 23,
+        "size": 87696
+      }
+    },
+    "fontbox-3.0.0-SNAPSHOT.jar": {
+      "original": {
+        "classes": 178,
+        "size": 649070
+      },
+      "spl": {
+        "classes": 176,
+        "size": 637550
+      }
+    },
+    "io-3.0.0-SNAPSHOT.jar": {
+      "original": {
+        "classes": 17,
+        "size": 63732
+      },
+      "spl": {
+        "classes": 16,
+        "size": 58407
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 63,
+      "size": 176232
+    },
+    "total_classes_orig_deps": 6836,
+    "class_reduction": 5133,
+    "total_original_size": 18888.1640625,
+    "total_final_size": 7790.9345703125,
+    "percentage_reduction": 58.752292999294774
+  },
+  {
+    "name": "pf4j/pf4j",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/pf4j/pf4j/",
+    "jar": "pf4j-3.8.0.jar",
+    "project_classes": 93,
+    "deps_orig": [
+      "asm-9.1.jar",
+      "java-semver-0.9.0.jar",
+      "slf4j-api-1.7.30.jar"
+    ],
+    "deps_spl": [
+      "asm-9.1.jar",
+      "slf4j-api-1.7.30.jar"
+    ],
+    "deps_non_spl": [
+      "java-semver-0.9.0.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 243.6259765625,
+    "asm-9.1.jar": {
+      "original": {
+        "classes": 38,
+        "size": 243189
+      },
+      "spl": {
+        "classes": 35,
+        "size": 234962
+      }
+    },
+    "java-semver-0.9.0.jar": {
+      "original": {
+        "classes": 43,
+        "size": 82837
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 43,
+        "size": 82837
+      }
+    },
+    "slf4j-api-1.7.30.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82200
+      },
+      "spl": {
+        "classes": 27,
+        "size": 71970
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 115,
+    "class_reduction": 10,
+    "total_original_size": 642.2841796875,
+    "total_final_size": 624.259765625,
+    "percentage_reduction": 2.8062989300576704
+  },
+  {
+    "name": "Recaf",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/with-workload/Recaf/",
+    "jar": "recaf-2.21.13.jar",
+    "project_classes": 538,
+    "deps_orig": [
+      "annotations-3.0.1.jar",
+      "commons-io-2.11.0.jar",
+      "javassist-3.28.0-GA.jar",
+      "jregex-1.2_01.jar",
+      "reactfx-2.0-M5.jar",
+      "args4j-2.33.jar",
+      "commons-lang3-3.11.jar",
+      "javax.inject-1.jar",
+      "jsoup-1.14.3.jar",
+      "reflectasm-1.11.9.jar",
+      "asm-9.2.jar",
+      "cssparser-0.9.29.jar",
+      "jcip-annotations-1.0.jar",
+      "jsr305-3.0.2.jar",
+      "richtextfx-0.10.6.jar",
+      "asm-analysis-9.2.jar",
+      "directories-12.jar",
+      "jgrapht-core-1.0.1.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "sac-1.3.jar",
+      "asm-commons-9.2.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "jline-3.19.0.jar",
+      "logback-classic-1.2.10.jar",
+      "SimAnalyzer-1.6.0.jar",
+      "asm-tree-9.2.jar",
+      "failureaccess-1.0.1.jar",
+      "jline-builtins-3.21.0.jar",
+      "logback-core-1.2.3.jar",
+      "slf4j-api-1.7.30.jar",
+      "asm-util-9.2.jar",
+      "flowless-0.6.3.jar",
+      "jline-reader-3.21.0.jar",
+      "minimal-json-0.9.5.jar",
+      "undofx-2.1.0.jar",
+      "CAFED00D-1.9.6.jar",
+      "forgeflower-1.5.498.29.jar",
+      "jline-style-3.21.0.jar",
+      "picocli-4.6.3.jar",
+      "wellbehavedfx-0.3.3.jar",
+      "cfr-0.152.jar",
+      "guava-31.1-jre.jar",
+      "jline-terminal-3.21.0.jar",
+      "picocli-shell-jline3-4.6.3.jar",
+      "checker-qual-3.12.0.jar",
+      "j2objc-annotations-1.3.jar",
+      "jline-terminal-jna-3.21.0.jar",
+      "plugface-core-0.7.1.jar",
+      "commonmark-0.18.2.jar",
+      "javaparser-core-3.24.2.jar",
+      "jna-5.9.0.jar",
+      "procyon-compilertools-0.6.0.jar",
+      "commons-codec-1.15.jar",
+      "javaparser-symbol-solver-core-3.24.2.jar",
+      "jphantom-1.4.3.jar",
+      "procyon-core-0.6.0.jar"
+    ],
+    "deps_spl": [
+      "annotations-3.0.1.jar",
+      "checker-qual-3.12.0.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "javaparser-symbol-solver-core-3.24.2.jar",
+      "jline-reader-3.21.0.jar",
+      "logback-classic-1.2.10.jar",
+      "procyon-core-0.6.0.jar",
+      "args4j-2.33.jar",
+      "commonmark-0.18.2.jar",
+      "flowless-0.6.3.jar",
+      "javassist-3.28.0-GA.jar",
+      "jline-terminal-3.21.0.jar",
+      "logback-core-1.2.3.jar",
+      "reactfx-2.0-M5.jar",
+      "asm-analysis-9.2.jar",
+      "commons-codec-1.15.jar",
+      "forgeflower-1.5.498.29.jar",
+      "javax.inject-1.jar",
+      "jphantom-1.4.3.jar",
+      "picocli-4.6.3.jar",
+      "richtextfx-0.10.6.jar",
+      "asm-commons-9.2.jar",
+      "commons-io-2.11.0.jar",
+      "guava-31.1-jre.jar",
+      "jgrapht-core-1.0.1.jar",
+      "jregex-1.2_01.jar",
+      "picocli-shell-jline3-4.6.3.jar",
+      "SimAnalyzer-1.6.0.jar",
+      "asm-util-9.2.jar",
+      "cssparser-0.9.29.jar",
+      "j2objc-annotations-1.3.jar",
+      "jline-3.19.0.jar",
+      "jsoup-1.14.3.jar",
+      "plugface-core-0.7.1.jar",
+      "slf4j-api-1.7.30.jar",
+      "cfr-0.152.jar",
+      "directories-12.jar",
+      "javaparser-core-3.24.2.jar",
+      "jline-builtins-3.21.0.jar",
+      "jsr305-3.0.2.jar",
+      "procyon-compilertools-0.6.0.jar"
+    ],
+    "deps_non_spl": [
+      "asm-9.2.jar",
+      "asm-tree-9.2.jar",
+      "CAFED00D-1.9.6.jar",
+      "minimal-json-0.9.5.jar",
+      "reflectasm-1.11.9.jar",
+      "sac-1.3.jar",
+      "undofx-2.1.0.jar",
+      "wellbehavedfx-0.3.3.jar"
+    ],
+    "deps_bloated": [
+      "commons-lang3-3.11.jar",
+      "failureaccess-1.0.1.jar",
+      "jcip-annotations-1.0.jar",
+      "jline-style-3.21.0.jar",
+      "jline-terminal-jna-3.21.0.jar",
+      "jna-5.9.0.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    ],
+    "project_size": 1970.59375,
+    "annotations-3.0.1.jar": {
+      "original": {
+        "classes": 60,
+        "size": 39595
+      },
+      "spl": {
+        "classes": 11,
+        "size": 6744
+      }
+    },
+    "commons-io-2.11.0.jar": {
+      "original": {
+        "classes": 201,
+        "size": 628032
+      },
+      "spl": {
+        "classes": 60,
+        "size": 261347
+      }
+    },
+    "javassist-3.28.0-GA.jar": {
+      "original": {
+        "classes": 426,
+        "size": 1535868
+      },
+      "spl": {
+        "classes": 339,
+        "size": 1265839
+      }
+    },
+    "jregex-1.2_01.jar": {
+      "original": {
+        "classes": 68,
+        "size": 158602
+      },
+      "spl": {
+        "classes": 44,
+        "size": 126770
+      }
+    },
+    "reactfx-2.0-M5.jar": {
+      "original": {
+        "classes": 356,
+        "size": 1006563
+      },
+      "spl": {
+        "classes": 297,
+        "size": 872113
+      }
+    },
+    "args4j-2.33.jar": {
+      "original": {
+        "classes": 74,
+        "size": 157080
+      },
+      "spl": {
+        "classes": 52,
+        "size": 110473
+      }
+    },
+    "commons-lang3-3.11.jar": {
+      "original": {
+        "classes": 339,
+        "size": 1228251
+      }
+    },
+    "javax.inject-1.jar": {
+      "original": {
+        "classes": 6,
+        "size": 2311
+      },
+      "spl": {
+        "classes": 1,
+        "size": 450
+      }
+    },
+    "jsoup-1.14.3.jar": {
+      "original": {
+        "classes": 259,
+        "size": 751289
+      },
+      "spl": {
+        "classes": 250,
+        "size": 749094
+      }
+    },
+    "reflectasm-1.11.9.jar": {
+      "original": {
+        "classes": 26,
+        "size": 145046
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 26,
+        "size": 145046
+      }
+    },
+    "asm-9.2.jar": {
+      "original": {
+        "classes": 38,
+        "size": 243663
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 38,
+        "size": 243663
+      }
+    },
+    "cssparser-0.9.29.jar": {
+      "original": {
+        "classes": 104,
+        "size": 878541
+      },
+      "spl": {
+        "classes": 77,
+        "size": 426517
+      }
+    },
+    "jcip-annotations-1.0.jar": {
+      "original": {
+        "classes": 4,
+        "size": 1736
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 10,
+        "size": 6282
+      }
+    },
+    "richtextfx-0.10.6.jar": {
+      "original": {
+        "classes": 144,
+        "size": 746682
+      },
+      "spl": {
+        "classes": 133,
+        "size": 691733
+      }
+    },
+    "asm-analysis-9.2.jar": {
+      "original": {
+        "classes": 15,
+        "size": 76867
+      },
+      "spl": {
+        "classes": 11,
+        "size": 64330
+      }
+    },
+    "directories-12.jar": {
+      "original": {
+        "classes": 5,
+        "size": 21240
+      },
+      "spl": {
+        "classes": 3,
+        "size": 12249
+      }
+    },
+    "jgrapht-core-1.0.1.jar": {
+      "original": {
+        "classes": 376,
+        "size": 1151497
+      },
+      "spl": {
+        "classes": 97,
+        "size": 229171
+      }
+    },
+    "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "sac-1.3.jar": {
+      "original": {
+        "classes": 29,
+        "size": 17767
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 29,
+        "size": 17767
+      }
+    },
+    "asm-commons-9.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 150798
+      },
+      "spl": {
+        "classes": 12,
+        "size": 45516
+      }
+    },
+    "error_prone_annotations-2.11.0.jar": {
+      "original": {
+        "classes": 26,
+        "size": 14442
+      },
+      "spl": {
+        "classes": 13,
+        "size": 8052
+      }
+    },
+    "jline-3.19.0.jar": {
+      "original": {
+        "classes": 375,
+        "size": 1941558
+      },
+      "spl": {
+        "classes": 227,
+        "size": 1217573
+      }
+    },
+    "logback-classic-1.2.10.jar": {
+      "original": {
+        "classes": 157,
+        "size": 412800
+      },
+      "spl": {
+        "classes": 96,
+        "size": 269886
+      }
+    },
+    "SimAnalyzer-1.6.0.jar": {
+      "original": {
+        "classes": 40,
+        "size": 160359
+      },
+      "spl": {
+        "classes": 37,
+        "size": 146156
+      }
+    },
+    "asm-tree-9.2.jar": {
+      "original": {
+        "classes": 39,
+        "size": 104146
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 39,
+        "size": 104146
+      }
+    },
+    "failureaccess-1.0.1.jar": {
+      "original": {
+        "classes": 2,
+        "size": 1201
+      }
+    },
+    "jline-builtins-3.21.0.jar": {
+      "original": {
+        "classes": 72,
+        "size": 520731
+      },
+      "spl": {
+        "classes": 66,
+        "size": 475699
+      }
+    },
+    "logback-core-1.2.3.jar": {
+      "original": {
+        "classes": 373,
+        "size": 854328
+      },
+      "spl": {
+        "classes": 259,
+        "size": 591028
+      }
+    },
+    "slf4j-api-1.7.30.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82200
+      },
+      "spl": {
+        "classes": 32,
+        "size": 78349
+      }
+    },
+    "asm-util-9.2.jar": {
+      "original": {
+        "classes": 25,
+        "size": 187314
+      },
+      "spl": {
+        "classes": 21,
+        "size": 142670
+      }
+    },
+    "flowless-0.6.3.jar": {
+      "original": {
+        "classes": 42,
+        "size": 154308
+      },
+      "spl": {
+        "classes": 41,
+        "size": 147273
+      }
+    },
+    "jline-reader-3.21.0.jar": {
+      "original": {
+        "classes": 69,
+        "size": 352222
+      },
+      "spl": {
+        "classes": 66,
+        "size": 343485
+      }
+    },
+    "minimal-json-0.9.5.jar": {
+      "original": {
+        "classes": 23,
+        "size": 64368
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 23,
+        "size": 64368
+      }
+    },
+    "undofx-2.1.0.jar": {
+      "original": {
+        "classes": 21,
+        "size": 67627
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 21,
+        "size": 67627
+      }
+    },
+    "CAFED00D-1.9.6.jar": {
+      "original": {
+        "classes": 132,
+        "size": 309364
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 132,
+        "size": 309364
+      }
+    },
+    "forgeflower-1.5.498.29.jar": {
+      "original": {
+        "classes": 262,
+        "size": 1741983
+      },
+      "spl": {
+        "classes": 244,
+        "size": 1636629
+      }
+    },
+    "jline-style-3.21.0.jar": {
+      "original": {
+        "classes": 18,
+        "size": 49259
+      }
+    },
+    "picocli-4.6.3.jar": {
+      "original": {
+        "classes": 225,
+        "size": 913069
+      },
+      "spl": {
+        "classes": 224,
+        "size": 912939
+      }
+    },
+    "wellbehavedfx-0.3.3.jar": {
+      "original": {
+        "classes": 41,
+        "size": 161246
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 41,
+        "size": 161246
+      }
+    },
+    "cfr-0.152.jar": {
+      "original": {
+        "classes": 1302,
+        "size": 5482857
+      },
+      "spl": {
+        "classes": 1287,
+        "size": 5442194
+      }
+    },
+    "guava-31.1-jre.jar": {
+      "original": {
+        "classes": 2023,
+        "size": 6552221
+      },
+      "spl": {
+        "classes": 853,
+        "size": 2973834
+      }
+    },
+    "jline-terminal-3.21.0.jar": {
+      "original": {
+        "classes": 93,
+        "size": 408643
+      },
+      "spl": {
+        "classes": 87,
+        "size": 382081
+      }
+    },
+    "picocli-shell-jline3-4.6.3.jar": {
+      "original": {
+        "classes": 5,
+        "size": 19749
+      },
+      "spl": {
+        "classes": 1,
+        "size": 2272
+      }
+    },
+    "checker-qual-3.12.0.jar": {
+      "original": {
+        "classes": 333,
+        "size": 241225
+      },
+      "spl": {
+        "classes": 7,
+        "size": 9111
+      }
+    },
+    "j2objc-annotations-1.3.jar": {
+      "original": {
+        "classes": 12,
+        "size": 7232
+      },
+      "spl": {
+        "classes": 2,
+        "size": 831
+      }
+    },
+    "jline-terminal-jna-3.21.0.jar": {
+      "original": {
+        "classes": 38,
+        "size": 120633
+      }
+    },
+    "plugface-core-0.7.1.jar": {
+      "original": {
+        "classes": 20,
+        "size": 44274
+      },
+      "spl": {
+        "classes": 14,
+        "size": 34621
+      }
+    },
+    "commonmark-0.18.2.jar": {
+      "original": {
+        "classes": 150,
+        "size": 286508
+      },
+      "spl": {
+        "classes": 119,
+        "size": 222680
+      }
+    },
+    "javaparser-core-3.24.2.jar": {
+      "original": {
+        "classes": 615,
+        "size": 3817921
+      },
+      "spl": {
+        "classes": 571,
+        "size": 3041806
+      }
+    },
+    "jna-5.9.0.jar": {
+      "original": {
+        "classes": 117,
+        "size": 363541
+      }
+    },
+    "procyon-compilertools-0.6.0.jar": {
+      "original": {
+        "classes": 874,
+        "size": 4038660
+      },
+      "spl": {
+        "classes": 847,
+        "size": 3968708
+      }
+    },
+    "commons-codec-1.15.jar": {
+      "original": {
+        "classes": 106,
+        "size": 392038
+      },
+      "spl": {
+        "classes": 12,
+        "size": 31025
+      }
+    },
+    "javaparser-symbol-solver-core-3.24.2.jar": {
+      "original": {
+        "classes": 194,
+        "size": 1370242
+      },
+      "spl": {
+        "classes": 135,
+        "size": 1057058
+      }
+    },
+    "jphantom-1.4.3.jar": {
+      "original": {
+        "classes": 157,
+        "size": 416948
+      },
+      "spl": {
+        "classes": 155,
+        "size": 412928
+      }
+    },
+    "procyon-core-0.6.0.jar": {
+      "original": {
+        "classes": 161,
+        "size": 378807
+      },
+      "spl": {
+        "classes": 137,
+        "size": 339585
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 518,
+      "size": 1764621
+    },
+    "total_classes_orig_deps": 10769,
+    "class_reduction": 3470,
+    "total_original_size": 42006.427734375,
+    "total_final_size": 31140.8359375,
+    "percentage_reduction": 25.866498016881813
+  },
+  {
+    "name": "scribejava/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/scribejava/scribejava-core/",
+    "jar": "scribejava-core-8.3.2.jar",
+    "project_classes": 116,
+    "deps_orig": [
+      "commons-codec-1.15.jar",
+      "jackson-core-2.13.4.jar",
+      "jakarta.activation-2.0.1.jar",
+      "jaxb-api-2.3.0.jar",
+      "jackson-annotations-2.13.4.jar",
+      "jackson-databind-2.13.4.jar",
+      "jakarta.xml.bind-api-3.0.1.jar",
+      "scribejava-java8-8.3.2.jar"
+    ],
+    "deps_spl": [
+      "commons-codec-1.15.jar",
+      "jackson-databind-2.13.4.jar",
+      "jackson-annotations-2.13.4.jar",
+      "jakarta.xml.bind-api-3.0.1.jar",
+      "jackson-core-2.13.4.jar",
+      "jaxb-api-2.3.0.jar"
+    ],
+    "deps_non_spl": [
+      "scribejava-java8-8.3.2.jar"
+    ],
+    "deps_bloated": [
+      "jakarta.activation-2.0.1.jar"
+    ],
+    "project_size": 269.0498046875,
+    "commons-codec-1.15.jar": {
+      "original": {
+        "classes": 106,
+        "size": 392038
+      },
+      "spl": {
+        "classes": 12,
+        "size": 28315
+      }
+    },
+    "jackson-core-2.13.4.jar": {
+      "original": {
+        "classes": 128,
+        "size": 763302
+      },
+      "spl": {
+        "classes": 117,
+        "size": 721270
+      }
+    },
+    "jakarta.activation-2.0.1.jar": {
+      "original": {
+        "classes": 39,
+        "size": 101409
+      }
+    },
+    "jaxb-api-2.3.0.jar": {
+      "original": {
+        "classes": 112,
+        "size": 188095
+      },
+      "spl": {
+        "classes": 7,
+        "size": 34894
+      }
+    },
+    "jackson-annotations-2.13.4.jar": {
+      "original": {
+        "classes": 72,
+        "size": 119323
+      },
+      "spl": {
+        "classes": 71,
+        "size": 119133
+      }
+    },
+    "jackson-databind-2.13.4.jar": {
+      "original": {
+        "classes": 708,
+        "size": 4022130
+      },
+      "spl": {
+        "classes": 671,
+        "size": 3901159
+      }
+    },
+    "jakarta.xml.bind-api-3.0.1.jar": {
+      "original": {
+        "classes": 112,
+        "size": 191257
+      },
+      "spl": {
+        "classes": 7,
+        "size": 34948
+      }
+    },
+    "scribejava-java8-8.3.2.jar": {
+      "original": {
+        "classes": 1,
+        "size": 984
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 1,
+        "size": 984
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 39,
+      "size": 101409
+    },
+    "total_classes_orig_deps": 1278,
+    "class_reduction": 392,
+    "total_original_size": 5912.1533203125,
+    "total_final_size": 4996.298828125,
+    "percentage_reduction": 15.491047720986547
+  },
+  {
+    "name": "tablesaw/json",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/tablesaw/json/",
+    "jar": "tablesaw-json-0.43.1.jar",
+    "project_classes": 7,
+    "deps_orig": [
+      "commons-lang3-3.9.jar",
+      "jackson-annotations-2.13.2.jar",
+      "jackson-databind-2.13.2.1.jar",
+      "json-base-1.0.0.jar",
+      "minimal-json-0.9.5.jar",
+      "commons-text-1.8.jar",
+      "jackson-core-2.13.2.jar",
+      "jackson-datatype-jsr310-2.13.2.jar",
+      "json-flattener-0.8.1.jar"
+    ],
+    "deps_spl": [
+      "commons-lang3-3.9.jar",
+      "commons-text-1.8.jar",
+      "jackson-core-2.13.2.jar",
+      "jackson-databind-2.13.2.1.jar",
+      "jackson-datatype-jsr310-2.13.2.jar",
+      "json-base-1.0.0.jar",
+      "json-flattener-0.8.1.jar"
+    ],
+    "deps_non_spl": [
+      "jackson-annotations-2.13.2.jar",
+      "minimal-json-0.9.5.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 23.8642578125,
+    "commons-lang3-3.9.jar": {
+      "original": {
+        "classes": 281,
+        "size": 1052018
+      },
+      "spl": {
+        "classes": 71,
+        "size": 439030
+      }
+    },
+    "jackson-annotations-2.13.2.jar": {
+      "original": {
+        "classes": 72,
+        "size": 119323
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 72,
+        "size": 119323
+      }
+    },
+    "jackson-databind-2.13.2.1.jar": {
+      "original": {
+        "classes": 707,
+        "size": 4017510
+      },
+      "spl": {
+        "classes": 676,
+        "size": 3942712
+      }
+    },
+    "json-base-1.0.0.jar": {
+      "original": {
+        "classes": 24,
+        "size": 37669
+      },
+      "spl": {
+        "classes": 17,
+        "size": 25558
+      }
+    },
+    "minimal-json-0.9.5.jar": {
+      "original": {
+        "classes": 23,
+        "size": 64368
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 23,
+        "size": 64368
+      }
+    },
+    "commons-text-1.8.jar": {
+      "original": {
+        "classes": 134,
+        "size": 379855
+      },
+      "spl": {
+        "classes": 21,
+        "size": 51530
+      }
+    },
+    "jackson-core-2.13.2.jar": {
+      "original": {
+        "classes": 128,
+        "size": 763081
+      },
+      "spl": {
+        "classes": 117,
+        "size": 721049
+      }
+    },
+    "jackson-datatype-jsr310-2.13.2.jar": {
+      "original": {
+        "classes": 59,
+        "size": 286857
+      },
+      "spl": {
+        "classes": 54,
+        "size": 267680
+      }
+    },
+    "json-flattener-0.8.1.jar": {
+      "original": {
+        "classes": 19,
+        "size": 48228
+      },
+      "spl": {
+        "classes": 17,
+        "size": 36100
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 1447,
+    "class_reduction": 379,
+    "total_original_size": 6634.126953125,
+    "total_final_size": 5558.3857421875,
+    "percentage_reduction": 16.215264171735104
+  },
+  {
+    "name": "tika/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/tika/tika-core/",
+    "jar": "tika-core-2.6.0.jar",
+    "project_classes": 435,
+    "deps_orig": [
+      "commons-io-2.11.0.jar",
+      "slf4j-api-2.0.3.jar"
+    ],
+    "deps_spl": [
+      "commons-io-2.11.0.jar",
+      "slf4j-api-2.0.3.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [],
+    "project_size": 1228.6474609375,
+    "commons-io-2.11.0.jar": {
+      "original": {
+        "classes": 201,
+        "size": 628032
+      },
+      "spl": {
+        "classes": 23,
+        "size": 94679
+      }
+    },
+    "slf4j-api-2.0.3.jar": {
+      "original": {
+        "classes": 52,
+        "size": 122933
+      },
+      "spl": {
+        "classes": 43,
+        "size": 110938
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 253,
+    "class_reduction": 187,
+    "total_original_size": 1962.01171875,
+    "total_final_size": 1429.4453125,
+    "percentage_reduction": 27.143895276491964
+  },
+  {
+    "name": "undertow/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/tst/undertow/core/",
+    "jar": "undertow-core-2.2.21.Final.jar",
+    "project_classes": 1581,
+    "deps_orig": [
+      "jboss-logging-3.4.1.Final.jar",
+      "jboss-threads-3.1.0.Final.jar",
+      "wildfly-client-config-1.0.1.Final.jar",
+      "wildfly-common-1.5.4.Final.jar",
+      "xnio-api-3.8.7.Final.jar"
+    ],
+    "deps_spl": [
+      "jboss-logging-3.4.1.Final.jar",
+      "jboss-threads-3.1.0.Final.jar",
+      "wildfly-client-config-1.0.1.Final.jar",
+      "wildfly-common-1.5.4.Final.jar",
+      "xnio-api-3.8.7.Final.jar"
+    ],
+    "deps_non_spl": [],
+    "deps_bloated": [],
+    "project_size": 4776.9951171875,
+    "jboss-logging-3.4.1.Final.jar": {
+      "original": {
+        "classes": 35,
+        "size": 142014
+      },
+      "spl": {
+        "classes": 32,
+        "size": 139363
+      }
+    },
+    "jboss-threads-3.1.0.Final.jar": {
+      "original": {
+        "classes": 66,
+        "size": 170068
+      },
+      "spl": {
+        "classes": 48,
+        "size": 102867
+      }
+    },
+    "wildfly-client-config-1.0.1.Final.jar": {
+      "original": {
+        "classes": 16,
+        "size": 102696
+      },
+      "spl": {
+        "classes": 14,
+        "size": 85277
+      }
+    },
+    "wildfly-common-1.5.4.Final.jar": {
+      "original": {
+        "classes": 204,
+        "size": 558328
+      },
+      "spl": {
+        "classes": 84,
+        "size": 272592
+      }
+    },
+    "xnio-api-3.8.7.Final.jar": {
+      "original": {
+        "classes": 421,
+        "size": 1214107
+      },
+      "spl": {
+        "classes": 340,
+        "size": 890149
+      }
+    },
+    "unsuccessfully_spl_classes": 0,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 742,
+    "class_reduction": 224,
+    "total_original_size": 6912.9453125,
+    "total_final_size": 6232.3154296875,
+    "percentage_reduction": 9.845729309933695
+  }
+]

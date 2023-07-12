@@ -1,0 +1,3971 @@
+[
+  {
+    "name": "checkstyle",
+    "path": "/home/dee/dev/deptrim-major/execution-results/checkstyle/",
+    "jar": "checkstyle-10.5.0.jar",
+    "project_classes": 863,
+    "deps_orig": [
+      "antlr4-runtime-4.11.1.jar",
+      "commons-collections-3.2.2.jar",
+      "guava-31.1-jre.jar",
+      "j2objc-annotations-1.3.jar",
+      "picocli-4.7.0.jar",
+      "xmlresolver-4.4.3-data.jar",
+      "checker-qual-3.27.0.jar",
+      "commons-logging-1.2.jar",
+      "javassist-3.28.0-GA.jar",
+      "reflections-0.10.2.jar",
+      "xmlresolver-4.4.3.jar",
+      "commons-beanutils-1.9.4.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "jsr305-3.0.2.jar",
+      "Saxon-HE-11.4.jar",
+      "failureaccess-1.0.1.jar",
+      "slf4j-api-1.7.32.jar"
+    ],
+    "deps_spl": [
+      "antlr4-runtime-4.11.1.jar",
+      "reflections-0.10.2.jar",
+      "commons-collections-3.2.2.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "j2objc-annotations-1.3.jar",
+      "jsr305-3.0.2.jar",
+      "xmlresolver-4.4.3.jar",
+      "checker-qual-3.27.0.jar",
+      "commons-logging-1.2.jar",
+      "javassist-3.28.0-GA.jar",
+      "picocli-4.7.0.jar",
+      "slf4j-api-1.7.32.jar"
+    ],
+    "deps_non_spl": [
+      "commons-beanutils-1.9.4.jar",
+      "guava-31.1-jre.jar",
+      "Saxon-HE-11.4.jar"
+    ],
+    "deps_bloated": [
+      "failureaccess-1.0.1.jar",
+      "xmlresolver-4.4.3-data.jar"
+    ],
+    "project_size": 4011.166015625,
+    "antlr4-runtime-4.11.1.jar": {
+      "original": {
+        "classes": 215,
+        "size": 630921
+      },
+      "spl": {
+        "classes": 190,
+        "size": 553149
+      }
+    },
+    "commons-collections-3.2.2.jar": {
+      "original": {
+        "classes": 460,
+        "size": 1116578
+      },
+      "spl": {
+        "classes": 7,
+        "size": 16099
+      }
+    },
+    "guava-31.1-jre.jar": {
+      "original": {
+        "classes": 2023,
+        "size": 6552221
+      },
+      "classes_removed": 1130,
+      "non_spl": {
+        "classes": 2023,
+        "size": 6552221
+      }
+    },
+    "j2objc-annotations-1.3.jar": {
+      "original": {
+        "classes": 12,
+        "size": 7232
+      },
+      "spl": {
+        "classes": 2,
+        "size": 831
+      }
+    },
+    "picocli-4.7.0.jar": {
+      "original": {
+        "classes": 227,
+        "size": 927588
+      },
+      "spl": {
+        "classes": 215,
+        "size": 879523
+      }
+    },
+    "xmlresolver-4.4.3-data.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "checker-qual-3.27.0.jar": {
+      "original": {
+        "classes": 358,
+        "size": 258994
+      },
+      "spl": {
+        "classes": 7,
+        "size": 9111
+      }
+    },
+    "commons-logging-1.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 102911
+      },
+      "spl": {
+        "classes": 23,
+        "size": 87696
+      }
+    },
+    "javassist-3.28.0-GA.jar": {
+      "original": {
+        "classes": 426,
+        "size": 1535868
+      },
+      "spl": {
+        "classes": 339,
+        "size": 1265839
+      }
+    },
+    "reflections-0.10.2.jar": {
+      "original": {
+        "classes": 74,
+        "size": 288968
+      },
+      "spl": {
+        "classes": 63,
+        "size": 255430
+      }
+    },
+    "xmlresolver-4.4.3.jar": {
+      "original": {
+        "classes": 86,
+        "size": 288609
+      },
+      "spl": {
+        "classes": 78,
+        "size": 263967
+      }
+    },
+    "commons-beanutils-1.9.4.jar": {
+      "original": {
+        "classes": 137,
+        "size": 484061
+      },
+      "classes_removed": 74,
+      "non_spl": {
+        "classes": 137,
+        "size": 484061
+      }
+    },
+    "error_prone_annotations-2.11.0.jar": {
+      "original": {
+        "classes": 26,
+        "size": 14442
+      },
+      "spl": {
+        "classes": 14,
+        "size": 8425
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 9,
+        "size": 5763
+      }
+    },
+    "Saxon-HE-11.4.jar": {
+      "original": {
+        "classes": 2350,
+        "size": 9941382
+      },
+      "classes_removed": 111,
+      "non_spl": {
+        "classes": 2350,
+        "size": 9941382
+      }
+    },
+    "failureaccess-1.0.1.jar": {
+      "original": {
+        "classes": 2,
+        "size": 1201
+      }
+    },
+    "slf4j-api-1.7.32.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82284
+      },
+      "spl": {
+        "classes": 19,
+        "size": 63694
+      }
+    },
+    "unsuccessfully_spl_classes": 3195,
+    "classes_removed_from_unsucc_deps": 1315,
+    "bloated": {
+      "classes": 2,
+      "size": 1201
+    },
+    "total_classes_orig_deps": 6493,
+    "class_reduction": 1017,
+    "total_original_size": 25744.078125,
+    "total_final_size": 23920.5322265625,
+    "percentage_reduction": 7.083360645439697
+  },
+  {
+    "name": "Chronicle-Map",
+    "path": "/home/dee/dev/deptrim-major/execution-results/Chronicle-Map/",
+    "jar": "chronicle-map-3.23.5.jar",
+    "project_classes": 375,
+    "deps_orig": [
+      "affinity-3.23ea1.jar",
+      "asm-9.2.jar",
+      "jna-5.5.0.jar",
+      "asm-analysis-9.2.jar",
+      "jna-platform-5.5.0.jar",
+      "asm-commons-9.2.jar",
+      "jnr-a64asm-1.0.0.jar",
+      "asm-tree-9.2.jar",
+      "jnr-constants-0.10.3.jar",
+      "asm-util-9.2.jar",
+      "jnr-ffi-2.2.11.jar",
+      "chronicle-algorithms-2.23.4.jar",
+      "jnr-x86asm-1.0.2.jar",
+      "chronicle-analytics-2.23.2.jar",
+      "maven-resolver-api-1.3.1.jar",
+      "chronicle-bytes-2.23.30.jar",
+      "maven-resolver-impl-1.3.1.jar",
+      "chronicle-core-2.23.35.jar",
+      "maven-resolver-spi-1.3.1.jar",
+      "chronicle-threads-2.23.25.jar",
+      "maven-resolver-util-1.3.1.jar",
+      "chronicle-values-2.23.3.jar",
+      "mxparser-1.2.2.jar",
+      "chronicle-wire-2.23.39.jar",
+      "pax-url-aether-2.6.2.jar",
+      "compiler-2.23ea0.jar",
+      "pax-url-aether-support-2.6.2.jar",
+      "javapoet-1.13.0.jar",
+      "posix-2.23.1.jar",
+      "jcl-over-slf4j-1.6.6.jar",
+      "slf4j-api-1.7.32.jar",
+      "jettison-1.4.1.jar",
+      "xmlpull-1.1.3.1.jar",
+      "jffi-1.3.9.jar",
+      "xstream-1.4.19.jar"
+    ],
+    "deps_spl": [
+      "affinity-3.23ea1.jar",
+      "asm-9.2.jar",
+      "jna-5.5.0.jar",
+      "asm-analysis-9.2.jar",
+      "jna-platform-5.5.0.jar",
+      "asm-commons-9.2.jar",
+      "jnr-a64asm-1.0.0.jar",
+      "jnr-constants-0.10.3.jar",
+      "asm-util-9.2.jar",
+      "jnr-ffi-2.2.11.jar",
+      "chronicle-algorithms-2.23.4.jar",
+      "jnr-x86asm-1.0.2.jar",
+      "chronicle-analytics-2.23.2.jar",
+      "chronicle-bytes-2.23.30.jar",
+      "chronicle-core-2.23.35.jar",
+      "chronicle-threads-2.23.25.jar",
+      "javapoet-1.13.0.jar",
+      "posix-2.23.1.jar",
+      "slf4j-api-1.7.32.jar",
+      "jettison-1.4.1.jar",
+      "jffi-1.3.9.jar",
+      "xstream-1.4.19.jar"
+    ],
+    "deps_non_spl": [
+      "asm-tree-9.2.jar",
+      "chronicle-values-2.23.3.jar",
+      "compiler-2.23ea0.jar",
+      "xmlpull-1.1.3.1.jar",
+      "chronicle-wire-2.23.39.jar",
+      "pax-url-aether-2.6.2.jar"
+    ],
+    "deps_bloated": [
+      "jcl-over-slf4j-1.6.6.jar",
+      "maven-resolver-api-1.3.1.jar",
+      "maven-resolver-impl-1.3.1.jar",
+      "maven-resolver-spi-1.3.1.jar",
+      "maven-resolver-util-1.3.1.jar",
+      "mxparser-1.2.2.jar",
+      "pax-url-aether-support-2.6.2.jar"
+    ],
+    "project_size": 1720.3662109375,
+    "affinity-3.23ea1.jar": {
+      "original": {
+        "classes": 49,
+        "size": 136945
+      },
+      "spl": {
+        "classes": 39,
+        "size": 112345
+      }
+    },
+    "asm-9.2.jar": {
+      "original": {
+        "classes": 38,
+        "size": 243663
+      },
+      "spl": {
+        "classes": 37,
+        "size": 240673
+      }
+    },
+    "jna-5.5.0.jar": {
+      "original": {
+        "classes": 115,
+        "size": 351550
+      },
+      "spl": {
+        "classes": 112,
+        "size": 349061
+      }
+    },
+    "asm-analysis-9.2.jar": {
+      "original": {
+        "classes": 15,
+        "size": 76867
+      },
+      "spl": {
+        "classes": 11,
+        "size": 64330
+      }
+    },
+    "jna-platform-5.5.0.jar": {
+      "original": {
+        "classes": 1173,
+        "size": 2414209
+      },
+      "spl": {
+        "classes": 224,
+        "size": 626046
+      }
+    },
+    "asm-commons-9.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 150798
+      },
+      "spl": {
+        "classes": 1,
+        "size": 275
+      }
+    },
+    "jnr-a64asm-1.0.0.jar": {
+      "original": {
+        "classes": 48,
+        "size": 188938
+      },
+      "spl": {
+        "classes": 38,
+        "size": 173498
+      }
+    },
+    "asm-tree-9.2.jar": {
+      "original": {
+        "classes": 39,
+        "size": 104146
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 39,
+        "size": 104146
+      }
+    },
+    "jnr-constants-0.10.3.jar": {
+      "original": {
+        "classes": 1038,
+        "size": 2887246
+      },
+      "spl": {
+        "classes": 11,
+        "size": 35848
+      }
+    },
+    "asm-util-9.2.jar": {
+      "original": {
+        "classes": 25,
+        "size": 187314
+      },
+      "spl": {
+        "classes": 21,
+        "size": 142670
+      }
+    },
+    "jnr-ffi-2.2.11.jar": {
+      "original": {
+        "classes": 666,
+        "size": 1373555
+      },
+      "spl": {
+        "classes": 500,
+        "size": 1105289
+      }
+    },
+    "chronicle-algorithms-2.23.4.jar": {
+      "original": {
+        "classes": 108,
+        "size": 309138
+      },
+      "spl": {
+        "classes": 99,
+        "size": 280236
+      }
+    },
+    "jnr-x86asm-1.0.2.jar": {
+      "original": {
+        "classes": 84,
+        "size": 600639
+      },
+      "spl": {
+        "classes": 36,
+        "size": 291805
+      }
+    },
+    "chronicle-analytics-2.23.2.jar": {
+      "original": {
+        "classes": 16,
+        "size": 46789
+      },
+      "spl": {
+        "classes": 14,
+        "size": 46506
+      }
+    },
+    "maven-resolver-api-1.3.1.jar": {
+      "original": {
+        "classes": 131,
+        "size": 289822
+      }
+    },
+    "chronicle-bytes-2.23.30.jar": {
+      "original": {
+        "classes": 189,
+        "size": 1029722
+      },
+      "spl": {
+        "classes": 177,
+        "size": 1000168
+      }
+    },
+    "maven-resolver-impl-1.3.1.jar": {
+      "original": {
+        "classes": 96,
+        "size": 407613
+      }
+    },
+    "chronicle-core-2.23.35.jar": {
+      "original": {
+        "classes": 303,
+        "size": 829283
+      },
+      "spl": {
+        "classes": 206,
+        "size": 668134
+      }
+    },
+    "maven-resolver-spi-1.3.1.jar": {
+      "original": {
+        "classes": 34,
+        "size": 51056
+      }
+    },
+    "chronicle-threads-2.23.25.jar": {
+      "original": {
+        "classes": 54,
+        "size": 186590
+      },
+      "spl": {
+        "classes": 48,
+        "size": 172001
+      }
+    },
+    "maven-resolver-util-1.3.1.jar": {
+      "original": {
+        "classes": 101,
+        "size": 299478
+      }
+    },
+    "chronicle-values-2.23.3.jar": {
+      "original": {
+        "classes": 84,
+        "size": 374861
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 84,
+        "size": 374861
+      }
+    },
+    "mxparser-1.2.2.jar": {
+      "original": {
+        "classes": 1,
+        "size": 44638
+      }
+    },
+    "chronicle-wire-2.23.39.jar": {
+      "original": {
+        "classes": 411,
+        "size": 1960574
+      },
+      "classes_removed": 124,
+      "non_spl": {
+        "classes": 411,
+        "size": 1960574
+      }
+    },
+    "pax-url-aether-2.6.2.jar": {
+      "original": {
+        "classes": 1960,
+        "size": 6616761
+      },
+      "classes_removed": 1892,
+      "non_spl": {
+        "classes": 1960,
+        "size": 6616761
+      }
+    },
+    "compiler-2.23ea0.jar": {
+      "original": {
+        "classes": 8,
+        "size": 40105
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 8,
+        "size": 40105
+      }
+    },
+    "pax-url-aether-support-2.6.2.jar": {
+      "original": {
+        "classes": 1,
+        "size": 7409
+      }
+    },
+    "javapoet-1.13.0.jar": {
+      "original": {
+        "classes": 43,
+        "size": 242684
+      },
+      "spl": {
+        "classes": 42,
+        "size": 238909
+      }
+    },
+    "posix-2.23.1.jar": {
+      "original": {
+        "classes": 27,
+        "size": 54866
+      },
+      "spl": {
+        "classes": 22,
+        "size": 51126
+      }
+    },
+    "jcl-over-slf4j-1.6.6.jar": {
+      "original": {
+        "classes": 9,
+        "size": 29876
+      }
+    },
+    "slf4j-api-1.7.32.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82284
+      },
+      "spl": {
+        "classes": 20,
+        "size": 63943
+      }
+    },
+    "jettison-1.4.1.jar": {
+      "original": {
+        "classes": 47,
+        "size": 160519
+      },
+      "spl": {
+        "classes": 31,
+        "size": 123893
+      }
+    },
+    "xmlpull-1.1.3.1.jar": {
+      "original": {
+        "classes": 4,
+        "size": 12585
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 4,
+        "size": 12585
+      }
+    },
+    "jffi-1.3.9.jar": {
+      "original": {
+        "classes": 126,
+        "size": 308426
+      },
+      "spl": {
+        "classes": 109,
+        "size": 264290
+      }
+    },
+    "xstream-1.4.19.jar": {
+      "original": {
+        "classes": 490,
+        "size": 1219649
+      },
+      "spl": {
+        "classes": 345,
+        "size": 841154
+      }
+    },
+    "unsuccessfully_spl_classes": 355,
+    "classes_removed_from_unsucc_deps": 2016,
+    "bloated": {
+      "classes": 373,
+      "size": 1129892
+    },
+    "total_classes_orig_deps": 7595,
+    "class_reduction": 2946,
+    "total_original_size": 24494.3876953125,
+    "total_final_size": 17346.5693359375,
+    "percentage_reduction": 29.18145351615742
+  },
+  {
+    "name": "flink/flink-java",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/flink/flink-java/",
+    "jar": "original-flink-java-1.15.3.jar",
+    "project_classes": 277,
+    "deps_orig": [
+      "chill-java-0.7.6.jar",
+      "flink-shaded-asm-9-9.2-15.0.jar",
+      "commons-collections-3.2.2.jar",
+      "flink-shaded-force-shading-15.0.jar",
+      "commons-compress-1.21.jar",
+      "flink-shaded-guava-30.1.1-jre-15.0.jar",
+      "commons-lang3-3.3.2.jar",
+      "jsr305-1.3.9.jar",
+      "commons-math3-3.6.1.jar",
+      "kryo-2.24.0.jar",
+      "flink-annotations-1.15.3.jar",
+      "minlog-1.2.jar",
+      "flink-core-1.15.3.jar",
+      "objenesis-2.1.jar",
+      "flink-metrics-core-1.15.3.jar",
+      "slf4j-api-1.7.32.jar"
+    ],
+    "deps_spl": [
+      "chill-java-0.7.6.jar",
+      "flink-shaded-asm-9-9.2-15.0.jar",
+      "commons-collections-3.2.2.jar",
+      "commons-compress-1.21.jar",
+      "flink-shaded-guava-30.1.1-jre-15.0.jar",
+      "commons-lang3-3.3.2.jar",
+      "jsr305-1.3.9.jar",
+      "kryo-2.24.0.jar",
+      "flink-annotations-1.15.3.jar",
+      "objenesis-2.1.jar",
+      "flink-metrics-core-1.15.3.jar",
+      "slf4j-api-1.7.32.jar"
+    ],
+    "deps_non_spl": [
+      "commons-math3-3.6.1.jar",
+      "minlog-1.2.jar",
+      "flink-core-1.15.3.jar"
+    ],
+    "deps_bloated": [
+      "flink-shaded-force-shading-15.0.jar"
+    ],
+    "project_size": 1144.2705078125,
+    "chill-java-0.7.6.jar": {
+      "original": {
+        "classes": 54,
+        "size": 108362
+      },
+      "spl": {
+        "classes": 13,
+        "size": 22135
+      }
+    },
+    "flink-shaded-asm-9-9.2-15.0.jar": {
+      "original": {
+        "classes": 116,
+        "size": 652668
+      },
+      "spl": {
+        "classes": 34,
+        "size": 258618
+      }
+    },
+    "commons-collections-3.2.2.jar": {
+      "original": {
+        "classes": 460,
+        "size": 1116578
+      },
+      "spl": {
+        "classes": 3,
+        "size": 2798
+      }
+    },
+    "flink-shaded-force-shading-15.0.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "commons-compress-1.21.jar": {
+      "original": {
+        "classes": 524,
+        "size": 1978846
+      },
+      "spl": {
+        "classes": 14,
+        "size": 45362
+      }
+    },
+    "flink-shaded-guava-30.1.1-jre-15.0.jar": {
+      "original": {
+        "classes": 2032,
+        "size": 7391806
+      },
+      "spl": {
+        "classes": 789,
+        "size": 3078127
+      }
+    },
+    "commons-lang3-3.3.2.jar": {
+      "original": {
+        "classes": 217,
+        "size": 862033
+      },
+      "spl": {
+        "classes": 46,
+        "size": 333006
+      }
+    },
+    "jsr305-1.3.9.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21515
+      },
+      "spl": {
+        "classes": 10,
+        "size": 7447
+      }
+    },
+    "commons-math3-3.6.1.jar": {
+      "original": {
+        "classes": 1301,
+        "size": 4374521
+      },
+      "classes_removed": 1188,
+      "non_spl": {
+        "classes": 1301,
+        "size": 4374521
+      }
+    },
+    "kryo-2.24.0.jar": {
+      "original": {
+        "classes": 193,
+        "size": 700944
+      },
+      "spl": {
+        "classes": 168,
+        "size": 615450
+      }
+    },
+    "flink-annotations-1.15.3.jar": {
+      "original": {
+        "classes": 16,
+        "size": 16745
+      },
+      "spl": {
+        "classes": 15,
+        "size": 11762
+      }
+    },
+    "minlog-1.2.jar": {
+      "original": {
+        "classes": 2,
+        "size": 5780
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 2,
+        "size": 5780
+      }
+    },
+    "flink-core-1.15.3.jar": {
+      "original": {
+        "classes": 1122,
+        "size": 4014871
+      },
+      "classes_removed": 342,
+      "non_spl": {
+        "classes": 1122,
+        "size": 4014871
+      }
+    },
+    "objenesis-2.1.jar": {
+      "original": {
+        "classes": 37,
+        "size": 61731
+      },
+      "spl": {
+        "classes": 17,
+        "size": 28634
+      }
+    },
+    "flink-metrics-core-1.15.3.jar": {
+      "original": {
+        "classes": 32,
+        "size": 31624
+      },
+      "spl": {
+        "classes": 21,
+        "size": 20873
+      }
+    },
+    "slf4j-api-1.7.32.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82284
+      },
+      "spl": {
+        "classes": 26,
+        "size": 71494
+      }
+    },
+    "unsuccessfully_spl_classes": 893,
+    "classes_removed_from_unsucc_deps": 1530,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 6175,
+    "class_reduction": 2594,
+    "total_original_size": 22062.5400390625,
+    "total_final_size": 13733.0185546875,
+    "percentage_reduction": 37.7541365120575
+  },
+  {
+    "name": "graphhopper/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/with-workload/graphhopper/core/",
+    "jar": "graphhopper-core-6.0-SNAPSHOT.jar",
+    "project_classes": 631,
+    "deps_orig": [
+      "commons-compiler-3.1.2.jar",
+      "jackson-annotations-2.10.5.jar",
+      "jackson-datatype-jts-0.12-2.5-1.jar",
+      "janino-3.1.2.jar",
+      "slf4j-api-1.7.36.jar",
+      "commons-io-2.7.jar",
+      "jackson-core-2.10.5.jar",
+      "jackson-module-jaxb-annotations-2.10.5.jar",
+      "jts-core-1.15.1.jar",
+      "stax2-api-4.2.1.jar",
+      "graphhopper-web-api-6.0-SNAPSHOT.jar",
+      "jackson-databind-2.10.5.1.jar",
+      "osmosis-osm-binary-0.47.3.jar",
+      "woodstox-core-6.2.1.jar",
+      "hppc-0.8.1.jar",
+      "jackson-dataformat-xml-2.10.5.jar",
+      "protobuf-java-3.11.4.jar",
+      "xmlgraphics-commons-2.7.jar"
+    ],
+    "deps_spl": [
+      "commons-compiler-3.1.2.jar",
+      "jackson-annotations-2.10.5.jar",
+      "jackson-datatype-jts-0.12-2.5-1.jar",
+      "janino-3.1.2.jar",
+      "slf4j-api-1.7.36.jar",
+      "jackson-core-2.10.5.jar",
+      "jts-core-1.15.1.jar",
+      "jackson-databind-2.10.5.1.jar",
+      "osmosis-osm-binary-0.47.3.jar",
+      "hppc-0.8.1.jar",
+      "protobuf-java-3.11.4.jar",
+      "xmlgraphics-commons-2.7.jar"
+    ],
+    "deps_non_spl": [
+      "graphhopper-web-api-6.0-SNAPSHOT.jar"
+    ],
+    "deps_bloated": [
+      "commons-io-2.7.jar",
+      "jackson-dataformat-xml-2.10.5.jar",
+      "jackson-module-jaxb-annotations-2.10.5.jar",
+      "stax2-api-4.2.1.jar",
+      "woodstox-core-6.2.1.jar"
+    ],
+    "project_size": 2089.201171875,
+    "commons-compiler-3.1.2.jar": {
+      "original": {
+        "classes": 136,
+        "size": 234470
+      },
+      "spl": {
+        "classes": 63,
+        "size": 103214
+      }
+    },
+    "jackson-annotations-2.10.5.jar": {
+      "original": {
+        "classes": 69,
+        "size": 113722
+      },
+      "spl": {
+        "classes": 68,
+        "size": 113532
+      }
+    },
+    "jackson-datatype-jts-0.12-2.5-1.jar": {
+      "original": {
+        "classes": 15,
+        "size": 38062
+      },
+      "spl": {
+        "classes": 14,
+        "size": 34871
+      }
+    },
+    "janino-3.1.2.jar": {
+      "original": {
+        "classes": 464,
+        "size": 2174420
+      },
+      "spl": {
+        "classes": 441,
+        "size": 2097657
+      }
+    },
+    "slf4j-api-1.7.36.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82200
+      },
+      "spl": {
+        "classes": 32,
+        "size": 78349
+      }
+    },
+    "commons-io-2.7.jar": {
+      "original": {
+        "classes": 176,
+        "size": 518304
+      }
+    },
+    "jackson-core-2.10.5.jar": {
+      "original": {
+        "classes": 118,
+        "size": 716256
+      },
+      "spl": {
+        "classes": 107,
+        "size": 676476
+      }
+    },
+    "jackson-module-jaxb-annotations-2.10.5.jar": {
+      "original": {
+        "classes": 13,
+        "size": 67269
+      }
+    },
+    "jts-core-1.15.1.jar": {
+      "original": {
+        "classes": 527,
+        "size": 1621127
+      },
+      "spl": {
+        "classes": 286,
+        "size": 944092
+      }
+    },
+    "stax2-api-4.2.1.jar": {
+      "original": {
+        "classes": 125,
+        "size": 384680
+      }
+    },
+    "graphhopper-web-api-6.0-SNAPSHOT.jar": {
+      "original": {
+        "classes": 76,
+        "size": 180381
+      },
+      "classes_removed": 5,
+      "non_spl": {
+        "classes": 76,
+        "size": 180381
+      }
+    },
+    "jackson-databind-2.10.5.1.jar": {
+      "original": {
+        "classes": 656,
+        "size": 3672457
+      },
+      "spl": {
+        "classes": 634,
+        "size": 3612609
+      }
+    },
+    "osmosis-osm-binary-0.47.3.jar": {
+      "original": {
+        "classes": 79,
+        "size": 687856
+      },
+      "spl": {
+        "classes": 63,
+        "size": 638339
+      }
+    },
+    "woodstox-core-6.2.1.jar": {
+      "original": {
+        "classes": 943,
+        "size": 3018310
+      }
+    },
+    "hppc-0.8.1.jar": {
+      "original": {
+        "classes": 950,
+        "size": 2153618
+      },
+      "spl": {
+        "classes": 204,
+        "size": 448094
+      }
+    },
+    "jackson-dataformat-xml-2.10.5.jar": {
+      "original": {
+        "classes": 52,
+        "size": 231966
+      }
+    },
+    "protobuf-java-3.11.4.jar": {
+      "original": {
+        "classes": 666,
+        "size": 4395513
+      },
+      "spl": {
+        "classes": 491,
+        "size": 3178091
+      }
+    },
+    "xmlgraphics-commons-2.7.jar": {
+      "original": {
+        "classes": 375,
+        "size": 1197963
+      },
+      "spl": {
+        "classes": 25,
+        "size": 151494
+      }
+    },
+    "unsuccessfully_spl_classes": 71,
+    "classes_removed_from_unsucc_deps": 5,
+    "bloated": {
+      "classes": 1309,
+      "size": 4220529
+    },
+    "total_classes_orig_deps": 5474,
+    "class_reduction": 2970,
+    "total_original_size": 23074.13671875,
+    "total_final_size": 14059.1220703125,
+    "percentage_reduction": 39.069780847367156
+  },
+  {
+    "name": "helidon-io",
+    "path": "/home/dee/dev/deptrim-major/execution-results/helidon_openapi/",
+    "jar": "helidon-openapi-2.5.6.jar",
+    "project_classes": 32,
+    "deps_orig": [
+      "helidon-common-2.5.6.jar",
+      "helidon-common-service-loader-2.5.6.jar",
+      "jakarta.annotation-api-1.3.5.jar",
+      "netty-buffer-4.1.86.Final.jar",
+      "netty-transport-native-unix-common-4.1.86.Final.jar",
+      "helidon-common-configurable-2.5.6.jar",
+      "helidon-config-2.5.6.jar",
+      "netty-codec-4.1.86.Final.jar",
+      "opentracing-api-0.33.0.jar",
+      "helidon-common-context-2.5.6.jar",
+      "helidon-logging-common-2.5.6.jar",
+      "netty-codec-http2-4.1.86.Final.jar",
+      "opentracing-noop-0.33.0.jar",
+      "helidon-common-http-2.5.6.jar",
+      "helidon-media-common-2.5.6.jar",
+      "netty-codec-http-4.1.86.Final.jar",
+      "opentracing-util-0.33.0.jar",
+      "helidon-common-key-util-2.5.6.jar",
+      "helidon-media-jsonp-2.5.6.jar",
+      "jandex-2.3.1.Final.jar",
+      "netty-common-4.1.86.Final.jar",
+      "smallrye-open-api-core-2.0.26.jar",
+      "helidon-common-mapper-2.5.6.jar",
+      "helidon-tracing-config-2.5.6.jar",
+      "jboss-logging-3.2.1.Final.jar",
+      "netty-handler-4.1.86.Final.jar",
+      "smallrye-open-api-jaxrs-2.0.26.jar",
+      "helidon-common-media-type-2.5.6.jar",
+      "helidon-webserver-2.5.6.jar",
+      "microprofile-config-api-1.4.jar",
+      "netty-resolver-4.1.86.Final.jar",
+      "snakeyaml-1.32.jar",
+      "helidon-common-reactive-2.5.6.jar",
+      "helidon-webserver-cors-2.5.6.jar",
+      "microprofile-openapi-api-1.2.jar",
+      "netty-transport-4.1.86.Final.jar"
+    ],
+    "deps_spl": [
+      "helidon-common-2.5.6.jar",
+      "helidon-common-service-loader-2.5.6.jar",
+      "jakarta.annotation-api-1.3.5.jar",
+      "netty-buffer-4.1.86.Final.jar",
+      "netty-transport-native-unix-common-4.1.86.Final.jar",
+      "helidon-common-configurable-2.5.6.jar",
+      "helidon-config-2.5.6.jar",
+      "netty-codec-4.1.86.Final.jar",
+      "opentracing-api-0.33.0.jar",
+      "helidon-common-context-2.5.6.jar",
+      "helidon-logging-common-2.5.6.jar",
+      "netty-codec-http2-4.1.86.Final.jar",
+      "helidon-common-http-2.5.6.jar",
+      "helidon-media-common-2.5.6.jar",
+      "netty-codec-http-4.1.86.Final.jar",
+      "opentracing-util-0.33.0.jar",
+      "helidon-common-key-util-2.5.6.jar",
+      "helidon-media-jsonp-2.5.6.jar",
+      "jandex-2.3.1.Final.jar",
+      "netty-common-4.1.86.Final.jar",
+      "helidon-common-mapper-2.5.6.jar",
+      "helidon-tracing-config-2.5.6.jar",
+      "jboss-logging-3.2.1.Final.jar",
+      "netty-handler-4.1.86.Final.jar",
+      "helidon-common-media-type-2.5.6.jar",
+      "helidon-webserver-2.5.6.jar",
+      "microprofile-config-api-1.4.jar",
+      "snakeyaml-1.32.jar",
+      "helidon-common-reactive-2.5.6.jar",
+      "helidon-webserver-cors-2.5.6.jar",
+      "microprofile-openapi-api-1.2.jar",
+      "netty-transport-4.1.86.Final.jar"
+    ],
+    "deps_non_spl": [
+      "opentracing-noop-0.33.0.jar",
+      "smallrye-open-api-core-2.0.26.jar"
+    ],
+    "deps_bloated": [
+      "netty-resolver-4.1.86.Final.jar",
+      "smallrye-open-api-jaxrs-2.0.26.jar"
+    ],
+    "project_size": 138.9091796875,
+    "helidon-common-2.5.6.jar": {
+      "original": {
+        "classes": 39,
+        "size": 127348
+      },
+      "spl": {
+        "classes": 27,
+        "size": 102524
+      }
+    },
+    "helidon-common-service-loader-2.5.6.jar": {
+      "original": {
+        "classes": 6,
+        "size": 20195
+      },
+      "spl": {
+        "classes": 5,
+        "size": 20058
+      }
+    },
+    "jakarta.annotation-api-1.3.5.jar": {
+      "original": {
+        "classes": 15,
+        "size": 9061
+      },
+      "spl": {
+        "classes": 6,
+        "size": 2739
+      }
+    },
+    "netty-buffer-4.1.86.Final.jar": {
+      "original": {
+        "classes": 137,
+        "size": 733447
+      },
+      "spl": {
+        "classes": 110,
+        "size": 702963
+      }
+    },
+    "netty-transport-native-unix-common-4.1.86.Final.jar": {
+      "original": {
+        "classes": 32,
+        "size": 71551
+      },
+      "spl": {
+        "classes": 8,
+        "size": 14396
+      }
+    },
+    "helidon-common-configurable-2.5.6.jar": {
+      "original": {
+        "classes": 39,
+        "size": 138390
+      },
+      "spl": {
+        "classes": 19,
+        "size": 54687
+      }
+    },
+    "helidon-config-2.5.6.jar": {
+      "original": {
+        "classes": 225,
+        "size": 773715
+      },
+      "spl": {
+        "classes": 217,
+        "size": 759783
+      }
+    },
+    "netty-codec-4.1.86.Final.jar": {
+      "original": {
+        "classes": 217,
+        "size": 667306
+      },
+      "spl": {
+        "classes": 97,
+        "size": 320681
+      }
+    },
+    "opentracing-api-0.33.0.jar": {
+      "original": {
+        "classes": 29,
+        "size": 20804
+      },
+      "spl": {
+        "classes": 23,
+        "size": 16023
+      }
+    },
+    "helidon-common-context-2.5.6.jar": {
+      "original": {
+        "classes": 16,
+        "size": 36898
+      },
+      "spl": {
+        "classes": 14,
+        "size": 36632
+      }
+    },
+    "helidon-logging-common-2.5.6.jar": {
+      "original": {
+        "classes": 5,
+        "size": 4772
+      },
+      "spl": {
+        "classes": 3,
+        "size": 4506
+      }
+    },
+    "netty-codec-http2-4.1.86.Final.jar": {
+      "original": {
+        "classes": 277,
+        "size": 1066673
+      },
+      "spl": {
+        "classes": 256,
+        "size": 944282
+      }
+    },
+    "opentracing-noop-0.33.0.jar": {
+      "original": {
+        "classes": 13,
+        "size": 14610
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 13,
+        "size": 14610
+      }
+    },
+    "helidon-common-http-2.5.6.jar": {
+      "original": {
+        "classes": 58,
+        "size": 162050
+      },
+      "spl": {
+        "classes": 57,
+        "size": 161922
+      }
+    },
+    "helidon-media-common-2.5.6.jar": {
+      "original": {
+        "classes": 72,
+        "size": 239375
+      },
+      "spl": {
+        "classes": 67,
+        "size": 225612
+      }
+    },
+    "netty-codec-http-4.1.86.Final.jar": {
+      "original": {
+        "classes": 385,
+        "size": 1378850
+      },
+      "spl": {
+        "classes": 157,
+        "size": 586428
+      }
+    },
+    "opentracing-util-0.33.0.jar": {
+      "original": {
+        "classes": 5,
+        "size": 9098
+      },
+      "spl": {
+        "classes": 3,
+        "size": 6883
+      }
+    },
+    "helidon-common-key-util-2.5.6.jar": {
+      "original": {
+        "classes": 12,
+        "size": 47985
+      },
+      "spl": {
+        "classes": 11,
+        "size": 47858
+      }
+    },
+    "helidon-media-jsonp-2.5.6.jar": {
+      "original": {
+        "classes": 12,
+        "size": 42098
+      },
+      "spl": {
+        "classes": 11,
+        "size": 41970
+      }
+    },
+    "jandex-2.3.1.Final.jar": {
+      "original": {
+        "classes": 106,
+        "size": 415350
+      },
+      "spl": {
+        "classes": 86,
+        "size": 293642
+      }
+    },
+    "netty-common-4.1.86.Final.jar": {
+      "original": {
+        "classes": 488,
+        "size": 1318081
+      },
+      "spl": {
+        "classes": 365,
+        "size": 1017712
+      }
+    },
+    "smallrye-open-api-core-2.0.26.jar": {
+      "original": {
+        "classes": 234,
+        "size": 1034081
+      },
+      "classes_removed": 53,
+      "non_spl": {
+        "classes": 234,
+        "size": 1034081
+      }
+    },
+    "helidon-common-mapper-2.5.6.jar": {
+      "original": {
+        "classes": 13,
+        "size": 31073
+      },
+      "spl": {
+        "classes": 3,
+        "size": 2412
+      }
+    },
+    "helidon-tracing-config-2.5.6.jar": {
+      "original": {
+        "classes": 21,
+        "size": 51963
+      },
+      "spl": {
+        "classes": 20,
+        "size": 51832
+      }
+    },
+    "jboss-logging-3.2.1.Final.jar": {
+      "original": {
+        "classes": 48,
+        "size": 148397
+      },
+      "spl": {
+        "classes": 33,
+        "size": 111177
+      }
+    },
+    "netty-handler-4.1.86.Final.jar": {
+      "original": {
+        "classes": 344,
+        "size": 1115000
+      },
+      "spl": {
+        "classes": 223,
+        "size": 755097
+      }
+    },
+    "smallrye-open-api-jaxrs-2.0.26.jar": {
+      "original": {
+        "classes": 9,
+        "size": 61606
+      }
+    },
+    "helidon-common-media-type-2.5.6.jar": {
+      "original": {
+        "classes": 7,
+        "size": 14939
+      },
+      "spl": {
+        "classes": 5,
+        "size": 14667
+      }
+    },
+    "helidon-webserver-2.5.6.jar": {
+      "original": {
+        "classes": 156,
+        "size": 674109
+      },
+      "spl": {
+        "classes": 129,
+        "size": 579734
+      }
+    },
+    "microprofile-config-api-1.4.jar": {
+      "original": {
+        "classes": 11,
+        "size": 8444
+      },
+      "spl": {
+        "classes": 6,
+        "size": 6555
+      }
+    },
+    "netty-resolver-4.1.86.Final.jar": {
+      "original": {
+        "classes": 29,
+        "size": 71217
+      }
+    },
+    "snakeyaml-1.32.jar": {
+      "original": {
+        "classes": 226,
+        "size": 634660
+      },
+      "spl": {
+        "classes": 216,
+        "size": 610599
+      }
+    },
+    "helidon-common-reactive-2.5.6.jar": {
+      "original": {
+        "classes": 195,
+        "size": 681793
+      },
+      "spl": {
+        "classes": 190,
+        "size": 657367
+      }
+    },
+    "helidon-webserver-cors-2.5.6.jar": {
+      "original": {
+        "classes": 35,
+        "size": 131931
+      },
+      "spl": {
+        "classes": 34,
+        "size": 131800
+      }
+    },
+    "microprofile-openapi-api-1.2.jar": {
+      "original": {
+        "classes": 120,
+        "size": 183674
+      },
+      "spl": {
+        "classes": 90,
+        "size": 172379
+      }
+    },
+    "netty-transport-4.1.86.Final.jar": {
+      "original": {
+        "classes": 366,
+        "size": 1026252
+      },
+      "spl": {
+        "classes": 239,
+        "size": 666095
+      }
+    },
+    "unsuccessfully_spl_classes": 181,
+    "classes_removed_from_unsucc_deps": 53,
+    "bloated": {
+      "classes": 38,
+      "size": 132823
+    },
+    "total_classes_orig_deps": 4002,
+    "class_reduction": 1025,
+    "total_original_size": 12997.1083984375,
+    "total_final_size": 10070.2626953125,
+    "percentage_reduction": 22.51920668351787
+  },
+  {
+    "name": "jacop",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/jacop/",
+    "jar": "jacop-4.10.0-SNAPSHOT.jar",
+    "project_classes": 833,
+    "deps_orig": [
+      "jansi-1.12.jar",
+      "jline-2.14.6.jar",
+      "log4j-1.2.17.jar",
+      "mockito-all-1.10.19.jar",
+      "scala-compiler-2.13.1.jar",
+      "scala-library-2.13.1.jar",
+      "scala-reflect-2.13.1.jar",
+      "slf4j-api-1.7.24.jar",
+      "slf4j-log4j12-1.7.24.jar"
+    ],
+    "deps_spl": [
+      "scala-library-2.13.1.jar",
+      "scala-reflect-2.13.1.jar",
+      "scala-compiler-2.13.1.jar"
+    ],
+    "deps_non_spl": [
+      "mockito-all-1.10.19.jar"
+    ],
+    "deps_bloated": [
+      "jansi-1.12.jar",
+      "jline-2.14.6.jar",
+      "log4j-1.2.17.jar",
+      "slf4j-api-1.7.24.jar",
+      "slf4j-log4j12-1.7.24.jar"
+    ],
+    "project_size": 4113.115234375,
+    "jansi-1.12.jar": {
+      "original": {
+        "classes": 43,
+        "size": 119211
+      }
+    },
+    "jline-2.14.6.jar": {
+      "original": {
+        "classes": 105,
+        "size": 375911
+      }
+    },
+    "log4j-1.2.17.jar": {
+      "original": {
+        "classes": 314,
+        "size": 887471
+      }
+    },
+    "mockito-all-1.10.19.jar": {
+      "original": {
+        "classes": 752,
+        "size": 1661940
+      },
+      "classes_removed": 749,
+      "non_spl": {
+        "classes": 752,
+        "size": 1661940
+      }
+    },
+    "scala-compiler-2.13.1.jar": {
+      "original": {
+        "classes": 2984,
+        "size": 23615969
+      },
+      "spl": {
+        "classes": 2,
+        "size": 9358
+      }
+    },
+    "scala-library-2.13.1.jar": {
+      "original": {
+        "classes": 2829,
+        "size": 13550117
+      },
+      "spl": {
+        "classes": 1458,
+        "size": 8827887
+      }
+    },
+    "scala-reflect-2.13.1.jar": {
+      "original": {
+        "classes": 1418,
+        "size": 9385071
+      },
+      "spl": {
+        "classes": 67,
+        "size": 291148
+      }
+    },
+    "slf4j-api-1.7.24.jar": {
+      "original": {
+        "classes": 34,
+        "size": 81431
+      }
+    },
+    "slf4j-log4j12-1.7.24.jar": {
+      "original": {
+        "classes": 8,
+        "size": 19337
+      }
+    },
+    "unsuccessfully_spl_classes": 3,
+    "classes_removed_from_unsucc_deps": 749,
+    "bloated": {
+      "classes": 504,
+      "size": 1483361
+    },
+    "total_classes_orig_deps": 8487,
+    "class_reduction": 6208,
+    "total_original_size": 52644.8125,
+    "total_final_size": 14650.5498046875,
+    "percentage_reduction": 72.17095263719003
+  },
+  {
+    "name": "java-faker",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/java-faker/",
+    "jar": "javafaker-1.0.3-SNAPSHOT.jar",
+    "project_classes": 107,
+    "deps_orig": [
+      "automaton-1.11-8.jar",
+      "commons-lang3-3.5.jar",
+      "generex-1.0.2.jar",
+      "snakeyaml-1.26-android.jar"
+    ],
+    "deps_spl": [
+      "automaton-1.11-8.jar",
+      "commons-lang3-3.5.jar",
+      "generex-1.0.2.jar"
+    ],
+    "deps_non_spl": [
+      "snakeyaml-1.26-android.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 215.72265625,
+    "automaton-1.11-8.jar": {
+      "original": {
+        "classes": 25,
+        "size": 113917
+      },
+      "spl": {
+        "classes": 22,
+        "size": 106731
+      }
+    },
+    "commons-lang3-3.5.jar": {
+      "original": {
+        "classes": 260,
+        "size": 991588
+      },
+      "spl": {
+        "classes": 53,
+        "size": 379775
+      }
+    },
+    "generex-1.0.2.jar": {
+      "original": {
+        "classes": 7,
+        "size": 18384
+      },
+      "spl": {
+        "classes": 6,
+        "size": 17089
+      }
+    },
+    "snakeyaml-1.26-android.jar": {
+      "original": {
+        "classes": 214,
+        "size": 571071
+      },
+      "classes_removed": 11,
+      "non_spl": {
+        "classes": 214,
+        "size": 571071
+      }
+    },
+    "unsuccessfully_spl_classes": 203,
+    "classes_removed_from_unsucc_deps": 11,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 506,
+    "class_reduction": 211,
+    "total_original_size": 1870.95703125,
+    "total_final_size": 1265.201171875,
+    "percentage_reduction": 32.376791623605065
+  },
+  {
+    "name": "jcabi-github",
+    "path": "/home/dee/dev/deptrim-major/execution-results/jcabi-github/",
+    "jar": "jcabi-github-1.3.2.jar",
+    "project_classes": 312,
+    "deps_orig": [
+      "hamcrest-2.2.jar",
+      "jcabi-immutable-1.5.jar",
+      "antlr4-runtime-4.10.1.jar",
+      "jcabi-log-0.22.0.jar",
+      "jcabi-manifests-1.2.1.jar",
+      "cactoos-0.54.0.jar",
+      "j2objc-annotations-1.3.jar",
+      "jcabi-xml-0.25.3.jar",
+      "checker-qual-3.12.0.jar",
+      "commons-io-2.11.0.jar",
+      "commons-lang3-3.12.0.jar",
+      "jsr305-3.0.2.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "slf4j-api-2.0.0-beta1.jar",
+      "failureaccess-1.0.1.jar",
+      "jcabi-aspects-0.24.1.jar",
+      "xembly-0.28.1.jar",
+      "guava-31.1-jre.jar",
+      "jcabi-http-1.20.1.jar"
+    ],
+    "deps_spl": [
+      "hamcrest-2.2.jar",
+      "jcabi-immutable-1.5.jar",
+      "antlr4-runtime-4.10.1.jar",
+      "jcabi-log-0.22.0.jar",
+      "cactoos-0.54.0.jar",
+      "j2objc-annotations-1.3.jar",
+      "jcabi-xml-0.25.3.jar",
+      "checker-qual-3.12.0.jar",
+      "commons-io-2.11.0.jar",
+      "commons-lang3-3.12.0.jar",
+      "jsr305-3.0.2.jar",
+      "error_prone_annotations-2.11.0.jar",
+      "slf4j-api-2.0.0-beta1.jar",
+      "jcabi-aspects-0.24.1.jar",
+      "xembly-0.28.1.jar",
+      "guava-31.1-jre.jar"
+    ],
+    "deps_non_spl": [
+      "jcabi-http-1.20.1.jar"
+    ],
+    "deps_bloated": [
+      "failureaccess-1.0.1.jar",
+      "jcabi-manifests-1.2.1.jar",
+      "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+    ],
+    "project_size": 909.7275390625,
+    "hamcrest-2.2.jar": {
+      "original": {
+        "classes": 108,
+        "size": 266460
+      },
+      "spl": {
+        "classes": 92,
+        "size": 240134
+      }
+    },
+    "jcabi-immutable-1.5.jar": {
+      "original": {
+        "classes": 11,
+        "size": 46501
+      },
+      "spl": {
+        "classes": 5,
+        "size": 24386
+      }
+    },
+    "antlr4-runtime-4.10.1.jar": {
+      "original": {
+        "classes": 213,
+        "size": 627250
+      },
+      "spl": {
+        "classes": 187,
+        "size": 546622
+      }
+    },
+    "jcabi-log-0.22.0.jar": {
+      "original": {
+        "classes": 39,
+        "size": 80799
+      },
+      "spl": {
+        "classes": 20,
+        "size": 44563
+      }
+    },
+    "jcabi-manifests-1.2.1.jar": {
+      "original": {
+        "classes": 7,
+        "size": 14233
+      }
+    },
+    "cactoos-0.54.0.jar": {
+      "original": {
+        "classes": 329,
+        "size": 677142
+      },
+      "spl": {
+        "classes": 72,
+        "size": 186912
+      }
+    },
+    "j2objc-annotations-1.3.jar": {
+      "original": {
+        "classes": 12,
+        "size": 7232
+      },
+      "spl": {
+        "classes": 2,
+        "size": 831
+      }
+    },
+    "jcabi-xml-0.25.3.jar": {
+      "original": {
+        "classes": 21,
+        "size": 73094
+      },
+      "spl": {
+        "classes": 7,
+        "size": 31604
+      }
+    },
+    "checker-qual-3.12.0.jar": {
+      "original": {
+        "classes": 333,
+        "size": 241225
+      },
+      "spl": {
+        "classes": 7,
+        "size": 9111
+      }
+    },
+    "commons-io-2.11.0.jar": {
+      "original": {
+        "classes": 201,
+        "size": 628032
+      },
+      "spl": {
+        "classes": 60,
+        "size": 261347
+      }
+    },
+    "commons-lang3-3.12.0.jar": {
+      "original": {
+        "classes": 345,
+        "size": 1249211
+      },
+      "spl": {
+        "classes": 80,
+        "size": 485162
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 8,
+        "size": 5251
+      }
+    },
+    "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "error_prone_annotations-2.11.0.jar": {
+      "original": {
+        "classes": 26,
+        "size": 14442
+      },
+      "spl": {
+        "classes": 12,
+        "size": 7495
+      }
+    },
+    "slf4j-api-2.0.0-beta1.jar": {
+      "original": {
+        "classes": 52,
+        "size": 122780
+      },
+      "spl": {
+        "classes": 43,
+        "size": 110817
+      }
+    },
+    "failureaccess-1.0.1.jar": {
+      "original": {
+        "classes": 2,
+        "size": 1201
+      }
+    },
+    "jcabi-aspects-0.24.1.jar": {
+      "original": {
+        "classes": 50,
+        "size": 160099
+      },
+      "spl": {
+        "classes": 6,
+        "size": 4689
+      }
+    },
+    "xembly-0.28.1.jar": {
+      "original": {
+        "classes": 40,
+        "size": 107497
+      },
+      "spl": {
+        "classes": 37,
+        "size": 103069
+      }
+    },
+    "guava-31.1-jre.jar": {
+      "original": {
+        "classes": 2023,
+        "size": 6552221
+      },
+      "spl": {
+        "classes": 785,
+        "size": 2737486
+      }
+    },
+    "jcabi-http-1.20.1.jar": {
+      "original": {
+        "classes": 74,
+        "size": 222291
+      },
+      "classes_removed": 41,
+      "non_spl": {
+        "classes": 74,
+        "size": 222291
+      }
+    },
+    "unsuccessfully_spl_classes": 33,
+    "classes_removed_from_unsucc_deps": 41,
+    "bloated": {
+      "classes": 9,
+      "size": 15434
+    },
+    "total_classes_orig_deps": 3921,
+    "class_reduction": 2424,
+    "total_original_size": 11762.2197265625,
+    "total_final_size": 5813.7998046875,
+    "percentage_reduction": 50.572256429130846
+  },
+  {
+    "name": "jooby",
+    "path": "/home/dee/dev/deptrim-major/execution-results/jooby_jooby/",
+    "jar": "original-jooby-2.16.1.jar",
+    "project_classes": 320,
+    "deps_orig": [
+      "annotations-13.0.jar",
+      "bucket4j-core-6.4.1.jar",
+      "kotlin-reflect-1.6.21.jar",
+      "kotlinx-coroutines-core-1.6.2.jar",
+      "slf4j-api-1.7.36.jar",
+      "asm-9.3.jar",
+      "commons-io-2.11.0.jar",
+      "kotlin-stdlib-1.6.21.jar",
+      "kotlinx-coroutines-core-jvm-1.6.2.jar",
+      "unbescape-1.1.6.RELEASE.jar",
+      "asm-analysis-9.3.jar",
+      "config-1.4.2.jar",
+      "kotlin-stdlib-common-1.6.21.jar",
+      "reactive-streams-1.0.3.jar",
+      "asm-tree-9.3.jar",
+      "javax.inject-1.jar",
+      "kotlin-stdlib-jdk7-1.6.21.jar",
+      "reactor-core-3.4.18.jar",
+      "asm-util-9.3.jar",
+      "jsr305-3.0.2.jar",
+      "kotlin-stdlib-jdk8-1.6.21.jar",
+      "rxjava-2.2.21.jar"
+    ],
+    "deps_spl": [
+      "annotations-13.0.jar",
+      "bucket4j-core-6.4.1.jar",
+      "kotlin-reflect-1.6.21.jar",
+      "slf4j-api-1.7.36.jar",
+      "asm-9.3.jar",
+      "commons-io-2.11.0.jar",
+      "kotlin-stdlib-1.6.21.jar",
+      "unbescape-1.1.6.RELEASE.jar",
+      "asm-analysis-9.3.jar",
+      "config-1.4.2.jar",
+      "reactive-streams-1.0.3.jar",
+      "asm-tree-9.3.jar",
+      "javax.inject-1.jar",
+      "kotlin-stdlib-jdk7-1.6.21.jar",
+      "reactor-core-3.4.18.jar",
+      "asm-util-9.3.jar",
+      "jsr305-3.0.2.jar",
+      "kotlin-stdlib-jdk8-1.6.21.jar",
+      "rxjava-2.2.21.jar"
+    ],
+    "deps_non_spl": [
+      "kotlinx-coroutines-core-jvm-1.6.2.jar"
+    ],
+    "deps_bloated": [
+      "kotlin-stdlib-common-1.6.21.jar",
+      "kotlinx-coroutines-core-1.6.2.jar"
+    ],
+    "project_size": 1032.8701171875,
+    "annotations-13.0.jar": {
+      "original": {
+        "classes": 32,
+        "size": 15401
+      },
+      "spl": {
+        "classes": 2,
+        "size": 1094
+      }
+    },
+    "bucket4j-core-6.4.1.jar": {
+      "original": {
+        "classes": 93,
+        "size": 277475
+      },
+      "spl": {
+        "classes": 35,
+        "size": 80069
+      }
+    },
+    "kotlin-reflect-1.6.21.jar": {
+      "original": {
+        "classes": 1865,
+        "size": 7681136
+      },
+      "spl": {
+        "classes": 1843,
+        "size": 7604313
+      }
+    },
+    "kotlinx-coroutines-core-1.6.2.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "slf4j-api-1.7.36.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82200
+      },
+      "spl": {
+        "classes": 32,
+        "size": 78349
+      }
+    },
+    "asm-9.3.jar": {
+      "original": {
+        "classes": 38,
+        "size": 244052
+      },
+      "spl": {
+        "classes": 37,
+        "size": 241062
+      }
+    },
+    "commons-io-2.11.0.jar": {
+      "original": {
+        "classes": 201,
+        "size": 628032
+      },
+      "spl": {
+        "classes": 21,
+        "size": 112542
+      }
+    },
+    "kotlin-stdlib-1.6.21.jar": {
+      "original": {
+        "classes": 881,
+        "size": 3687766
+      },
+      "spl": {
+        "classes": 658,
+        "size": 3122535
+      }
+    },
+    "kotlinx-coroutines-core-jvm-1.6.2.jar": {
+      "original": {
+        "classes": 845,
+        "size": 3108061
+      },
+      "classes_removed": 619,
+      "non_spl": {
+        "classes": 845,
+        "size": 3108061
+      }
+    },
+    "unbescape-1.1.6.RELEASE.jar": {
+      "original": {
+        "classes": 69,
+        "size": 310487
+      },
+      "spl": {
+        "classes": 44,
+        "size": 215523
+      }
+    },
+    "asm-analysis-9.3.jar": {
+      "original": {
+        "classes": 15,
+        "size": 76889
+      },
+      "spl": {
+        "classes": 1,
+        "size": 215
+      }
+    },
+    "config-1.4.2.jar": {
+      "original": {
+        "classes": 181,
+        "size": 641087
+      },
+      "spl": {
+        "classes": 175,
+        "size": 622019
+      }
+    },
+    "kotlin-stdlib-common-1.6.21.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "reactive-streams-1.0.3.jar": {
+      "original": {
+        "classes": 13,
+        "size": 21428
+      },
+      "spl": {
+        "classes": 4,
+        "size": 1191
+      }
+    },
+    "asm-tree-9.3.jar": {
+      "original": {
+        "classes": 39,
+        "size": 104173
+      },
+      "spl": {
+        "classes": 30,
+        "size": 76859
+      }
+    },
+    "javax.inject-1.jar": {
+      "original": {
+        "classes": 6,
+        "size": 2311
+      },
+      "spl": {
+        "classes": 4,
+        "size": 1527
+      }
+    },
+    "kotlin-stdlib-jdk7-1.6.21.jar": {
+      "original": {
+        "classes": 9,
+        "size": 59838
+      },
+      "spl": {
+        "classes": 2,
+        "size": 4302
+      }
+    },
+    "reactor-core-3.4.18.jar": {
+      "original": {
+        "classes": 891,
+        "size": 3825071
+      },
+      "spl": {
+        "classes": 851,
+        "size": 3737576
+      }
+    },
+    "asm-util-9.3.jar": {
+      "original": {
+        "classes": 26,
+        "size": 188643
+      },
+      "spl": {
+        "classes": 13,
+        "size": 113586
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 11,
+        "size": 6804
+      }
+    },
+    "kotlin-stdlib-jdk8-1.6.21.jar": {
+      "original": {
+        "classes": 13,
+        "size": 26793
+      },
+      "spl": {
+        "classes": 3,
+        "size": 6560
+      }
+    },
+    "rxjava-2.2.21.jar": {
+      "original": {
+        "classes": 1659,
+        "size": 5124851
+      },
+      "spl": {
+        "classes": 1604,
+        "size": 4931311
+      }
+    },
+    "unsuccessfully_spl_classes": 226,
+    "classes_removed_from_unsucc_deps": 619,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 6945,
+    "class_reduction": 730,
+    "total_original_size": 26547.4560546875,
+    "total_final_size": 24534.3330078125,
+    "percentage_reduction": 7.583110949418227
+  },
+  {
+    "name": "lettuce/core",
+    "path": "/home/dee/dev/deptrim-major/execution-results/lettuce-core/",
+    "jar": "lettuce-core-6.2.2.RELEASE.jar",
+    "project_classes": 1302,
+    "deps_orig": [
+      "annotations-13.0.jar",
+      "netty-handler-4.1.85.Final.jar",
+      "brave-5.13.11.jar",
+      "netty-incubator-transport-classes-io_uring-0.0.16.Final.jar",
+      "cdi-api-2.0.SP1.jar",
+      "netty-incubator-transport-native-io_uring-0.0.16.Final-linux-x86_64.jar",
+      "commons-pool2-2.11.1.jar",
+      "netty-resolver-4.1.85.Final.jar",
+      "HdrHistogram-2.1.12.jar",
+      "netty-resolver-dns-4.1.85.Final.jar",
+      "javax.el-api-3.0.0.jar",
+      "netty-tcnative-2.0.54.Final-linux-x86_64.jar",
+      "javax.inject-1.jar",
+      "netty-tcnative-classes-2.0.54.Final.jar",
+      "javax.interceptor-api-1.2.jar",
+      "netty-transport-4.1.85.Final.jar",
+      "jsr305-3.0.2.jar",
+      "netty-transport-classes-epoll-4.1.85.Final.jar",
+      "kotlin-stdlib-1.5.30.jar",
+      "netty-transport-classes-kqueue-4.1.85.Final.jar",
+      "kotlin-stdlib-common-1.5.30.jar",
+      "netty-transport-native-epoll-4.1.85.Final-linux-x86_64.jar",
+      "kotlin-stdlib-jdk7-1.5.30.jar",
+      "netty-transport-native-kqueue-4.1.85.Final-osx-x86_64.jar",
+      "kotlin-stdlib-jdk8-1.5.30.jar",
+      "netty-transport-native-unix-common-4.1.85.Final.jar",
+      "kotlinx-coroutines-core-jvm-1.5.2.jar",
+      "reactive-streams-1.0.4.jar",
+      "kotlinx-coroutines-jdk8-1.5.2.jar",
+      "reactor-core-3.4.25.jar",
+      "kotlinx-coroutines-reactive-1.5.2.jar",
+      "rxjava-1.3.8.jar",
+      "LatencyUtils-2.0.3.jar",
+      "rxjava-2.2.21.jar",
+      "micrometer-core-1.9.6.jar",
+      "rxjava-3.1.5.jar",
+      "netty-buffer-4.1.85.Final.jar",
+      "rxjava-reactive-streams-1.2.1.jar",
+      "netty-codec-4.1.85.Final.jar",
+      "zipkin-2.23.2.jar",
+      "netty-codec-dns-4.1.85.Final.jar",
+      "zipkin-reporter-2.16.3.jar",
+      "netty-common-4.1.85.Final.jar",
+      "zipkin-reporter-brave-2.16.3.jar"
+    ],
+    "deps_spl": [
+      "annotations-13.0.jar",
+      "netty-handler-4.1.85.Final.jar",
+      "brave-5.13.11.jar",
+      "netty-incubator-transport-classes-io_uring-0.0.16.Final.jar",
+      "cdi-api-2.0.SP1.jar",
+      "commons-pool2-2.11.1.jar",
+      "netty-resolver-4.1.85.Final.jar",
+      "HdrHistogram-2.1.12.jar",
+      "netty-resolver-dns-4.1.85.Final.jar",
+      "javax.el-api-3.0.0.jar",
+      "javax.inject-1.jar",
+      "javax.interceptor-api-1.2.jar",
+      "netty-transport-4.1.85.Final.jar",
+      "jsr305-3.0.2.jar",
+      "netty-transport-classes-epoll-4.1.85.Final.jar",
+      "kotlin-stdlib-1.5.30.jar",
+      "netty-transport-classes-kqueue-4.1.85.Final.jar",
+      "kotlin-stdlib-jdk7-1.5.30.jar",
+      "kotlin-stdlib-jdk8-1.5.30.jar",
+      "netty-transport-native-unix-common-4.1.85.Final.jar",
+      "kotlinx-coroutines-core-jvm-1.5.2.jar",
+      "reactive-streams-1.0.4.jar",
+      "kotlinx-coroutines-jdk8-1.5.2.jar",
+      "reactor-core-3.4.25.jar",
+      "kotlinx-coroutines-reactive-1.5.2.jar",
+      "micrometer-core-1.9.6.jar",
+      "rxjava-3.1.5.jar",
+      "rxjava-1.3.8.jar",
+      "rxjava-2.2.21.jar",
+      "netty-buffer-4.1.85.Final.jar",
+      "netty-codec-4.1.85.Final.jar",
+      "zipkin-2.23.2.jar",
+      "netty-codec-dns-4.1.85.Final.jar",
+      "zipkin-reporter-2.16.3.jar",
+      "netty-common-4.1.85.Final.jar",
+      "zipkin-reporter-brave-2.16.3.jar"
+    ],
+    "deps_non_spl": [
+      "LatencyUtils-2.0.3.jar",
+      "rxjava-reactive-streams-1.2.1.jar",
+      "netty-tcnative-classes-2.0.54.Final.jar"
+    ],
+    "deps_bloated": [
+      "kotlin-stdlib-common-1.5.30.jar",
+      "netty-incubator-transport-native-io_uring-0.0.16.Final-linux-x86_64.jar",
+      "netty-tcnative-2.0.54.Final-linux-x86_64.jar",
+      "netty-transport-native-epoll-4.1.85.Final-linux-x86_64.jar",
+      "netty-transport-native-kqueue-4.1.85.Final-osx-x86_64.jar"
+    ],
+    "project_size": 4909.486328125,
+    "annotations-13.0.jar": {
+      "original": {
+        "classes": 32,
+        "size": 15401
+      },
+      "spl": {
+        "classes": 2,
+        "size": 1094
+      }
+    },
+    "netty-handler-4.1.85.Final.jar": {
+      "original": {
+        "classes": 344,
+        "size": 1115000
+      },
+      "spl": {
+        "classes": 235,
+        "size": 778851
+      }
+    },
+    "brave-5.13.11.jar": {
+      "original": {
+        "classes": 251,
+        "size": 534580
+      },
+      "spl": {
+        "classes": 176,
+        "size": 398468
+      }
+    },
+    "netty-incubator-transport-classes-io_uring-0.0.16.Final.jar": {
+      "original": {
+        "classes": 44,
+        "size": 217967
+      },
+      "spl": {
+        "classes": 40,
+        "size": 196118
+      }
+    },
+    "cdi-api-2.0.SP1.jar": {
+      "original": {
+        "classes": 148,
+        "size": 165110
+      },
+      "spl": {
+        "classes": 62,
+        "size": 91712
+      }
+    },
+    "netty-incubator-transport-native-io_uring-0.0.16.Final-linux-x86_64.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "commons-pool2-2.11.1.jar": {
+      "original": {
+        "classes": 80,
+        "size": 297831
+      },
+      "spl": {
+        "classes": 68,
+        "size": 235068
+      }
+    },
+    "netty-resolver-4.1.85.Final.jar": {
+      "original": {
+        "classes": 29,
+        "size": 71217
+      },
+      "spl": {
+        "classes": 19,
+        "size": 47546
+      }
+    },
+    "HdrHistogram-2.1.12.jar": {
+      "original": {
+        "classes": 96,
+        "size": 336343
+      },
+      "spl": {
+        "classes": 39,
+        "size": 143281
+      }
+    },
+    "netty-resolver-dns-4.1.85.Final.jar": {
+      "original": {
+        "classes": 101,
+        "size": 334102
+      },
+      "spl": {
+        "classes": 93,
+        "size": 323315
+      }
+    },
+    "javax.el-api-3.0.0.jar": {
+      "original": {
+        "classes": 46,
+        "size": 109376
+      },
+      "spl": {
+        "classes": 17,
+        "size": 34335
+      }
+    },
+    "netty-tcnative-2.0.54.Final-linux-x86_64.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "javax.inject-1.jar": {
+      "original": {
+        "classes": 6,
+        "size": 2311
+      },
+      "spl": {
+        "classes": 3,
+        "size": 1109
+      }
+    },
+    "netty-tcnative-classes-2.0.54.Final.jar": {
+      "original": {
+        "classes": 28,
+        "size": 56931
+      },
+      "classes_removed": 1,
+      "non_spl": {
+        "classes": 28,
+        "size": 56931
+      }
+    },
+    "javax.interceptor-api-1.2.jar": {
+      "original": {
+        "classes": 10,
+        "size": 4751
+      },
+      "spl": {
+        "classes": 3,
+        "size": 1753
+      }
+    },
+    "netty-transport-4.1.85.Final.jar": {
+      "original": {
+        "classes": 366,
+        "size": 1025451
+      },
+      "spl": {
+        "classes": 245,
+        "size": 704309
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      },
+      "spl": {
+        "classes": 7,
+        "size": 4733
+      }
+    },
+    "netty-transport-classes-epoll-4.1.85.Final.jar": {
+      "original": {
+        "classes": 66,
+        "size": 326650
+      },
+      "spl": {
+        "classes": 61,
+        "size": 292724
+      }
+    },
+    "kotlin-stdlib-1.5.30.jar": {
+      "original": {
+        "classes": 864,
+        "size": 3696422
+      },
+      "spl": {
+        "classes": 634,
+        "size": 3172238
+      }
+    },
+    "netty-transport-classes-kqueue-4.1.85.Final.jar": {
+      "original": {
+        "classes": 50,
+        "size": 247317
+      },
+      "spl": {
+        "classes": 40,
+        "size": 186150
+      }
+    },
+    "kotlin-stdlib-common-1.5.30.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "netty-transport-native-epoll-4.1.85.Final-linux-x86_64.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "kotlin-stdlib-jdk7-1.5.30.jar": {
+      "original": {
+        "classes": 8,
+        "size": 58899
+      },
+      "spl": {
+        "classes": 1,
+        "size": 1663
+      }
+    },
+    "netty-transport-native-kqueue-4.1.85.Final-osx-x86_64.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "kotlin-stdlib-jdk8-1.5.30.jar": {
+      "original": {
+        "classes": 12,
+        "size": 24531
+      },
+      "spl": {
+        "classes": 2,
+        "size": 4166
+      }
+    },
+    "netty-transport-native-unix-common-4.1.85.Final.jar": {
+      "original": {
+        "classes": 32,
+        "size": 71551
+      },
+      "spl": {
+        "classes": 28,
+        "size": 65805
+      }
+    },
+    "kotlinx-coroutines-core-jvm-1.5.2.jar": {
+      "original": {
+        "classes": 833,
+        "size": 3135980
+      },
+      "spl": {
+        "classes": 725,
+        "size": 2767243
+      }
+    },
+    "reactive-streams-1.0.4.jar": {
+      "original": {
+        "classes": 13,
+        "size": 21428
+      },
+      "spl": {
+        "classes": 4,
+        "size": 1191
+      }
+    },
+    "kotlinx-coroutines-jdk8-1.5.2.jar": {
+      "original": {
+        "classes": 10,
+        "size": 34305
+      },
+      "spl": {
+        "classes": 6,
+        "size": 23043
+      }
+    },
+    "reactor-core-3.4.25.jar": {
+      "original": {
+        "classes": 903,
+        "size": 3934115
+      },
+      "spl": {
+        "classes": 863,
+        "size": 3846565
+      }
+    },
+    "kotlinx-coroutines-reactive-1.5.2.jar": {
+      "original": {
+        "classes": 33,
+        "size": 130177
+      },
+      "spl": {
+        "classes": 21,
+        "size": 77657
+      }
+    },
+    "rxjava-1.3.8.jar": {
+      "original": {
+        "classes": 1015,
+        "size": 2241348
+      },
+      "spl": {
+        "classes": 975,
+        "size": 2140512
+      }
+    },
+    "LatencyUtils-2.0.3.jar": {
+      "original": {
+        "classes": 22,
+        "size": 47377
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 22,
+        "size": 47377
+      }
+    },
+    "rxjava-2.2.21.jar": {
+      "original": {
+        "classes": 1659,
+        "size": 5124851
+      },
+      "spl": {
+        "classes": 1604,
+        "size": 4931311
+      }
+    },
+    "micrometer-core-1.9.6.jar": {
+      "original": {
+        "classes": 366,
+        "size": 1745704
+      },
+      "spl": {
+        "classes": 142,
+        "size": 484640
+      }
+    },
+    "rxjava-3.1.5.jar": {
+      "original": {
+        "classes": 1757,
+        "size": 6050937
+      },
+      "spl": {
+        "classes": 1700,
+        "size": 5845203
+      }
+    },
+    "netty-buffer-4.1.85.Final.jar": {
+      "original": {
+        "classes": 137,
+        "size": 733502
+      },
+      "spl": {
+        "classes": 109,
+        "size": 699622
+      }
+    },
+    "rxjava-reactive-streams-1.2.1.jar": {
+      "original": {
+        "classes": 15,
+        "size": 30317
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 15,
+        "size": 30317
+      }
+    },
+    "netty-codec-4.1.85.Final.jar": {
+      "original": {
+        "classes": 214,
+        "size": 658183
+      },
+      "spl": {
+        "classes": 23,
+        "size": 64628
+      }
+    },
+    "zipkin-2.23.2.jar": {
+      "original": {
+        "classes": 167,
+        "size": 436591
+      },
+      "spl": {
+        "classes": 86,
+        "size": 257502
+      }
+    },
+    "netty-codec-dns-4.1.85.Final.jar": {
+      "original": {
+        "classes": 45,
+        "size": 136804
+      },
+      "spl": {
+        "classes": 38,
+        "size": 120952
+      }
+    },
+    "zipkin-reporter-2.16.3.jar": {
+      "original": {
+        "classes": 30,
+        "size": 56809
+      },
+      "spl": {
+        "classes": 3,
+        "size": 2398
+      }
+    },
+    "netty-common-4.1.85.Final.jar": {
+      "original": {
+        "classes": 488,
+        "size": 1317755
+      },
+      "spl": {
+        "classes": 354,
+        "size": 997573
+      }
+    },
+    "zipkin-reporter-brave-2.16.3.jar": {
+      "original": {
+        "classes": 9,
+        "size": 23512
+      },
+      "spl": {
+        "classes": 6,
+        "size": 15339
+      }
+    },
+    "unsuccessfully_spl_classes": 27,
+    "classes_removed_from_unsucc_deps": 1,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 10364,
+    "class_reduction": 1865,
+    "total_original_size": 38691.3984375,
+    "total_final_size": 33322.02734375,
+    "percentage_reduction": 13.877428344760897
+  },
+  {
+    "name": "modelmapper/core",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/modelmapper/core/",
+    "jar": "original-modelmapper-3.1.1.jar",
+    "project_classes": 210,
+    "deps_orig": [
+      "asm-9.4.jar",
+      "asm-commons-9.2.jar",
+      "asm-tree-9.4.jar",
+      "byte-buddy-dep-1.12.3.jar",
+      "objenesis-3.2.jar",
+      "typetools-0.6.3.jar"
+    ],
+    "deps_spl": [
+      "asm-9.4.jar",
+      "asm-commons-9.2.jar",
+      "asm-tree-9.4.jar",
+      "objenesis-3.2.jar"
+    ],
+    "deps_non_spl": [
+      "byte-buddy-dep-1.12.3.jar",
+      "typetools-0.6.3.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 537.3623046875,
+    "asm-9.4.jar": {
+      "original": {
+        "classes": 38,
+        "size": 244794
+      },
+      "spl": {
+        "classes": 37,
+        "size": 244604
+      }
+    },
+    "asm-commons-9.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 150798
+      },
+      "spl": {
+        "classes": 10,
+        "size": 40232
+      }
+    },
+    "asm-tree-9.4.jar": {
+      "original": {
+        "classes": 39,
+        "size": 104165
+      },
+      "spl": {
+        "classes": 9,
+        "size": 22643
+      }
+    },
+    "byte-buddy-dep-1.12.3.jar": {
+      "original": {
+        "classes": 2544,
+        "size": 8652510
+      },
+      "classes_removed": 346,
+      "non_spl": {
+        "classes": 2544,
+        "size": 8652510
+      }
+    },
+    "objenesis-3.2.jar": {
+      "original": {
+        "classes": 43,
+        "size": 75243
+      },
+      "spl": {
+        "classes": 26,
+        "size": 43875
+      }
+    },
+    "typetools-0.6.3.jar": {
+      "original": {
+        "classes": 8,
+        "size": 28383
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 8,
+        "size": 28383
+      }
+    },
+    "unsuccessfully_spl_classes": 2198,
+    "classes_removed_from_unsucc_deps": 346,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 2700,
+    "class_reduction": 66,
+    "total_original_size": 9576.3203125,
+    "total_final_size": 9357.916015625,
+    "percentage_reduction": 2.280670338375338
+  },
+  {
+    "name": "mybatis-3",
+    "path": "/home/dee/dev/deptrim-major/deptrim-experiments/pipeline/projects/mybatis-3/",
+    "jar": "original-mybatis-3.5.11.jar",
+    "project_classes": 480,
+    "deps_orig": [
+      "asm-7.1.jar",
+      "cglib-3.3.0.jar",
+      "commons-logging-1.2.jar",
+      "javassist-3.29.2-GA.jar",
+      "log4j-api-2.19.0.jar",
+      "ognl-3.3.4.jar",
+      "reload4j-1.2.22.jar",
+      "slf4j-api-2.0.1.jar"
+    ],
+    "deps_spl": [
+      "asm-7.1.jar",
+      "cglib-3.3.0.jar",
+      "commons-logging-1.2.jar",
+      "javassist-3.29.2-GA.jar",
+      "log4j-api-2.19.0.jar",
+      "ognl-3.3.4.jar",
+      "reload4j-1.2.22.jar"
+    ],
+    "deps_non_spl": [
+      "slf4j-api-2.0.1.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 1329.3349609375,
+    "asm-7.1.jar": {
+      "original": {
+        "classes": 36,
+        "size": 229213
+      },
+      "spl": {
+        "classes": 31,
+        "size": 216615
+      }
+    },
+    "cglib-3.3.0.jar": {
+      "original": {
+        "classes": 249,
+        "size": 561284
+      },
+      "spl": {
+        "classes": 142,
+        "size": 332027
+      }
+    },
+    "commons-logging-1.2.jar": {
+      "original": {
+        "classes": 28,
+        "size": 102911
+      },
+      "spl": {
+        "classes": 23,
+        "size": 87696
+      }
+    },
+    "javassist-3.29.2-GA.jar": {
+      "original": {
+        "classes": 426,
+        "size": 1542983
+      },
+      "spl": {
+        "classes": 356,
+        "size": 1337253
+      }
+    },
+    "log4j-api-2.19.0.jar": {
+      "original": {
+        "classes": 193,
+        "size": 733730
+      },
+      "spl": {
+        "classes": 125,
+        "size": 546463
+      }
+    },
+    "ognl-3.3.4.jar": {
+      "original": {
+        "classes": 144,
+        "size": 512360
+      },
+      "spl": {
+        "classes": 140,
+        "size": 504554
+      }
+    },
+    "reload4j-1.2.22.jar": {
+      "original": {
+        "classes": 217,
+        "size": 608859
+      },
+      "spl": {
+        "classes": 62,
+        "size": 170965
+      }
+    },
+    "slf4j-api-2.0.1.jar": {
+      "original": {
+        "classes": 52,
+        "size": 122835
+      },
+      "classes_removed": 8,
+      "non_spl": {
+        "classes": 52,
+        "size": 122835
+      }
+    },
+    "unsuccessfully_spl_classes": 44,
+    "classes_removed_from_unsucc_deps": 8,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 1345,
+    "class_reduction": 414,
+    "total_original_size": 5640.052734375,
+    "total_final_size": 4569.9677734375,
+    "percentage_reduction": 18.97296020683539
+  },
+  {
+    "name": "OpenPDF/openpdf",
+    "path": "/home/dee/dev/deptrim-major/execution-results/OpenPDF/",
+    "jar": "openpdf-1.3.30.jar",
+    "project_classes": 484,
+    "deps_orig": [
+      "batik-anim-1.14.jar",
+      "batik-dom-1.14.jar",
+      "batik-parser-1.14.jar",
+      "batik-transcoder-1.14.jar",
+      "bcutil-jdk18on-1.71.1.jar",
+      "fop-events-2.7.jar",
+      "serializer-2.7.2.jar",
+      "batik-awt-util-1.14.jar",
+      "batik-ext-1.14.jar",
+      "batik-script-1.14.jar",
+      "batik-util-1.14.jar",
+      "commons-logging-1.0.4.jar",
+      "fop-util-2.7.jar",
+      "xalan-2.7.2.jar",
+      "batik-bridge-1.14.jar",
+      "batik-extension-1.14.jar",
+      "batik-shared-resources-1.14.jar",
+      "batik-xml-1.14.jar",
+      "fontbox-2.0.24.jar",
+      "icu4j-71.1.jar",
+      "xml-apis-1.4.01.jar",
+      "batik-constants-1.14.jar",
+      "batik-gvt-1.14.jar",
+      "batik-svg-dom-1.14.jar",
+      "bcpkix-jdk18on-1.71.1.jar",
+      "fop-2.7.jar",
+      "jsr305-3.0.2.jar",
+      "xml-apis-ext-1.3.04.jar",
+      "batik-css-1.14.jar",
+      "batik-i18n-1.14.jar",
+      "batik-svggen-1.14.jar",
+      "bcprov-jdk18on-1.71.1.jar",
+      "fop-core-2.7.jar",
+      "qdox-1.12.jar",
+      "xmlgraphics-commons-2.7.jar"
+    ],
+    "deps_spl": [
+      "serializer-2.7.2.jar",
+      "bcpkix-jdk18on-1.71.1.jar",
+      "fontbox-2.0.24.jar",
+      "xmlgraphics-commons-2.7.jar",
+      "xalan-2.7.2.jar",
+      "icu4j-71.1.jar",
+      "bcutil-jdk18on-1.71.1.jar",
+      "xml-apis-1.4.01.jar",
+      "fop-core-2.7.jar",
+      "bcprov-jdk18on-1.71.1.jar",
+      "commons-logging-1.0.4.jar"
+    ],
+    "deps_non_spl": [
+      "fop-2.7.jar"
+    ],
+    "deps_bloated": [
+      "batik-anim-1.14.jar",
+      "batik-awt-util-1.14.jar",
+      "batik-bridge-1.14.jar",
+      "batik-constants-1.14.jar",
+      "batik-css-1.14.jar",
+      "batik-dom-1.14.jar",
+      "batik-ext-1.14.jar",
+      "batik-extension-1.14.jar",
+      "batik-gvt-1.14.jar",
+      "batik-i18n-1.14.jar",
+      "batik-parser-1.14.jar",
+      "batik-script-1.14.jar",
+      "batik-shared-resources-1.14.jar",
+      "batik-svg-dom-1.14.jar",
+      "batik-svggen-1.14.jar",
+      "batik-transcoder-1.14.jar",
+      "batik-util-1.14.jar",
+      "batik-xml-1.14.jar",
+      "fop-events-2.7.jar",
+      "fop-util-2.7.jar",
+      "jsr305-3.0.2.jar",
+      "qdox-1.12.jar",
+      "xml-apis-ext-1.3.04.jar"
+    ],
+    "project_size": 2658.07421875,
+    "batik-anim-1.14.jar": {
+      "original": {
+        "classes": 396,
+        "size": 930126
+      }
+    },
+    "batik-dom-1.14.jar": {
+      "original": {
+        "classes": 115,
+        "size": 340067
+      }
+    },
+    "batik-parser-1.14.jar": {
+      "original": {
+        "classes": 55,
+        "size": 129221
+      }
+    },
+    "batik-transcoder-1.14.jar": {
+      "original": {
+        "classes": 60,
+        "size": 228293
+      }
+    },
+    "bcutil-jdk18on-1.71.1.jar": {
+      "original": {
+        "classes": 579,
+        "size": 1203184
+      },
+      "spl": {
+        "classes": 47,
+        "size": 114704
+      }
+    },
+    "fop-events-2.7.jar": {
+      "original": {
+        "classes": 24,
+        "size": 67500
+      }
+    },
+    "serializer-2.7.2.jar": {
+      "original": {
+        "classes": 108,
+        "size": 513867
+      },
+      "spl": {
+        "classes": 69,
+        "size": 265353
+      }
+    },
+    "batik-awt-util-1.14.jar": {
+      "original": {
+        "classes": 222,
+        "size": 787778
+      }
+    },
+    "batik-ext-1.14.jar": {
+      "original": {
+        "classes": 7,
+        "size": 2858
+      }
+    },
+    "batik-script-1.14.jar": {
+      "original": {
+        "classes": 13,
+        "size": 25710
+      }
+    },
+    "batik-util-1.14.jar": {
+      "original": {
+        "classes": 80,
+        "size": 228323
+      }
+    },
+    "commons-logging-1.0.4.jar": {
+      "original": {
+        "classes": 18,
+        "size": 58624
+      },
+      "spl": {
+        "classes": 12,
+        "size": 40004
+      }
+    },
+    "fop-util-2.7.jar": {
+      "original": {
+        "classes": 15,
+        "size": 33987
+      }
+    },
+    "xalan-2.7.2.jar": {
+      "original": {
+        "classes": 1501,
+        "size": 6588683
+      },
+      "spl": {
+        "classes": 559,
+        "size": 2000274
+      }
+    },
+    "batik-bridge-1.14.jar": {
+      "original": {
+        "classes": 399,
+        "size": 1397022
+      }
+    },
+    "batik-extension-1.14.jar": {
+      "original": {
+        "classes": 47,
+        "size": 115365
+      }
+    },
+    "batik-shared-resources-1.14.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "batik-xml-1.14.jar": {
+      "original": {
+        "classes": 6,
+        "size": 95206
+      }
+    },
+    "fontbox-2.0.24.jar": {
+      "original": {
+        "classes": 157,
+        "size": 564165
+      },
+      "spl": {
+        "classes": 57,
+        "size": 193663
+      }
+    },
+    "icu4j-71.1.jar": {
+      "original": {
+        "classes": 1555,
+        "size": 5603374
+      },
+      "spl": {
+        "classes": 977,
+        "size": 3506885
+      }
+    },
+    "xml-apis-1.4.01.jar": {
+      "original": {
+        "classes": 346,
+        "size": 305765
+      },
+      "spl": {
+        "classes": 112,
+        "size": 120392
+      }
+    },
+    "batik-constants-1.14.jar": {
+      "original": {
+        "classes": 1,
+        "size": 2379
+      }
+    },
+    "batik-gvt-1.14.jar": {
+      "original": {
+        "classes": 103,
+        "size": 353661
+      }
+    },
+    "batik-svg-dom-1.14.jar": {
+      "original": {
+        "classes": 64,
+        "size": 121123
+      }
+    },
+    "bcpkix-jdk18on-1.71.1.jar": {
+      "original": {
+        "classes": 841,
+        "size": 1795732
+      },
+      "spl": {
+        "classes": 144,
+        "size": 346096
+      }
+    },
+    "fop-2.7.jar": {
+      "original": {
+        "classes": 2582,
+        "size": 8821957
+      },
+      "classes_removed": 2313,
+      "non_spl": {
+        "classes": 2582,
+        "size": 8821957
+      }
+    },
+    "jsr305-3.0.2.jar": {
+      "original": {
+        "classes": 35,
+        "size": 21242
+      }
+    },
+    "xml-apis-ext-1.3.04.jar": {
+      "original": {
+        "classes": 192,
+        "size": 77695
+      }
+    },
+    "batik-css-1.14.jar": {
+      "original": {
+        "classes": 237,
+        "size": 629501
+      }
+    },
+    "batik-i18n-1.14.jar": {
+      "original": {
+        "classes": 4,
+        "size": 7478
+      }
+    },
+    "batik-svggen-1.14.jar": {
+      "original": {
+        "classes": 157,
+        "size": 406064
+      }
+    },
+    "bcprov-jdk18on-1.71.1.jar": {
+      "original": {
+        "classes": 4567,
+        "size": 10185003
+      },
+      "spl": {
+        "classes": 1184,
+        "size": 3035873
+      }
+    },
+    "fop-core-2.7.jar": {
+      "original": {
+        "classes": 2547,
+        "size": 8739858
+      },
+      "spl": {
+        "classes": 269,
+        "size": 1170035
+      }
+    },
+    "qdox-1.12.jar": {
+      "original": {
+        "classes": 104,
+        "size": 372980
+      }
+    },
+    "xmlgraphics-commons-2.7.jar": {
+      "original": {
+        "classes": 375,
+        "size": 1197963
+      },
+      "spl": {
+        "classes": 9,
+        "size": 38146
+      }
+    },
+    "unsuccessfully_spl_classes": 269,
+    "classes_removed_from_unsucc_deps": 2313,
+    "bloated": {
+      "classes": 2336,
+      "size": 6373579
+    },
+    "total_classes_orig_deps": 17512,
+    "class_reduction": 11491,
+    "total_original_size": 53392.208984375,
+    "total_final_size": 21850.830078125,
+    "percentage_reduction": 59.07487160810382
+  },
+  {
+    "name": "poi-tl",
+    "path": "/home/dee/dev/deptrim-major/execution-results/poi-tl/",
+    "jar": "poi-tl-1.12.2-SNAPSHOT.jar",
+    "project_classes": 255,
+    "deps_orig": [
+      "batik-anim-1.14.jar",
+      "batik-dom-1.14.jar",
+      "batik-shared-resources-1.14.jar",
+      "commons-codec-1.15.jar",
+      "commons-math3-3.6.1.jar",
+      "slf4j-api-1.7.32.jar",
+      "batik-awt-util-1.14.jar",
+      "batik-ext-1.14.jar",
+      "batik-svg-dom-1.14.jar",
+      "commons-collections4-4.4.jar",
+      "curvesapi-1.07.jar",
+      "SparseBitSet-1.2.jar",
+      "batik-bridge-1.14.jar",
+      "batik-gvt-1.14.jar",
+      "batik-svggen-1.14.jar",
+      "commons-compress-1.21.jar",
+      "log4j-api-2.17.2.jar",
+      "xml-apis-1.4.01.jar",
+      "batik-codec-1.14.jar",
+      "batik-i18n-1.14.jar",
+      "batik-transcoder-1.14.jar",
+      "commons-io-2.11.0.jar",
+      "poi-5.2.2.jar",
+      "xml-apis-ext-1.3.04.jar",
+      "batik-constants-1.14.jar",
+      "batik-parser-1.14.jar",
+      "batik-util-1.14.jar",
+      "commons-lang3-3.3.2.jar",
+      "poi-ooxml-5.2.2.jar",
+      "xmlbeans-5.0.3.jar",
+      "batik-css-1.14.jar",
+      "batik-script-1.14.jar",
+      "batik-xml-1.14.jar",
+      "commons-logging-1.0.4.jar",
+      "poi-ooxml-lite-5.2.2.jar",
+      "xmlgraphics-commons-2.6.jar"
+    ],
+    "deps_spl": [
+      "batik-anim-1.14.jar",
+      "batik-dom-1.14.jar",
+      "commons-codec-1.15.jar",
+      "commons-math3-3.6.1.jar",
+      "slf4j-api-1.7.32.jar",
+      "batik-awt-util-1.14.jar",
+      "commons-collections4-4.4.jar",
+      "batik-bridge-1.14.jar",
+      "batik-gvt-1.14.jar",
+      "commons-compress-1.21.jar",
+      "log4j-api-2.17.2.jar",
+      "xml-apis-1.4.01.jar",
+      "batik-codec-1.14.jar",
+      "batik-i18n-1.14.jar",
+      "batik-transcoder-1.14.jar",
+      "commons-io-2.11.0.jar",
+      "poi-5.2.2.jar",
+      "xml-apis-ext-1.3.04.jar",
+      "batik-util-1.14.jar",
+      "commons-lang3-3.3.2.jar",
+      "poi-ooxml-5.2.2.jar",
+      "xmlbeans-5.0.3.jar",
+      "batik-css-1.14.jar",
+      "batik-script-1.14.jar",
+      "batik-xml-1.14.jar",
+      "commons-logging-1.0.4.jar",
+      "poi-ooxml-lite-5.2.2.jar",
+      "xmlgraphics-commons-2.6.jar"
+    ],
+    "deps_non_spl": [
+      "batik-constants-1.14.jar",
+      "batik-ext-1.14.jar",
+      "batik-parser-1.14.jar",
+      "batik-svg-dom-1.14.jar",
+      "SparseBitSet-1.2.jar"
+    ],
+    "deps_bloated": [
+      "batik-shared-resources-1.14.jar",
+      "batik-svggen-1.14.jar",
+      "curvesapi-1.07.jar"
+    ],
+    "project_size": 892.96875,
+    "batik-anim-1.14.jar": {
+      "original": {
+        "classes": 396,
+        "size": 930126
+      },
+      "spl": {
+        "classes": 392,
+        "size": 923414
+      }
+    },
+    "batik-dom-1.14.jar": {
+      "original": {
+        "classes": 115,
+        "size": 340067
+      },
+      "spl": {
+        "classes": 111,
+        "size": 332805
+      }
+    },
+    "batik-shared-resources-1.14.jar": {
+      "original": {
+        "classes": 0,
+        "size": 0
+      }
+    },
+    "commons-codec-1.15.jar": {
+      "original": {
+        "classes": 106,
+        "size": 392038
+      },
+      "spl": {
+        "classes": 16,
+        "size": 51535
+      }
+    },
+    "commons-math3-3.6.1.jar": {
+      "original": {
+        "classes": 1301,
+        "size": 4374521
+      },
+      "spl": {
+        "classes": 286,
+        "size": 1091130
+      }
+    },
+    "slf4j-api-1.7.32.jar": {
+      "original": {
+        "classes": 34,
+        "size": 82284
+      },
+      "spl": {
+        "classes": 31,
+        "size": 77882
+      }
+    },
+    "batik-awt-util-1.14.jar": {
+      "original": {
+        "classes": 222,
+        "size": 787778
+      },
+      "spl": {
+        "classes": 184,
+        "size": 692735
+      }
+    },
+    "batik-ext-1.14.jar": {
+      "original": {
+        "classes": 7,
+        "size": 2858
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 7,
+        "size": 2858
+      }
+    },
+    "batik-svg-dom-1.14.jar": {
+      "original": {
+        "classes": 64,
+        "size": 121123
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 64,
+        "size": 121123
+      }
+    },
+    "commons-collections4-4.4.jar": {
+      "original": {
+        "classes": 524,
+        "size": 1718054
+      },
+      "spl": {
+        "classes": 311,
+        "size": 949866
+      }
+    },
+    "curvesapi-1.07.jar": {
+      "original": {
+        "classes": 101,
+        "size": 177213
+      }
+    },
+    "SparseBitSet-1.2.jar": {
+      "original": {
+        "classes": 15,
+        "size": 37695
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 15,
+        "size": 37695
+      }
+    },
+    "batik-bridge-1.14.jar": {
+      "original": {
+        "classes": 399,
+        "size": 1397022
+      },
+      "spl": {
+        "classes": 351,
+        "size": 1294801
+      }
+    },
+    "batik-gvt-1.14.jar": {
+      "original": {
+        "classes": 103,
+        "size": 353661
+      },
+      "spl": {
+        "classes": 88,
+        "size": 333578
+      }
+    },
+    "batik-svggen-1.14.jar": {
+      "original": {
+        "classes": 157,
+        "size": 406064
+      }
+    },
+    "commons-compress-1.21.jar": {
+      "original": {
+        "classes": 524,
+        "size": 1978846
+      },
+      "spl": {
+        "classes": 223,
+        "size": 806288
+      }
+    },
+    "log4j-api-2.17.2.jar": {
+      "original": {
+        "classes": 180,
+        "size": 703569
+      },
+      "spl": {
+        "classes": 124,
+        "size": 527662
+      }
+    },
+    "xml-apis-1.4.01.jar": {
+      "original": {
+        "classes": 346,
+        "size": 305765
+      },
+      "spl": {
+        "classes": 201,
+        "size": 188893
+      }
+    },
+    "batik-codec-1.14.jar": {
+      "original": {
+        "classes": 45,
+        "size": 193748
+      },
+      "spl": {
+        "classes": 17,
+        "size": 59842
+      }
+    },
+    "batik-i18n-1.14.jar": {
+      "original": {
+        "classes": 4,
+        "size": 7478
+      },
+      "spl": {
+        "classes": 3,
+        "size": 7005
+      }
+    },
+    "batik-transcoder-1.14.jar": {
+      "original": {
+        "classes": 60,
+        "size": 228293
+      },
+      "spl": {
+        "classes": 25,
+        "size": 52960
+      }
+    },
+    "commons-io-2.11.0.jar": {
+      "original": {
+        "classes": 201,
+        "size": 628032
+      },
+      "spl": {
+        "classes": 20,
+        "size": 90269
+      }
+    },
+    "poi-5.2.2.jar": {
+      "original": {
+        "classes": 1652,
+        "size": 5841645
+      },
+      "spl": {
+        "classes": 1325,
+        "size": 4854047
+      }
+    },
+    "xml-apis-ext-1.3.04.jar": {
+      "original": {
+        "classes": 192,
+        "size": 77695
+      },
+      "spl": {
+        "classes": 187,
+        "size": 75782
+      }
+    },
+    "batik-constants-1.14.jar": {
+      "original": {
+        "classes": 1,
+        "size": 2379
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 1,
+        "size": 2379
+      }
+    },
+    "batik-parser-1.14.jar": {
+      "original": {
+        "classes": 55,
+        "size": 129221
+      },
+      "classes_removed": 0,
+      "non_spl": {
+        "classes": 55,
+        "size": 129221
+      }
+    },
+    "batik-util-1.14.jar": {
+      "original": {
+        "classes": 80,
+        "size": 228323
+      },
+      "spl": {
+        "classes": 67,
+        "size": 184399
+      }
+    },
+    "commons-lang3-3.3.2.jar": {
+      "original": {
+        "classes": 217,
+        "size": 862033
+      },
+      "spl": {
+        "classes": 55,
+        "size": 339956
+      }
+    },
+    "poi-ooxml-5.2.2.jar": {
+      "original": {
+        "classes": 869,
+        "size": 4510521
+      },
+      "spl": {
+        "classes": 490,
+        "size": 2684567
+      }
+    },
+    "xmlbeans-5.0.3.jar": {
+      "original": {
+        "classes": 1031,
+        "size": 4178032
+      },
+      "spl": {
+        "classes": 670,
+        "size": 2762472
+      }
+    },
+    "batik-css-1.14.jar": {
+      "original": {
+        "classes": 237,
+        "size": 629501
+      },
+      "spl": {
+        "classes": 207,
+        "size": 551692
+      }
+    },
+    "batik-script-1.14.jar": {
+      "original": {
+        "classes": 13,
+        "size": 25710
+      },
+      "spl": {
+        "classes": 6,
+        "size": 10573
+      }
+    },
+    "batik-xml-1.14.jar": {
+      "original": {
+        "classes": 6,
+        "size": 95206
+      },
+      "spl": {
+        "classes": 2,
+        "size": 67877
+      }
+    },
+    "commons-logging-1.0.4.jar": {
+      "original": {
+        "classes": 18,
+        "size": 58624
+      },
+      "spl": {
+        "classes": 13,
+        "size": 41995
+      }
+    },
+    "poi-ooxml-lite-5.2.2.jar": {
+      "original": {
+        "classes": 2494,
+        "size": 14941948
+      },
+      "spl": {
+        "classes": 1132,
+        "size": 3401988
+      }
+    },
+    "xmlgraphics-commons-2.6.jar": {
+      "original": {
+        "classes": 374,
+        "size": 1195904
+      },
+      "spl": {
+        "classes": 14,
+        "size": 36871
+      }
+    },
+    "unsuccessfully_spl_classes": 142,
+    "classes_removed_from_unsucc_deps": 0,
+    "bloated": {
+      "classes": 258,
+      "size": 583277
+    },
+    "total_classes_orig_deps": 12143,
+    "class_reduction": 5450,
+    "total_original_size": 47712.2822265625,
+    "total_final_size": 23145.078125,
+    "percentage_reduction": 51.49031434904907
+  },
+  {
+    "name": "RxRelay",
+    "path": "/home/dee/dev/deptrim-major/execution-results/RxRelay/",
+    "jar": "rxrelay-3.0.2-SNAPSHOT.jar",
+    "project_classes": 16,
+    "deps_orig": [
+      "reactive-streams-1.0.3.jar",
+      "rxjava-3.0.3.jar"
+    ],
+    "deps_spl": [
+      "reactive-streams-1.0.3.jar"
+    ],
+    "deps_non_spl": [
+      "rxjava-3.0.3.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 49.35546875,
+    "reactive-streams-1.0.3.jar": {
+      "original": {
+        "classes": 13,
+        "size": 21428
+      },
+      "spl": {
+        "classes": 4,
+        "size": 1191
+      }
+    },
+    "rxjava-3.0.3.jar": {
+      "original": {
+        "classes": 1745,
+        "size": 6007334
+      },
+      "classes_removed": 55,
+      "non_spl": {
+        "classes": 1745,
+        "size": 6007334
+      }
+    },
+    "unsuccessfully_spl_classes": 1690,
+    "classes_removed_from_unsucc_deps": 55,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 1758,
+    "class_reduction": 9,
+    "total_original_size": 5936.818359375,
+    "total_final_size": 5917.0556640625,
+    "percentage_reduction": 0.3328836106513544
+  },
+  {
+    "name": "woodstox",
+    "path": "/home/dee/dev/deptrim-major/execution-results/woodstox/",
+    "jar": "original-woodstox-core-6.4.1-SNAPSHOT.jar",
+    "project_classes": 208,
+    "deps_orig": [
+      "isorelax-20090621.jar",
+      "msv-core-2013.6.1.jar",
+      "relaxngDatatype-20020414.jar",
+      "stax2-api-4.2.1.jar",
+      "xsdlib-2013.6.1.jar"
+    ],
+    "deps_spl": [
+      "isorelax-20090621.jar",
+      "relaxngDatatype-20020414.jar",
+      "xsdlib-2013.6.1.jar"
+    ],
+    "deps_non_spl": [
+      "msv-core-2013.6.1.jar",
+      "stax2-api-4.2.1.jar"
+    ],
+    "deps_bloated": [],
+    "project_size": 1004.48828125,
+    "isorelax-20090621.jar": {
+      "original": {
+        "classes": 51,
+        "size": 120475
+      },
+      "spl": {
+        "classes": 19,
+        "size": 53887
+      }
+    },
+    "msv-core-2013.6.1.jar": {
+      "original": {
+        "classes": 524,
+        "size": 1264422
+      },
+      "classes_removed": 176,
+      "non_spl": {
+        "classes": 524,
+        "size": 1264422
+      }
+    },
+    "relaxngDatatype-20020414.jar": {
+      "original": {
+        "classes": 16,
+        "size": 15351
+      },
+      "spl": {
+        "classes": 15,
+        "size": 14733
+      }
+    },
+    "stax2-api-4.2.1.jar": {
+      "original": {
+        "classes": 125,
+        "size": 384680
+      },
+      "classes_removed": 12,
+      "non_spl": {
+        "classes": 125,
+        "size": 384680
+      }
+    },
+    "xsdlib-2013.6.1.jar": {
+      "original": {
+        "classes": 148,
+        "size": 406763
+      },
+      "spl": {
+        "classes": 147,
+        "size": 404808
+      }
+    },
+    "unsuccessfully_spl_classes": 461,
+    "classes_removed_from_unsucc_deps": 188,
+    "bloated": {
+      "classes": 0,
+      "size": 0
+    },
+    "total_classes_orig_deps": 864,
+    "class_reduction": 34,
+    "total_original_size": 3144.8115234375,
+    "total_final_size": 3077.271484375,
+    "percentage_reduction": 2.147665720477709
+  }
+]
