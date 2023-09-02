@@ -115,7 +115,7 @@ default | verb.rb | verbs.yml
 default | vulnerability_identifier.rb | x
 default | world_cup.rb | world_cup.yml | uncoventional
 fantasy | tolkien.rb | tolkien.yml | uncoventional
-games | clash_of_clan.rb | clash_of_clan.yml | uncoventional
+games | clash_of_clans.rb | clash_of_clan.yml | uncoventional
 games | control.rb | control.yml | uncoventional
 games | dota.rb | dota.yml | uncoventional
 games | dnd.rb | dnd.yml | uncoventional
@@ -152,23 +152,23 @@ japanese_media | one_piece.rb | one_piece.yml | uncoventional
 japanese_media | studio_ghibli.rb | studio_ghibli.yml | uncoventional
 japanese_media | sword_art_online.rb | sword_art_online.yml | uncoventional
 locations | australia.rb | australia.yml
-movie | avatar.rb | avatar.yml | uncoventional
-movie | back_to_the_future.rb | back_to_the_future.yml | uncoventional
-movie | departed.rb | departed.yml | uncoventional
-movie | ghostbusters.rb | ghostbusters.yml | uncoventional
-movie | hackers.rb | hackers.yml | uncoventional
-movie | harry_potter.rb | harry_potter.yml | uncoventional
-movie | hitchhikers_guide_to_the_galaxy.rb | hitchhikers_guide_to_the_galaxy.yml | uncoventional
-movie | hobbit.rb | x | uncoventional
-movie | how_to_train_your_dragon.rb | how_to_train_your_dragon.yml | uncoventional
-movie | lebowski.rb | lebowski.yml | uncoventional
-movie | lord_of_the_rings.rb | x | uncoventional
-movie | movie.rb | movie.yml
-movie | princess_bride.rb | princess_bride.yml | uncoventional
-movie | room.rb | room.yml | uncoventional
-movie | star_wars.rb | star_wars.yml | uncoventional
-movie | tron.rb | tron.yml | uncoventional
-movie | v_for_vendetta.rb | v_for_vendetta.yml | uncoventional
+movies | avatar.rb | avatar.yml | uncoventional
+movies | back_to_the_future.rb | back_to_the_future.yml | uncoventional
+movies | departed.rb | departed.yml | uncoventional
+movies | ghostbusters.rb | ghostbusters.yml | uncoventional
+movies | hackers.rb | hackers.yml | uncoventional
+movies | harry_potter.rb | harry_potter.yml | uncoventional
+movies | hitchhikers_guide_to_the_galaxy.rb | hitchhikers_guide_to_the_galaxy.yml | uncoventional
+movies | hobbit.rb | x | uncoventional
+movies | how_to_train_your_dragon.rb | how_to_train_your_dragon.yml | uncoventional
+movies | lebowski.rb | lebowski.yml | uncoventional
+movies | lord_of_the_rings.rb | x | uncoventional
+movies | movie.rb | movie.yml
+movies | princess_bride.rb | princess_bride.yml | uncoventional
+movies | room.rb | room.yml | uncoventional
+movies | star_wars.rb | star_wars.yml | uncoventional
+movies | tron.rb | tron.yml | uncoventional
+movies | v_for_vendetta.rb | v_for_vendetta.yml | uncoventional
 music | grateful_dead.rb | grateful_dead.yml | uncoventional
 music | hiphop.rb | x | uncoventional
 music | music.rb | music.yml
