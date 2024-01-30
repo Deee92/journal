@@ -1,30 +1,34 @@
 ## Clients of [`java-faker`](https://github.com/DiUS/java-faker)
 
-Clients on [deps.dev](https://deps.dev/maven/com.github.javafaker%3Ajavafaker/1.0.2/dependents)
+GitHub search string: `path:**/*.java /import com.github.javafaker/  NOT is:archived NOT is:fork language:Java`
 
-GitHub search string: `path:**/*.java /import com.github.javafaker.Faker/  NOT is:archived NOT is:fork language:Java`
+OR dependents on [deps.dev](https://deps.dev/maven/com.github.javafaker%3Ajavafaker/1.0.2/dependents)
 
 OR with Sourcegraph: [search](https://sourcegraph.com/search?q=context:global+lang:Java+import+com.github.javafaker+NOT+repo:DiUS/java-faker+NOT+repo:eugenp/tutorials&patternType=standard&sm=0)
 
-\# | project | `java-faker` version | tests | other usages
--- | ------- | -------------------- | ----- | ------------
-1  | [Netflix/hollow](https://github.com/Netflix/hollow) | (`latest`) | ? | [`FakeDataGenerator`](https://github.com/Netflix/hollow/blob/master/hollow-fakedata/src/main/java/hollow/FakeDataGenerator.java)
-2  | [AzureCosmosDB/labs](https://github.com/AzureCosmosDB/labs) | `1.0.2`, `0.17.2` | ? | multiple in [this](https://github.com/AzureCosmosDB/labs/tree/master/java/solutions/src/main/java/com/azure/cosmos/handsonlabs) package
-3  | [geoserver/geoserver](https://github.com/geoserver/geoserver) | `1.0.2` | [`DataDirectoryGeoServerLoaderTest`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/datadir/DataDirectoryGeoServerLoaderTest.java)  | [`CatalogFaker`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java)
-4  | [apache/hop](https://github.com/apache/hop) | `1.0.2` | [`FakerTypeTest`](https://github.com/apache/hop/blob/master/plugins/transforms/fake/src/test/java/org/apache/hop/pipeline/transforms/fake/FakerTypeTest.java) | some in [this](https://github.com/apache/hop/tree/master/plugins/transforms/fake/src/main/java/org/apache/hop/pipeline/transforms/fake) package
-5  | [apache/shiro](https://github.com/apache/shiro) | `1.0.2` | ? | [`InMemoryStormtrooperDao`](https://github.com/apache/shiro/blob/main/integration-tests/jaxrs/app/src/main/java/org/apache/shiro/testing/jaxrs/app/dao/InMemoryStormtrooperDao.java)
-6  | [sakaiproject/sakai](https://github.com/sakaiproject/sakai) | `0.13`, `0.4` | [`AssignmentServiceTest`](https://github.com/sakaiproject/sakai/blob/master/assignment/impl/src/test/org/sakaiproject/assignment/impl/AssignmentServiceTest.java) and [`ElasticSearchTest`](https://github.com/sakaiproject/sakai/blob/master/search/elasticsearch/impl/src/test/org/sakaiproject/search/elasticsearch/ElasticSearchTest.java) | [`SeedSitesAndUsersJob`](https://github.com/sakaiproject/sakai/blob/master/site-manage/site-manage-impl/impl/src/java/org/sakaiproject/sitemanage/impl/job/SeedSitesAndUsersJob.java)
-7  | [nitrite/nitrite-java](https://github.com/nitrite/nitrite-java) | `1.0.2` | [`CollectionFindBySingleFieldIndexTest`](https://github.com/nitrite/nitrite-java/blob/main/nitrite/src/test/java/org/dizitart/no2/integration/collection/CollectionFindBySingleFieldIndexTest.java), [`ObjectRepositoryTest`](https://github.com/nitrite/nitrite-java/blob/main/nitrite/src/test/java/org/dizitart/no2/integration/repository/ObjectRepositoryTest.java), ... (19 test classes) | [`DataGenerator`](https://github.com/nitrite/nitrite-java/blob/main/nitrite-support/src/test/java/org/dizitart/no2/support/data/DataGenerator.java)
-8  | [SORMAS-Foundation/SORMAS-Project](https://github.com/SORMAS-Foundation/SORMAS-Project) | `1.0.2` | many in [`e2e-tests`](https://github.com/SORMAS-Foundation/SORMAS-Project/tree/development/sormas-e2e-tests) | ?
-9  | [geoserver/geoserver-cloud](https://github.com/geoserver/geoserver-cloud) | | ? | [`CatalogFaker`](https://github.com/geoserver/geoserver-cloud/blob/main/src/catalog/plugin/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java)
-10 | [Keyist-Ecommerce](https://github.com/antkaynak/Keyist-Ecommerce) | | multiple in [`backend.api`](https://github.com/antkaynak/Keyist-Ecommerce/tree/master/resource_server/src/test/java/com/commerce/backend/api) | ?
-
-
-## Clients of [`datafaker`](https://github.com/datafaker-net/datafaker)
-
-Search string: `path:**/*.java /import net.datafaker.Faker/ NOT is:archived NOT is:fork`
-
-\# | project | `datafaker` version | \#tests | \#usages
--- | ------- | ------------------- | ------- | --------
-1  | [HangarMC/Hangar](https://github.com/HangarMC/Hangar) | | |
+\# | project | stars | `java-faker` version | within `Test` class | other usages | notes 
+-- | ------- | ----- | -------------------- | ------------------- | ------------ | -----
+1  | [apache/shiro](https://github.com/apache/shiro) | 4,227 | `1.0.2` | x | [`InMemoryStormtrooperDao`](https://github.com/apache/shiro/blob/main/integration-tests/jaxrs/app/src/main/java/org/apache/shiro/testing/jaxrs/app/dao/InMemoryStormtrooperDao.java) | defined, not used
+2  | [geoserver/geoserver](https://github.com/geoserver/geoserver) | 3,483 | `1.0.2` | x | [`CatalogFaker`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java) | `CatalogFaker` used within [`DataDirectoryGeoServerLoaderTest`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/datadir/DataDirectoryGeoServerLoaderTest.java)
+3  | [liferay/liferay-portal](https://github.com/liferay/liferay-portal) | 2,035 | | | |
+4  | [bytedance/bitsail](https://github.com/bytedance/bitsail) | 1,536 | x | [`FakeSource`](https://github.com/bytedance/bitsail/blob/master/bitsail-connectors/connector-fake/src/main/java/com/bytedance/bitsail/connector/fake/source/FakeSource.java) | legacy, faker data not used within [`FakeSourceTest`](https://github.com/bytedance/bitsail/blob/2ef2e157aef228beeb11fee143640fac37b5d57b/bitsail-connectors/bitsail-connectors-legacy/bitsail-connector-fake/src/test/java/com/bytedance/bitsail/connector/legacy/fake/source/FakeSourceTest.java)
+5  | [confluentinc/demo-scene](https://github.com/confluentinc/demo-scene) | 1,432 | 
+6  | [alexxiyang/shiro-redis](https://github.com/alexxiyang/shiro-redis) | 1,162 | 
+7  | [Netflix/hollow](https://github.com/Netflix/hollow) | 1,129 | (`latest`) | x | [`FakeDataGenerator`](https://github.com/Netflix/hollow/blob/master/hollow-fakedata/src/main/java/hollow/FakeDataGenerator.java) | defined, not used, documented [here](https://github.com/Netflix/hollow/blob/master/docs/testing.md)
+8  | [sakaiproject/sakai](https://github.com/sakaiproject/sakai) | 994 | `0.13`, `0.4` | imported but not used in [`AssignmentServiceTest`](https://github.com/sakaiproject/sakai/blob/master/assignment/impl/src/test/org/sakaiproject/assignment/impl/AssignmentServiceTest.java), used in [`ElasticSearchTest`](https://github.com/sakaiproject/sakai/blob/master/search/elasticsearch/impl/src/test/org/sakaiproject/search/elasticsearch/ElasticSearchTest.java) | [`SeedSitesAndUsersJob`](https://github.com/sakaiproject/sakai/blob/master/site-manage/site-manage-impl/impl/src/java/org/sakaiproject/sitemanage/impl/job/SeedSitesAndUsersJob.java) | weak oracle in `ElasticSearchTest`
+9  | [apache/causeway](https://github.com/apache/causeway) | 814 |
+10 | [apache/hop](https://github.com/apache/hop) | 805 | `1.0.2` | [`FakerTypeTest`](https://github.com/apache/hop/blob/master/plugins/transforms/fake/src/test/java/org/apache/hop/pipeline/transforms/fake/FakerTypeTest.java) | some in [this](https://github.com/apache/hop/tree/master/plugins/transforms/fake/src/main/java/org/apache/hop/pipeline/transforms/fake) package
+11 | [testsigmahq/testsigma](https://github.com/testsigmahq/testsigma) | 789 |
+12 | [nitrite/nitrite-java](https://github.com/nitrite/nitrite-java) | 788 | `1.0.2` | [`CollectionFindBySingleFieldIndexTest`](https://github.com/nitrite/nitrite-java/blob/main/nitrite/src/test/java/org/dizitart/no2/integration/collection/CollectionFindBySingleFieldIndexTest.java), [`ObjectRepositoryTest`](https://github.com/nitrite/nitrite-java/blob/main/nitrite/src/test/java/org/dizitart/no2/integration/repository/ObjectRepositoryTest.java), ... (19 test classes) | [`DataGenerator`](https://github.com/nitrite/nitrite-java/blob/main/nitrite-support/src/test/java/org/dizitart/no2/support/data/DataGenerator.java)
+13 | [Keyist-Ecommerce](https://github.com/antkaynak/Keyist-Ecommerce) | 312 | | multiple in [`backend.api`](https://github.com/antkaynak/Keyist-Ecommerce/tree/master/resource_server/src/test/java/com/commerce/backend/api) | ?
+14 | [dasniko/testcontainers-keycloak](https://github.com/dasniko/testcontainers-keycloak) | 294 |
+15 | [SORMAS-Foundation/SORMAS-Project](https://github.com/SORMAS-Foundation/SORMAS-Project) | 289 | `1.0.2` | many in [`e2e-tests`](https://github.com/SORMAS-Foundation/SORMAS-Project/tree/development/sormas-e2e-tests) | ?
+16 | [dhis2/dhis2-core](https://github.com/dhis2/dhis2-core) | 268 |
+17 | [DylanCope/Evolving-Protozoa](https://github.com/DylanCope/Evolving-Protozoa) | 208 |
+18 | [geoserver/geoserver-cloud](https://github.com/geoserver/geoserver-cloud) | 207 | | ? | [`CatalogFaker`](https://github.com/geoserver/geoserver-cloud/blob/main/src/catalog/plugin/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java)
+19 | [IBM/janusgraph-utils](https://github.com/IBM/janusgraph-utils) | 203 | 
+20 | [turkraft/springfilter](https://github.com/turkraft/springfilter) | 184
+21 | [hackvertor/hackvertor](https://github.com/hackvertor/hackvertor) | 126
+22 | [AzureCosmosDB/labs](https://github.com/AzureCosmosDB/labs) | 77 | `1.0.2`, `0.17.2` | ? | multiple in [this](https://github.com/AzureCosmosDB/labs/tree/master/java/solutions/src/main/java/com/azure/cosmos/handsonlabs) package
+/src/test/java/org/geoserver/catalog/datadir/DataDirectoryGeoServerLoaderTest.java)  | [`CatalogFaker`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java)
 
