@@ -1,5 +1,7 @@
 ## Clients of [`java-faker`](https://github.com/DiUS/java-faker)
 
+Clients on [deps.dev](https://deps.dev/maven/com.github.javafaker%3Ajavafaker/1.0.2/dependents)
+
 GitHub search string: `path:**/*.java /import com.github.javafaker.Faker/  NOT is:archived NOT is:fork language:Java`
 
 OR with Sourcegraph: [search](https://sourcegraph.com/search?q=context:global+lang:Java+import+com.github.javafaker+NOT+repo:DiUS/java-faker+NOT+repo:eugenp/tutorials&patternType=standard&sm=0)
