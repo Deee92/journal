@@ -30,5 +30,4 @@ OR with Sourcegraph: [search](https://sourcegraph.com/search?q=context:global+la
 20 | [turkraft/springfilter](https://github.com/turkraft/springfilter) | 184
 21 | [hackvertor/hackvertor](https://github.com/hackvertor/hackvertor) | 126
 22 | [AzureCosmosDB/labs](https://github.com/AzureCosmosDB/labs) | 77 | `1.0.2`, `0.17.2` | ? | multiple in [this](https://github.com/AzureCosmosDB/labs/tree/master/java/solutions/src/main/java/com/azure/cosmos/handsonlabs) package
-/src/test/java/org/geoserver/catalog/datadir/DataDirectoryGeoServerLoaderTest.java)  | [`CatalogFaker`](https://github.com/geoserver/geoserver/blob/main/src/community/datadir-catalog-loader/src/test/java/org/geoserver/catalog/faker/CatalogFaker.java)
 
