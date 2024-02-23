@@ -1,0 +1,3027 @@
+[
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedArrayList(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedArrayList",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testArrayList"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.Attribute.setName(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.Attribute",
+    "method_name": "setName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.AttributeTest.testAtt"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setLong(java.lang.String,long)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setLong",
+    "parameters": [
+      "java.lang.String",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetLong"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PageLayout.fromString(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PageLayout",
+    "method_name": "fromString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.PageLayoutTest.testValues",
+      "org.apache.pdfbox.pdmodel.PageLayoutTest.fromStringInputNotNullOutputIllegalArgumentException"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDTextField.setValue(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDTextField",
+    "method_name": "setValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleFormWithEmbeddedFont",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineBreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testBadDA"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractComplexProperty.addNamespace(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractComplexProperty",
+    "method_name": "addNamespace",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDButton.setDefaultValue(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDButton",
+    "method_name": "setDefaultValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.Hex.decodeHex(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.util.Hex",
+    "method_name": "decodeHex",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCRL"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.Matrix.getValue(int,int)",
+    "declaring_type": "org.apache.pdfbox.util.Matrix",
+    "method_name": "getValue",
+    "parameters": [
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testScaling",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation",
+      "org.apache.pdfbox.util.MatrixTest.testTranslation"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFromByteArrayWithCreatedByCCITTFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFromByteArrayWithCreatedByCCITTFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractStructuredType.addSimpleProperty(java.lang.String,java.lang.Object)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractStructuredType",
+    "method_name": "addSimpleProperty",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedTextProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.TypeMapping.createBoolean(java.lang.String,java.lang.String,java.lang.String,boolean)",
+    "declaring_type": "org.apache.xmpbox.type.TypeMapping",
+    "method_name": "createBoolean",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testListAndContainerAccessor",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testElementAndObjectSynchronization",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testObjectCreationWithNamespace"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSString.parseHex(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSString",
+    "method_name": "parseHex",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.cos.PDFDocEncodingTest.testPDFBox3864",
+      "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF16BEURI",
+      "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF16LEURI"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.multipdf.PDFMergerUtility.setDestinationFileName(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.multipdf.PDFMergerUtility",
+    "method_name": "setDestinationFileName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testLegacyModeMerge",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testJoinFieldsMerge_TextFieldsOnly_SameMerged",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAnnotsEntry",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAPEntry",
+      "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.PreflightConfiguration.setErrorOnMissingProcess(boolean)",
+    "declaring_type": "org.apache.pdfbox.preflight.PreflightConfiguration",
+    "method_name": "setErrorOnMissingProcess",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.parser.TestPreflightConfiguration.testGetValidationProcess_MissingProcess_NoError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationProcess_noError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationPageProcess_noError"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.Matrix.scale(float,float)",
+    "declaring_type": "org.apache.pdfbox.util.Matrix",
+    "method_name": "scale",
+    "parameters": [
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.util.MatrixTest.testScaling"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.getTitle(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "getTitle",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.parser.DeserializationTest.testGetTitle"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.PDFAIdentificationSchema.setPartValueWithInt(int)",
+    "declaring_type": "org.apache.xmpbox.schema.PDFAIdentificationSchema",
+    "method_name": "setPartValueWithInt",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testPDFAIdentification"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy.setEncryptionKeyLength(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy",
+    "method_name": "setEncryptionKeyLength",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtectionError",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtection",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testMultipleRecipients"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedLanguagePropertyLanguagesValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedLanguagePropertyLanguagesValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractField.getAttribute(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractField",
+    "method_name": "getAttribute",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testAttribute",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testAttribute"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFromByteArrayWithCreatedByJPEGFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFromByteArrayWithCreatedByJPEGFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.setDefaultAppearance(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm",
+    "method_name": "setDefaultAppearance",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testAcroFormProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDPageTree.get(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDPageTree",
+    "method_name": "get",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.TestPDPageTransitions.readTransitions",
+      "org.apache.pdfbox.pdmodel.TestPDPageTransitions.saveAndReadTransitions"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntent.fromString(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntent",
+    "method_name": "fromString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntentTest.fromStringInputNotNullOutputNotNull",
+      "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntentTest.fromStringInputNotNullOutputNotNull2",
+      "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntentTest.fromStringInputNotNullOutputNotNull3",
+      "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntentTest.fromStringInputNotNullOutputNotNull4",
+      "org.apache.pdfbox.pdmodel.graphics.state.RenderingIntentTest.fromStringInputNotNullOutputNotNull5"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDButton.setRadioButton(boolean)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDButton",
+    "method_name": "setRadioButton",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.changePushButtonToRadioButton"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.commons.logging.Log.info(java.lang.Object)",
+    "declaring_type": "org.apache.commons.logging.Log",
+    "method_name": "info",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.integration.AbstractInvalidFileTester.validate"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.PostScriptTable.getName(int)",
+    "declaring_type": "org.apache.fontbox.ttf.PostScriptTable",
+    "method_name": "getName",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.common.COSArrayList.get(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.common.COSArrayList",
+    "method_name": "get",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.getFromList",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeFromListByIndex",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeUniqueFromListByObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeFromFilteredListByObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleDirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleIndirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeIndirectObject"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractField.containsAttribute(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractField",
+    "method_name": "containsAttribute",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testAttribute",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testAttribute"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.font.PDFont.getStringWidth(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.font.PDFont",
+    "method_name": "getStringWidth",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox5048",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AdobePDFSchema.setKeywords(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AdobePDFSchema",
+    "method_name": "setKeywords",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testPDFAIdentification",
+      "org.apache.xmpbox.schema.AdobePDFTest.testPDFAIdentification"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.DateConverter.toCalendar(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.util.DateConverter",
+    "method_name": "toCalendar",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3208",
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3208",
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3940",
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3977",
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3977",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testPDFBox4292"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetTextListValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AbstractXMPSchemaTest",
+    "method_name": "testGetSetTextListValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty",
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty",
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty",
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty",
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileByExtensionWithCreatedByCCITTFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileByExtensionWithCreatedByCCITTFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSUpdateInfo.setNeedToBeUpdated(boolean)",
+    "declaring_type": "org.apache.pdfbox.cos.COSUpdateInfo",
+    "method_name": "setNeedToBeUpdated",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.cos.TestCOSUpdateInfo.testIsSetNeedToBeUpdate",
+      "org.apache.pdfbox.cos.TestCOSUpdateInfo.testIsSetNeedToBeUpdate",
+      "org.apache.pdfbox.cos.TestCOSUpdateInfo.testIsSetNeedToBeUpdate",
+      "org.apache.pdfbox.cos.TestCOSUpdateInfo.testIsSetNeedToBeUpdate"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.xml.DomXmpParser.setStrictParsing(boolean)",
+    "declaring_type": "org.apache.xmpbox.xml.DomXmpParser",
+    "method_name": "setStrictParsing",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.TestExifXmp.testNonStrict",
+      "org.apache.xmpbox.XMPMetaDataTest.testPDFBOX3257"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSArray.getObject(int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSArray",
+    "method_name": "getObject",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.PDLineDashPatternTest.testGetCOSObject"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.GlyphTable.getGlyph(int)",
+    "declaring_type": "org.apache.fontbox.ttf.GlyphTable",
+    "method_name": "getGlyph",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset2",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TrueTypeFont.getAdvanceWidth(int)",
+    "declaring_type": "org.apache.fontbox.ttf.TrueTypeFont",
+    "method_name": "getAdvanceWidth",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3319",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3319",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDButton.setValue(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDButton",
+    "method_name": "setValue",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByValidIndex",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidIndex",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox4617IndexForSetByIndex"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.removeUnqualifiedBagValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "removeUnqualifiedBagValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testBagManagement"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.TypeMapping.getSchemaFactory(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.TypeMapping",
+    "method_name": "getSchemaFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.TestValidatePermitedMetadata.checkExistence"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.setAppearanceState(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation",
+    "method_name": "setAppearanceState",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testRadioButtonPDModel"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getBooleanPropertyValueAsSimple(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getBooleanPropertyValueAsSimple",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.action.PDActionURI.setURI(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.action.PDActionURI",
+    "method_name": "setURI",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF8URI",
+      "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF7URI"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent.setOutputCondition(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent",
+    "method_name": "setOutputCondition",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.TestPDDocumentCatalog.handleOutputIntents"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.BufferedRandomAccessFile.seek(long)",
+    "declaring_type": "org.apache.fontbox.ttf.BufferedRandomAccessFile",
+    "method_name": "seek",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.BufferedRandomAccessFileTest.testReadBuffer",
+      "org.apache.fontbox.ttf.BufferedRandomAccessFileTest.testReadBuffer",
+      "org.apache.fontbox.ttf.BufferedRandomAccessFileTest.testReadBuffer"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedSequenceDateValueList(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedSequenceDateValueList",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.Attribute.setValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.Attribute",
+    "method_name": "setValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.AttributeTest.testAtt"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.encryption.TestPublicKeyEncryption.getKeyStore(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.encryption.TestPublicKeyEncryption",
+    "method_name": "getKeyStore",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtectionError",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtection",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testMultipleRecipients",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testMultipleRecipients"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.HorizontalMetricsTable.getLeftSideBearing(int)",
+    "declaring_type": "org.apache.fontbox.ttf.HorizontalMetricsTable",
+    "method_name": "getLeftSideBearing",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3319",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3319",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TrueTypeCollection.getFontByName(java.lang.String)",
+    "declaring_type": "org.apache.fontbox.ttf.TrueTypeCollection",
+    "method_name": "getFontByName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testFullEmbeddingTTC"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.common.COSArrayList.remove(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.common.COSArrayList",
+    "method_name": "remove",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeFromListByIndex",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeFromFilteredListByIndex"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPBasicSchema.setCreatorTool(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPBasicSchema",
+    "method_name": "setCreatorTool",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.Matrix.setValue(int,int,float)",
+    "declaring_type": "org.apache.pdfbox.util.Matrix",
+    "method_name": "setValue",
+    "parameters": [
+      "int",
+      "int",
+      "float"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.util.MatrixTest.testMultiplication",
+      "org.apache.pdfbox.util.MatrixTest.testMultiplication",
+      "org.apache.pdfbox.util.MatrixTest.testOldMultiplication",
+      "org.apache.pdfbox.util.MatrixTest.testIllegalValueNaN1",
+      "org.apache.pdfbox.util.MatrixTest.testIllegalValueNaN2",
+      "org.apache.pdfbox.util.MatrixTest.testIllegalValuePositiveInfinity",
+      "org.apache.pdfbox.util.MatrixTest.testIllegalValueNegativeInfinity"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedTextPropertyValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedTextPropertyValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSpecifiedSimplePropertyFormer",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.containsKey(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "containsKey",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.cos.TestCOSName.PDFBox4076"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDPageContentStream.newLineAtOffset(float,float)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDPageContentStream",
+    "method_name": "newLineAtOffset",
+    "parameters": [
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testDeleteFont",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.XMPMetadata.getSchema(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.XMPMetadata",
+    "method_name": "getSchema",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.examples.pdmodel.CreateGradientShadingPDF.create(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.examples.pdmodel.CreateGradientShadingPDF",
+    "method_name": "create",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateGradientShadingPDF.testCreateGradientShading"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSInteger.get(long)",
+    "declaring_type": "org.apache.pdfbox.cos.COSInteger",
+    "method_name": "get",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdfparser.PDFObjectStreamParserTest.testOffsetParsing",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsInteger"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileWithCreatedByCCITTFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileWithCreatedByCCITTFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setTitle(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setTitle",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getBooleanProperty(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getBooleanProperty",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.rendering.PDFRenderer.renderImageWithDPI(int,float)",
+    "declaring_type": "org.apache.pdfbox.rendering.PDFRenderer",
+    "method_name": "renderImageWithDPI",
+    "parameters": [
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdfwriter.ContentStreamWriterTest.testPDFBox4750"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.commons.logging.Log.warn(java.lang.Object)",
+    "declaring_type": "org.apache.commons.logging.Log",
+    "method_name": "warn",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.integration.AbstractInvalidFileTester.validate",
+      "org.apache.pdfbox.preflight.integration.TestValidFiles.validate"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileByExtensionWithCreatedByLosslessFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileByExtensionWithCreatedByLosslessFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractTypeTester.calculateSimpleGetter(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractTypeTester",
+    "method_name": "calculateSimpleGetter",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractSchemaTester.testInitializedToNull",
+      "org.apache.xmpbox.type.AbstractStructuredTypeTester.testInitializedToNull"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AbstractXMPSchemaTest.retrievePropertyType(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AbstractXMPSchemaTest",
+    "method_name": "retrievePropertyType",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocument.getPage(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocument",
+    "method_name": "getPage",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateMultiWidgetsForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateMultiWidgetsForm",
+      "org.apache.pdfbox.examples.pdmodel.TestRubberStampWithImage.test",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAnnotsEntry",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAnnotsEntry",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAnnotsEntry",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAnnotsEntry",
+      "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations",
+      "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations",
+      "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations",
+      "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations",
+      "org.apache.pdfbox.pdfwriter.ContentStreamWriterTest.testPDFBox4750",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleDirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleIndirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeIndirectObject",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox5048",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFlattenWidgetNoRef",
+      "org.apache.pdfbox.pdmodel.TestPDPageTree.positiveSingleLevel",
+      "org.apache.pdfbox.pdmodel.TestPDPageTree.positiveMultipleLevel"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.TypeMapping.createReal(java.lang.String,java.lang.String,java.lang.String,float)",
+    "declaring_type": "org.apache.xmpbox.type.TypeMapping",
+    "method_name": "createReal",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testElementAndObjectSynchronization",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testObjectCreationWithNamespace"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.examples.signature.CreateSignatureBase.setExternalSigning(boolean)",
+    "declaring_type": "org.apache.pdfbox.examples.signature.CreateSignatureBase",
+    "method_name": "setExternalSigning",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256WithTSA",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256WithTSA",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCreateVisibleSignature",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCreateVisibleSignature2",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testPDFBox3978",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testPDFBox3978",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSObject.setGenerationNumber(int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSObject",
+    "method_name": "setGenerationNumber",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsInteger",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsFloat",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsString",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsStream",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsDictionary",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsArray"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedSequenceValueList(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedSequenceValueList",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setSubject(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setSubject",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testNullArrayValue",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.setTitle(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "setTitle",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.addDescription(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "addDescription",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testSchemaParsing",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.removeUnqualifiedSequenceValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "removeUnqualifiedSequenceValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.font.encoding.Encoding.getName(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.font.encoding.Encoding",
+    "method_name": "getName",
+    "parameters": [
+      "char"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractField.removeAttribute(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractField",
+    "method_name": "removeAttribute",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testAttribute"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.createAction(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction",
+    "method_name": "createAction",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testLaunch",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testSound",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testMovie",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testImportData",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testResetForm",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestForbiddenAction.testJS"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setKeywords(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setKeywords",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractStructuredType.getDatePropertyAsCalendar(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractStructuredType",
+    "method_name": "getDatePropertyAsCalendar",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedDateProperty",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedDateProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getDatePropertyValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getDatePropertyValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.encryption.TestPublicKeyEncryption.save(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.encryption.TestPublicKeyEncryption",
+    "method_name": "save",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtectionError",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtection",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testMultipleRecipients"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDVariableText.setDefaultAppearance(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDVariableText",
+    "method_name": "setDefaultAppearance",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testBadDA"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSObject.setObjectNumber(long)",
+    "declaring_type": "org.apache.pdfbox.cos.COSObject",
+    "method_name": "setObjectNumber",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsInteger",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsFloat",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsString",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsStream",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsDictionary",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsArray"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.PDFAIdentificationSchema.setAmd(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.PDFAIdentificationSchema",
+    "method_name": "setAmd",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testPDFAIdentification"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition.setDuration(float)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition",
+    "method_name": "setDuration",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest.duration"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setBoolean(java.lang.String,boolean)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setBoolean",
+    "parameters": [
+      "java.lang.String",
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetBoolean"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TrueTypeFont.getPath(java.lang.String)",
+    "declaring_type": "org.apache.fontbox.ttf.TrueTypeFont",
+    "method_name": "getPath",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.rendering.PDFRenderer.renderImage(int)",
+    "declaring_type": "org.apache.pdfbox.rendering.PDFRenderer",
+    "method_name": "renderImage",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testAddBorderToField",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleFormWithEmbeddedFont",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateMultiWidgetsForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateMultiWidgetsForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateCheckBox",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateCheckBox",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateGradientShadingPDF.testCreateGradientShading",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestRubberStampWithImage.test",
+      "org.apache.pdfbox.examples.pdmodel.TestRubberStampWithImage.test",
+      "org.apache.pdfbox.pdfparser.TestPDFParser.testPDFBox3950",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBox988",
+      "org.apache.pdfbox.rendering.TestRendering.render"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent.setRegistryName(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent",
+    "method_name": "setRegistryName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.TestPDDocumentCatalog.handleOutputIntents"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.PDFAIdentificationSchema.setConformance(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.PDFAIdentificationSchema",
+    "method_name": "setConformance",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testBadPDFAConformanceId",
+      "org.apache.xmpbox.schema.AdobePDFTest.testBadPDFAConformanceId",
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testPDFAIdentification",
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testBadPDFAConformanceId"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedLanguagePropertyValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedLanguagePropertyValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.font.PDFontLike.getHeight(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.font.PDFontLike",
+    "method_name": "getHeight",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox5048"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TTFParser.parse(java.lang.String)",
+    "declaring_type": "org.apache.fontbox.ttf.TTFParser",
+    "method_name": "parse",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset2",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFromByteArrayWithCreatedByLosslessFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFromByteArrayWithCreatedByLosslessFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromByteArray"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.examples.signature.CreateVisibleSignature.setVisibleSignatureProperties(java.lang.String,java.lang.String,java.lang.String,int,int,boolean)",
+    "declaring_type": "org.apache.pdfbox.examples.signature.CreateVisibleSignature",
+    "method_name": "setVisibleSignatureProperties",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int",
+      "int",
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCreateVisibleSignature",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testPDFBox3978"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent.setInfo(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent",
+    "method_name": "setInfo",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.TestPDDocumentCatalog.handleOutputIntents"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.setAboutAsSimple(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "setAboutAsSimple",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.rdfAboutTest",
+      "org.apache.xmpbox.schema.XMPSchemaTest.rdfAboutTest",
+      "org.apache.xmpbox.schema.XMPSchemaTest.rdfAboutTest",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setNeedToBeUpdated(boolean)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setNeedToBeUpdated",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setCreator(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setCreator",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdfparser.RandomAccessSource.readFully(int)",
+    "declaring_type": "org.apache.pdfbox.pdfparser.RandomAccessSource",
+    "method_name": "readFully",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionReadFully",
+      "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionReadFully",
+      "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionPeek",
+      "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionUnreadBytes"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.PDFAIdentificationSchema.setPartValueWithString(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.PDFAIdentificationSchema",
+    "method_name": "setPartValueWithString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testBadVersionIdValueType",
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testBadVersionIdValueType",
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testBadVersionIdValueType",
+      "org.apache.xmpbox.schema.PDFAIdentificationOthersTest.testBadVersionIdValueType"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileWithCreatedByJPEGFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileWithCreatedByJPEGFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.PreflightConfiguration.getInstanceOfProcess(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.preflight.PreflightConfiguration",
+    "method_name": "getInstanceOfProcess",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.parser.TestPreflightConfiguration.testGetValidationProcess_MissingProcess",
+      "org.apache.pdfbox.preflight.parser.TestPreflightConfiguration.testGetValidationProcess_MissingProcess_NoError",
+      "org.apache.pdfbox.preflight.parser.TestPreflightConfiguration.testReplaceValidationProcess",
+      "org.apache.pdfbox.preflight.parser.TestPreflightConfiguration.testReplaceValidationProcess",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationProcess",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationPageProcess",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationProcess_noError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationPageProcess_noError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationProcess",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationPageProcess",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationProcess2",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationPageProcess2"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileWithCreatedByLosslessFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileWithCreatedByLosslessFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFile"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPBasicJobTicketSchema.addJob(java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPBasicJobTicketSchema",
+    "method_name": "addJob",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.BasicJobTicketSchemaTest.testAddTwoJobs",
+      "org.apache.xmpbox.schema.BasicJobTicketSchemaTest.testAddWithDefaultPrefix"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.filter.Predictor.calcSetBitSeq(int,int,int,int)",
+    "declaring_type": "org.apache.pdfbox.filter.Predictor",
+    "method_name": "calcSetBitSeq",
+    "parameters": [
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testCalcSetBitSeq"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.examples.pdmodel.TestHelloWorld.checkOutputFile(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.examples.pdmodel.TestHelloWorld",
+    "method_name": "checkOutputFile",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestHelloWorld.testHelloWorldTTF",
+      "org.apache.pdfbox.examples.pdmodel.TestHelloWorld.testHelloWorld"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedByContentWithCreatedByJPEGFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedByContentWithCreatedByJPEGFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.mapPNGRenderIntent(int)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter",
+    "method_name": "mapPNGRenderIntent",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testMapPNGRenderIntent"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AdobePDFSchema.setPDFVersion(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AdobePDFSchema",
+    "method_name": "setPDFVersion",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testPDFAIdentification",
+      "org.apache.xmpbox.schema.AdobePDFTest.testPDFAIdentification",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent.setOutputConditionIdentifier(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent",
+    "method_name": "setOutputConditionIdentifier",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.TestPDDocumentCatalog.handleOutputIntents"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PageMode.fromString(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PageMode",
+    "method_name": "fromString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull2",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull3",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull4",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull5",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputNotNull6",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputIllegalArgumentException",
+      "org.apache.pdfbox.pdmodel.PageModeTest.fromStringInputNotNullOutputIllegalArgumentException2"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getIntegerPropertyValueAsSimple(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getIntegerPropertyValueAsSimple",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.checkImageConvertFail(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest",
+    "method_name": "checkImageConvertFail",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBAlpha",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionGrayAlpha",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionGray",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionGrayGamma"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.XMPMetadata.createXMPMetadata(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.XMPMetadata",
+    "method_name": "createXMPMetadata",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.XMPMetaDataTest.testInitMetaDataWithInfo"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.setFormat(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "setFormat",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.TypeMapping.createInteger(java.lang.String,java.lang.String,java.lang.String,int)",
+    "declaring_type": "org.apache.xmpbox.type.TypeMapping",
+    "method_name": "createInteger",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.TestExifXmp.testGenerate",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testElementAndObjectSynchronization",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testObjectCreationWithNamespace"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDButton.setValue(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDButton",
+    "method_name": "setValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testRadioButtonWithOptions",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxGroupProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxGroupProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setCheckboxInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setCheckboxGroupInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setRadioButtonInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testRadioButtonPDModel",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testRadioButtonPDModel",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testRadioButtonPDModel",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByValidExportValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidExportValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox4617IndexForSetByOption"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.util.Matrix.translate(float,float)",
+    "declaring_type": "org.apache.pdfbox.util.Matrix",
+    "method_name": "translate",
+    "parameters": [
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.util.MatrixTest.testTranslation"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.addBagValueAsSimple(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "addBagValueAsSimple",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition.setFlyAreaOpaque(boolean)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition",
+    "method_name": "setFlyAreaOpaque",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest.flyArea"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedFileByExtensionWithCreatedByJPEGFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedFileByExtensionWithCreatedByJPEGFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByExtension"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.addCreator(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "addCreator",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testNullArrayValue",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.setBooleanPropertyValueAsSimple(java.lang.String,java.lang.Boolean)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "setBooleanPropertyValueAsSimple",
+    "parameters": [
+      "java.lang.String",
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.font.PDFont.encode(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.font.PDFont",
+    "method_name": "encode",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox4318",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox4318",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox4318"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AdobePDFSchema.setProducer(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AdobePDFSchema",
+    "method_name": "setProducer",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.xmpbox.schema.AdobePDFErrorsTest.testPDFAIdentification",
+      "org.apache.xmpbox.schema.AdobePDFTest.testPDFAIdentification",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.PreflightConfiguration.removeProcess(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.preflight.PreflightConfiguration",
+    "method_name": "removeProcess",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationProcess_noError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationProcess"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractComplexProperty.getProperty(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractComplexProperty",
+    "method_name": "getProperty",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractSchemaTester.testInitializedToNull",
+      "org.apache.xmpbox.schema.TestExifXmp.testNonStrict",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testListAndContainerAccessor",
+      "org.apache.xmpbox.type.AbstractStructuredTypeTester.testInitializedToNull",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testNonExistingProperty",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testNotValuatedPropertyProperty",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedTextProperty",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedDateProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreateByContentWithCreatedByCCITTFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreateByContentWithCreatedByCCITTFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDButton.setPushButton(boolean)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDButton",
+    "method_name": "setPushButton",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.changeRadioButtonToPushButton"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractTypeTester.calculateArrayGetter(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractTypeTester",
+    "method_name": "calculateArrayGetter",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractSchemaTester.testInitializedToNull"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSBase.setDirect(boolean)",
+    "declaring_type": "org.apache.pdfbox.cos.COSBase",
+    "method_name": "setDirect",
+    "parameters": [
+      "boolean"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleDirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleDirectObject"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.checkImageConvert(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest",
+    "method_name": "checkImageConvert",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGB",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBGamma",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGB16BitICC",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBIndexed",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBIndexedAlpha1Bit",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBIndexedAlpha2Bit",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBIndexedAlpha4Bit",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionRGBIndexedAlpha8Bit",
+      "org.apache.pdfbox.pdmodel.graphics.image.PNGConverterTest.testImageConversionIntentIndexed"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.CmapSubtable.getGlyphId(int)",
+    "declaring_type": "org.apache.fontbox.ttf.CmapSubtable",
+    "method_name": "getGlyphId",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.TestTTFParser.testPostTable",
+      "org.apache.pdfbox.pdmodel.font.TestTTFParser.testPostTable"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setEmbeddedInt(java.lang.String,java.lang.String,int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setEmbeddedInt",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedInt"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.getField(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm",
+    "method_name": "getField",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testAddBorderToField",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testAddBorderToField",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateSimpleFormWithEmbeddedFont",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateMultiWidgetsForm",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateCheckBox",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateCheckBox",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testLegacyModeMerge",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testLegacyModeMerge",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testLegacyModeMerge",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testLegacyModeMerge",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testJoinFieldsMerge_TextFieldsOnly_SameMerged",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testJoinFieldsMerge_TextFieldsOnly_SameMerged",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testJoinFieldsMerge_TextFieldsOnly_SameMerged",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testJoinFieldsMerge_TextFieldsOnly_SameMerged",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAPEntry",
+      "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAPEntry",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AlignmentTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterNUL",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterTAB",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterSPACE",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterSPACE",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCRLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCRLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLFCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLFCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeLinebreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeLinebreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeParagraphbreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeParagraphbreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest.checkSingleAnnotation",
+      "org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest.checkSameLayout",
+      "org.apache.pdfbox.pdmodel.interactive.form.HandleDifferentDALevelsTest.checkDifferentLayout",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineAuto",
+      "org.apache.pdfbox.pdmodel.interactive.form.MultilineFieldsTest.testMultilineBreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFromAnnotsTest.testFromAnnots3891CreateFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFieldsEntry",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFieldsEntry",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFlattenSpecificFieldsOnly",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFlattenSpecificFieldsOnly",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFlattenSpecificFieldsOnly",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testFlattenSpecificFieldsOnly",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testRadioButtonWithOptions",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.retrieveAcrobatCheckBoxProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatCheckBox",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatCheckBoxGroupProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedCheckBoxGroup",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setCheckboxInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setCheckboxGroupInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedCheckboxInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedCheckboxGroupInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.retrieveAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatRadioButton",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setRadioButtonInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedRadioButtonInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest.createDefaultSignatureField",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656NotInUnison",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByValidExportValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidExportValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByValidIndex",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidIndex",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox4617IndexNoneSelected",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox4617IndexForSetByOption",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox4617IndexForSetByIndex"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setInt(java.lang.String,int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setInt",
+    "parameters": [
+      "java.lang.String",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetInt"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractStructuredType.getPropertyValueAsString(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractStructuredType",
+    "method_name": "getPropertyValueAsString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedTextProperty",
+      "org.apache.xmpbox.type.TestAbstractStructuredType.testValuatedTextProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setFloat(java.lang.String,float)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setFloat",
+    "parameters": [
+      "java.lang.String",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetFloat"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getDateProperty(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getDateProperty",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getBooleanPropertyValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getBooleanPropertyValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.PreflightConfiguration.removePageProcess(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.preflight.PreflightConfiguration",
+    "method_name": "removePageProcess",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetValidationPageProcess_noError",
+      "org.apache.pdfbox.preflight.TestPreflightConfiguration.testGetMissingValidationPageProcess"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.wink.client.MockHttpServer$MockHttpServerResponse.setMockResponseContentType(java.lang.String)",
+    "declaring_type": "org.apache.wink.client.MockHttpServer$MockHttpServerResponse",
+    "method_name": "setMockResponseContentType",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256WithTSA"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getIntegerPropertyValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getIntegerPropertyValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition.setFlyScale(float)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition",
+    "method_name": "setFlyScale",
+    "parameters": [
+      "float"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionTest.flyScale",
+      "org.apache.pdfbox.pdmodel.TestPDPageTransitions.saveAndReadTransitions"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getIntegerProperty(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getIntegerProperty",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDPageContentStream.showText(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDPageContentStream",
+    "method_name": "showText",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBox3747",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testDeleteFont",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.filter.Predictor.getBitSeq(int,int,int)",
+    "declaring_type": "org.apache.pdfbox.filter.Predictor",
+    "method_name": "getBitSeq",
+    "parameters": [
+      "int",
+      "int",
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq",
+      "org.apache.pdfbox.filter.PredictorTest.testGetBitSeq"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDField.setValue(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDField",
+    "method_name": "setValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.AcroFormsRotationTest.fillFields",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterNUL",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterTAB",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterSPACE",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterCRLF",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterLFCR",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeLinebreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.ControlCharacterTest.characterUnicodeParagraphbreak",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatCheckBox",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatCheckBox",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedCheckBoxGroup",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedCheckBoxGroup",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedCheckboxInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedCheckboxGroupInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatRadioButton",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatRadioButton",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setAbstractedRadioButtonInvalidValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest.setValueForAbstractedSignatureField"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocument.setDocumentId(java.lang.Long)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocument",
+    "method_name": "setDocumentId",
+    "parameters": [
+      "long"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testPDFBox3811"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setString(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setString",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetString"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.setCoverage(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "setCoverage",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas",
+      "org.apache.xmpbox.DoubleSameTypeSchemaTest.testDoubleDublinCore",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testSchemaParsing",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDField.setPartialName(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDField",
+    "method_name": "setPartialName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testBadDA",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest.createDefaultSignatureField",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureFieldTest.setValueForAbstractedSignatureField"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.flattenAndCompare(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest",
+    "method_name": "flattenAndCompare",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX2469Empty",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX2586",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX3262",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX3396_1",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX3396_2",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX3396_3",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBOX3396_4",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBox4693",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBox4788",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBox4889",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormFlattenTest.testFlattenPDFBox4955"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.wink.client.MockHttpServer$MockHttpServerResponse.setMockResponseCode(int)",
+    "declaring_type": "org.apache.wink.client.MockHttpServer$MockHttpServerResponse",
+    "method_name": "setMockResponseCode",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256WithTSA"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSArray.get(int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSArray",
+    "method_name": "get",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.getFromList",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeUniqueFromListByObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeUniqueFromListByObject",
+      "org.apache.pdfbox.pdmodel.graphics.PDLineDashPatternTest.testGetCOSObject",
+      "org.apache.pdfbox.pdmodel.graphics.PDLineDashPatternTest.testGetCOSObject",
+      "org.apache.pdfbox.pdmodel.graphics.PDLineDashPatternTest.testGetCOSObject",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
+      "org.apache.pdfbox.util.MatrixTest.testPdfbox2872"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setAuthor(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setAuthor",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testNullArrayValue",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCompareCreatedByContentWithCreatedByLosslessFactory(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest",
+    "method_name": "testCompareCreatedByContentWithCreatedByLosslessFactory",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent",
+      "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObjectTest.testCreateFromFileByContent"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getDatePropertyValueAsSimple(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getDatePropertyValueAsSimple",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.addContributor(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "addContributor",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.SaveMetadataHelperTest.testSchemaParsing",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testSchemaParsing",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing",
+      "org.apache.xmpbox.SaveMetadataHelperTest.testMetadataParsing"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TTFSubsetter.add(int)",
+    "declaring_type": "org.apache.fontbox.ttf.TTFSubsetter",
+    "method_name": "add",
+    "parameters": [
+      "char"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3319",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.setTextPropertyValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "setTextPropertyValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.fontbox.ttf.TrueTypeFont.nameToGID(java.lang.String)",
+    "declaring_type": "org.apache.fontbox.ttf.TrueTypeFont",
+    "method_name": "nameToGID",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testEmptySubset2",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757",
+      "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3757"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.getString(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "getString",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.cos.TestCOSName.PDFBox4076"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSArray.getString(int)",
+    "declaring_type": "org.apache.pdfbox.cos.COSArray",
+    "method_name": "getString",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testRadioButtonPDModel"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.Attribute.setNsURI(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.Attribute",
+    "method_name": "setNsURI",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.type.AttributeTest.testAtt"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.setUnqualifiedLanguagePropertyValue(java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "setUnqualifiedLanguagePropertyValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAltProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdfparser.InputStreamSource.readFully(int)",
+    "declaring_type": "org.apache.pdfbox.pdfparser.InputStreamSource",
+    "method_name": "readFully",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdfparser.InputStreamSourceTest.testPositionReadFully",
+      "org.apache.pdfbox.pdfparser.InputStreamSourceTest.testPositionReadFully",
+      "org.apache.pdfbox.pdfparser.InputStreamSourceTest.testPositionPeek",
+      "org.apache.pdfbox.pdfparser.InputStreamSourceTest.testPositionUnreadBytes"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.addUnqualifiedSequenceValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "addUnqualifiedSequenceValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSeqManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setName(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setName",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetName"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.text.PDFTextStripper.setLineSeparator(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.text.PDFTextStripper",
+    "method_name": "setLineSeparator",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedTextProperty(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedTextProperty",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSpecifiedSimplePropertyFormer",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.font.PDType1Font.getPath(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.font.PDType1Font",
+    "method_name": "getPath",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.DateConverter.toCalendar(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.DateConverter",
+    "method_name": "toCalendar",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testPDFBox4292",
+      "org.apache.xmpbox.parser.DeserializationTest.testIsartorStyleWithThumbs",
+      "org.apache.xmpbox.parser.DeserializationTest.testIsartorStyleWithThumbs",
+      "org.apache.xmpbox.parser.DeserializationTest.testIsartorStyleWithThumbs",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateConversion",
+      "org.apache.xmpbox.DateConverterTest.testDateFormatting",
+      "org.apache.xmpbox.DateConverterTest.testDateFormatting"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocumentInformation.setProducer(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocumentInformation",
+    "method_name": "setProducer",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMP",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testEmptyXMPSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoSynchronized",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadPrefixSchemas",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testdoublePrefixSchemas"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.AbstractField.setPropertyName(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.AbstractField",
+    "method_name": "setPropertyName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.TestExifXmp.testGenerate"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.getOutputFileName(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.examples.pdmodel.TestCreateSignature",
+    "method_name": "getOutputFileName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testDetachedSHA256WithTSA",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCreateVisibleSignature",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testCreateVisibleSignature2",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign",
+      "org.apache.pdfbox.examples.pdmodel.TestCreateSignature.testSaveIncrementalAfterSign"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSDictionary.setEmbeddedString(java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSDictionary",
+    "method_name": "setEmbeddedString",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedString"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.pdmodel.PDDocument.save(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.pdmodel.PDDocument",
+    "method_name": "save",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testCreateCheckBox",
+      "org.apache.pdfbox.examples.interactive.form.TestCreateSimpleForms.testRadioButtons",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleDirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleIndirectObject",
+      "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeIndirectObject"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.setTextPropertyValueAsSimple(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "setTextPropertyValueAsSimple",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSetSpecifiedSimpleTypeProperty",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSpecifiedSimplePropertyFormer"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.type.TypeMapping.createText(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.type.TypeMapping",
+    "method_name": "createText",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testBagManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testArrayList",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testArrayList",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testSpecifiedSimplePropertyFormer",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testProperties",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testElementAndObjectSynchronization",
+      "org.apache.xmpbox.type.TestSimpleMetadataProperties.testObjectCreationWithNamespace"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.cos.COSName.getPDFName(java.lang.String)",
+    "declaring_type": "org.apache.pdfbox.cos.COSName",
+    "method_name": "getPDFName",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.examples.pdmodel.TestRubberStampWithImage.test",
+      "org.apache.pdfbox.cos.TestCOSName.PDFBox4076",
+      "org.apache.pdfbox.pdmodel.fdf.FDFFieldTest.testCOSNameValue",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFBOX4115",
+      "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox5048",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testAddMissingInformationOnAcroFormAccess",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testAddMissingInformationOnAcroFormAccess",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testAddMissingInformationOnAcroFormAccess",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testAddMissingInformationOnAcroFormAccess",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testAcrobatRadioButtonProperties",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatRadioButton",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.setValueForAbstractedAcrobatRadioButton",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoAction.testGoto_OK",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoRemoteAction.testGoto_OK",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoRemoteAction.testGoto_OK",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoRemoteAction.testGoto_KO_InvalidContent",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoRemoteAction.testGoto_KO_MissingD",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestGotoRemoteAction.testGoto_KO_MissingF",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testFirstPage",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testLastPage",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testNextPage",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testPrevPage",
+      "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testForbiddenN"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.getUnqualifiedBagValueList(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "getUnqualifiedBagValueList",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testBagManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testBagManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testAsSimpleMethods",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.junit.Assert.fail(java.lang.String)",
+    "declaring_type": "org.junit.Assert",
+    "method_name": "fail",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.cos.TestCOSUpdateInfo.testIsSetNeedToBeUpdate",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testUnmodifiableCOSDictionary",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetItem",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetItem",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetItem",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetItem",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetBoolean",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetBoolean",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetName",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetName",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetDate",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetDate",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedDate",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedDate",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetString",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetString",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedString",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedString",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetInt",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetInt",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedInt",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetEmbeddedInt",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetLong",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetLong",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetFloat",
+      "org.apache.pdfbox.io.UnmodifiableCOSDictionaryTest.testSetFloat",
+      "org.apache.pdfbox.pdfwriter.ContentStreamWriterTest.testPDFBox4750",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDAcroFormTest.testBadDA",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testRadioButtonWithOptions",
+      "org.apache.pdfbox.pdmodel.interactive.form.PDButtonTest.testOptionsAndNamesNotNumbers",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidExportValue",
+      "org.apache.pdfbox.pdmodel.interactive.form.TestRadioButtons.testPDFBox3656ByInvalidIndex",
+      "org.apache.pdfbox.rendering.TestPDFToImage.testRenderImage",
+      "org.apache.pdfbox.encryption.TestPublicKeyEncryption.testProtectionError",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsInteger",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsFloat",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsString",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsStream",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsDictionary",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testIsArray",
+      "org.apache.pdfbox.preflight.utils.TestCOSUtils.testCloseCOSDocumentIO",
+      "org.apache.pdfbox.preflight.TestIsartorBavaria.validate"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.DublinCoreSchema.addSubject(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.DublinCoreSchema",
+    "method_name": "addSubject",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testNullArrayValue",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testBadSizeOfArrays",
+      "org.apache.pdfbox.preflight.metadata.TestSynchronizedMetadataValidation.testAllInfoUnsynchronized"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.io.ScratchFileBuffer.seek(long)",
+    "declaring_type": "org.apache.pdfbox.io.ScratchFileBuffer",
+    "method_name": "seek",
+    "parameters": [
+      "int"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.io.ScratchFileBufferTest.testEOFBugInSeek",
+      "org.apache.pdfbox.io.ScratchFileBufferTest.testEOFBugInSeek"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPSchema.addQualifiedBagValue(java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPSchema",
+    "method_name": "addQualifiedBagValue",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.XMPSchemaTest.testBagManagement",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema",
+      "org.apache.xmpbox.schema.XMPSchemaTest.testMergeSchema"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.XMPBasicJobTicketSchema.addJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.XMPBasicJobTicketSchema",
+    "method_name": "addJob",
+    "parameters": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.BasicJobTicketSchemaTest.testAddTwoJobs",
+      "org.apache.xmpbox.schema.BasicJobTicketSchemaTest.testAddWithDefinedPrefix"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetDateListValue(java.lang.String)",
+    "declaring_type": "org.apache.xmpbox.schema.AbstractXMPSchemaTest",
+    "method_name": "testGetSetDateListValue",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.xmpbox.schema.AbstractXMPSchemaTest.testGetSetProperty"
+    ]
+  },
+  {
+    "full_method_signature": "org.apache.pdfbox.preflight.PreflightPath.pushObject(java.lang.Object)",
+    "declaring_type": "org.apache.pdfbox.preflight.PreflightPath",
+    "method_name": "pushObject",
+    "parameters": [
+      "java.lang.String"
+    ],
+    "invoked_by_tests": [
+      "org.apache.pdfbox.preflight.TestPreflightPath.test",
+      "org.apache.pdfbox.preflight.TestPreflightPath.test",
+      "org.apache.pdfbox.preflight.TestPreflightPath.test",
+      "org.apache.pdfbox.preflight.TestPreflightPath.testPush"
+    ]
+  }
+]
