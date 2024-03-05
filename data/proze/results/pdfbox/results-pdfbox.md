@@ -1,5 +1,5 @@
-\# | signature | \#args in union | generated test class | output |
--- | --------- | --------------- | -------------------- | ------ |
+\# | method signature | \#args in test, prod union | generated test class: `TestProzeGen_methodName_testName` | output |
+-- | ---------------- | -------------------------- | -------------------------------------------------------- | ------ |
 M1 | `org.apache.fontbox.ttf.CmapSubtable.getGlyphId(int)` | 88 | [`TestProzeGen_getGlyph_testEmptySubset`](https://github.com/Deee92/journal/blob/master/data/proze/results/pdfbox/org/apache/fontbox/ttf/TestProzeGen_getGlyph_testEmptySubset.java) | P: 1, F: 87, E: 0 |
 M1 | `org.apache.fontbox.ttf.CmapSubtable.getGlyphId(int)` | 88 | [`TestProzeGen_getGlyph_testEmptySubset2`](https://github.com/Deee92/journal/blob/master/data/proze/results/pdfbox/org/apache/fontbox/ttf/TestProzeGen_getGlyph_testEmptySubset2.java) | P: 1, F: 87, E: 0 |
 M1 | `org.apache.fontbox.ttf.CmapSubtable.getGlyphId(int)` | 88 | [`TestProzeGen_getGlyph_testNonEmptySubset`](https://github.com/Deee92/journal/blob/master/data/proze/results/pdfbox/org/apache/fontbox/ttf/TestProzeGen_getGlyph_testNonEmptySubset.java) | P: 0, F: 88, E: 0 |
