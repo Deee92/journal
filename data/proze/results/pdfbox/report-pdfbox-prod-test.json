@@ -13,6 +13,9 @@
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
     ],
+    "numTestArgs": 3,
+    "numProdArgs": 2242,
+    "sizeUnion": 2245,
     "unionProdAndTestArgs": [
       "  ",
       "   ",
@@ -2297,6 +2300,9 @@
       "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset",
       "org.apache.fontbox.ttf.TTFSubsetterTest.testNonEmptySubset"
     ],
+    "numTestArgs": 3,
+    "numProdArgs": 85,
+    "sizeUnion": 88,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -2422,6 +2428,9 @@
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox4318",
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testPDFox4318"
     ],
+    "numTestArgs": 1,
+    "numProdArgs": 2624,
+    "sizeUnion": 2625,
     "unionProdAndTestArgs": [
       "  ",
       "   ",
@@ -5066,6 +5075,9 @@
     "invokedByTests": [
       "org.apache.pdfbox.pdmodel.graphics.PDLineDashPatternTest.testGetCOSObject"
     ],
+    "numTestArgs": 2,
+    "numProdArgs": 119,
+    "sizeUnion": 119,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -5216,6 +5228,9 @@
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen",
       "org.apache.pdfbox.pdmodel.font.PDFontTest.testSoftHyphen"
     ],
+    "numTestArgs": 3,
+    "numProdArgs": 382,
+    "sizeUnion": 385,
     "unionProdAndTestArgs": [
       "        NOAA's Undersea Research Program ",
       "       30 seconds without falling. ",
@@ -5637,6 +5652,9 @@
       "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
       "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379"
     ],
+    "numTestArgs": 6,
+    "numProdArgs": 48,
+    "sizeUnion": 50,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -5745,6 +5763,9 @@
       "org.apache.pdfbox.util.MatrixTest.testPdfbox2872",
       "org.apache.pdfbox.util.MatrixTest.testPdfbox2872"
     ],
+    "numTestArgs": 6,
+    "numProdArgs": 256,
+    "sizeUnion": 256,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -6093,6 +6114,9 @@
       "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379",
       "org.apache.fontbox.ttf.TTFSubsetterTest.testPDFBox3379"
     ],
+    "numTestArgs": 7,
+    "numProdArgs": 84,
+    "sizeUnion": 88,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -6259,6 +6283,9 @@
       "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testPrevPage",
       "org.apache.pdfbox.preflight.action.pdfa1b.TestNamedAction.testForbiddenN"
     ],
+    "numTestArgs": 24,
+    "numProdArgs": 367,
+    "sizeUnion": 373,
     "unionProdAndTestArgs": [
       "1.4",
       "1.7",
@@ -6763,6 +6790,9 @@
     "invokedByTests": [
       "org.apache.pdfbox.cos.TestCOSName.PDFBox4076"
     ],
+    "numTestArgs": 1,
+    "numProdArgs": 6,
+    "sizeUnion": 7,
     "unionProdAndTestArgs": [
       "OL14",
       "OL2",
@@ -6793,6 +6823,9 @@
       "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleIndirectObject",
       "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeIndirectObject"
     ],
+    "numTestArgs": 3,
+    "numProdArgs": 23,
+    "sizeUnion": 26,
     "unionProdAndTestArgs": [
       "./000752-decoded.pdf",
       "./000752-from-txt.pdf",
@@ -6847,6 +6880,9 @@
       "org.apache.pdfbox.pdmodel.TestPDPageTransitions.readTransitions",
       "org.apache.pdfbox.pdmodel.TestPDPageTransitions.saveAndReadTransitions"
     ],
+    "numTestArgs": 1,
+    "numProdArgs": 3,
+    "sizeUnion": 3,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -6879,6 +6915,9 @@
       "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeSingleIndirectObject",
       "org.apache.pdfbox.pdmodel.common.COSArrayListTest.removeIndirectObject"
     ],
+    "numTestArgs": 4,
+    "numProdArgs": 80,
+    "sizeUnion": 82,
     "unionProdAndTestArgs": [
       "0",
       "1",
@@ -7019,6 +7058,9 @@
       "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionPeek",
       "org.apache.pdfbox.pdfparser.RandomAccessSourceTest.testPositionUnreadBytes"
     ],
+    "numTestArgs": 2,
+    "numProdArgs": 2,
+    "sizeUnion": 3,
     "unionProdAndTestArgs": [
       "4",
       "5",
@@ -7053,6 +7095,9 @@
       "org.apache.pdfbox.multipdf.MergeAcroFormsTest.testAPEntry",
       "org.apache.pdfbox.multipdf.MergeAnnotationsTest.testLinkAnnotations"
     ],
+    "numTestArgs": 5,
+    "numProdArgs": 3,
+    "sizeUnion": 8,
     "unionProdAndTestArgs": [
       "./000752-merged.pdf",
       "./000753-merged.pdf",
@@ -7097,6 +7142,9 @@
       "org.apache.pdfbox.pdmodel.font.TestTTFParser.testPostTable",
       "org.apache.pdfbox.pdmodel.font.TestTTFParser.testPostTable"
     ],
+    "numTestArgs": 2,
+    "numProdArgs": 74,
+    "sizeUnion": 76,
     "unionProdAndTestArgs": [
       "100",
       "101",
@@ -7198,6 +7246,9 @@
       "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF16BEURI",
       "org.apache.pdfbox.pdmodel.interactive.action.PDActionURITest.testUTF16LEURI"
     ],
+    "numTestArgs": 258,
+    "numProdArgs": 137,
+    "sizeUnion": 395,
     "unionProdAndTestArgs": [
       "0037C9EE91CA4C613A944859D6932CB8D1820ACE27C1F1B372D5E30C56DFADC0",
       "004B3A3A5C15EFCBCBD4A69BD0D1150214CC32C30E4F39F3E7F67A1A665DBA3F70E685D916BC70A5696824B344C6D5C4",
